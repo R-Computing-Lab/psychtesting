@@ -1,10 +1,11 @@
-# Optional Deep Dive: R basics and workflows {#r_basics}
+# R basics and workflows {#r_basics}
 
 ```{r include = FALSE}
 source("common.R")
 library(tweetrmd) #... embedding tweets
 ds4p_urls <- read.csv("./data/ds4p_urls.csv")
 ```
+
 ```{r links, child="links.md"}
 ```
 
@@ -17,11 +18,24 @@ include_tweet("https://twitter.com/CurieDr/status/1355911682585931777")
 
 <!--Original content: https://stat545.com/block002_hello-r-workspace-wd-project.html-->
 
-This chapter is a recommended, but optional deep dive (ODD) that might be useful to you.
 
-## Basics of working with R at the command line and RStudio goodies
 
-Launch RStudio/R.
+We'll start our tour of R with a summary of how R code is used to interact with R via the console. In these notes, blocks of example R code are offset from the main text as shown below. Comments within code blocks start with a single hash `#`, the code itself has nothing consistent preceding it, and output from my R console is preceded by a double hash `##`. You can copy and paste example code directly into your R console. Anything after the `#` will be ignored.
+
+
+```{r first-example}
+# This is a comment within a block of R code. Comments 
+# start with the hash sign and are ignored by R. The code 
+# below will be interpreted by R once you paste or type it
+# into the console.
+x <- c(4, 8, 15, 16, 23, 42)
+mean(x)  # Only code after the hash is ignored
+sd(x)
+```
+
+In the code above, we're creating a short vector of scores in `x` and calculating its mean and standard deviation. 
+
+Ok, if you haven't opened up R/RStudio, do that now....
 
 Notice the default panes:
 
@@ -31,7 +45,34 @@ Notice the default panes:
 
 FYI: you can change the default location of the panes, among many other things: [Customizing RStudio][rstudio-customizing].
 
-Go into the Console, where we interact with the live R process.
+Go into the Console, where we interact with the live R process. You should paste that example code in the console and verify that you get the same results. Note that code you enter at the console is preceded by the R prompt `>`, whereas output printed in your console is not.
+
+
+## Introducing Functions
+
+```{r}
+
+x <- c(4, 8, 15, 16, 23, 42)
+mean(x) 
+sd(x)
+```
+
+In the example code above (and in the previous section), the functions that get things done in R have names. To use them, we summon by name with parentheses enclosing any required information or instructions for how the functions should work. 
+
+For example, we used the function `c()` to combine a set of numbers into a "vector" of scores. The information supplied to `c()` consisted of the scores themselves, separated by commas. `mean()` and `sd()` are functions for obtaining the mean and standard deviation of vectors of scores, like the ones in `x`.
+
+## Introduction to Objects
+
+```{r}
+x <- c(4, 8, 15, 16, 23, 42)
+mean(x) 
+sd(x)
+```
+
+The second thing to notice in the example above is that data and results are saved to "objects" in R using the assignment operator `<-`. We used the concatenate function to stick our numbers together in a set, `c(4, 8, 15, 16, 23, 42)`, and then we assigned the result to have the name `x`. Objects created in this way can be accessed later on by their assigned name, for example, to find a mean or standard deviation. If we wanted to access it later, we could also save the mean of `x` to a new object.
+
+#### Now you try!
+
 
 Make an assignment and then inspect the object you just created:
 
@@ -41,16 +82,13 @@ x
 ```
 
 All R statements where you create objects -- "assignments" -- have this form:
+
 ```{r eval = FALSE}
 objectName <- value
 ```
 and in my head I hear, e.g., "x gets 12".
 
-You will make lots of assignments and the operator `<-` is a pain to type. Don't be lazy and use `=`, although it would work, because it will just sow confusion later. Instead, utilize RStudio's keyboard shortcut: Alt + - (the minus sign).
 
-Notice that RStudio auto-magically surrounds `<-` with spaces, which demonstrates a useful code formatting practice. Code is miserable to read on a good day. Give your eyes a break and use spaces.
-
-RStudio offers many handy [keyboard shortcuts][rstudio-key-shortcuts]. Also, Alt+Shift+K brings up a keyboard shortcut reference card.
 
 Object names cannot start with a digit and cannot contain certain other characters such as a comma or a space. You will be wise to adopt a [convention for demarcating words][wiki-snake-case] in names.
 
@@ -61,6 +99,7 @@ evenOthersUseCamelCase
 ```
 
 Make another assignment:
+
 ```{r}
 this_is_a_really_long_name <- 2.5
 ```
@@ -68,6 +107,7 @@ this_is_a_really_long_name <- 2.5
 To inspect this, try out RStudio's completion facility: type the first few characters, press TAB, add characters until you disambiguate, then press return.
 
 Make another assignment:
+
 ```{r}
 mason_rocks <- 2 ^ 3
 ```
@@ -78,7 +118,11 @@ masonrocks
 masn_rocks
 ```
 
-Implicit contract with the computer / scripting language: Computer will do tedious computation for you. In return, you will be completely precise in your instructions. Typos matter. Case matters. Get better at typing.
+Implicit contract with the computer / scripting language: Computer will do tedious computation for you. In return, you will be completely precise in your instructions. Typos matter. Case matters.
+
+```{r}
+mason_rocks
+```
 
 R has a mind-blowing collection of built-in functions that are accessed like so:
 
@@ -261,7 +305,7 @@ Visit your figure in an external viewer to verify that the PDF is changing as yo
 
 In your favorite OS-specific way, search your files for `toy_line_plot.pdf` and presumably you will find the PDF itself (no surprise) but _also the script that created it (`toy-line.r`)_. This latter phenomenon is a huge win. One day you will want to remake a figure or just simply understand where it came from. If you rigorously save figures to file __with R code and not ever ever ever the mouse or the clipboard__, you will sing my praises one day. Trust me.
 
-## Stuff
+## Saving Files and Protips
 
 ```{r, echo=FALSE}
 # tradition
@@ -269,8 +313,6 @@ video_url="https://www.youtube.com/watch?v=gRdfX7ut8gw"
 embed_url(video_url) %>%
   use_align("center")
 ```
-
-
 
 It is traditional to save R scripts with a `.R` or `.r` suffix. Follow this convention unless you have some extraordinary reason not to. 
 

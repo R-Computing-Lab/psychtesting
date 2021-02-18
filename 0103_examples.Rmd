@@ -1,0 +1,58 @@
+# Refreshers and Examples
+
+```{r include = FALSE}
+source("common.R")
+library(tweetrmd) #... embedding tweets
+ds4p_urls <- read.csv("./data/ds4p_urls.csv")
+```
+
+```{r links, child="links.md"}
+```
+
+You're now ready for a review of the introductory statistics that are prerequisite for the analyses that come later in this class.
+
+Statistics are important in measurement because they allow us to score and summarize the information collected with our tests and instruments. They're used to describe the reliability, validity, and predictive power of this information. They're also used to describe how well our test covers a domain of content or a network of constructs, including in relation to other content areas or constructs. We rely heavily on statistics for later modules
+
+
+## Some terms
+
+We'll begin this review with some basic statistical terms. These ideas should be familiar to you from your research methods classes, but I figured that this information is useful in case you've gotten a little rusty.
+
+
+First, a *variable* is a set of values that can differ for different people. For example, we often measure variables such as *age* and *gender*. These words are italicized here to denote them as statistical variables, as opposed to words. The term *variable* is synonymous with quality, attribute, trait, or property. Constructs are also variables. Really, a variable is anything assigned to people that can potentially take on more than just a single constant value. As noted above, variables in R can be contained within simple vectors, for example, `x`, or they can be grouped together in a `data.frame`.
+
+Generic variables will be labeled in this book using capital letters, usually $X$ and $Y$. Here, $X$ might represent a generic test score, for example, the total score across all the items in a test. It might also represent scores on a single item. Both are considered variables. The definition of a generic variable like $X$ depends on the context in which it is defined.
+
+Indices can also be used to denote generic variables that are part of some sequence of variables. Most often this will be scores on items within a test, where, for example, $X_1$ is the first item, $X_2$ is the second, and $X_J$ is the last, with $J$ being the number of items in the test and $X_j$ representing any given item. Subscripts can also be used to index individual people on a single variable. For example, test scores for a group of people could be denoted as $X_1$, $X_2$, $\dots$, $X_N$, where $N$ is the number of people and $X_i$ represents the score for a generic person. Combining people and items, $X_{ij}$ would be the score for person $i$ on item $j$.
+
+The number of people is denoted by $n$ or sometimes $N$. Typically, the lowercase  $n$ represents sample size and the uppercase $N$ represents the population, however, the two are often used interchangeably. Greek and Arabic letters are used for other sample and population statistics. The sample mean is denoted by $m$ and the population mean by $\mu$, the standard deviation is $s$ or $\sigma$, variance is $s^2$ or $\sigma^2$, and correlation is $r$ or $\rho$. Note that the mean and standard deviation are sometimes abbreviated as $M$ and $SD$. Note also that distinctions between sample and population values often aren't necessary, in which case the population terms are used. If a distinction is necessary, it will be identified.
+
+Finally, you may see named subscripts added to variable names and other terms, for example, $M_{control}$ might denote the mean of a control group. These subscripts depend on the situation and must be interpreted in context.
+
+
+## Summary Statistics
+
+Descriptive and inferential are terms that refer to two general uses of statistics. These uses differ based on whether or not an inference is made from properties of a sample of data to parameters for an unknown population. Descriptive statistics, or descriptives, are used simply to explore and describe certain features of distributions. For example, the mean and variance are statistics identifying the center of and variability in a distribution. These and other statistics are used inferentially when an inference is made to a population 
+
+Descriptives are not typically used to answer research questions or inform decision making. Instead, inferential statistics are more appropriate for these less exploratory and more confirmatory results.
+
+Inferential statistics involve an inference to a parameter or a population value. The quality of this inference is gauged using statistical tests that index the error associated with our estimates. In this review we're focusing on descriptive statistics. Later we'll consider some inferential applications.
+
+The `describe()` function in the psych package returns basic descriptive statistics that are often useful for psychometrics, including the mean, median, standard deviation (sd), skewness (skew), kurtosis (kurt), minimum (min), and maximum (max), as well as some others I'm forgetting. 
+
+
+The describe function in the psych package is meant to produce the most frequently requested stats in psychometric and psychology studies, and to produce them in an easy to read data.frame. If a grouping variable is called for in formula mode, it will also call describeBy to the processing. The results from describe can be used in graphics functions (e.g., error.crosses).
+
+The range statistics (min, max, range) are most useful for data checking to detect coding errors, and should be found in early analyses of the data.
+
+Although describe will work on data frames as well as matrices, it is important to realize that for data frames, descriptive statistics will be reported only for those variables where this makes sense (i.e., not for alphanumeric data).
+
+If the check option is TRUE, variables that are categorical or logical are converted to numeric and then described. These variables are marked with an * in the row name. This is somewhat slower. Note that in the case of categories or factors, the numerical ordering is not necessarily the one expected. For instance, if education is coded "high school", "some college" , "finished college", then the default coding will lead to these as values of 2, 3, 1. Thus, statistics for those variables marked with * should be interpreted cautiously (if at all).
+
+
+## Measures of Spread
+
+
+##  The Normal Distribution and Z-Scores
+
+## Correlation
