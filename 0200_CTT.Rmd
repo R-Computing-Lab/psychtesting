@@ -5,6 +5,8 @@
 #devtools::install_github("talbano/epmr")
 source("common.R")
 library(tweetrmd) #... embedding tweets
+library(tidyverse)
+library(psych)
 
 ```
 
@@ -24,6 +26,13 @@ set.seed(160416)
 myt <- 20
 mye <- rnorm(1000, mean = 0, sd = 1)
 myx <- myt + mye
+
+df=data.frame(myx,myt,mye)
+mean(myx); sd(myx)
+
+p <- ggplot(df, aes(x=myx)) + 
+  geom_histogram()
+p
 
 ```
 
