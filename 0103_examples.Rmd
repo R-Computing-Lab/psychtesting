@@ -49,10 +49,11 @@ Although describe will work on data frames as well as matrices, it is important 
 
 If the check option is TRUE, variables that are categorical or logical are converted to numeric and then described. These variables are marked with an * in the row name. This is somewhat slower. Note that in the case of categories or factors, the numerical ordering is not necessarily the one expected. For instance, if education is coded "high school", "some college" , "finished college", then the default coding will lead to these as values of 2, 3, 1. Thus, statistics for those variables marked with * should be interpreted cautiously (if at all).
 
-
+<!--
 ## Measures of Spread
 
 
 ##  The Normal Distribution and Z-Scores
 
 ## Correlation
+-->
