@@ -24,7 +24,7 @@
 <meta name="author" content="S. Mason Garrison" />
 
 
-<meta name="date" content="2021-02-20" />
+<meta name="date" content="2021-02-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -217,9 +217,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="3.1" data-path="refreshers-and-examples.html"><a href="refreshers-and-examples.html#some-terms"><i class="fa fa-check"></i><b>3.1</b> Some terms</a></li>
 <li class="chapter" data-level="3.2" data-path="refreshers-and-examples.html"><a href="refreshers-and-examples.html#summary-statistics"><i class="fa fa-check"></i><b>3.2</b> Summary Statistics</a></li>
-<li class="chapter" data-level="3.3" data-path="refreshers-and-examples.html"><a href="refreshers-and-examples.html#measures-of-spread"><i class="fa fa-check"></i><b>3.3</b> Measures of Spread</a></li>
-<li class="chapter" data-level="3.4" data-path="refreshers-and-examples.html"><a href="refreshers-and-examples.html#the-normal-distribution-and-z-scores"><i class="fa fa-check"></i><b>3.4</b> The Normal Distribution and Z-Scores</a></li>
-<li class="chapter" data-level="3.5" data-path="refreshers-and-examples.html"><a href="refreshers-and-examples.html#correlation"><i class="fa fa-check"></i><b>3.5</b> Correlation</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="r-code-for-module-5.html"><a href="r-code-for-module-5.html"><i class="fa fa-check"></i><b>4</b> R Code for Module 5</a>
 <ul>
@@ -331,12 +328,11 @@ True scores are truncated to fall between 0 and 11 using setrange()</p>
 </div>
 <div id="reliability-and-unreliability-illustrated" class="section level2" number="4.3">
 <h2><span class="header-section-number">4.3</span> Reliability and unreliability Illustrated</h2>
-<p>Here we have simulated scores for a new form of the reading test called y. Note that rho is the made up reliability, which is set to 0.80
-, and x is the original reading total scores. Form y, which is slightly easier than x, has a mean of 6 and SD of 3.</p>
+<p>Here we have simulated scores for a new form of the reading test called y. Note that rho is the made up reliability, which is set to 0.80, and x is the original reading total scores. Form y, which is slightly easier than x, has a mean of 6 and SD of 3.</p>
 <div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="r-code-for-module-5.html#cb35-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb35-2"><a href="r-code-for-module-5.html#cb35-2" aria-hidden="true" tabindex="-1"></a>xysim <span class="ot">&lt;-</span> <span class="fu">rsim</span>(<span class="at">rho =</span> .<span class="dv">8</span>, <span class="at">x =</span> scores<span class="sc">$</span>x1, <span class="at">meany =</span> <span class="dv">6</span>, <span class="at">sdy =</span> <span class="dv">3</span>)</span>
-<span id="cb35-3"><a href="r-code-for-module-5.html#cb35-3" aria-hidden="true" tabindex="-1"></a>scores<span class="sc">$</span>x2 <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">setrange</span>(xysim<span class="sc">$</span>y, scores<span class="sc">$</span>x1))</span>
-<span id="cb35-4"><a href="r-code-for-module-5.html#cb35-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(scores, <span class="fu">aes</span>(x1, x2)) <span class="sc">+</span></span>
+<span id="cb35-3"><a href="r-code-for-module-5.html#cb35-3" aria-hidden="true" tabindex="-1"></a>scores<span class="sc">$</span>y <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">setrange</span>(xysim<span class="sc">$</span>y, scores<span class="sc">$</span>x1))</span>
+<span id="cb35-4"><a href="r-code-for-module-5.html#cb35-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(scores, <span class="fu">aes</span>(x1, y)) <span class="sc">+</span></span>
 <span id="cb35-5"><a href="r-code-for-module-5.html#cb35-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">position =</span> <span class="fu">position_jitter</span>(<span class="at">w =</span> .<span class="dv">3</span>, <span class="at">h =</span> .<span class="dv">3</span>)) <span class="sc">+</span></span>
 <span id="cb35-6"><a href="r-code-for-module-5.html#cb35-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_abline</span>(<span class="at">col =</span> <span class="st">&quot;blue&quot;</span>)</span></code></pre></div>
 <div class="figure"><span id="fig:cttplot2"></span>
