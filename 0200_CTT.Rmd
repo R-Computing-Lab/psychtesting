@@ -93,8 +93,10 @@ ggplot(scores, aes(x1, y)) +
 
 
 
+# (PART) Module 06 {-}
 
-# R Code for Module 6
+
+# R Code and Readings for Module 6
 
 
 ## Statistical definition of reliability. 
@@ -137,11 +139,11 @@ cor(xsplit1, xsplit2, use = "complete")
 The Spearman-Brown formula was originally used to correct for the reduction in reliability that occurred when correlating two test forms that were only half the length of the original test. In theory, reliability will increase as we add items to a test. Thus, Spearman-Brown is used to estimate, or predict, what the reliability would be if the half-length tests were made into full-length tests.
 
 ```{r}
-# sbr() in the epmr package uses the Spearman-Brown 
+# sb_r() in the epmr package uses the Spearman-Brown 
 # formula to estimate how reliability would change when 
 # test length changes by a factor k
 # If test length were doubled, k would be 2
-sbr(r = cor(xsplit1, xsplit2, use = "complete"), k = 2)
+sb_r(r = cor(xsplit1, xsplit2, use = "complete"), k = 2)
 ```
 
 The Spearman-Brown reliability, $r_{new}$, is estimated as a function of what's labeled here as the old reliability, $r_{old}$, and the factor by which the length of $X$ is predicted to change, $k$:
@@ -152,7 +154,7 @@ r_{new} = \frac{kr_{old}}{(k - 1)r_{old} + 1}.
 \end{equation}
 
 
-Again, $k$ is the factor by which the test length is increased or decreased. It is equal to the number of items in the new test divided by the number of items in the original test. Multiply $k$ by the old reliability, and then divided the result by $(k - 1)$ times the old reliability, plus 1. The epmr package contains `sbr()`, a simple function for estimating the Spearman-Brown reliability.
+Again, $k$ is the factor by which the test length is increased or decreased. It is equal to the number of items in the new test divided by the number of items in the original test. Multiply $k$ by the old reliability, and then divided the result by $(k - 1)$ times the old reliability, plus 1. The epmr package contains `sb_r()`, a simple function for estimating the Spearman-Brown reliability.
 
 
 ## SEM
@@ -170,14 +172,14 @@ Confidence intervals for `PISA09` can be estimated in the same way. First, we ch
 
 ```{r cttplot3, out.width='75%', fig.cap = "The PISA09 reading scale shown with 68 and 95 percent confidence intervals around each point."}
 # Get alpha and SEM for students in Belgium
-# ggplot2 also has a function called alpha, so we have to 
-# specify the package name
-bela <- epmr::alpha(PISA09[PISA09$cnt == "BEL", rsitems])
+
+bela <- coef_alpha(PISA09[PISA09$cnt == "BEL", rsitems])
+bela_alpha=bela$alpha
 # The sem function from epmr also overlaps with sem from 
 # another package so we're spelling it out here in long 
 # form
-belsem <- epmr::sem(r = bela, sd = sd(scores$x1,
-  na.rm = T))
+belsem <- epmr::sem(r = bela_alpha, sd = sd(scores$x1,
+  na.rm = TRUE))
 # Plot the 11 possible total scores against themselves
 # Error bars are shown for 1 SEM, giving a 68% confidence
 # interval and 2 SEM, giving the 95% confidence interval
@@ -192,3 +194,31 @@ ggplot(beldat, aes(factor(x), x)) +
   geom_point()
 ```
 Figure \@ref(fig:cttplot3) helps us visualize the impact of unreliable measurement on score comparisons. For example, note that the top of the 95% confidence interval for $X$ of 2 extends nearly to 5 points, and thus overlaps with the CI for adjacent scores 3 through 7. It isn't until $X$ of 8 that the CI no longer overlap. With a CI of `belsem` `r round(belsem, 3)`, we're 95% confident that students with observed scores differing at least by `belsem * 4` `r round(belsem, 3) * 4` have different true scores. Students with observed scores closer than `belsem * 4` may actually have the same true scores.
+
+
+
+### Interpreting reliability and unreliability
+
+There are no agreed-upon standards for interpreting reliability coefficients. Reliability is bound by 0 on the lower end and 1 at the upper end, because, by definition, the amount of true variability can never be less or more than the total available variability in $X$. Higher reliability is clearly better, but cutoffs for acceptable levels of reliability vary for different fields, situations, and types of tests. The stakes of a test are an important consideration when interpreting reliability coefficients. The higher the stakes, the higher we expect reliability to be. Otherwise, cutoffs depend on the particular application.
+
+In general, reliabilities for educational and psychological tests can be interpreted using scales like the ones presented in Table \@ref(tab:interpretr). With medium-stakes tests, a reliability of 0.70 is sometimes considered minimally acceptable, 0.80 is decent, 0.90 is quite good, and anything above 0.90 is excellent. High stakes tests should have reliabilities at or above 0.90. Low stakes tests, which are often simpler and shorter than higher-stakes ones, often have reliabilities as low as 0.70. These are general guidelines, and interpretations can vary considerably by test. Remember that the cognitive measures in PISA would be considered low-stakes at the student level.
+
+A few additional considerations are necessary when interpreting coefficient alpha. First, alpha assumes that all items measure the same single construct. Items are also assumed to be equally related to this construct, that is, they are assumed to be parallel measures of the construct. When the items are not parallel measures of the construct, alpha is considered a lower-bound estimate of reliability, that is, the true reliability for the test is expected to be higher than indicated by alpha. Finally, alpha is not a measure of dimensionality. It is frequently claimed that a strong coefficient alpha supports the unidimensionality of a measure. However, alpha does not index dimensionality. It is impacted by the extent to which all of the test items measure a single construct, but it does not necessarily go up or down as a test becomes more or less unidimensional.
+
+```{r interpretr, echo=FALSE}
+if (!knitr:::is_latex_output()) {
+knitr::kable(cbind("Reliability" = c("$\\geq 0.90$", "$0.80 \\leq r < 0.90$", "$0.70 \\leq r < 0.80$", "$0.60 \\leq r < 0.70$", "$0.50 \\leq r < 0.60$", "$0.20 \\leq r < 0.50$", "$0.00 \\leq r < 0.20$"), "High Stakes Interpretation" = c("Excellent", "Good", "Acceptable", "Borderline", "Low", "Unacceptable", "Unacceptable"), "Low Stakes Interpretation" = c("Excellent", "Excellent", "Good", "Acceptable", "Borderline", "Low", "Unacceptable")),
+  digits = 2, caption = "General Guidelines for Interpreting Reliability Coefficients")
+} else {
+knitr::kable(cbind("Reliability" = c("$>= 0.90$", "$0.80 <= r < 0.90$", "$0.70 <= r < 0.80$", "$0.60 <= r < 0.70$", "$0.50 <= r < 0.60$", "$0.20 <= r < 0.50$", "$0.00 <= r < 0.20$"), "High Stakes Interpretation" = c("Excellent", "Good", "Acceptable", "Borderline", "Low", "Unacceptable", "Unacceptable"), "Low Stakes Interpretation" = c("Excellent", "Excellent", "Good", "Acceptable", "Borderline", "Low", "Unacceptable")),
+  digits = 2, caption = "General Guidelines for Interpreting Reliability Coefficients")
+}
+
+```
+
+
+
+
+
+
+
