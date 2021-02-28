@@ -6,8 +6,8 @@ author:
 date: "`r Sys.Date()`"
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
-url: 'https\://r-computing-lab.github.io/Testing4Psych'
-github-repo: DataScience4Psych/Testing4Psych
+url: 'https\://r-computing-lab.github.io/psychtesting'
+github-repo: R-Computing-Lab/psychtesting
 twitter-handle: smasongarrison
 cover-image: assets/logo.png
 documentclass: book
