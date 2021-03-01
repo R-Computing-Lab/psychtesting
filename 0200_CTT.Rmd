@@ -103,10 +103,87 @@ ggplot(scores, aes(x1, y)) +
 # (PART) Module 06 {-}
 
 
-# R Code and Readings for Module 6
 
 
-## Statistical definition of reliability. 
+
+# Installing epmr
+
+A lot of the examples I'm using in the class require the `epmr` package. In theory, it should be really easy to install, using the following code.
+
+```{r, eval=FALSE}
+# Will install devtools if not already installed 
+if (!require("devtools")) install.packages("devtools")	 
+devtools::install_github("talbano/epmr")
+
+```
+
+
+It will install devtools, if you don't have it already and then compile the current version of the package for you. However, if your computer doesn't already have a compiler, you might have some trouble.
+
+
+If you have trouble installing the `epmr` package, you are not alone. I, Prof. Mason, am working on resolving the issue. To install `epmr` package directly from github, you need `devtools` *and* a working development environment (a.k.a. an R friendly compiler). The specific compiler will depend on your operating system. 
+
+  + Windows: Install [Rtools](http://cran.r-project.org/bin/windows/Rtools/).
+  + Mac: Install Xcode from the Mac App Store.
+  + Linux: Install a compiler and various development libraries (details vary across different flavors of Linux).
+
+Try installing the compiler that corresponds to your operating system. And then try installing directly from github again.
+
+```{r, eval=FALSE}
+# Will install devtools if not already installed 
+if (!require("devtools")) install.packages("devtools")	 
+devtools::install_github("talbano/epmr")
+
+```
+
+
+If the compilation doesn't work, don't despair! I've compiled a version that *should* work. First download [this file "epmr_0.0.0.9000.tar.gz"](https://github.com/R-Computing-Lab/psychtesting/blob/main/data/epmr_0.0.0.9000.tar.gz) from github, and place it in your working directory. (Here is the direct [download link:]( https://github.com/R-Computing-Lab/psychtesting/raw/main/data/epmr_0.0.0.9000.tar.gz)) 
+
+Then, install that package directly, using this code.
+
+```{r, eval=FALSE}
+install.packages("epmr_0.0.0.9000.tar.gz", repos = NULL, type = "source")
+```
+
+
+If that doesn't work, please try using the Rstudio GUI, as illustrated below.
+
+
+1. Open the `tools` dropdown menu, and click `Install Packages`
+
+```{r echo=FALSE, eval=TRUE}
+knitr::include_graphics("img/install_step1.png")
+```
+
+2. Then change the install from setting to `Install from package archive`
+
+```{r echo=FALSE, eval=TRUE}
+knitr::include_graphics("img/install_step2.png")
+```
+
+
+
+3. Then select browse for file and locate the archive "epmr_0.0.0.9000.tar.gz"
+
+```{r echo=FALSE, eval=TRUE}
+knitr::include_graphics("img/install_step3.png")
+```
+
+4. Then select that archive, and you should see something like the image below
+
+
+```{r echo=FALSE, eval=TRUE}
+knitr::include_graphics("img/install_step4.png")
+```
+
+
+5. Press Install. This action should begin the installation process. If you still cannot get the package to install, please let me know as soon as possible. That way, I can help you during regular business hours. (In other words, don't wait until the last minute)
+
+
+
+
+
+# Statistical definition of reliability. 
 
 In CTT, reliability is defined as the proportion of variability in $X$ that is due to variability in true scores $T$:
 
@@ -134,6 +211,7 @@ The split-half method takes scores on a single test form, and separates them int
 # one test form
 # With an odd number of reading items, one half has 5 
 # items and the other has 6
+library(epmr)
 
 xsplit1 <- rowSums(PISA09[PISA09$cnt == "BEL", 
   rsitems[1:5]])
@@ -206,7 +284,7 @@ Figure \@ref(fig:cttplot3) helps us visualize the impact of unreliable measureme
 
 
 
-## Interpreting reliability and unreliability
+# Interpreting reliability and unreliability
 
 There are no agreed-upon standards for interpreting reliability coefficients. Reliability is bound by 0 on the lower end and 1 at the upper end, because, by definition, the amount of true variability can never be less or more than the total available variability in $X$. Higher reliability is clearly better, but cutoffs for acceptable levels of reliability vary for different fields, situations, and types of tests. The stakes of a test are an important consideration when interpreting reliability coefficients. The higher the stakes, the higher we expect reliability to be. Otherwise, cutoffs depend on the particular application.
 

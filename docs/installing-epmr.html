@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>License | Psychological Testing</title>
+  <title>5 Installing epmr | Psychological Testing</title>
   <meta name="description" content="PSY 362: Psychological Testing" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="License | Psychological Testing" />
+  <meta property="og:title" content="5 Installing epmr | Psychological Testing" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://r-computing-lab.github.io/psychtesting" />
   <meta property="og:image" content="https://r-computing-lab.github.io/psychtestingassets/logo.png" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="R-Computing-Lab/psychtesting" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="License | Psychological Testing" />
+  <meta name="twitter:title" content="5 Installing epmr | Psychological Testing" />
   <meta name="twitter:site" content="@smasongarrison" />
   <meta name="twitter:description" content="PSY 362: Psychological Testing" />
   <meta name="twitter:image" content="https://r-computing-lab.github.io/psychtestingassets/logo.png" />
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="attribution.html"/>
-<link rel="next" href="colophon.html"/>
+<link rel="prev" href="r-code-for-module-5.html"/>
+<link rel="next" href="statistical-definition-of-reliability-.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-3.5.1/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -274,50 +274,54 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="license" class="section level1 unnumbered">
-<h1>License</h1>
-<p>This work is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
-<center>
-<i class="fab fa-creative-commons fa-2x"></i><i class="fab fa-creative-commons-by fa-2x"></i><i class="fab fa-creative-commons-sa fa-2x"></i>
-</center>
-<p><em>This is a human-readable summary of (and not a substitute for) the license.
-Please see <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" class="uri">https://creativecommons.org/licenses/by-sa/4.0/legalcode</a> for the full legal text.</em></p>
-<p><strong>You are free to:</strong></p>
+<div id="installing-epmr" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> Installing epmr</h1>
+<p>A lot of the examples I’m using in the class require the <code>epmr</code> package. In theory, it should be really easy to install, using the following code.</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="installing-epmr.html#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Will install devtools if not already installed </span></span>
+<span id="cb36-2"><a href="installing-epmr.html#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">&quot;devtools&quot;</span>)) <span class="fu">install.packages</span>(<span class="st">&quot;devtools&quot;</span>)   </span>
+<span id="cb36-3"><a href="installing-epmr.html#cb36-3" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;talbano/epmr&quot;</span>)</span></code></pre></div>
+<p>It will install devtools, if you don’t have it already and then compile the current version of the package for you. However, if your computer doesn’t already have a compiler, you might have some trouble.</p>
+<p>If you have trouble installing the <code>epmr</code> package, you are not alone. I, Prof. Mason, am working on resolving the issue. To install <code>epmr</code> package directly from github, you need <code>devtools</code> <em>and</em> a working development environment (a.k.a. an R friendly compiler). The specific compiler will depend on your operating system.</p>
 <ul>
-<li><p><strong>Share</strong>—copy and redistribute the material in any medium or
-format</p></li>
-<li><p><strong>Remix</strong>—remix, transform, and build upon the material for any
-purpose, even commercially.</p></li>
+<li>Windows: Install <a href="http://cran.r-project.org/bin/windows/Rtools/">Rtools</a>.</li>
+<li>Mac: Install Xcode from the Mac App Store.</li>
+<li>Linux: Install a compiler and various development libraries (details vary across different flavors of Linux).</li>
 </ul>
-<p>The licensor cannot revoke these freedoms as long as you follow the
-license terms.</p>
-<p><strong>Under the following terms:</strong></p>
-<ul>
-<li><p><strong>Attribution</strong>—You must give appropriate credit, provide a link
-to the license, and indicate if changes were made. You may do so in
-any reasonable manner, but not in any way that suggests the licensor
-endorses you or your use.</p></li>
-<li><p><strong>ShareAlike</strong>—If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.</p></li>
-<li><p><strong>No additional restrictions</strong>—You may not apply legal terms or
-technological measures that legally restrict others from doing
-anything the license permits.</p></li>
-</ul>
-<p><strong>Notices:</strong></p>
-<p>You do not have to comply with the license for elements of the
-material in the public domain or where your use is permitted by an
-applicable exception or limitation.</p>
-<p>No warranties are given. The license may not give you all of the
-permissions necessary for your intended use. For example, other rights
-such as publicity, privacy, or moral rights may limit how you use the
-material.</p>
+<p>Try installing the compiler that corresponds to your operating system. And then try installing directly from github again.</p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="installing-epmr.html#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Will install devtools if not already installed </span></span>
+<span id="cb37-2"><a href="installing-epmr.html#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">&quot;devtools&quot;</span>)) <span class="fu">install.packages</span>(<span class="st">&quot;devtools&quot;</span>)   </span>
+<span id="cb37-3"><a href="installing-epmr.html#cb37-3" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;talbano/epmr&quot;</span>)</span></code></pre></div>
+<p>If the compilation doesn’t work, don’t despair! I’ve compiled a version that <em>should</em> work. First download <a href="https://github.com/R-Computing-Lab/psychtesting/blob/main/data/epmr_0.0.0.9000.tar.gz">this file “epmr_0.0.0.9000.tar.gz”</a> from github, and place it in your working directory. (Here is the direct <a href="https://github.com/R-Computing-Lab/psychtesting/raw/main/data/epmr_0.0.0.9000.tar.gz">download link:</a>)</p>
+<p>Then, install that package directly, using this code.</p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="installing-epmr.html#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;epmr_0.0.0.9000.tar.gz&quot;</span>, <span class="at">repos =</span> <span class="cn">NULL</span>, <span class="at">type =</span> <span class="st">&quot;source&quot;</span>)</span></code></pre></div>
+<p>If that doesn’t work, please try using the Rstudio GUI, as illustrated below.</p>
+<ol style="list-style-type: decimal">
+<li>Open the <code>tools</code> dropdown menu, and click <code>Install Packages</code></li>
+</ol>
+<p><img src="img/install_step1.png" width="1210" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Then change the install from setting to <code>Install from package archive</code></li>
+</ol>
+<p><img src="img/install_step2.png" width="1260" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Then select browse for file and locate the archive “epmr_0.0.0.9000.tar.gz”</li>
+</ol>
+<p><img src="img/install_step3.png" width="1311" /></p>
+<ol start="4" style="list-style-type: decimal">
+<li>Then select that archive, and you should see something like the image below</li>
+</ol>
+<p><img src="img/install_step4.png" width="1252" /></p>
+<ol start="5" style="list-style-type: decimal">
+<li>Press Install. This action should begin the installation process. If you still cannot get the package to install, please let me know as soon as possible. That way, I can help you during regular business hours. (In other words, don’t wait until the last minute)</li>
+</ol>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="attribution.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="colophon.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="r-code-for-module-5.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="statistical-definition-of-reliability-.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -348,7 +352,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/DataScience4Psych/DataScience4Psych/edit/main/0000a_front.Rmd",
+"link": "https://github.com/DataScience4Psych/DataScience4Psych/edit/main/0200_CTT.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -359,7 +363,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["https://github.com/DataScience4Psych/DataScience4Psych/raw/main/0000a_front.Rmd", "DS4P.epub"],
+"download": ["https://github.com/DataScience4Psych/DataScience4Psych/raw/main/0200_CTT.Rmd", "DS4P.epub"],
 "toc": {
 "collapse": "section"
 }
