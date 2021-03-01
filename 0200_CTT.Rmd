@@ -21,6 +21,8 @@ Note, set.seed() gives R a starting point for generating random numbers, so we c
 You should check the mean and SD of E and X. Creating a histogram of X might be interesting too...
 
 ```{r}
+library(tidyverse)
+
 
 set.seed(160416)
 myt <- 20
@@ -35,6 +37,7 @@ p <- ggplot(df, aes(x=myx)) +
 p
 
 ```
+
 
 ## PISA total reading scores with simulated error and true scores based on CTT
 
@@ -51,8 +54,12 @@ library(ggplot2)
 ritems <- c("r414q02", "r414q11", "r414q06", "r414q09", 
   "r452q03", "r452q04", "r452q06", "r452q07", "r458q01",
   "r458q07", "r458q04")
+
 rsitems <- paste0(ritems, "s")
-xscores <- rowSums(PISA09[PISA09$cnt == "BEL", rsitems],
+
+BEL_PISA09=PISA09[PISA09$cnt == "BEL", rsitems]
+
+xscores <- rowSums(BEL_PISA09,
   na.rm = TRUE)
 ```
 
@@ -127,10 +134,12 @@ The split-half method takes scores on a single test form, and separates them int
 # one test form
 # With an odd number of reading items, one half has 5 
 # items and the other has 6
+
 xsplit1 <- rowSums(PISA09[PISA09$cnt == "BEL", 
   rsitems[1:5]])
 xsplit2 <- rowSums(PISA09[PISA09$cnt == "BEL", 
   rsitems[6:11]])
+
 cor(xsplit1, xsplit2, use = "complete")
 ```
 
@@ -276,6 +285,7 @@ essays <- rsim(100, rho = .9, meanx = 4, meany = 3,
   sdx = 1.5, sdy = 1.5, to.data.frame = T)
 colnames(essays) <- c("r1", "r2")
 essays <- round(setrange(essays, to = c(0, 6)))
+
 # Use a cut off of greater than or equal to 3 to determine
 # pass versus fail scores
 # ifelse() takes a vector of TRUEs and FALSEs as its first

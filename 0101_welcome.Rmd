@@ -19,7 +19,7 @@ ds4p_urls <- read.csv("./data/ds4p_urls.csv")
 ```{r, echo=FALSE}
 
 # Filler Video
-video_url=sample_no_surprises(ds4p_funyoutube$funyoutube)
+video_url="https://www.youtube.com/watch?v=Kub5COELXzs"
 embed_url(video_url) %>%
   use_align("center")
 ```
@@ -96,15 +96,32 @@ You could use the above method to install the following packages, all of which w
 
 * tidyr, [package webpage][tidyr-web]
 * ggplot2, [package webpage][ggplot2-web]
+* psych, [package webpage](http://personality-project.org/r/psych/)
+* epmr, [package webpage](https://github.com/talbano/epmr)
+
+### Installing epmr
+
+If you have trouble installing the epmr package, you are not alone. I, Prof. Mason, am working on resolving the issue. First, try this code. 
+
+```{r, eval=FALSE}
+if (!require("devtools")) install.packages("devtools")	 # Will install devtools if not already installed 
+devtools::install_github("talbano/epmr")
+
+```
+
+It will install devtools, if you don't have it already and then compile the current version of the package for you.
+
+If that doesn't work, I've compiled a version that *should* work. First download [this] file, and place it in your working directory.
+
+```{r, eval=FALSE}
 
 
-
+```
 
 ## Getting Help with R
 
 
 ```{r, echo=FALSE}
-
 embed_url("https://www.youtube.com/watch?v=lo67SSJRScw") %>%
   use_align("center")
 ```
@@ -112,7 +129,6 @@ embed_url("https://www.youtube.com/watch?v=lo67SSJRScw") %>%
 You can follow along with the slides [here](https://r-computing-lab.github.io/testing_slides//meetr/meet_r.html) if they do not appear below.
 
 ```{r, echo=FALSE}
-
 var_url="https://r-computing-lab.github.io/testing_slides//meetr/meet_r.html#16"
 include_url(var_url, height = "400px")
 ```
@@ -125,6 +141,11 @@ At the console, you can also perform a search through all of the available R doc
 
 If you're unsatisfied with the documentation internal to R, an online search can be surprisingly effective for finding function names or instructions on running a certain procedure or analysis in R.
 
+
+
+
+
+
 ### Further resources
 
 The above will get your basic setup ready but here are some links if you are interested in reading a bit further.
@@ -134,7 +155,6 @@ The above will get your basic setup ready but here are some links if you are int
 * [R FAQ][cran-faq]
 * [R Installation and Administration][cran-R-admin]
 * [More about add-on packages in the R Installation and Administration Manual][cran-add-ons]
-
 
 
 
