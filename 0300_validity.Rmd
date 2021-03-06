@@ -8,7 +8,7 @@ source("common.R")
 library(tweetrmd) #... embedding tweets
 library(tidyverse)
 library(psych)
-
+library(epmr)
 ```
 
 ```{r links, child="links.md"}
@@ -177,7 +177,7 @@ rsitems <- paste0(ritems, "s")
 # Calculate total reading scores
 pisausa <- PISA09[PISA09$cnt == "USA", rsitems]
 rtotal <- rowSums(pisausa, na.rm = TRUE)
-# Simulate a criterion - see Chapter 5 for another example
+# Simulate a criterion
 # using rsim
 criterion <- rsim(rho = .8, x = rtotal, meany = 24,
   sdy = 6)
@@ -196,7 +196,7 @@ Correcting for attenuation due to measurement error produces a validity coeffici
 
 ```{r}
 # Internal consistency for the PISA items
-epmr::alpha(pisausa)
+epmr::coef_alpha(pisausa)
 # Correction for attenuation
 cor(rtotal, criterion$y)/sqrt(.77 * .86)
 ```
