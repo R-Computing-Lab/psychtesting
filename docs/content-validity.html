@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>9 Validity | Psychological Testing</title>
+  <title>11 Content validity | Psychological Testing</title>
   <meta name="description" content="PSY 362: Psychological Testing" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="9 Validity | Psychological Testing" />
+  <meta property="og:title" content="11 Content validity | Psychological Testing" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://r-computing-lab.github.io/psychtesting" />
   <meta property="og:image" content="https://r-computing-lab.github.io/psychtestingassets/logo.png" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="R-Computing-Lab/psychtesting" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="9 Validity | Psychological Testing" />
+  <meta name="twitter:title" content="11 Content validity | Psychological Testing" />
   <meta name="twitter:site" content="@smasongarrison" />
   <meta name="twitter:description" content="PSY 362: Psychological Testing" />
   <meta name="twitter:image" content="https://r-computing-lab.github.io/psychtestingassets/logo.png" />
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="reliability-study-designs.html"/>
-<link rel="next" href="overview-of-validity.html"/>
+<link rel="prev" href="overview-of-validity.html"/>
+<link rel="next" href="criterion-validity.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-3.5.1/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -373,46 +373,101 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="validity" class="section level1" number="9">
-<h1><span class="header-section-number">9</span> Validity</h1>
-<blockquote>
-<p>Validity has long been one of the major deities in the pantheon of the psychometrician. It is universally praised, but the good works done in its name are remarkably few.<br />
-— Robert Ebel</p>
-</blockquote>
-<p>As noted by <span class="citation"><a href="references.html#ref-ebel1961must" role="doc-biblioref">Ebel</a> (<a href="references.html#ref-ebel1961must" role="doc-biblioref">1961</a>)</span>, validity is universally considered the most important feature of a testing program. Validity encompasses everything relating to the testing process that makes score inferences useful and meaningful. All of the topics covered in this course, provide evidence supporting the validity of scores. Scores that are consistent and based on items written according to specified content standards with appropriate levels of difficulty and discrimination are more useful and meaningful than scores that do not have these qualities. Correct measurement, sound test construction, reliability, and certain item properties are thus all prerequisites for validity.</p>
-<p>These notes begin with a definition of validity and some related terms. After defining validity, three common sources of validity evidence are discussed: test content via what’s referred to as a test blueprint or test outline, relationships with criterion variables, and theoretical models of the construct being measured. These three sources of validity evidence are then discussed within a unified view of validity. Finally, threats to validity are addressed.</p>
-<div id="objectives" class="section level2" number="9.1">
-<h2><span class="header-section-number">9.1</span> Objectives</h2>
-<p><strong>Learning objectives connected to these notes</strong></p>
+<div id="content-validity" class="section level1" number="11">
+<h1><span class="header-section-number">11</span> Content validity</h1>
+<p>According to <span class="citation"><a href="references.html#ref-haynes1995content" role="doc-biblioref">Haynes, Richard, and Kubany</a> (<a href="references.html#ref-haynes1995content" role="doc-biblioref">1995</a>)</span>, content validity is “the degree to which elements of an assessment instrument are relevant to and representative of the targeted construct for a particular assessment purpose.” Note that this definition of content validity is very similar to our original definition of validity. The difference is that content validity focuses on <em>elements</em> of the construct and how well they are represented in our test. Thus, content validity assumes the target construct can be broken down into elements, and that we can obtain a representative sample of these elements.</p>
+<p>Having defined the purpose of our test and the construct we are measuring, there are three main steps to establishing content validity evidence:</p>
 <ol style="list-style-type: decimal">
-<li>Define validity in terms of test score interpretation and use, and identify and describe examples of this definition in context.</li>
-<li>Compare and contrast three main types of validity evidence (content, criterion, and construct), with examples of how each type is established, including the validation process involved with each.</li>
-<li>Explain the structure and function of a test blueprint, and how it is used to provide evidence of content validity.</li>
-<li>Calculate and interpret a validity coefficient, describing what it represents and how it supports criterion validity.</li>
-<li>Describe how unreliability can attenuate a correlation, and how to correct for attenuation in a validity coefficient.</li>
-<li>Identify appropriate sources of validity evidence for given testing applications and describe how certain sources are more appropriate than others for certain applications.</li>
-<li>Describe the unified view of validity and how it differs from and improves upon the traditional view of validity.</li>
-<li>Identify threats to validity, including features of a test, testing process, or score interpretation or use, that impact validity. Consider, for example, the issues of content underrepresentation and misrepresentation, and construct irrelevant variance.</li>
+<li>Define the content domain based on relevant standards, skills, tasks, behaviors, facets, factors, etc. that represent the construct. The idea here is that our construct can be represented in terms of specific identifiable dimensions or components, some of which may be more relevant to the construct than others.</li>
+<li>Use the defined content domain to create a blueprint or outline for our test. The blueprint organizes the test based on the relevant components of the content domain, and describes how each of these components will be represented within the test.</li>
+<li>Subject matter experts evaluate the extent to which our test blueprint adequately captures the content domain, and the extent to which our test items will adequately sample from the content domain.</li>
 </ol>
-<pre><code>
-R analysis in this chapter is minimal. We&#39;ll run correlations and make adjustments to them using the base R functions, and we&#39;ll simulate scores using epmr.
-
-
-```r
-# R setup for this chapter
-library(&quot;epmr&quot;)
-# Functions we&#39;ll use
-# cor() from the base package
-# rsim() from epmr to simulate scores</code></pre>
-</div>
+<p>Here is an overview of how content validity could be established for the IGDI measures of early literacy. Again, the purpose of the test is to identify preschoolers in need of additional support in developing early literacy skills.</p>
+<p><strong>1. Define the content domain</strong></p>
+<p>The early literacy content domain is broken down into a variety of content areas, including alphabet principles (e.g., knowledge of the names and sounds of letters), phonemic awareness (e.g., awareness of the sounds that make up words), and oral language (e.g., definitional vocabulary). The literature on early literacy has identified other important skills, but we’ll focus here on these three. Note that the content domain for a construct should be established both by research and practice.</p>
+<p><strong>2. Outline the test</strong></p>
+<p>Next, we map the portions of our test that will address each area of the content domain. The test outline can include information about the type of items used, the cognitive skills required, and the difficulty levels that are targeted, among other things. Review Chapter <a href="#development"><strong>??</strong></a> for additional details on test outlines or blueprints.</p>
+<p>Table <a href="content-validity.html#tab:igdi-outline">11.1</a> contains an example of a test outline for the IGDI measures. The three content areas listed above are shown in the first column. These are then broken down further into cognitive processes or skills. Theory and practical constraints determine reasonable numbers and types of test items or tasks devoted to each cognitive process in the test itself. The final column shows the percentage of the total test that is devoted to each area.</p>
+<table>
+<caption><span id="tab:igdi-outline">Table 11.1: </span>Example Test Outline for a Measure of Early Literacy</caption>
+<thead>
+<tr class="header">
+<th align="left">Content Area</th>
+<th align="left">Cognitive process</th>
+<th align="left">Items</th>
+<th align="left">Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Alphabet principles</td>
+<td align="left">Letter naming</td>
+<td align="left">20</td>
+<td align="left">13%</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Sound identification</td>
+<td align="left">20</td>
+<td align="left">13%</td>
+</tr>
+<tr class="odd">
+<td align="left">Phonological awareness</td>
+<td align="left">Rhyming</td>
+<td align="left">15</td>
+<td align="left">10%</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Alliteration</td>
+<td align="left">15</td>
+<td align="left">10%</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">Sound blending</td>
+<td align="left">10</td>
+<td align="left">7%</td>
+</tr>
+<tr class="even">
+<td align="left">Oral language</td>
+<td align="left">Picture naming</td>
+<td align="left">30</td>
+<td align="left">20%</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">Which one doesn’t belong</td>
+<td align="left">20</td>
+<td align="left">13%</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Sentence completion</td>
+<td align="left">20</td>
+<td align="left">13%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>3. Evaluate</strong></p>
+<p>Validity evidence requires that the test outline be representative of the content domain and appropriate for the construct and test purpose. The appropriateness of an outline is typically evaluated by content experts. In the case of the IGDI measures, these experts could be researchers in the area of early literacy, and teachers who work directly with students from the target population.</p>
+<p><strong>Licensure testing</strong></p>
+<p>Here is an example of content validity from the area of licensure/certification testing. I have consulted with an organization that develops and administers tests of medical imaging, including knowledge assessments taken by candidates for certification in radiography. This area provides a unique example of content validity, because the test itself measures a construct that is directly tied to professional practice. If practicing radiographers utilize a certain procedure, that procedure, or the knowledge required to perform it, should be included in the test.</p>
+<p>The domain for a licensure/certification test such as this is defined using what is referred to as a job analysis or practice analysis <span class="citation">(<a href="references.html#ref-raymond2001job" role="doc-biblioref">Raymond 2001</a>)</span>. A job analysis is a research study, the central feature of which is a survey sent to practitioners that lists a wide range of procedures and skills potentially used in the field. Respondents indicate how often they perform each procedure or use each skill on the survey. Procedures and skills performed by a high percentage of professionals are then included in the test outline. As in the previous examples, the final step in establishing content validity is having a select group of experts review the procedures and skills and their distribution across the test, as organized in the test outline.</p>
+<p><strong>Psychological measures</strong></p>
+<p>Content validity is relevant in non-cognitive psychological testing as well. Suppose the purpose of a test is to measure client experience with panic attacks so as to determine the efficacy of treatment. The domain for this test could be defined using criteria listed in the DSM-V (<a href="http://www.dsm5.org/Pages/Default.aspx">www.dsm5.org</a>), reports about panic attack frequency, and secondary effects of panic attacks. The test outline would organize the number and types of items written to address all relevant criteria from the DSM-V. Finally, experts who work directly in clinical settings would evaluate the test outline to determine its quality, and their evaluation would provide evidence supporting the content validity of the test for this purpose.</p>
+<p><strong>Threats to content validity</strong></p>
+<p>When considering the appropriateness of our test content, we must also be aware of how content validity evidence can be compromised. What does content invalidity look like? For example, if our panic attack scores were not valid for a particular use, how would this lack of validity manifest itself in the process of establishing content validity?</p>
+<p>Here are two main sources of content invalidity. First, if items reflecting domain elements that are important to the construct are <em>omitted</em> from our test outline, the construct will be <em>underrepresented</em> in the test. In our panic attack example, if the test does not include items addressing “nausea or abdominal distress,” other criteria, such as “fear of dying,” may have too much sway in determining an individual’s score. Second, if unnecessary items measuring irrelevant or tangential material are included, the construct will be <em>misrepresented</em> in the test. For example, if items measuring depression are included in the scoring process, the score itself is less valid as a measure of the target construct.</p>
+<p>Together, these two threats to content validity lead to unsupported score inferences. Some worst-case-scenario consequences include misdiagnoses, failure to provide needed treatment, or the provision of treatment that is not needed. In licensure testing, the result can be the licensing of candidates who lack the knowledge, skills, and abilities required for safe and effective practice.</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="reliability-study-designs.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="overview-of-validity.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="overview-of-validity.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="criterion-validity.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

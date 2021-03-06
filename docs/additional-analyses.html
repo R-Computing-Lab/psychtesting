@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>9 Validity | Psychological Testing</title>
+  <title>19 Additional analyses | Psychological Testing</title>
   <meta name="description" content="PSY 362: Psychological Testing" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="9 Validity | Psychological Testing" />
+  <meta property="og:title" content="19 Additional analyses | Psychological Testing" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://r-computing-lab.github.io/psychtesting" />
   <meta property="og:image" content="https://r-computing-lab.github.io/psychtestingassets/logo.png" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="R-Computing-Lab/psychtesting" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="9 Validity | Psychological Testing" />
+  <meta name="twitter:title" content="19 Additional analyses | Psychological Testing" />
   <meta name="twitter:site" content="@smasongarrison" />
   <meta name="twitter:description" content="PSY 362: Psychological Testing" />
   <meta name="twitter:image" content="https://r-computing-lab.github.io/psychtestingassets/logo.png" />
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="reliability-study-designs.html"/>
-<link rel="next" href="overview-of-validity.html"/>
+<link rel="prev" href="traditional-item-statistics.html"/>
+<link rel="next" href="summary-2.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-3.5.1/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -373,37 +373,65 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="validity" class="section level1" number="9">
-<h1><span class="header-section-number">9</span> Validity</h1>
-<blockquote>
-<p>Validity has long been one of the major deities in the pantheon of the psychometrician. It is universally praised, but the good works done in its name are remarkably few.<br />
-— Robert Ebel</p>
-</blockquote>
-<p>As noted by <span class="citation"><a href="references.html#ref-ebel1961must" role="doc-biblioref">Ebel</a> (<a href="references.html#ref-ebel1961must" role="doc-biblioref">1961</a>)</span>, validity is universally considered the most important feature of a testing program. Validity encompasses everything relating to the testing process that makes score inferences useful and meaningful. All of the topics covered in this course, provide evidence supporting the validity of scores. Scores that are consistent and based on items written according to specified content standards with appropriate levels of difficulty and discrimination are more useful and meaningful than scores that do not have these qualities. Correct measurement, sound test construction, reliability, and certain item properties are thus all prerequisites for validity.</p>
-<p>These notes begin with a definition of validity and some related terms. After defining validity, three common sources of validity evidence are discussed: test content via what’s referred to as a test blueprint or test outline, relationships with criterion variables, and theoretical models of the construct being measured. These three sources of validity evidence are then discussed within a unified view of validity. Finally, threats to validity are addressed.</p>
-<div id="objectives" class="section level2" number="9.1">
-<h2><span class="header-section-number">9.1</span> Objectives</h2>
-<p><strong>Learning objectives connected to these notes</strong></p>
-<ol style="list-style-type: decimal">
-<li>Define validity in terms of test score interpretation and use, and identify and describe examples of this definition in context.</li>
-<li>Compare and contrast three main types of validity evidence (content, criterion, and construct), with examples of how each type is established, including the validation process involved with each.</li>
-<li>Explain the structure and function of a test blueprint, and how it is used to provide evidence of content validity.</li>
-<li>Calculate and interpret a validity coefficient, describing what it represents and how it supports criterion validity.</li>
-<li>Describe how unreliability can attenuate a correlation, and how to correct for attenuation in a validity coefficient.</li>
-<li>Identify appropriate sources of validity evidence for given testing applications and describe how certain sources are more appropriate than others for certain applications.</li>
-<li>Describe the unified view of validity and how it differs from and improves upon the traditional view of validity.</li>
-<li>Identify threats to validity, including features of a test, testing process, or score interpretation or use, that impact validity. Consider, for example, the issues of content underrepresentation and misrepresentation, and construct irrelevant variance.</li>
-</ol>
-<pre><code>
-R analysis in this chapter is minimal. We&#39;ll run correlations and make adjustments to them using the base R functions, and we&#39;ll simulate scores using epmr.
-
-
-```r
-# R setup for this chapter
-library(&quot;epmr&quot;)
-# Functions we&#39;ll use
-# cor() from the base package
-# rsim() from epmr to simulate scores</code></pre>
+<div id="additional-analyses" class="section level1" number="19">
+<h1><span class="header-section-number">19</span> Additional analyses</h1>
+<p>Whereas item analysis is useful for evaluating the quality of items and their contribution to a test or scale, other analyses are available for digging deeper into the strengths and weaknesses of items. Two commonly used analyses are option analysis, also called distractor analysis, and differential item functioning analysis.</p>
+<div id="option-analysis" class="section level2" number="19.1">
+<h2><span class="header-section-number">19.1</span> Option analysis</h2>
+<p>So far, our item analyses have focused on scored item responses. However, data from unscored SR items can also provide useful information about test takers. An <em>option analysis</em> involves the examination of unscored item responses by ability or trait groupings for each option in a selected-response item. Relationships between the construct and response patters over keyed and unkeyed options can give us insights into whether or not response options are functioning as intended.</p>
+<p>To conduct an option analysis, we simply calculate bivariate (two variables) frequency distributions for ability or trait levels (one variable) and response choice (the other variable). Response choice is already a nominal variable, and the ability or trait is usually converted to ordinal categories to simplify interpretation.</p>
+<p>The <code>ostudy()</code> function from epmr takes a matrix of unscored item responses, along with some information about the construct (a grouping variable, a vector of ability or trait scores, or a vector containing the keys for each item) and returns crosstabs for each item that break down response choices by construct groupings. By default, the construct is categorized into three equal-interval groups, with labels “low,” “mid,” and “high.”</p>
+<div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb67-1"><a href="additional-analyses.html#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Item option study on all SR reading items</span></span>
+<span id="cb67-2"><a href="additional-analyses.html#cb67-2" aria-hidden="true" tabindex="-1"></a>pisao <span class="ot">&lt;-</span> <span class="fu">ostudy</span>(PISA09[, sritems], <span class="at">scores =</span> PISA09<span class="sc">$</span>rtotal)</span>
+<span id="cb67-3"><a href="additional-analyses.html#cb67-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Warning in ostudy(PISA09[, sritems], scores = PISA09$rtotal): 1250 cases with</span></span>
+<span id="cb67-4"><a href="additional-analyses.html#cb67-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; missing data removed.</span></span>
+<span id="cb67-5"><a href="additional-analyses.html#cb67-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Print frequency results for one item</span></span>
+<span id="cb67-6"><a href="additional-analyses.html#cb67-6" aria-hidden="true" tabindex="-1"></a>pisao<span class="sc">$</span>counts<span class="sc">$</span>r458q04</span>
+<span id="cb67-7"><a href="additional-analyses.html#cb67-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    groups</span></span>
+<span id="cb67-8"><a href="additional-analyses.html#cb67-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;       low   mid  high</span></span>
+<span id="cb67-9"><a href="additional-analyses.html#cb67-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   1  2117   890   297</span></span>
+<span id="cb67-10"><a href="additional-analyses.html#cb67-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   2  5039  9191 11608</span></span>
+<span id="cb67-11"><a href="additional-analyses.html#cb67-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   3  5288  2806   855</span></span>
+<span id="cb67-12"><a href="additional-analyses.html#cb67-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   4  2944  1226   266</span></span>
+<span id="cb67-13"><a href="additional-analyses.html#cb67-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   8   224    73    18</span></span>
+<span id="cb67-14"><a href="additional-analyses.html#cb67-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   9   658   110    18</span></span>
+<span id="cb67-15"><a href="additional-analyses.html#cb67-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   r     0     0     0</span></span></code></pre></div>
+<p>With large samples, a crosstab of counts can be difficult to interpret. Instead, we can also view percentages by option, in rows, or by construct group, in columns. Here, we check the percentages by column, where each column should sum to 100%. These results tell us the percentage of students within each ability group that chose each option.</p>
+<div class="sourceCode" id="cb68"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb68-1"><a href="additional-analyses.html#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Print option analysis percentages by column</span></span>
+<span id="cb68-2"><a href="additional-analyses.html#cb68-2" aria-hidden="true" tabindex="-1"></a><span class="co"># This item discriminates relatively well</span></span>
+<span id="cb68-3"><a href="additional-analyses.html#cb68-3" aria-hidden="true" tabindex="-1"></a>pisao<span class="sc">$</span>colpct<span class="sc">$</span>r458q04</span>
+<span id="cb68-4"><a href="additional-analyses.html#cb68-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    groups</span></span>
+<span id="cb68-5"><a href="additional-analyses.html#cb68-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;     low mid high</span></span>
+<span id="cb68-6"><a href="additional-analyses.html#cb68-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   1  13   6    2</span></span>
+<span id="cb68-7"><a href="additional-analyses.html#cb68-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   2  31  64   89</span></span>
+<span id="cb68-8"><a href="additional-analyses.html#cb68-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   3  33  20    7</span></span>
+<span id="cb68-9"><a href="additional-analyses.html#cb68-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   4  18   9    2</span></span>
+<span id="cb68-10"><a href="additional-analyses.html#cb68-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   8   1   1    0</span></span>
+<span id="cb68-11"><a href="additional-analyses.html#cb68-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   9   4   1    0</span></span>
+<span id="cb68-12"><a href="additional-analyses.html#cb68-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   r   0   0    0</span></span></code></pre></div>
+<p>Consider the distribution over response choices for high ability students, in the last column of the crosstab for item <code>r458q04</code>. The large majority of high ability students, 89%, chose the second option on this item, which is also the correct or keyed option. On the other hand, low ability students, in the left column of the crosstab, are spread out across the different options, with only 31% choosing the correct option. This is what we hope to see for an item that discriminates well.</p>
+<div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="additional-analyses.html#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Print option analysis percentages by column</span></span>
+<span id="cb69-2"><a href="additional-analyses.html#cb69-2" aria-hidden="true" tabindex="-1"></a><span class="co"># This item discriminates relatively less well</span></span>
+<span id="cb69-3"><a href="additional-analyses.html#cb69-3" aria-hidden="true" tabindex="-1"></a>pisao<span class="sc">$</span>colpct<span class="sc">$</span>r414q11</span>
+<span id="cb69-4"><a href="additional-analyses.html#cb69-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    groups</span></span>
+<span id="cb69-5"><a href="additional-analyses.html#cb69-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;     low mid high</span></span>
+<span id="cb69-6"><a href="additional-analyses.html#cb69-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   1  44  51   29</span></span>
+<span id="cb69-7"><a href="additional-analyses.html#cb69-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   2  25   8    2</span></span>
+<span id="cb69-8"><a href="additional-analyses.html#cb69-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   3  16  35   67</span></span>
+<span id="cb69-9"><a href="additional-analyses.html#cb69-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   4   9   5    2</span></span>
+<span id="cb69-10"><a href="additional-analyses.html#cb69-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   8   1   0    0</span></span>
+<span id="cb69-11"><a href="additional-analyses.html#cb69-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   9   5   1    0</span></span>
+<span id="cb69-12"><a href="additional-analyses.html#cb69-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   r   0   0    0</span></span></code></pre></div>
+<p>Item <code>r414q11</code> doesn’t discriminate as well as item <code>r458q04</code>, and this is reflected in the option analysis results. The majority of high ability students are still choosing the correct option. However, some are also pulled toward another, incorrect option, option 1. The majority of low ability students are choosing option 1, with fewer choosing the correct option.</p>
+<p>In addition to telling us more about the discrimination of an item by option, these results also help us identify dysfunctional options, ones which do not provide us with any useful information about test takers. Do you see any options in item <code>r414q11</code> that don’t function well? The incorrect options are 1, 2, and 4.</p>
+<p>A dysfunctional option is one that fails to attract the students we expect to choose it. We expect high ability students to choose the correct option. On more difficult questions, we also expect some high ability students to choose one or more incorrect options. We typically expect a somewhat uniform distribution of choices for low ability students. If our incorrect options were written to capture common misunderstandings of students, we may expect them to be chosen by low ability students more often than the correct option. A dysfunction option is then one that is chosen by few low or medium ability students, or is chosen by high ability students more often than the correct option.</p>
+<p>When an incorrect option is infrequently or never chosen by lower ability groups, it is often because the option is obviously incorrect. In item <code>r414q11</code>, option 4 is chosen by only 9% of low ability students and 5% of medium ability students. Reviewing the content of the item in Appendix <a href="#cellphone"><strong>??</strong></a>, the option (D) doesn’t stand out as being problematic. It may have been better worded as “It proves the No argument.” Then, it would have conformed with the wording in option 2 (B). However, the option appears to follow the remaining item writing guidelines.</p>
+</div>
+<div id="differential-item-functioning" class="section level2" number="19.2">
+<h2><span class="header-section-number">19.2</span> Differential item functioning</h2>
+<p>A second supplemental item analysis, frequently conducted with large-scale and commercially available tests, is an analysis of differential item functioning or DIF. Consider a test question where students of the same ability or trait level respond differently based on certain demographic or background features pertaining to the examinee, but <em>not</em> relating directly to the construct. In an option analysis, we examine categorical frequency distributions for each response option by <em>ability groups</em>. In DIF, we examine these same categorical frequency distributions, but by different demographic groups, where all test takers in the analysis have the same level on the construct. The presence of DIF in a test item is evidence of potential bias, as, after controlling for the construct, demographic variables should not produce significant differences in test taker responses.</p>
+<p>A variety of statistics, with R packages to calculate them, are available for DIF analysis in educational and psychological testing. We will not review them all here. Instead, we focus on the concept of DIF and how it is displayed in item level performance in general. We’ll return to this discussion in Chapter <a href="irt.html#irt">22</a>, within IRT.</p>
+<p>DIF is most often based on a statistical model that compares item difficulty or the mean performance on an item for two groups of test takers, after <em>controlling for</em> their ability levels. Here, <em>controlling for</em> refers to either statistical or experimental control. The point is that we in some way remove the effects of ability on mean performance per group, so that we can then examine any leftover performance differences. Testing for the significance of DIF can be done, for example, using IRT, logistic regression, or chi-square statistics. Once DIF is identified for an item, the item itself is examined for potential sources of differential performance by subgroup. The item is either rewritten or deleted.</p>
 </div>
 </div>
             </section>
@@ -411,8 +439,8 @@ library(&quot;epmr&quot;)
           </div>
         </div>
       </div>
-<a href="reliability-study-designs.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="overview-of-validity.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="traditional-item-statistics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="summary-2.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -443,7 +471,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/DataScience4Psych/DataScience4Psych/edit/main/0300_validity.Rmd",
+"link": "https://github.com/DataScience4Psych/DataScience4Psych/edit/main/0400_itemanalysis.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -454,7 +482,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["https://github.com/DataScience4Psych/DataScience4Psych/raw/main/0300_validity.Rmd", "DS4P.epub"],
+"download": ["https://github.com/DataScience4Psych/DataScience4Psych/raw/main/0400_itemanalysis.Rmd", "DS4P.epub"],
 "toc": {
 "collapse": "section"
 }

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>9 Validity | Psychological Testing</title>
+  <title>17 Preparing for item analysis | Psychological Testing</title>
   <meta name="description" content="PSY 362: Psychological Testing" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="9 Validity | Psychological Testing" />
+  <meta property="og:title" content="17 Preparing for item analysis | Psychological Testing" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://r-computing-lab.github.io/psychtesting" />
   <meta property="og:image" content="https://r-computing-lab.github.io/psychtestingassets/logo.png" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="R-Computing-Lab/psychtesting" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="9 Validity | Psychological Testing" />
+  <meta name="twitter:title" content="17 Preparing for item analysis | Psychological Testing" />
   <meta name="twitter:site" content="@smasongarrison" />
   <meta name="twitter:description" content="PSY 362: Psychological Testing" />
   <meta name="twitter:image" content="https://r-computing-lab.github.io/psychtestingassets/logo.png" />
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="reliability-study-designs.html"/>
-<link rel="next" href="overview-of-validity.html"/>
+<link rel="prev" href="itemanalysis.html"/>
+<link rel="next" href="traditional-item-statistics.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-3.5.1/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -373,37 +373,100 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="validity" class="section level1" number="9">
-<h1><span class="header-section-number">9</span> Validity</h1>
-<blockquote>
-<p>Validity has long been one of the major deities in the pantheon of the psychometrician. It is universally praised, but the good works done in its name are remarkably few.<br />
-— Robert Ebel</p>
-</blockquote>
-<p>As noted by <span class="citation"><a href="references.html#ref-ebel1961must" role="doc-biblioref">Ebel</a> (<a href="references.html#ref-ebel1961must" role="doc-biblioref">1961</a>)</span>, validity is universally considered the most important feature of a testing program. Validity encompasses everything relating to the testing process that makes score inferences useful and meaningful. All of the topics covered in this course, provide evidence supporting the validity of scores. Scores that are consistent and based on items written according to specified content standards with appropriate levels of difficulty and discrimination are more useful and meaningful than scores that do not have these qualities. Correct measurement, sound test construction, reliability, and certain item properties are thus all prerequisites for validity.</p>
-<p>These notes begin with a definition of validity and some related terms. After defining validity, three common sources of validity evidence are discussed: test content via what’s referred to as a test blueprint or test outline, relationships with criterion variables, and theoretical models of the construct being measured. These three sources of validity evidence are then discussed within a unified view of validity. Finally, threats to validity are addressed.</p>
-<div id="objectives" class="section level2" number="9.1">
-<h2><span class="header-section-number">9.1</span> Objectives</h2>
-<p><strong>Learning objectives connected to these notes</strong></p>
-<ol style="list-style-type: decimal">
-<li>Define validity in terms of test score interpretation and use, and identify and describe examples of this definition in context.</li>
-<li>Compare and contrast three main types of validity evidence (content, criterion, and construct), with examples of how each type is established, including the validation process involved with each.</li>
-<li>Explain the structure and function of a test blueprint, and how it is used to provide evidence of content validity.</li>
-<li>Calculate and interpret a validity coefficient, describing what it represents and how it supports criterion validity.</li>
-<li>Describe how unreliability can attenuate a correlation, and how to correct for attenuation in a validity coefficient.</li>
-<li>Identify appropriate sources of validity evidence for given testing applications and describe how certain sources are more appropriate than others for certain applications.</li>
-<li>Describe the unified view of validity and how it differs from and improves upon the traditional view of validity.</li>
-<li>Identify threats to validity, including features of a test, testing process, or score interpretation or use, that impact validity. Consider, for example, the issues of content underrepresentation and misrepresentation, and construct irrelevant variance.</li>
-</ol>
-<pre><code>
-R analysis in this chapter is minimal. We&#39;ll run correlations and make adjustments to them using the base R functions, and we&#39;ll simulate scores using epmr.
-
-
-```r
-# R setup for this chapter
-library(&quot;epmr&quot;)
-# Functions we&#39;ll use
-# cor() from the base package
-# rsim() from epmr to simulate scores</code></pre>
+<div id="preparing-for-item-analysis" class="section level1" number="17">
+<h1><span class="header-section-number">17</span> Preparing for item analysis</h1>
+<div id="item-quality" class="section level2" number="17.1">
+<h2><span class="header-section-number">17.1</span> Item quality</h2>
+<p>As noted above, item analysis lets us examine the quality of individual test items. Information about individual item quality can help us determine whether or not an item is measuring the content and construct that it was written to measure, and whether or not it is doing so at the appropriate ability level. Because we are discussing item analysis here in the context of CTT, we’ll assume that there is a single construct of interest, perhaps being assessed across multiple related content areas, and that individual items can contribute or detract from our measurement of that construct by limiting or introducing <em>construct irrelevant variance</em> in the form of <em>bias</em> and <em>random measurement error</em>.</p>
+<p>Bias represents a systematic error with an influence on item performance that can be attributed to an interaction between examinees and some feature of the test. Bias in a test item leads examinees having a known background characteristic, aside from their ability, to perform better or worse on an item simply because of this background characteristic. For example, bias sometimes results from the use of scenarios or examples in an item that are more familiar to certain gender or ethnic groups. Differential familiarity with item content can make an item more relevant, engaging, and more easily understood, and can then lead to differential performance, even for examinees of the same ability level. We identify such item bias primarily by using measures of item difficulty and <em>differential item functioning</em> (DIF), discussed below and again in Chapter <a href="irt.html#irt">22</a>.</p>
+<p>Bias in a test item indicates that the item is measuring some other construct besides the construct of interest, where systematic differences on the other construct are interpreted as meaningful differences on the construct of interest. The result is a negative impact on the validity of test scores and corresponding inferences and interpretations. Random measurement error on the other hand is not attributed to a specific identifiable source, such as a second construct. Instead, measurement error is inconsistency of measurement at the item level. An item that introduces measurement error detracts from the overall internal consistency of the measure, and this is detected in CTT, in part, using item analysis statistics.</p>
+</div>
+<div id="piloting" class="section level2" number="17.2">
+<h2><span class="header-section-number">17.2</span> Piloting</h2>
+<p>The goal in developing an instrument or scale is to identify bias and inconsistent measurement at the item level <em>prior to</em> administering a final version of our instrument. As we talk about item analysis, remember that the analysis itself is typically carried out in practice using pilot data. Pilot data are gathered prior to or while developing an instrument or scale. These data require at least a preliminary version of the educational or psychological measure. We’ve written some items for our measure, and we want to see how well they work.</p>
+<p><span class="citation"><a href="references.html#ref-ferketich1991focus" role="doc-biblioref">Ferketich</a> (<a href="references.html#ref-ferketich1991focus" role="doc-biblioref">1991</a>)</span> and others recommend that the initial pilot “pool” of candidate test items should be at least twice as large as the final number of items needed. So, if you’re dreaming up a test with 100 items on it, you should pilot at least 200 items. That may not be feasible, but it is a best-case scenario, and should at least be followed in large-scale testing. By collecting data on twice as many items as we intend to actually use, we’re acknowledging that, despite our best efforts, many of our preliminary test items may either be low quality, for example, biased or internally inconsistent, and they may address different ability levels or content than intended.</p>
+<p><span class="citation"><a href="references.html#ref-ferketich1991focus" role="doc-biblioref">Ferketich</a> (<a href="references.html#ref-ferketich1991focus" role="doc-biblioref">1991</a>)</span> also recommends that data should be collected on at least 100 individuals from the population of interest. This too may not be feasible, however, it is essential if we hope to obtain results that will generalize to other samples of individuals. When our sample is not representative, for example, when it is a convenience sample or when it contains fewer than 100 people, our item analysis results must be interpreted with caution. This goes back to inferences made based on any type of statistic: small samples leads to erroneous results. Keep in mind that every statistic discussed here has a standard error and confidence interval associated with it, whether it is directly examined or not. Note also that bias and measurement error arise in addition to this standard error or sampling error, and we cannot identify bias in our test questions without representative data from our intended population. Thus, adequate sampling in the pilot study phase is critical.</p>
+<p>The item analysis statistics discussed here are based on the CTT model of test performance. In Chapter <a href="irt.html#irt">22</a> we’ll discuss the more complex item response theory (IRT) and its applications in item analysis.</p>
+</div>
+<div id="data-entry" class="section level2" number="17.3">
+<h2><span class="header-section-number">17.3</span> Data entry</h2>
+<p>After piloting a set of items, raw item responses are organized into a data frame with test takers in rows and items in columns. The <code>str()</code> function is used here to summarize the structure of the unscored items on the <code>PISA09</code> reading test. Each unscored item is coded in R as a factor with four to eight factor levels. Each factor level represents different information about a student’s response.</p>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="preparing-for-item-analysis.html#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Recreate the item name index and use it to check the </span></span>
+<span id="cb53-2"><a href="preparing-for-item-analysis.html#cb53-2" aria-hidden="true" tabindex="-1"></a><span class="co"># structure of the unscored reading items</span></span>
+<span id="cb53-3"><a href="preparing-for-item-analysis.html#cb53-3" aria-hidden="true" tabindex="-1"></a><span class="co"># The strict.width argument is optional, making sure the</span></span>
+<span id="cb53-4"><a href="preparing-for-item-analysis.html#cb53-4" aria-hidden="true" tabindex="-1"></a><span class="co"># results fit in the console window</span></span>
+<span id="cb53-5"><a href="preparing-for-item-analysis.html#cb53-5" aria-hidden="true" tabindex="-1"></a>ritems <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;r414q02&quot;</span>, <span class="st">&quot;r414q11&quot;</span>, <span class="st">&quot;r414q06&quot;</span>, <span class="st">&quot;r414q09&quot;</span>,</span>
+<span id="cb53-6"><a href="preparing-for-item-analysis.html#cb53-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;r452q03&quot;</span>, <span class="st">&quot;r452q04&quot;</span>, <span class="st">&quot;r452q06&quot;</span>, <span class="st">&quot;r452q07&quot;</span>, <span class="st">&quot;r458q01&quot;</span>,</span>
+<span id="cb53-7"><a href="preparing-for-item-analysis.html#cb53-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;r458q07&quot;</span>, <span class="st">&quot;r458q04&quot;</span>)</span>
+<span id="cb53-8"><a href="preparing-for-item-analysis.html#cb53-8" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(PISA09[, ritems], <span class="at">strict.width =</span> <span class="st">&quot;cut&quot;</span>)</span>
+<span id="cb53-9"><a href="preparing-for-item-analysis.html#cb53-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; &#39;data.frame&#39;:    44878 obs. of  11 variables:</span></span>
+<span id="cb53-10"><a href="preparing-for-item-analysis.html#cb53-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  $ r414q02: Factor w/ 7 levels &quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,..: 2 1 4 1 1 2 2 2 3 2 ...</span></span>
+<span id="cb53-11"><a href="preparing-for-item-analysis.html#cb53-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  $ r414q11: Factor w/ 7 levels &quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,..: 4 1 1 1 3 1 1 3 1 1 ...</span></span>
+<span id="cb53-12"><a href="preparing-for-item-analysis.html#cb53-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  $ r414q06: Factor w/ 5 levels &quot;0&quot;,&quot;1&quot;,&quot;8&quot;,&quot;9&quot;,..: 1 4 2 1 2 2 2 4 1 1 ...</span></span>
+<span id="cb53-13"><a href="preparing-for-item-analysis.html#cb53-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  $ r414q09: Factor w/ 8 levels &quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,..: 3 7 4 3 3 3 3 5 3 3 ...</span></span>
+<span id="cb53-14"><a href="preparing-for-item-analysis.html#cb53-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  $ r452q03: Factor w/ 5 levels &quot;0&quot;,&quot;1&quot;,&quot;8&quot;,&quot;9&quot;,..: 1 4 1 1 1 2 2 1 1 1 ...</span></span>
+<span id="cb53-15"><a href="preparing-for-item-analysis.html#cb53-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  $ r452q04: Factor w/ 7 levels &quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,..: 4 6 4 3 2 2 2 1 2 2 ...</span></span>
+<span id="cb53-16"><a href="preparing-for-item-analysis.html#cb53-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  $ r452q06: Factor w/ 4 levels &quot;0&quot;,&quot;1&quot;,&quot;9&quot;,&quot;r&quot;: 1 3 2 1 2 2 2 2 1 2 ...</span></span>
+<span id="cb53-17"><a href="preparing-for-item-analysis.html#cb53-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  $ r452q07: Factor w/ 7 levels &quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,..: 3 6 3 1 2 4 4 4 2 4 ...</span></span>
+<span id="cb53-18"><a href="preparing-for-item-analysis.html#cb53-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  $ r458q01: Factor w/ 7 levels &quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,..: 4 4 4 3 4 4 3 4 3 3 ...</span></span>
+<span id="cb53-19"><a href="preparing-for-item-analysis.html#cb53-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  $ r458q07: Factor w/ 4 levels &quot;0&quot;,&quot;1&quot;,&quot;9&quot;,&quot;r&quot;: 1 3 2 1 1 2 1 2 2 2 ...</span></span>
+<span id="cb53-20"><a href="preparing-for-item-analysis.html#cb53-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  $ r458q04: Factor w/ 7 levels &quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,..: 2 3 2 3 2 2 2 3 3 4 ...</span></span></code></pre></div>
+<p>In addition to checking the structure of the data, it’s good practice to run frequency tables on each variable. An example is shown below for a subset of <code>PISA09</code> reading items. The frequency distribution for each variable will reveal any data entry errors that resulted in incorrect codes. Frequency distributions should also match what we expect to see for correct and incorrect response patterns and missing data.</p>
+<p><code>PISA09</code> items that include a code or factor level of “0” are constructed-response items, scored by raters. The remaining factor levels for these CR items are coded “1” for full credit, “7” for not administered, “9” for missing, and “r” for not reached, where the student ran out of time before responding to the item. Selected-response items do not include a factor level of “0.” Instead, they contain levels “1” through up to “5,” which correspond to multiple-choice options one through five, and then codes of “7” for not administered, “8” for an ambiguous selected response, “9” for missing, and “r” again for not reached.</p>
+<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="preparing-for-item-analysis.html#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Subsets of the reading item index for constructed and</span></span>
+<span id="cb54-2"><a href="preparing-for-item-analysis.html#cb54-2" aria-hidden="true" tabindex="-1"></a><span class="co"># selected items</span></span>
+<span id="cb54-3"><a href="preparing-for-item-analysis.html#cb54-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Check frequency tables by item (hence the 2 in apply)</span></span>
+<span id="cb54-4"><a href="preparing-for-item-analysis.html#cb54-4" aria-hidden="true" tabindex="-1"></a><span class="co"># for CR items</span></span>
+<span id="cb54-5"><a href="preparing-for-item-analysis.html#cb54-5" aria-hidden="true" tabindex="-1"></a>critems <span class="ot">&lt;-</span> ritems[<span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">10</span>)]</span>
+<span id="cb54-6"><a href="preparing-for-item-analysis.html#cb54-6" aria-hidden="true" tabindex="-1"></a>sritems <span class="ot">&lt;-</span> ritems[<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">8</span><span class="sc">:</span><span class="dv">9</span>, <span class="dv">11</span>)]</span>
+<span id="cb54-7"><a href="preparing-for-item-analysis.html#cb54-7" aria-hidden="true" tabindex="-1"></a><span class="fu">apply</span>(PISA09[, critems], <span class="dv">2</span>, table, <span class="at">exclude =</span> <span class="cn">NULL</span>)</span>
+<span id="cb54-8"><a href="preparing-for-item-analysis.html#cb54-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   r414q06 r452q03 r452q06 r458q07</span></span>
+<span id="cb54-9"><a href="preparing-for-item-analysis.html#cb54-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 0    9620   33834   10584   12200</span></span>
+<span id="cb54-10"><a href="preparing-for-item-analysis.html#cb54-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1   23934    5670   22422   25403</span></span>
+<span id="cb54-11"><a href="preparing-for-item-analysis.html#cb54-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 9   10179    4799   11058    6939</span></span>
+<span id="cb54-12"><a href="preparing-for-item-analysis.html#cb54-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r    1145     575     814     336</span></span></code></pre></div>
+<p>In the piloting and data collection processes, response codes or factor levels should be chosen carefully to represent all of the required response information. Responses should always be entered in a data set in their most raw form. Scoring should then happen after data entry, through the creation of new variables, whenever possible.</p>
+</div>
+<div id="scoring" class="section level2" number="17.4">
+<h2><span class="header-section-number">17.4</span> Scoring</h2>
+<p>In Chapter <a href="#measurement"><strong>??</strong></a>, which covered measurement, scales, and scoring, we briefly discussed the difference between dichotomous and polytomous scoring. Each involves the assignment of some value to each possible observed response to an item. This value is taken to indicate a difference in the construct underlying our measure. For dichotomous items, we usually assign a score of 1 to a correct response, and a zero otherwise. Polytomous items involve responses that are correct to differing degrees, for example, 0, 1, and 2 for incorrect, somewhat correct, and completely correct.</p>
+<p>In noncognitive testing, we replace “correctness” from the cognitive context with “amount” of the trait or attribute of interest. So, a dichotomous item might involve a yes/no response, where “yes” is taken to mean the construct is present in the individual, and it is given a score of 1, whereas “no” is taken to mean the construct is not present, and it is given a score of 0. Polytomous items then allow for different amounts of the construct to be present.</p>
+<p>Although it seems standard to use dichotomous 0/1 scoring, and polytomous scoring of 0, 1, 2, ect., these values should not be taken for granted. The score assigned to a particular response determines how much a given item will contribute to any composite score that is later calculated across items. In educational testing, the typical scoring schemes are popular because they are simple. Other scoring schemes could also be used to given certain items more or less weight when calculating the total.</p>
+<p>For example, a polytomous item could be scored using partial credit, where incorrect is scored as 0, completely correct is given 1, and levels of correctness are assigned decimal values in between. In psychological testing, the center of the rating scale could be given a score of 0, and the tails could decrease and increase from there. For example, if a rating scale is used to measure levels of agreement, 0 could be assigned to a “neutral” rating, and -2 and -1 might correspond to “strongly disagree” and “disagree,” with 1 and 2 corresponding to “agree” and “strongly agree.” Changing the values assigned to item responses in this way can help improve the interpretation of summary results.</p>
+<p>Scoring item responses also requires that direction, that is, decreases and increases, be given to the correctness or amount of trait involved. Thus, at the item level, we are at least using an ordinal scale. In cognitive testing, the direction is simple: increases in points correspond to increases in correctness. In psychological testing, reverse scoring may also be necessary.</p>
+<p><code>PISA09</code> contains examples of scoring for both educational and psychological measures. First, we’ll check the scoring for the CR and SR reading items. A crosstab for the raw and scored versions of an item shows how each code was converted to a score. Note students not reaching an item, with an unscored factor level “r,” were given an <code>NA</code> for their score.</p>
+<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="preparing-for-item-analysis.html#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Indices for scored reading items</span></span>
+<span id="cb55-2"><a href="preparing-for-item-analysis.html#cb55-2" aria-hidden="true" tabindex="-1"></a>rsitems <span class="ot">&lt;-</span> <span class="fu">paste0</span>(ritems, <span class="st">&quot;s&quot;</span>)</span>
+<span id="cb55-3"><a href="preparing-for-item-analysis.html#cb55-3" aria-hidden="true" tabindex="-1"></a>crsitems <span class="ot">&lt;-</span> <span class="fu">paste0</span>(critems, <span class="st">&quot;s&quot;</span>)</span>
+<span id="cb55-4"><a href="preparing-for-item-analysis.html#cb55-4" aria-hidden="true" tabindex="-1"></a>srsitems <span class="ot">&lt;-</span> <span class="fu">paste0</span>(sritems, <span class="st">&quot;s&quot;</span>)</span>
+<span id="cb55-5"><a href="preparing-for-item-analysis.html#cb55-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Tabulate unscored and scored responses for the first CR</span></span>
+<span id="cb55-6"><a href="preparing-for-item-analysis.html#cb55-6" aria-hidden="true" tabindex="-1"></a><span class="co"># item</span></span>
+<span id="cb55-7"><a href="preparing-for-item-analysis.html#cb55-7" aria-hidden="true" tabindex="-1"></a><span class="co"># exclude = NULL shows us NAs as well</span></span>
+<span id="cb55-8"><a href="preparing-for-item-analysis.html#cb55-8" aria-hidden="true" tabindex="-1"></a><span class="co"># raw and scored are not arguments to table, but are used</span></span>
+<span id="cb55-9"><a href="preparing-for-item-analysis.html#cb55-9" aria-hidden="true" tabindex="-1"></a><span class="co"># simply to give labels to the printed output</span></span>
+<span id="cb55-10"><a href="preparing-for-item-analysis.html#cb55-10" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(<span class="at">raw =</span> PISA09[, critems[<span class="dv">1</span>]],</span>
+<span id="cb55-11"><a href="preparing-for-item-analysis.html#cb55-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">scored =</span> PISA09[, crsitems[<span class="dv">1</span>]],</span>
+<span id="cb55-12"><a href="preparing-for-item-analysis.html#cb55-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">exclude =</span> <span class="cn">NULL</span>)</span>
+<span id="cb55-13"><a href="preparing-for-item-analysis.html#cb55-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    scored</span></span>
+<span id="cb55-14"><a href="preparing-for-item-analysis.html#cb55-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; raw     0     1  &lt;NA&gt;</span></span>
+<span id="cb55-15"><a href="preparing-for-item-analysis.html#cb55-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   0  9620     0     0</span></span>
+<span id="cb55-16"><a href="preparing-for-item-analysis.html#cb55-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   1     0 23934     0</span></span>
+<span id="cb55-17"><a href="preparing-for-item-analysis.html#cb55-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   8     0     0     0</span></span>
+<span id="cb55-18"><a href="preparing-for-item-analysis.html#cb55-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   9 10179     0     0</span></span>
+<span id="cb55-19"><a href="preparing-for-item-analysis.html#cb55-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   r     0     0  1145</span></span>
+<span id="cb55-20"><a href="preparing-for-item-analysis.html#cb55-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the same type of table for the first SR item</span></span></code></pre></div>
+<p>For a psychological example, we revisit the attitude toward school items presented in Figure <a href="#fig:pisaq33"><strong>??</strong></a>. In <code>PISA09</code>, these items were coded during data entry with values of 1 through 4 for “Strongly Disagree” to “Strongly Agree.” We could utilize these as the scored responses in the item analyses that follow. However, we first need to rescore the two items that were worded in the opposite direction as the others. Then, higher scores on all four items will represent more positive attitudes toward school.</p>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="preparing-for-item-analysis.html#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check the structure of raw attitude items</span></span>
+<span id="cb56-2"><a href="preparing-for-item-analysis.html#cb56-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(PISA09[, <span class="fu">c</span>(<span class="st">&quot;st33q01&quot;</span>, <span class="st">&quot;st33q02&quot;</span>, <span class="st">&quot;st33q03&quot;</span>,</span>
+<span id="cb56-3"><a href="preparing-for-item-analysis.html#cb56-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;st33q04&quot;</span>)])</span>
+<span id="cb56-4"><a href="preparing-for-item-analysis.html#cb56-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; &#39;data.frame&#39;:    44878 obs. of  4 variables:</span></span>
+<span id="cb56-5"><a href="preparing-for-item-analysis.html#cb56-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  $ st33q01: num  3 3 2 1 2 2 2 3 2 3 ...</span></span>
+<span id="cb56-6"><a href="preparing-for-item-analysis.html#cb56-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  $ st33q02: num  2 2 1 1 2 2 2 2 1 2 ...</span></span>
+<span id="cb56-7"><a href="preparing-for-item-analysis.html#cb56-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  $ st33q03: num  2 1 3 3 3 3 1 3 1 3 ...</span></span>
+<span id="cb56-8"><a href="preparing-for-item-analysis.html#cb56-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  $ st33q04: num  3 3 4 3 3 3 3 2 1 3 ...</span></span>
+<span id="cb56-9"><a href="preparing-for-item-analysis.html#cb56-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Rescore two items</span></span>
+<span id="cb56-10"><a href="preparing-for-item-analysis.html#cb56-10" aria-hidden="true" tabindex="-1"></a>PISA09<span class="sc">$</span>st33q01r <span class="ot">&lt;-</span> <span class="fu">rescore</span>(PISA09<span class="sc">$</span>st33q01)</span>
+<span id="cb56-11"><a href="preparing-for-item-analysis.html#cb56-11" aria-hidden="true" tabindex="-1"></a>PISA09<span class="sc">$</span>st33q02r <span class="ot">&lt;-</span> <span class="fu">rescore</span>(PISA09<span class="sc">$</span>st33q02)</span></code></pre></div>
 </div>
 </div>
             </section>
@@ -411,8 +474,8 @@ library(&quot;epmr&quot;)
           </div>
         </div>
       </div>
-<a href="reliability-study-designs.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="overview-of-validity.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="itemanalysis.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="traditional-item-statistics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -443,7 +506,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/DataScience4Psych/DataScience4Psych/edit/main/0300_validity.Rmd",
+"link": "https://github.com/DataScience4Psych/DataScience4Psych/edit/main/0400_itemanalysis.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -454,7 +517,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["https://github.com/DataScience4Psych/DataScience4Psych/raw/main/0300_validity.Rmd", "DS4P.epub"],
+"download": ["https://github.com/DataScience4Psych/DataScience4Psych/raw/main/0400_itemanalysis.Rmd", "DS4P.epub"],
 "toc": {
 "collapse": "section"
 }

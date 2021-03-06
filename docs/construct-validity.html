@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>9 Validity | Psychological Testing</title>
+  <title>13 Construct validity | Psychological Testing</title>
   <meta name="description" content="PSY 362: Psychological Testing" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="9 Validity | Psychological Testing" />
+  <meta property="og:title" content="13 Construct validity | Psychological Testing" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://r-computing-lab.github.io/psychtesting" />
   <meta property="og:image" content="https://r-computing-lab.github.io/psychtestingassets/logo.png" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="R-Computing-Lab/psychtesting" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="9 Validity | Psychological Testing" />
+  <meta name="twitter:title" content="13 Construct validity | Psychological Testing" />
   <meta name="twitter:site" content="@smasongarrison" />
   <meta name="twitter:description" content="PSY 362: Psychological Testing" />
   <meta name="twitter:image" content="https://r-computing-lab.github.io/psychtestingassets/logo.png" />
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="reliability-study-designs.html"/>
-<link rel="next" href="overview-of-validity.html"/>
+<link rel="prev" href="criterion-validity.html"/>
+<link rel="next" href="unified-validity-and-threats.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-3.5.1/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -373,37 +373,88 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="validity" class="section level1" number="9">
-<h1><span class="header-section-number">9</span> Validity</h1>
-<blockquote>
-<p>Validity has long been one of the major deities in the pantheon of the psychometrician. It is universally praised, but the good works done in its name are remarkably few.<br />
-— Robert Ebel</p>
-</blockquote>
-<p>As noted by <span class="citation"><a href="references.html#ref-ebel1961must" role="doc-biblioref">Ebel</a> (<a href="references.html#ref-ebel1961must" role="doc-biblioref">1961</a>)</span>, validity is universally considered the most important feature of a testing program. Validity encompasses everything relating to the testing process that makes score inferences useful and meaningful. All of the topics covered in this course, provide evidence supporting the validity of scores. Scores that are consistent and based on items written according to specified content standards with appropriate levels of difficulty and discrimination are more useful and meaningful than scores that do not have these qualities. Correct measurement, sound test construction, reliability, and certain item properties are thus all prerequisites for validity.</p>
-<p>These notes begin with a definition of validity and some related terms. After defining validity, three common sources of validity evidence are discussed: test content via what’s referred to as a test blueprint or test outline, relationships with criterion variables, and theoretical models of the construct being measured. These three sources of validity evidence are then discussed within a unified view of validity. Finally, threats to validity are addressed.</p>
-<div id="objectives" class="section level2" number="9.1">
-<h2><span class="header-section-number">9.1</span> Objectives</h2>
-<p><strong>Learning objectives connected to these notes</strong></p>
-<ol style="list-style-type: decimal">
-<li>Define validity in terms of test score interpretation and use, and identify and describe examples of this definition in context.</li>
-<li>Compare and contrast three main types of validity evidence (content, criterion, and construct), with examples of how each type is established, including the validation process involved with each.</li>
-<li>Explain the structure and function of a test blueprint, and how it is used to provide evidence of content validity.</li>
-<li>Calculate and interpret a validity coefficient, describing what it represents and how it supports criterion validity.</li>
-<li>Describe how unreliability can attenuate a correlation, and how to correct for attenuation in a validity coefficient.</li>
-<li>Identify appropriate sources of validity evidence for given testing applications and describe how certain sources are more appropriate than others for certain applications.</li>
-<li>Describe the unified view of validity and how it differs from and improves upon the traditional view of validity.</li>
-<li>Identify threats to validity, including features of a test, testing process, or score interpretation or use, that impact validity. Consider, for example, the issues of content underrepresentation and misrepresentation, and construct irrelevant variance.</li>
-</ol>
-<pre><code>
-R analysis in this chapter is minimal. We&#39;ll run correlations and make adjustments to them using the base R functions, and we&#39;ll simulate scores using epmr.
-
-
-```r
-# R setup for this chapter
-library(&quot;epmr&quot;)
-# Functions we&#39;ll use
-# cor() from the base package
-# rsim() from epmr to simulate scores</code></pre>
+<div id="construct-validity" class="section level1" number="13">
+<h1><span class="header-section-number">13</span> Construct validity</h1>
+<div id="definition-1" class="section level2" number="13.1">
+<h2><span class="header-section-number">13.1</span> Definition</h2>
+<p>As noted above, validity focuses on the extent to which our construct is in fact what we think it is. If our construct is what we think it is, it should relate in known ways with other measures of the same or different constructs. On the other hand, if it is not what we think it is, relationships that should exist with other constructs will not be found.</p>
+<p>Construct validity is established when relationships between our test and other variables confirm what is predicted by theory. For example, theory might indicate that the personality traits of conscientiousness and neuroticism should be negatively related. If we develop a test of conscientiousness and then demonstrate that scores on our test correlate negatively with scores on a test of neuroticism, we’ve established construct validity evidence for our test. Furthermore, theory might indicate that conscientiousness contains three specific dimensions. Statistical analysis of the items within our test could show that the items tend to cluster, or perform similarly, in three specific groups. This too would establish construct validity evidence for our test.</p>
+<p>Chapter <a href="dimensionality.html#dimensionality">21</a> presents EFA and CFA as tools for exploring and confirming the factor structure of a test. Results from these analysis, particularly CFA, are key to establishing construct validity evidence.</p>
+</div>
+<div id="examples" class="section level2" number="13.2">
+<h2><span class="header-section-number">13.2</span> Examples</h2>
+<p>The entire set of relationships between our construct and other available constructs is sometimes referred to as a <em>nomological network</em>. This network outlines what the construct is, based on what it relates positively with, and conversely what it is not, based on what it relates negatively with. For example, what variables would you expect to relate positively with depression? As a person gets more depressed, what else tends to increase? What variables would you not expect to correlate with depression? Finally, what variables would you expect to relate negatively with depression?</p>
+<p>Table <a href="construct-validity.html#tab:nomological">13.1</a> contains an example of a correlation matrix that describes a nomological network for a hypothetical new depression scale. The BDI would be considered a well known criterion measure of depression. The remaining labels in this table refer to other related or unrelated variables. “Fake bad” is a measure of a person’s tendency to pretend to be “bad” or associate themselves with negative behaviors or characteristics. Positive correlations in this table represent what is referred to as <em>convergence</em>. Our hypothetical new scale converges with the BDI, a measure of anxiety, and a measure of faking bad. Negative correlations represent <em>divergence.</em> Our new scale diverges with measures of happiness and health. Both types of correlation should be predicted by a theory of depression.</p>
+<table>
+<caption><span id="tab:nomological">Table 13.1: </span>Nomological Network for a Hypothetical Depression Inventory</caption>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="right">New Scale</th>
+<th align="right">BDI</th>
+<th align="right">Anxiety</th>
+<th align="right">Happy</th>
+<th align="right">Health</th>
+<th align="right">Fake Bad</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">New Scale</td>
+<td align="right">1.00</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="left">BDI</td>
+<td align="right">0.80</td>
+<td align="right">1.00</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left">Anxiety</td>
+<td align="right">0.65</td>
+<td align="right">0.50</td>
+<td align="right">1.00</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="left">Happy</td>
+<td align="right">-0.59</td>
+<td align="right">-0.61</td>
+<td align="right">-0.40</td>
+<td align="right">1.00</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left">Health</td>
+<td align="right">-0.35</td>
+<td align="right">-0.10</td>
+<td align="right">-0.35</td>
+<td align="right">0.32</td>
+<td align="right">1.00</td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="left">Fake Bad</td>
+<td align="right">0.10</td>
+<td align="right">0.14</td>
+<td align="right">0.07</td>
+<td align="right">-0.05</td>
+<td align="right">0.07</td>
+<td align="right">1.00</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
             </section>
@@ -411,8 +462,8 @@ library(&quot;epmr&quot;)
           </div>
         </div>
       </div>
-<a href="reliability-study-designs.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="overview-of-validity.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="criterion-validity.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="unified-validity-and-threats.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

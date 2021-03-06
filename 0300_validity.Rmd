@@ -50,9 +50,9 @@ library("epmr")
 # rsim() from epmr to simulate scores
 ```
 
-## Overview of validity
+# Overview of validity
 
-### Definitions
+## Definitions
 
 Suppose you are conducting a research study on the efficacy of a reading intervention. Scores on a reading test will be compared for a treatment group who participated in the intervention and a control group who did not. A statistically significant difference in mean reading scores for the two groups will be taken as evidence of an effective intervention. This is an inferential use of statistics, as discussed in Chapter \@ref(introduction).
 
@@ -66,7 +66,7 @@ Recent literature on validity theory has clarified that tests and even test scor
 
 Finally, @kane2013validating also clarifies that validity is a matter of degree. It is establish incrementally through an accumulation of supporting evidence. Validity is not inherent in a test, and it is not simply declared to exist by a test developer. Instead, data are collected and research is conducted to establish evidence supporting a test for a particular use. As this evidence builds, so does our confidence that test scores can be used for their intended purpose.
 
-### Validity examples
+## Validity examples
 
 To evaluate the proposed score interpretations and uses for a test, and the extent to which they are valid, we should first examine the purpose of the test itself. As discussed in Chapters \@ref(measurement) and \@ref(applications), a good test purpose articulates key information about the test, including what it measures (the construct), for whom (the intended population), and why (for what purpose). The question then becomes, given the quality of its contents, how they were constructed, and how they are implemented, is the test valid for this purpose?
 
@@ -78,7 +78,7 @@ Different types of validity evidence would be needed to support the claims made 
 
 As a second example, consider a test construct that interests you. What construct are you interested in measuring? Perhaps it is one construct measured within a larger research study? How could you measure this construct? What type of test are you going to use? And what types of score(s) from the test will be used to support decision making? Next, consider who is going to take this test. Be as specific as possible when identifying your target population, the individuals that your work or research focuses on. Finally, consider why these people are taking your test. What are you going to do with the test scores? What are your proposed score interpretations and uses? Having defined your test purpose, consider what type of evidence would prove that the test is doing what you intend it to do, or that the score interpretations and uses are what you intend them to be. What information would support your test purpose?
 
-### Sources of validity evidence
+## Sources of validity evidence
 
 The information gathered to support a test purpose, and establish validity evidence for the intended uses of a test, is often categorized into three main areas of validity evidence. These are content, criterion, and construct validity. Nowadays, these are referred to as *sources of validity evidence*, where
 
@@ -89,7 +89,7 @@ In certain testing situations, one source of validity evidence may be more relev
 
 We will review each source of validity evidence in detail, and go over some practical examples of when one is more relevant than another. In this discussion, consider your own example, and examples of other tests you've encountered, and what type of validity evidence could be used to support their use.
 
-## Content validity
+# Content validity
 
 According to @haynes1995content, content validity is "the degree to which elements of an assessment instrument are relevant to and representative of the targeted construct for a particular assessment purpose." Note that this definition of content validity is very similar to our original definition of validity. The difference is that content validity focuses on *elements* of the construct and how well they are represented in our test. Thus, content validity assumes the target construct can be broken down into elements, and that we can obtain a representative sample of these elements.
 
@@ -137,9 +137,9 @@ Here are two main sources of content invalidity. First, if items reflecting doma
 
 Together, these two threats to content validity lead to unsupported score inferences. Some worst-case-scenario consequences include misdiagnoses, failure to provide needed treatment, or the provision of treatment that is not needed. In licensure testing, the result can be the licensing of candidates who lack the knowledge, skills, and abilities required for safe and effective practice.
 
-## Criterion validity
+# Criterion validity
 
-### Definition
+## Definition
 
 Criterion validity is the degree to which test scores correlate with, predict, or inform decisions regarding another measure or outcome. If you think of content validity as the extent to which a test *correlates with* or corresponds to the content domain, criterion validity is similar in that it is the extent to which a test correlates with or corresponds *to another test*. So, in content validity we compare our test to the content domain, and hope for a strong relationship, and in criterion validity we compare our test to a criterion variable, and again hope for a strong relationship.
 
@@ -205,7 +205,7 @@ In summary, the steps for establishing criterion validity evidence are relativel
 
 Note that a variety of other statistics are available for establishing the predictive power of a test $X$ for a criterion variable $Y$. Two popular examples are regression models, which provide more detailed information about the bivariate relationship between our test and criterion, and contingency tables, which describe predictions in terms of categorical or ordinal outcomes. In each case, criterion validity can be maximized by writing items for our test that are predictive of or correlate with the criterion.
 
-### Criterion examples
+## Criterion examples
 
 A popular example of criterion validity is the GRE, which has come up numerous times in this book. The GRE is designed to predict performance in graduate school. Admissions programs use it as one indicator of how well you are likely to do as a graduate student. Given this purpose, what is a suitable criterion variable that the GRE should predict? And how strong of a correlation would you expect to see between the GRE and this graduate performance variable?
 
@@ -215,9 +215,9 @@ Although this modest correlation may at first seem disappointing, a few differen
 
 Note that a substantial amount of research has been conducted documenting predictive validity evidence for the GRE. See @kuncel2001comprehensive for a meta-analysis of results from this literature.
 
-## Construct validity
+# Construct validity
 
-### Definition
+## Definition
 
 As noted above, validity focuses on the extent to which our construct is in fact what we think it is. If our construct is what we think it is, it should relate in known ways with other measures of the same or different constructs. On the other hand, if it is not what we think it is, relationships that should exist with other constructs will not be found.
 
@@ -225,7 +225,7 @@ Construct validity is established when relationships between our test and other 
 
 Chapter \@ref(dimensionality) presents EFA and CFA as tools for exploring and confirming the factor structure of a test. Results from these analysis, particularly CFA, are key to establishing construct validity evidence.
 
-### Examples
+## Examples
 
 The entire set of relationships between our construct and other available constructs is sometimes referred to as a *nomological network*. This network outlines what the construct is, based on what it relates positively with, and conversely what it is not, based on what it relates negatively with. For example, what variables would you expect to relate positively with depression? As a person gets more depressed, what else tends to increase? What variables would you not expect to correlate with depression? Finally, what variables would you expect to relate negatively with depression?
 
@@ -242,7 +242,7 @@ colnames(deptab) <- rownames(deptab)
 knitr::kable(deptab, align = "r", caption = "Nomological Network for a Hypothetical Depression Inventory")
 ```
 
-## Unified validity and threats
+# Unified validity and threats
 
 In the early 1980s, the three types of validity were reconceptualized as a single construct validity [e.g., @messick1980test]. This reconceptualization clarifies how content and criterion evidence do not, on their own, establish validity. Instead, both contribute to an overarching evaluation of construct validity. The literature has also clarified that validation is an ongoing process, where evidence supporting test use is accumulated over time from multiple sources. As a result, validity is a matter of degree instead of being evaluated as a simple and absolute yes or no.
 
@@ -254,11 +254,11 @@ Underrepresenting or misrepresenting the construct in a test can have a negative
 
 Other specific results of invalid test scores include misplacement of students, misallocation of funding, and implementation of programs that should not be implemented. Can you think of anything else to add to the list? What are some practical consequences of using test scores that do not measure what they purport to measure?
 
-## Summary
+# Summary
 
 This chapter provides an overview of validity, with examples of content, criterion, and construct validity, and details on how these three sources of validity evidence come together to support the intended interpretations and uses of test scores. The validation process is an incremental one, where sound test development practices and strong empirical results accumulate to establish 
 
-### Exercises
+## Exercises
 
 1. Consider your own testing application and how you would define a content domain. What is this definition of the content domain based on? In education, for example, end-of-year testing, it's typically based on a curriculum. In psychology, it's typically based on research and practice. How would you confirm that this content domain is adequate or representative of the construct? And how could content validity be compromised for your test?
 2. Consider your own testing application and a potential criterion measure for it. How do you go about choosing the criterion? How would you confirm that a relationship exists between your test and the criterion? How could criterion validity be compromised in this case?

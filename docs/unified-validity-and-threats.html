@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>9 Validity | Psychological Testing</title>
+  <title>14 Unified validity and threats | Psychological Testing</title>
   <meta name="description" content="PSY 362: Psychological Testing" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="9 Validity | Psychological Testing" />
+  <meta property="og:title" content="14 Unified validity and threats | Psychological Testing" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://r-computing-lab.github.io/psychtesting" />
   <meta property="og:image" content="https://r-computing-lab.github.io/psychtestingassets/logo.png" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="R-Computing-Lab/psychtesting" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="9 Validity | Psychological Testing" />
+  <meta name="twitter:title" content="14 Unified validity and threats | Psychological Testing" />
   <meta name="twitter:site" content="@smasongarrison" />
   <meta name="twitter:description" content="PSY 362: Psychological Testing" />
   <meta name="twitter:image" content="https://r-computing-lab.github.io/psychtestingassets/logo.png" />
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="reliability-study-designs.html"/>
-<link rel="next" href="overview-of-validity.html"/>
+<link rel="prev" href="construct-validity.html"/>
+<link rel="next" href="summary-1.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-3.5.1/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -373,46 +373,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="validity" class="section level1" number="9">
-<h1><span class="header-section-number">9</span> Validity</h1>
-<blockquote>
-<p>Validity has long been one of the major deities in the pantheon of the psychometrician. It is universally praised, but the good works done in its name are remarkably few.<br />
-— Robert Ebel</p>
-</blockquote>
-<p>As noted by <span class="citation"><a href="references.html#ref-ebel1961must" role="doc-biblioref">Ebel</a> (<a href="references.html#ref-ebel1961must" role="doc-biblioref">1961</a>)</span>, validity is universally considered the most important feature of a testing program. Validity encompasses everything relating to the testing process that makes score inferences useful and meaningful. All of the topics covered in this course, provide evidence supporting the validity of scores. Scores that are consistent and based on items written according to specified content standards with appropriate levels of difficulty and discrimination are more useful and meaningful than scores that do not have these qualities. Correct measurement, sound test construction, reliability, and certain item properties are thus all prerequisites for validity.</p>
-<p>These notes begin with a definition of validity and some related terms. After defining validity, three common sources of validity evidence are discussed: test content via what’s referred to as a test blueprint or test outline, relationships with criterion variables, and theoretical models of the construct being measured. These three sources of validity evidence are then discussed within a unified view of validity. Finally, threats to validity are addressed.</p>
-<div id="objectives" class="section level2" number="9.1">
-<h2><span class="header-section-number">9.1</span> Objectives</h2>
-<p><strong>Learning objectives connected to these notes</strong></p>
-<ol style="list-style-type: decimal">
-<li>Define validity in terms of test score interpretation and use, and identify and describe examples of this definition in context.</li>
-<li>Compare and contrast three main types of validity evidence (content, criterion, and construct), with examples of how each type is established, including the validation process involved with each.</li>
-<li>Explain the structure and function of a test blueprint, and how it is used to provide evidence of content validity.</li>
-<li>Calculate and interpret a validity coefficient, describing what it represents and how it supports criterion validity.</li>
-<li>Describe how unreliability can attenuate a correlation, and how to correct for attenuation in a validity coefficient.</li>
-<li>Identify appropriate sources of validity evidence for given testing applications and describe how certain sources are more appropriate than others for certain applications.</li>
-<li>Describe the unified view of validity and how it differs from and improves upon the traditional view of validity.</li>
-<li>Identify threats to validity, including features of a test, testing process, or score interpretation or use, that impact validity. Consider, for example, the issues of content underrepresentation and misrepresentation, and construct irrelevant variance.</li>
-</ol>
-<pre><code>
-R analysis in this chapter is minimal. We&#39;ll run correlations and make adjustments to them using the base R functions, and we&#39;ll simulate scores using epmr.
-
-
-```r
-# R setup for this chapter
-library(&quot;epmr&quot;)
-# Functions we&#39;ll use
-# cor() from the base package
-# rsim() from epmr to simulate scores</code></pre>
-</div>
+<div id="unified-validity-and-threats" class="section level1" number="14">
+<h1><span class="header-section-number">14</span> Unified validity and threats</h1>
+<p>In the early 1980s, the three types of validity were reconceptualized as a single construct validity <span class="citation">(e.g., <a href="references.html#ref-messick1980test" role="doc-biblioref">Messick 1980</a>)</span>. This reconceptualization clarifies how content and criterion evidence do not, on their own, establish validity. Instead, both contribute to an overarching evaluation of construct validity. The literature has also clarified that validation is an ongoing process, where evidence supporting test use is accumulated over time from multiple sources. As a result, validity is a matter of degree instead of being evaluated as a simple and absolute yes or no.</p>
+<p>As should be clear, scores are valid measures of a construct when they accurately represent the construct. When they do not, they are not valid. Two types of threats to content validity were mentioned previously. These are content underrepresentation and content misrepresentation. These can both be extended to more broadly refer to construct underrepresentation and construct misrepresentation. In the first, we fail to include all aspects of the construct in our test. In the second, our test is impacted by variables or constructs other than our target construct, including systematic and random error. And in both, we introduce construct irrelevant variance into our scores.</p>
+<p>Construct underrepresentation and misrepresentation can both be identified using a test outline. If the content domain is missing an important aspect of the construct, or the test is missing an important aspect of the content domain, the outline should make it apparent. Subject matter experts provide an external evaluation of these issues. Unfortunately, the construct is often underrepresented or misrepresented by individual items, and item-level content information is not provided in the test outline. As a result, the test development process also involves item-level reviews by subject matter experts and others who provide input on potential bias and unreliability at the item level.</p>
+<p>Underrepresenting or misrepresenting the construct in a test can have a negative impact on testing outcomes, both at the item level and the test level. Item bias refers to differential performance for subgroups of individuals, where the performance difference is not related to true differences in ability or trait. An item may address content that is relevant to the content domain, but it may do so in a way that is less easily understood by one group than another. For example, in educational tests, questions often involve word problems that provide context to an application. This context may address material, for example, a vacation to the beach, that is more familiar to students from a particular region, for example, coastal areas. This item might be biased against students who less familiar with the context because they don’t live near the beach. Given that we aren’t interested in measuring proximity to coastline, this constitutes test bias that reduces the validity of our test scores.</p>
+<p>Other specific results of invalid test scores include misplacement of students, misallocation of funding, and implementation of programs that should not be implemented. Can you think of anything else to add to the list? What are some practical consequences of using test scores that do not measure what they purport to measure?</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="reliability-study-designs.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="overview-of-validity.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="construct-validity.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="summary-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

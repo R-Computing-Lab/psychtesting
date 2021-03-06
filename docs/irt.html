@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>22 Item Response Theory | Psychological Testing</title>
+  <meta name="description" content="PSY 362: Psychological Testing" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="22 Item Response Theory | Psychological Testing" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://r-computing-lab.github.io/psychtesting" />
+  <meta property="og:image" content="https://r-computing-lab.github.io/psychtestingassets/logo.png" />
+  <meta property="og:description" content="PSY 362: Psychological Testing" />
+  <meta name="github-repo" content="R-Computing-Lab/psychtesting" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="22 Item Response Theory | Psychological Testing" />
+  <meta name="twitter:site" content="@smasongarrison" />
+  <meta name="twitter:description" content="PSY 362: Psychological Testing" />
+  <meta name="twitter:image" content="https://r-computing-lab.github.io/psychtestingassets/logo.png" />
+
+<meta name="author" content="S. Mason Garrison" />
+
+
+<meta name="date" content="2021-03-06" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+<link rel="prev" href="dimensionality.html"/>
+<link rel="next" href="good-resources.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-3.5.1/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="libs/vembedr-0.1.4/css/vembedr.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.17/datatables.js"></script>
+<link href="libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+<link href="libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet" />
+<script src="libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+<link href="libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet" />
+<script src="libs/selectize-0.12.0/selectize.min.js"></script>
+<link href="libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
+<script src="libs/twitter-widget-0.0.1/widgets.js"></script>
+<html>
+
+  <head>
+  <script src="anchor-links.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68219208-1"></script>
+
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-68219208-1');
+  </script>
+   -->
+  </head>
+
+</html>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="assets/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="toc-logo"><a href="./"><img src="assets/logo.png" style="border-radius: 00%;" ></a></li>
+
+<li class="divider"></li>
+<li class="part"><span><b>Front Matter</b></span></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome to PSY 362</a></li>
+<li class="chapter" data-level="" data-path="attribution.html"><a href="attribution.html"><i class="fa fa-check"></i>Attribution</a>
+<ul>
+<li class="chapter" data-level="" data-path="attribution.html"><a href="attribution.html#major-additional-attributions"><i class="fa fa-check"></i>Major &amp; Additional Attributions</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="license.html"><a href="license.html"><i class="fa fa-check"></i>License</a></li>
+<li class="chapter" data-level="" data-path="colophon.html"><a href="colophon.html"><i class="fa fa-check"></i>Colophon</a></li>
+<li class="chapter" data-level="" data-path="public-health-dashboards.html"><a href="public-health-dashboards.html"><i class="fa fa-check"></i>Public Health Dashboards</a>
+<ul>
+<li class="chapter" data-level="" data-path="public-health-dashboards.html"><a href="public-health-dashboards.html#wake-forest"><i class="fa fa-check"></i>Wake Forest</a></li>
+<li class="chapter" data-level="" data-path="public-health-dashboards.html"><a href="public-health-dashboards.html#forsyth-county"><i class="fa fa-check"></i>Forsyth County</a>
+<ul>
+<li class="chapter" data-level="" data-path="public-health-dashboards.html"><a href="public-health-dashboards.html#vaccinations"><i class="fa fa-check"></i>Vaccinations</a></li>
+<li class="chapter" data-level="" data-path="public-health-dashboards.html"><a href="public-health-dashboards.html#case-counts"><i class="fa fa-check"></i>Case Counts</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="public-health-dashboards.html"><a href="public-health-dashboards.html#north-carolina"><i class="fa fa-check"></i>North Carolina</a></li>
+</ul></li>
+<li class="part"><span><b>I Module 05</b></span></li>
+<li class="chapter" data-level="1" data-path="meet-our-toolbox.html"><a href="meet-our-toolbox.html"><i class="fa fa-check"></i><b>1</b> Meet our toolbox!</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="meet-our-toolbox.html"><a href="meet-our-toolbox.html#r"><i class="fa fa-check"></i><b>1.1</b> R</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="meet-our-toolbox.html"><a href="meet-our-toolbox.html#install"><i class="fa fa-check"></i><b>1.1.1</b> Install R and RStudio</a></li>
+<li class="chapter" data-level="1.1.2" data-path="meet-our-toolbox.html"><a href="meet-our-toolbox.html#testing-testing"><i class="fa fa-check"></i><b>1.1.2</b> Testing testing</a></li>
+<li class="chapter" data-level="1.1.3" data-path="meet-our-toolbox.html"><a href="meet-our-toolbox.html#add-on-packages"><i class="fa fa-check"></i><b>1.1.3</b> Add-on packages</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="meet-our-toolbox.html"><a href="meet-our-toolbox.html#getting-help-with-r"><i class="fa fa-check"></i><b>1.2</b> Getting Help with R</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="meet-our-toolbox.html"><a href="meet-our-toolbox.html#further-resources"><i class="fa fa-check"></i><b>1.2.1</b> Further resources</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="r-basics.html"><a href="r-basics.html"><i class="fa fa-check"></i><b>2</b> R basics and workflows</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="r-basics.html"><a href="r-basics.html#introducing-functions"><i class="fa fa-check"></i><b>2.1</b> Introducing Functions</a></li>
+<li class="chapter" data-level="2.2" data-path="r-basics.html"><a href="r-basics.html#introduction-to-objects"><i class="fa fa-check"></i><b>2.2</b> Introduction to Objects</a></li>
+<li class="chapter" data-level="2.3" data-path="r-basics.html"><a href="r-basics.html#workspace-and-working-directory"><i class="fa fa-check"></i><b>2.3</b> Workspace and working directory</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="r-basics.html"><a href="r-basics.html#workspace-.rdata"><i class="fa fa-check"></i><b>2.3.1</b> Workspace, <code>.RData</code></a></li>
+<li class="chapter" data-level="2.3.2" data-path="r-basics.html"><a href="r-basics.html#working-directory"><i class="fa fa-check"></i><b>2.3.2</b> Working directory</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="r-basics.html"><a href="r-basics.html#rprojs"><i class="fa fa-check"></i><b>2.4</b> RStudio projects</a></li>
+<li class="chapter" data-level="2.5" data-path="r-basics.html"><a href="r-basics.html#saving-files-and-protips"><i class="fa fa-check"></i><b>2.5</b> Saving Files and Protips</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="refreshers-and-examples.html"><a href="refreshers-and-examples.html"><i class="fa fa-check"></i><b>3</b> Refreshers and Examples</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="refreshers-and-examples.html"><a href="refreshers-and-examples.html#some-terms"><i class="fa fa-check"></i><b>3.1</b> Some terms</a></li>
+<li class="chapter" data-level="3.2" data-path="refreshers-and-examples.html"><a href="refreshers-and-examples.html#summary-statistics"><i class="fa fa-check"></i><b>3.2</b> Summary Statistics</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="r-code-for-module-5.html"><a href="r-code-for-module-5.html"><i class="fa fa-check"></i><b>4</b> R Code for Module 5</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="r-code-for-module-5.html"><a href="r-code-for-module-5.html#simulate-a-constant-true-score"><i class="fa fa-check"></i><b>4.1</b> Simulate a constant true score</a></li>
+<li class="chapter" data-level="4.2" data-path="r-code-for-module-5.html"><a href="r-code-for-module-5.html#pisa-total-reading-scores-with-simulated-error-and-true-scores-based-on-ctt"><i class="fa fa-check"></i><b>4.2</b> PISA total reading scores with simulated error and true scores based on CTT</a></li>
+<li class="chapter" data-level="4.3" data-path="r-code-for-module-5.html"><a href="r-code-for-module-5.html#reliability-and-unreliability-illustrated"><i class="fa fa-check"></i><b>4.3</b> Reliability and unreliability Illustrated</a></li>
+</ul></li>
+<li class="part"><span><b>II Module 06</b></span></li>
+<li class="chapter" data-level="5" data-path="installing-epmr.html"><a href="installing-epmr.html"><i class="fa fa-check"></i><b>5</b> Installing epmr</a></li>
+<li class="chapter" data-level="6" data-path="statistical-definition-of-reliability-.html"><a href="statistical-definition-of-reliability-.html"><i class="fa fa-check"></i><b>6</b> Statistical definition of reliability.</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="statistical-definition-of-reliability-.html"><a href="statistical-definition-of-reliability-.html#estimating-reliability"><i class="fa fa-check"></i><b>6.1</b> Estimating reliability</a></li>
+<li class="chapter" data-level="6.2" data-path="statistical-definition-of-reliability-.html"><a href="statistical-definition-of-reliability-.html#split-half-method"><i class="fa fa-check"></i><b>6.2</b> Split-half method</a></li>
+<li class="chapter" data-level="6.3" data-path="statistical-definition-of-reliability-.html"><a href="statistical-definition-of-reliability-.html#spearman-brown"><i class="fa fa-check"></i><b>6.3</b> Spearman Brown</a></li>
+<li class="chapter" data-level="6.4" data-path="statistical-definition-of-reliability-.html"><a href="statistical-definition-of-reliability-.html#sem"><i class="fa fa-check"></i><b>6.4</b> SEM</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="interpreting-reliability-and-unreliability.html"><a href="interpreting-reliability-and-unreliability.html"><i class="fa fa-check"></i><b>7</b> Interpreting reliability and unreliability</a></li>
+<li class="chapter" data-level="8" data-path="reliability-study-designs.html"><a href="reliability-study-designs.html"><i class="fa fa-check"></i><b>8</b> Reliability study designs</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="reliability-study-designs.html"><a href="reliability-study-designs.html#interrater-reliability"><i class="fa fa-check"></i><b>8.1</b> Interrater reliability</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="reliability-study-designs.html"><a href="reliability-study-designs.html#proportion-agreement"><i class="fa fa-check"></i><b>8.1.1</b> Proportion agreement</a></li>
+<li class="chapter" data-level="8.1.2" data-path="reliability-study-designs.html"><a href="reliability-study-designs.html#kappa-agreement"><i class="fa fa-check"></i><b>8.1.2</b> Kappa agreement</a></li>
+<li class="chapter" data-level="8.1.3" data-path="reliability-study-designs.html"><a href="reliability-study-designs.html#pearson-correlation"><i class="fa fa-check"></i><b>8.1.3</b> Pearson correlation</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="reliability-study-designs.html"><a href="reliability-study-designs.html#summary"><i class="fa fa-check"></i><b>8.2</b> Summary</a></li>
+</ul></li>
+<li class="part"><span><b>III Module 07</b></span></li>
+<li class="chapter" data-level="9" data-path="validity.html"><a href="validity.html"><i class="fa fa-check"></i><b>9</b> Validity</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="validity.html"><a href="validity.html#objectives"><i class="fa fa-check"></i><b>9.1</b> Objectives</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="overview-of-validity.html"><a href="overview-of-validity.html"><i class="fa fa-check"></i><b>10</b> Overview of validity</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="overview-of-validity.html"><a href="overview-of-validity.html#definitions"><i class="fa fa-check"></i><b>10.1</b> Definitions</a></li>
+<li class="chapter" data-level="10.2" data-path="overview-of-validity.html"><a href="overview-of-validity.html#validity-examples"><i class="fa fa-check"></i><b>10.2</b> Validity examples</a></li>
+<li class="chapter" data-level="10.3" data-path="overview-of-validity.html"><a href="overview-of-validity.html#sources-of-validity-evidence"><i class="fa fa-check"></i><b>10.3</b> Sources of validity evidence</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="content-validity.html"><a href="content-validity.html"><i class="fa fa-check"></i><b>11</b> Content validity</a></li>
+<li class="chapter" data-level="12" data-path="criterion-validity.html"><a href="criterion-validity.html"><i class="fa fa-check"></i><b>12</b> Criterion validity</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="criterion-validity.html"><a href="criterion-validity.html#definition"><i class="fa fa-check"></i><b>12.1</b> Definition</a></li>
+<li class="chapter" data-level="12.2" data-path="criterion-validity.html"><a href="criterion-validity.html#criterion-examples"><i class="fa fa-check"></i><b>12.2</b> Criterion examples</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="construct-validity.html"><a href="construct-validity.html"><i class="fa fa-check"></i><b>13</b> Construct validity</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="construct-validity.html"><a href="construct-validity.html#definition-1"><i class="fa fa-check"></i><b>13.1</b> Definition</a></li>
+<li class="chapter" data-level="13.2" data-path="construct-validity.html"><a href="construct-validity.html#examples"><i class="fa fa-check"></i><b>13.2</b> Examples</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="unified-validity-and-threats.html"><a href="unified-validity-and-threats.html"><i class="fa fa-check"></i><b>14</b> Unified validity and threats</a></li>
+<li class="chapter" data-level="15" data-path="summary-1.html"><a href="summary-1.html"><i class="fa fa-check"></i><b>15</b> Summary</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="summary-1.html"><a href="summary-1.html#exercises"><i class="fa fa-check"></i><b>15.1</b> Exercises</a></li>
+</ul></li>
+<li class="part"><span><b>IV Module 08</b></span></li>
+<li class="chapter" data-level="16" data-path="itemanalysis.html"><a href="itemanalysis.html"><i class="fa fa-check"></i><b>16</b> Item Analysis</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="itemanalysis.html"><a href="itemanalysis.html#objectives-1"><i class="fa fa-check"></i><b>16.1</b> Objectives</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="preparing-for-item-analysis.html"><a href="preparing-for-item-analysis.html"><i class="fa fa-check"></i><b>17</b> Preparing for item analysis</a>
+<ul>
+<li class="chapter" data-level="17.1" data-path="preparing-for-item-analysis.html"><a href="preparing-for-item-analysis.html#item-quality"><i class="fa fa-check"></i><b>17.1</b> Item quality</a></li>
+<li class="chapter" data-level="17.2" data-path="preparing-for-item-analysis.html"><a href="preparing-for-item-analysis.html#piloting"><i class="fa fa-check"></i><b>17.2</b> Piloting</a></li>
+<li class="chapter" data-level="17.3" data-path="preparing-for-item-analysis.html"><a href="preparing-for-item-analysis.html#data-entry"><i class="fa fa-check"></i><b>17.3</b> Data entry</a></li>
+<li class="chapter" data-level="17.4" data-path="preparing-for-item-analysis.html"><a href="preparing-for-item-analysis.html#scoring"><i class="fa fa-check"></i><b>17.4</b> Scoring</a></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="traditional-item-statistics.html"><a href="traditional-item-statistics.html"><i class="fa fa-check"></i><b>18</b> Traditional item statistics</a>
+<ul>
+<li class="chapter" data-level="18.1" data-path="traditional-item-statistics.html"><a href="traditional-item-statistics.html#item-difficulty"><i class="fa fa-check"></i><b>18.1</b> Item difficulty</a></li>
+<li class="chapter" data-level="18.2" data-path="traditional-item-statistics.html"><a href="traditional-item-statistics.html#item-discrimination"><i class="fa fa-check"></i><b>18.2</b> Item discrimination</a></li>
+<li class="chapter" data-level="18.3" data-path="traditional-item-statistics.html"><a href="traditional-item-statistics.html#internal-consistency"><i class="fa fa-check"></i><b>18.3</b> Internal consistency</a></li>
+<li class="chapter" data-level="18.4" data-path="traditional-item-statistics.html"><a href="traditional-item-statistics.html#item-analysis-applications"><i class="fa fa-check"></i><b>18.4</b> Item analysis applications</a></li>
+</ul></li>
+<li class="chapter" data-level="19" data-path="additional-analyses.html"><a href="additional-analyses.html"><i class="fa fa-check"></i><b>19</b> Additional analyses</a>
+<ul>
+<li class="chapter" data-level="19.1" data-path="additional-analyses.html"><a href="additional-analyses.html#option-analysis"><i class="fa fa-check"></i><b>19.1</b> Option analysis</a></li>
+<li class="chapter" data-level="19.2" data-path="additional-analyses.html"><a href="additional-analyses.html#differential-item-functioning"><i class="fa fa-check"></i><b>19.2</b> Differential item functioning</a></li>
+</ul></li>
+<li class="chapter" data-level="20" data-path="summary-2.html"><a href="summary-2.html"><i class="fa fa-check"></i><b>20</b> Summary</a>
+<ul>
+<li class="chapter" data-level="20.1" data-path="summary-2.html"><a href="summary-2.html#exercises-1"><i class="fa fa-check"></i><b>20.1</b> Exercises</a></li>
+</ul></li>
+<li class="part"><span><b>V Module 09</b></span></li>
+<li class="chapter" data-level="21" data-path="dimensionality.html"><a href="dimensionality.html"><i class="fa fa-check"></i><b>21</b> Factor Analysis</a>
+<ul>
+<li class="chapter" data-level="21.1" data-path="dimensionality.html"><a href="dimensionality.html#objectives-2"><i class="fa fa-check"></i><b>21.1</b> Objectives</a></li>
+<li class="chapter" data-level="21.2" data-path="dimensionality.html"><a href="dimensionality.html#measurement-models"><i class="fa fa-check"></i><b>21.2</b> Measurement models</a></li>
+<li class="chapter" data-level="21.3" data-path="dimensionality.html"><a href="dimensionality.html#exploratory-factor-analysis"><i class="fa fa-check"></i><b>21.3</b> Exploratory factor analysis</a>
+<ul>
+<li class="chapter" data-level="21.3.1" data-path="dimensionality.html"><a href="dimensionality.html#steps-in-efa"><i class="fa fa-check"></i><b>21.3.1</b> Steps in EFA</a></li>
+<li class="chapter" data-level="21.3.2" data-path="dimensionality.html"><a href="dimensionality.html#exploring-pisa-approaches-to-learning"><i class="fa fa-check"></i><b>21.3.2</b> Exploring PISA Approaches to Learning</a></li>
+</ul></li>
+<li class="chapter" data-level="21.4" data-path="dimensionality.html"><a href="dimensionality.html#confirmatory-factor-analysis"><i class="fa fa-check"></i><b>21.4</b> Confirmatory factor analysis</a>
+<ul>
+<li class="chapter" data-level="21.4.1" data-path="dimensionality.html"><a href="dimensionality.html#steps-in-cfa"><i class="fa fa-check"></i><b>21.4.1</b> Steps in CFA</a></li>
+<li class="chapter" data-level="21.4.2" data-path="dimensionality.html"><a href="dimensionality.html#confirming-pisa-approaches-to-learning"><i class="fa fa-check"></i><b>21.4.2</b> Confirming PISA Approaches to Learning</a></li>
+</ul></li>
+<li class="chapter" data-level="21.5" data-path="dimensionality.html"><a href="dimensionality.html#summary-3"><i class="fa fa-check"></i><b>21.5</b> Summary</a>
+<ul>
+<li class="chapter" data-level="21.5.1" data-path="dimensionality.html"><a href="dimensionality.html#exercises-2"><i class="fa fa-check"></i><b>21.5.1</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>VI Module 09</b></span></li>
+<li class="chapter" data-level="22" data-path="irt.html"><a href="irt.html"><i class="fa fa-check"></i><b>22</b> Item Response Theory</a>
+<ul>
+<li class="chapter" data-level="22.1" data-path="irt.html"><a href="irt.html#irt-versus-ctt"><i class="fa fa-check"></i><b>22.1</b> IRT versus CTT</a>
+<ul>
+<li class="chapter" data-level="22.1.1" data-path="irt.html"><a href="irt.html#ctt-review"><i class="fa fa-check"></i><b>22.1.1</b> CTT review</a></li>
+<li class="chapter" data-level="22.1.2" data-path="irt.html"><a href="irt.html#comparing-with-irt"><i class="fa fa-check"></i><b>22.1.2</b> Comparing with IRT</a></li>
+</ul></li>
+<li class="chapter" data-level="22.2" data-path="irt.html"><a href="irt.html#traditional-irt-models"><i class="fa fa-check"></i><b>22.2</b> Traditional IRT models</a>
+<ul>
+<li class="chapter" data-level="22.2.1" data-path="irt.html"><a href="irt.html#terminology"><i class="fa fa-check"></i><b>22.2.1</b> Terminology</a></li>
+<li class="chapter" data-level="22.2.2" data-path="irt.html"><a href="irt.html#the-irt-models"><i class="fa fa-check"></i><b>22.2.2</b> The IRT models</a></li>
+<li class="chapter" data-level="22.2.3" data-path="irt.html"><a href="irt.html#assumptions"><i class="fa fa-check"></i><b>22.2.3</b> Assumptions</a></li>
+</ul></li>
+<li class="chapter" data-level="22.3" data-path="irt.html"><a href="irt.html#irtapplications"><i class="fa fa-check"></i><b>22.3</b> Applications</a>
+<ul>
+<li class="chapter" data-level="22.3.1" data-path="irt.html"><a href="irt.html#in-practice"><i class="fa fa-check"></i><b>22.3.1</b> In practice</a></li>
+<li class="chapter" data-level="22.3.2" data-path="irt.html"><a href="irt.html#irtexamples"><i class="fa fa-check"></i><b>22.3.2</b> Examples</a></li>
+</ul></li>
+<li class="chapter" data-level="22.4" data-path="irt.html"><a href="irt.html#summary-4"><i class="fa fa-check"></i><b>22.4</b> Summary</a>
+<ul>
+<li class="chapter" data-level="22.4.1" data-path="irt.html"><a href="irt.html#exercises-3"><i class="fa fa-check"></i><b>22.4.1</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>VII Other Coolness</b></span></li>
+<li class="chapter" data-level="23" data-path="good-resources.html"><a href="good-resources.html"><i class="fa fa-check"></i><b>23</b> Good Resources</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><center>
+  <a rel="license" href="./license.html">
+    License: CC-BY-SA<br>
+    <i class = "fab fa-creative-commons fa-2x"></i>
+    <i class = "fab fa-creative-commons-by fa-2x"></i>
+    <i class = "fab fa-creative-commons-sa fa-2x"></i>
+  </a>
+</li></center>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Psychological Testing</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="irt" class="section level1" number="22">
+<h1><span class="header-section-number">22</span> Item Response Theory</h1>
+<blockquote>
+<p>One could make a case that item response theory is the most important statistical method about which most of us know little or nothing.<br />
+— David Kenny</p>
+</blockquote>
+<p>Item response theory (IRT) is arguably one of the most influential developments in the field of educational and psychological measurement. IRT provides a foundation for statistical methods that are utilized in contexts such as test development, item analysis, equating, item banking, and computerized adaptive testing. Its applications also extend to the measurement of a variety of latent constructs in a variety of disciplines.</p>
+<p>Given its role and influence in educational and psychological measurement, the topic of IRT has accumulated an extensive literature. Rather than cover every detail, this chapter gives a broad overview of IRT, with the intention of helping you understand key concepts and common applications. For comprehensive treatments of IRT, see <span class="citation"><a href="references.html#ref-deayala2009theory" role="doc-biblioref">de Ayala</a> (<a href="references.html#ref-deayala2009theory" role="doc-biblioref">2009</a>)</span> and <span class="citation"><a href="references.html#ref-embretson2000item" role="doc-biblioref">Embretson and Reise</a> (<a href="references.html#ref-embretson2000item" role="doc-biblioref">2000</a>)</span>. For a comparison of CTT and IRT, see <span class="citation"><a href="references.html#ref-hambleton1993comparison" role="doc-biblioref">Hambleton and Jones</a> (<a href="references.html#ref-hambleton1993comparison" role="doc-biblioref">1993</a>)</span>. <span class="citation"><a href="references.html#ref-harvey1999item" role="doc-biblioref">Harvey and Hammer</a> (<a href="references.html#ref-harvey1999item" role="doc-biblioref">1999</a>)</span> describe IRT specifically in the context of psychological testing.</p>
+<p>This chapter begins with a comparison of IRT with classical test theory (CTT), including a discussion of strengths and weaknesses and some typical uses of each. Next, the traditional dichotomous IRT models are introduced with definitions of key terms and a comparison based on assumptions, benefits, limitations, and uses. Finally, details are provided on applications of IRT in item analysis, test development, item banking, and computer adaptive testing.</p>
+<div class="objectives">
+<p>
+<strong>Learning objectives</strong>
+</p>
+<ol style="list-style-type: decimal">
+<li>
+Compare and contrast IRT and CTT in terms of their strengths and weaknesses.
+</li>
+<li>
+Identify the two main assumptions that are made when using a traditional IRT model, regarding dimensionality and functional form or the number of model parameters.
+</li>
+<li>
+Identify key terms in IRT, including probability of correct response, logistic curve, theta, IRF, TRF, SEM, and information functions.
+</li>
+<li>
+Define the three item parameters and one ability parameter in the traditional IRT models, and describe the role of each in modeling performance with the IIF.
+</li>
+<li>
+Distinguish between the 1PL, 2PL, and 3PL IRT models in terms of assumptions made, benefits and limitations, and applications of each.
+</li>
+<li>
+Describe how IRT is utilized in item analysis, test development, item banking, and computer adaptive testing.
+</li>
+</ol>
+</div>
+<p>In this chapter, we’ll use epmr to run IRT analyses with <code>PISA09</code> data, and we’ll use ggplot2 for plotting results.</p>
+<div class="sourceCode" id="cb84"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb84-1"><a href="irt.html#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="co"># R setup for this chapter</span></span>
+<span id="cb84-2"><a href="irt.html#cb84-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;epmr&quot;</span>)</span>
+<span id="cb84-3"><a href="irt.html#cb84-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb84-4"><a href="irt.html#cb84-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Attaching package: &#39;epmr&#39;</span></span>
+<span id="cb84-5"><a href="irt.html#cb84-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; The following object is masked from &#39;package:psych&#39;:</span></span>
+<span id="cb84-6"><a href="irt.html#cb84-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb84-7"><a href="irt.html#cb84-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;     skew</span></span>
+<span id="cb84-8"><a href="irt.html#cb84-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;ggplot2&quot;</span>)</span>
+<span id="cb84-9"><a href="irt.html#cb84-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Functions we&#39;ll use in this chapter</span></span>
+<span id="cb84-10"><a href="irt.html#cb84-10" aria-hidden="true" tabindex="-1"></a><span class="co"># rirf() for getting an item response function</span></span>
+<span id="cb84-11"><a href="irt.html#cb84-11" aria-hidden="true" tabindex="-1"></a><span class="co"># scale_y_continuous() for plotting a continuous scale</span></span>
+<span id="cb84-12"><a href="irt.html#cb84-12" aria-hidden="true" tabindex="-1"></a><span class="co"># irtstudy() from epmr for running an IRT study</span></span>
+<span id="cb84-13"><a href="irt.html#cb84-13" aria-hidden="true" tabindex="-1"></a><span class="co"># rtef() from epmr for getting a test error function</span></span>
+<span id="cb84-14"><a href="irt.html#cb84-14" aria-hidden="true" tabindex="-1"></a><span class="co"># rtif() from epmr for getting a test information function</span></span></code></pre></div>
+<div id="irt-versus-ctt" class="section level2" number="22.1">
+<h2><span class="header-section-number">22.1</span> IRT versus CTT</h2>
+<p>Since its development in the 1950s and 1960s <span class="citation">(<a href="references.html#ref-lord1952theory" role="doc-biblioref">Lord 1952</a>; <a href="references.html#ref-rasch1960probabilistic" role="doc-biblioref">Rasch 1960</a>)</span>, IRT has become the preferred statistical methodology for item analysis and test development. The success of IRT over its predecessor CTT comes primarily from the focus in IRT on the individual components that make up a test, that is, the items themselves. By modeling outcomes at the item level, rather than at the test level as in CTT, IRT is more complex but also more comprehensive in terms of the information it provides about test performance.</p>
+<div id="ctt-review" class="section level3" number="22.1.1">
+<h3><span class="header-section-number">22.1.1</span> CTT review</h3>
+<p>As presented in Chapter <a href="#reliability"><strong>??</strong></a>, CTT gives us a model for the observed total score <span class="math inline">\(X\)</span>. This model decomposes <span class="math inline">\(X\)</span> into two parts, truth <span class="math inline">\(T\)</span> and error <span class="math inline">\(E\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+X = T + E.
+\end{equation}\]</span></p>
+<p>The true score <span class="math inline">\(T\)</span> is the construct we’re intending to measure, and we assume it plays some systematic role in causing people to obtain observed scores on <span class="math inline">\(X\)</span>. The error <span class="math inline">\(E\)</span> is everything randomly unrelated to the construct we’re intending to measure. Error also has a direct impact on <span class="math inline">\(X\)</span>. From Chapter <a href="itemanalysis.html#itemanalysis">16</a>, two item statistics that come from CTT are the mean performance on a given item, referred to as the <span class="math inline">\(p\)</span>-value for dichotomous items, and the (corrected) item-total correlation for an item. Before moving on, you should be familiar with these two statistics, item difficulty and item discrimination, how they are related, and what they tell us about the items in a test.</p>
+<p>It should be apparent that CTT is a relatively simple model of test performance. The simplicity of the model brings up its main limitation: the score scale is dependent on the items in the test and the people taking the test. The results of CTT are said to be <em>sample dependent</em> because 1) any <span class="math inline">\(X\)</span>, <span class="math inline">\(T\)</span>, or <span class="math inline">\(E\)</span> that you obtain for a particular test taker only has meaning within the test she or he took, and 2) any item difficulty or discrimination statistics you estimate only have meaning within a particular sample of test takers. So, the person parameters are dependent on the test we use, and the item parameters are dependent on the test takers.</p>
+<p>For example, suppose an instructor gives the same final exam to a new classroom of students each semester. At the first administration, the CITC discrimination for one item is 0.08. That’s low, and it suggests that there’s a problem with the item. However, in the second administration of the same exam to another group of students, the same item is found to have a CITC of 0.52. Which of these discriminations is correct? According to CTT, they’re both correct, for the sample with which they are calculated. In CTT there is technically no absolute item difficulty or discrimination that generalizes across samples or populations of examinees. The same goes for ability estimates. If two students take different final exams for the same course, each with different items but the same number of items, ability estimates will depend on the difficulty and quality of the respective exams. There is no absolute ability estimate that generalizes across samples of items. This is the main limitation of CTT: parameters that come from the model are sample and test dependent.</p>
+<p>A second major limitation of CTT results from the fact that the model is specified using total scores. Because we rely on total scores in CTT, a given test only produces one estimate of reliability and, thus, one estimate of SEM, and these are assumed to be unchanging for all people taking the test. The measurement error we expect to see in scores would be the same regardless of level on the construct. This limitation is especially problematic when test items do not match the ability level of a particular group of people. For example, consider a comprehensive vocabulary test covering all of the words taught in a fourth grade classroom. The test is given to a group of students just starting fourth grade, and another group who just completed fourth grade and is starting fifth. Students who have had the opportunity to learn the test content should respond more reliably than students who have not. Yet, the test itself has a single reliability and SEM that would be used to estimate measurement error for any score. Thus, the second major limitation of CTT is that reliability and SEM are constant and do not depend on the construct.</p>
+</div>
+<div id="comparing-with-irt" class="section level3" number="22.1.2">
+<h3><span class="header-section-number">22.1.2</span> Comparing with IRT</h3>
+<p>IRT addresses the limitations of CTT, the limitations of sample and test dependence and a single constant SEM. As in CTT, IRT also provides a model of test performance. However, the model is defined at the item level, meaning there is, essentially, a separate model equation for each item in the test. So, IRT involves multiple item score models, as opposed to a single total score model. When the assumptions of the model are met, IRT parameters are, in theory, sample and item <em>independent</em>. This means that a person should have the same ability estimate no matter which set of items she or he takes, assuming the items pertain to the same test. And in IRT, a given item should have the same difficulty and discrimination no matter who is taking the test.</p>
+<p>IRT also takes into account the difficulty of the items that a person responds to when estimating the person’s ability or trait level. Although the construct estimate itself, in theory, does not depend on the items, the precision with which we estimate it does depend on the items taken. Estimates of the ability or trait are more precise when they’re based on items that are close to a person’s construct level. Precision decreases when there are mismatches between person construct and item difficulty. Thus, SEM in IRT can vary by the ability of the person and the characteristics of the items given.</p>
+<p>The main limitation of IRT is that it is a complex model requiring much larger samples of people than would be needed to utilize CTT. Whereas in CTT the recommended minimum is 100 examinees for conducting an item analysis (see Chapter <a href="itemanalysis.html#itemanalysis">16</a>), in IRT, as many as 500 or 1000 examinees may be needed to obtain stable results, depending on the complexity of the chosen model.</p>
+<div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb85-1"><a href="irt.html#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Prepping data for examples</span></span>
+<span id="cb85-2"><a href="irt.html#cb85-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Create subset of data for Great Britain, then reduce to </span></span>
+<span id="cb85-3"><a href="irt.html#cb85-3" aria-hidden="true" tabindex="-1"></a><span class="co"># complete data</span></span>
+<span id="cb85-4"><a href="irt.html#cb85-4" aria-hidden="true" tabindex="-1"></a>ritems <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;r414q02&quot;</span>, <span class="st">&quot;r414q11&quot;</span>, <span class="st">&quot;r414q06&quot;</span>, <span class="st">&quot;r414q09&quot;</span>,</span>
+<span id="cb85-5"><a href="irt.html#cb85-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;r452q03&quot;</span>, <span class="st">&quot;r452q04&quot;</span>, <span class="st">&quot;r452q06&quot;</span>, <span class="st">&quot;r452q07&quot;</span>, <span class="st">&quot;r458q01&quot;</span>,</span>
+<span id="cb85-6"><a href="irt.html#cb85-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;r458q07&quot;</span>, <span class="st">&quot;r458q04&quot;</span>)</span>
+<span id="cb85-7"><a href="irt.html#cb85-7" aria-hidden="true" tabindex="-1"></a>rsitems <span class="ot">&lt;-</span> <span class="fu">paste0</span>(ritems, <span class="st">&quot;s&quot;</span>)</span>
+<span id="cb85-8"><a href="irt.html#cb85-8" aria-hidden="true" tabindex="-1"></a>PISA09<span class="sc">$</span>rtotal <span class="ot">&lt;-</span> <span class="fu">rowSums</span>(PISA09[, rsitems])</span>
+<span id="cb85-9"><a href="irt.html#cb85-9" aria-hidden="true" tabindex="-1"></a>pisagbr <span class="ot">&lt;-</span> PISA09[PISA09<span class="sc">$</span>cnt <span class="sc">==</span> <span class="st">&quot;GBR&quot;</span>,</span>
+<span id="cb85-10"><a href="irt.html#cb85-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(rsitems, <span class="st">&quot;rtotal&quot;</span>)]</span>
+<span id="cb85-11"><a href="irt.html#cb85-11" aria-hidden="true" tabindex="-1"></a>pisagbr <span class="ot">&lt;-</span> pisagbr[<span class="fu">complete.cases</span>(pisagbr), ]</span></code></pre></div>
+<p>Another key difference between IRT and CTT has to do with the shape of the relationship that we estimate between item score and construct score. The CTT discrimination models a simple linear relationship between the two, whereas IRT models a curvilinear relationship between them. Recall from Chapter <a href="itemanalysis.html#itemanalysis">16</a> that the discrimination for an item can be visualized within a scatter plot, with the construct on the <span class="math inline">\(x\)</span>-axis and item scores on the <span class="math inline">\(y\)</span>-axis. A strong positive item discrimination would be shown by points for incorrect scores bunching up at the bottom of the scale, and points for correct scores bunching up at the top. A line passing through these points would then have a positive slope. Because they’re based on correlations, ITC and CITC discriminations are always represented by a straight line. See Figure <a href="irt.html#fig:irtplot1">22.1</a> for an example based on <code>PISA09</code> reading item <code>r452q06s</code>.</p>
+<div class="sourceCode" id="cb86"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb86-1"><a href="irt.html#cb86-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get p-values conditional on rtotal</span></span>
+<span id="cb86-2"><a href="irt.html#cb86-2" aria-hidden="true" tabindex="-1"></a><span class="co"># tapply() applies a function to the first argument over</span></span>
+<span id="cb86-3"><a href="irt.html#cb86-3" aria-hidden="true" tabindex="-1"></a><span class="co"># subsets of data defined by the second argument</span></span>
+<span id="cb86-4"><a href="irt.html#cb86-4" aria-hidden="true" tabindex="-1"></a>pvalues <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">rtotal =</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">11</span>,</span>
+<span id="cb86-5"><a href="irt.html#cb86-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">p =</span> <span class="fu">tapply</span>(pisagbr<span class="sc">$</span>r452q06s, pisagbr<span class="sc">$</span>rtotal, mean))</span>
+<span id="cb86-6"><a href="irt.html#cb86-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot CTT discrimination over scatter plot of scored item</span></span>
+<span id="cb86-7"><a href="irt.html#cb86-7" aria-hidden="true" tabindex="-1"></a><span class="co"># responses</span></span>
+<span id="cb86-8"><a href="irt.html#cb86-8" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(pisagbr, <span class="fu">aes</span>(rtotal, r414q06s)) <span class="sc">+</span></span>
+<span id="cb86-9"><a href="irt.html#cb86-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">position =</span> <span class="fu">position_jitter</span>(<span class="at">w =</span> <span class="fl">0.1</span>,</span>
+<span id="cb86-10"><a href="irt.html#cb86-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">h =</span> <span class="fl">0.1</span>)) <span class="sc">+</span></span>
+<span id="cb86-11"><a href="irt.html#cb86-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="at">fill =</span> <span class="cn">NA</span>) <span class="sc">+</span></span>
+<span id="cb86-12"><a href="irt.html#cb86-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(rtotal, p), <span class="at">data =</span> pvalues,</span>
+<span id="cb86-13"><a href="irt.html#cb86-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">col =</span> <span class="st">&quot;green&quot;</span>, <span class="at">size =</span> <span class="dv">3</span>)</span>
+<span id="cb86-14"><a href="irt.html#cb86-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; `geom_smooth()` using formula &#39;y ~ x&#39;</span></span></code></pre></div>
+<div class="figure"><span id="fig:irtplot1"></span>
+<img src="0600_irt_files/figure-html/irtplot1-1.png" alt="Scatter plots showing the relationship between total scores on the x-axis and scores from PISA item `r452q06s` on the y-axis. Lines represent the relationship between the construct and item scores for CTT (straight) and IRT (curved)." width="75%" />
+<p class="caption">
+Figure 22.1: Scatter plots showing the relationship between total scores on the x-axis and scores from PISA item <code>r452q06s</code> on the y-axis. Lines represent the relationship between the construct and item scores for CTT (straight) and IRT (curved).
+</p>
+</div>
+<p>In IRT, the relationship between item and construct is similar to CTT, but the line follows what’s called a logistic curve. To demonstrate the usefulness of a logistic curve, we calculate a set of <span class="math inline">\(p\)</span>-values for item <code>r452q06s</code> <em>conditional on the construct</em>. In Figure <a href="irt.html#fig:irtplot1">22.1</a>, the green points are <span class="math inline">\(p\)</span>-values calculated within each group of people having the same total reading score. For example, the <span class="math inline">\(p\)</span>-value on this item for students with a total score of 3 is about 0.20. As expected, people with lower totals have more incorrect than correct responses. As total scores increase, the number of people getting the item correct steadily increases. At a certain total score, around 5.5, we see roughly half the people get the item correct. Then, as we continue up the theta scale, more and more people get the item correct. IRT is used to capture the trend shown by the conditional <span class="math inline">\(p\)</span>-values in Figure <a href="irt.html#fig:irtplot1">22.1</a>.</p>
+</div>
+</div>
+<div id="traditional-irt-models" class="section level2" number="22.2">
+<h2><span class="header-section-number">22.2</span> Traditional IRT models</h2>
+<div id="terminology" class="section level3" number="22.2.1">
+<h3><span class="header-section-number">22.2.1</span> Terminology</h3>
+<p>Understanding IRT requires that we master some new terms. First, in IRT the underlying construct is referred to as theta or <span class="math inline">\(\theta\)</span>. Theta refers to the same construct we discussed in CTT, reliability, and our earlier measurement models. The underlying construct is the unobserved variable that we assume causes the behavior we observe in item responses. Different test takers are at different levels on the construct, and this results in them having different response patterns. In IRT we model these response patterns as a function of the construct theta. The theta scale is another name for the ability or trait scale.</p>
+<p>Second, the dependent variable in IRT differs from CTT. The dependent variable is found on the left of the model, as in a regression or other statistical model. The dependent variable in the CTT model is the total observed score <span class="math inline">\(X\)</span>. The IRT model instead has an item score as the dependent variable. The model then predicts the probability of a correct response for a given item, denoted <span class="math inline">\(\Pr(X = 1)\)</span>.</p>
+<p>Finally, in CTT we focus only on the person construct <span class="math inline">\(T\)</span> within the model itself. The dependent variable <span class="math inline">\(X\)</span> is modeled as a function of <span class="math inline">\(T\)</span>, and whatever is left over via <span class="math inline">\(E\)</span>. In IRT, we include the construct, now <span class="math inline">\(\theta\)</span>, along with parameters for the item that characterize its difficulty, discrimination, and lower-asymptote.</p>
+<p>In the discussion that follows, we will frequently use the term <em>function</em>. A function is simply an equation that produces an output for each input we supply to it. The CTT model could be considered a function, as each <span class="math inline">\(T\)</span> has a single corresponding <span class="math inline">\(X\)</span> that is influenced, in part, by <span class="math inline">\(E\)</span>. The IRT model also produces an output, but this output is now at the item level, and it is a probability of correct response for a given item. We can plug in <span class="math inline">\(\theta\)</span>, and get a prediction for the performance we’d expect on the item for that level on the construct. In IRT, this prediction of item performance depends on the item as well as the construct.</p>
+<p>The IRT model for a given item has a special name in IRT. It’s called the item response function (IRF), because it can be used to predict an item response. Each item has its own IRF. We can add up all the IRF in a test to obtain a test response function (TRF) that predicts not item scores but total scores on the test.</p>
+<p>Two other functions, with corresponding equations, are also commonly used in IRT. One is the item information function (IIF). This gives us the predicted discriminatory power of an item across the theta scale. Remember that, as CTT discrimination can be visualized with a straight line, the discrimination in IRT can be visualized with a curve. This curve is flatter at some points than others, indicating the item is less discriminating at those points. In IRT, <em>information</em> tells us how the discriminating power of an item changes across the theta scale. IIF can also be added together to get an overall test information function (TIF).</p>
+<p>The last IRT function we’ll discuss here gives us the SEM for our test. This is called the test error function (TEF). As with all the other IRT functions, there is an equation that is used to estimate the function output, in this case, the standard error of measurement, for each point on the theta scale.</p>
+<p>This overview of IRT terminology should help clarify the benefits of IRT over CTT. Recall that the main limitations of CTT are: 1) sample and test dependence, where our estimates of construct levels depend on the items in our test, and our estimates of item parameters depend on the construct levels for our sample of test takers; and 2) reliability and SEM that do not change depending on the construct. IRT addresses both of these limitations. The IRT model estimates the dependent variable of the model while accounting for both the construct and the properties of the item. As a result, estimates of ability or trait levels and item analysis statistics will be <em>sample and test independent</em>. This will be discussed further below. The IRT model also produces, via the TEF, measurement error estimates that vary by theta. Thus, the accuracy of a test depends on where the items are located on the construct.</p>
+<p>Here’s a recap of the key terms we’ll be using throughout this chapter:</p>
+<ul>
+<li>Theta, <span class="math inline">\(\theta\)</span>, is our label for the construct measured for people.<br />
+</li>
+<li><span class="math inline">\(\Pr(X = 1)\)</span> is the probability of correct response, the outcome in the IRT model. Remember that <span class="math inline">\(X\)</span> is now an item score, as opposed to a total score in CTT.<br />
+</li>
+<li>The IRF is the visual representation of <span class="math inline">\(\Pr(X = 1)\)</span>, showing us our predictions about how well people will do on an item based on theta.<br />
+</li>
+<li>The logistic curve is the name for the shape we use to model performance via the IRF. It is a curve with certain properties, such as horizontal lower and upper asymptotes.<br />
+</li>
+<li>The properties of the logistic curve are based on three item parameters, <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, and <span class="math inline">\(c\)</span>, which are the item discrimination, difficulty, and lower-asymptote, also known as the pseudo-guessing parameter.<br />
+</li>
+<li>Functions are simply equations that produce a single output value for each value on the theta scale. IRT functions include the IRF, TRF, IIF, TIF, and TEF.</li>
+<li>Information refers to a summary of the discriminating power provided by an item or test.</li>
+</ul>
+</div>
+<div id="the-irt-models" class="section level3" number="22.2.2">
+<h3><span class="header-section-number">22.2.2</span> The IRT models</h3>
+<p>We’ll now use the terminology above to compare three traditional IRT models. Equation <a href="irt.html#eq:irt3pl">(22.1)</a> contains what is referred to as the three-parameter IRT model, because it includes all three available item parameters. The model is usually labeled 3PL, for 3 parameter logistic. As noted above, in IRT we model the probability of correct response on a given item (<span class="math inline">\(\Pr(X = 1)\)</span>) as a function of person ability (<span class="math inline">\(\theta\)</span>) and certain properties of the item itself, namely: <span class="math inline">\(a\)</span>, how well the item discriminates between low and high ability examinees; <span class="math inline">\(b\)</span>, how difficult the item is, or the construct level at which we’d expect people to have a probability <span class="math inline">\(\Pr = 0.50\)</span> of getting the keyed item response; and <span class="math inline">\(c\)</span>, the lowest <span class="math inline">\(\Pr\)</span> that we’d expect to see on the item by chance alone.</p>
+<p><span class="math display" id="eq:irt3pl">\[\begin{equation}
+\Pr(X = 1) = c + (1 - c)\frac{e^{a(\theta - b)}}{1 + e^{a(\theta - b)}}
+\tag{22.1}
+\end{equation}\]</span></p>
+<p>The <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> parameters should be familiar. They are the IRT versions of the item analysis statistics from CTT, presented in Chapter <a href="#reliability"><strong>??</strong></a>. The <span class="math inline">\(a\)</span> parameter corresponds to ITC, where larger <span class="math inline">\(a\)</span> indicate larger, better discrimination. The <span class="math inline">\(b\)</span> parameter corresponds to the <em>opposite</em> of the <span class="math inline">\(p\)</span>-value, where a low <span class="math inline">\(b\)</span> indicates an easy item, and a high <span class="math inline">\(b\)</span> indicates a difficult item; higher <span class="math inline">\(b\)</span> require higher <span class="math inline">\(\theta\)</span> for a correct response. The <span class="math inline">\(c\)</span> parameter should then be pretty intuitive if you think of its application to multiple-choice questions. When people low on the construct guess randomly on a multiple-choice item, the <span class="math inline">\(c\)</span> parameter attempts to capture the chance of getting the item correct. In IRT, we acknowledge with the <span class="math inline">\(c\)</span> parameter that the probability of correct response may never be zero. The smallest probability of correct response produced by Equation <a href="irt.html#eq:irt3pl">(22.1)</a> will be <span class="math inline">\(c\)</span>.</p>
+<p>To better understand the IRF in Equation <a href="irt.html#eq:irt3pl">(22.1)</a>, focus first on the difference we take between theta and item difficulty, in <span class="math inline">\((\theta - b)\)</span>. Suppose we’re using a cognitive test that measures some ability. If someone is high ability and taking a very easy item, with low <span class="math inline">\(b\)</span>, we’re going to get a large difference between theta and <span class="math inline">\(b\)</span>. This large difference filters through the rest of the equation to give us a higher prediction of how well the person will do on the item. This difference is multiplied by the discrimination parameter, so that, if the item is highly discriminating, the difference between ability and difficulty is <em>magnified</em>. If the discrimination is low, for example, 0.50, the difference between ability and difficulty is cut in half before we use it to determine probability of correct response. The fractional part and the exponential term represented by <span class="math inline">\(e\)</span> serve to make the straight line of ITC into a nice curve with a lower and upper asymptote at <span class="math inline">\(c\)</span> and 1. Everything on the right side of Equation <a href="irt.html#eq:irt3pl">(22.1)</a> is used to estimate the left side, that is, how well a person with a given ability would do on a given item.</p>
+<p>Figure <a href="irt.html#fig:irtplot2">22.2</a> contains IRF for five items with different item parameters. Let’s examine the item with the IRF shown by the black line. This item would be considered the most difficult of this set, as it is located the furthest to the right. We only begin to predict that a person will get the item correct once we move past theta 0. The actual item difficulty, captured by the <span class="math inline">\(b\)</span> parameter, is 3. This is found as the theta required to have a probability of 0.05 of getting the keyed response. This item also has the highest discrimination, as it is steeper than any other item. It is most useful for distinguishing between probabilities of correct response around theta 3, its <span class="math inline">\(b\)</span> parameter; below and above this value, the item does not discriminate as well, as the IRF becomes more horizontal. Finally, this item appears to have a lower-asymptote of 0, suggesting test takers are likely not guessing on the item.</p>
+<div class="sourceCode" id="cb87"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb87-1"><a href="irt.html#cb87-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make up a, b, and c parameters for five items</span></span>
+<span id="cb87-2"><a href="irt.html#cb87-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Get IRF using the rirf() function from epmr and plot</span></span>
+<span id="cb87-3"><a href="irt.html#cb87-3" aria-hidden="true" tabindex="-1"></a><span class="co"># rirf() will be demonstrated again later</span></span>
+<span id="cb87-4"><a href="irt.html#cb87-4" aria-hidden="true" tabindex="-1"></a>ipar <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">a =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">1</span>, .<span class="dv">5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>),</span>
+<span id="cb87-5"><a href="irt.html#cb87-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">b =</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">2</span>, <span class="sc">-</span>.<span class="dv">5</span>, <span class="dv">0</span>, <span class="sc">-</span><span class="dv">1</span>),</span>
+<span id="cb87-6"><a href="irt.html#cb87-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">c =</span> <span class="fu">c</span>(<span class="dv">0</span>, .<span class="dv">2</span>, .<span class="dv">25</span>, .<span class="dv">1</span>, .<span class="dv">28</span>),</span>
+<span id="cb87-7"><a href="irt.html#cb87-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">row.names =</span> <span class="fu">paste0</span>(<span class="st">&quot;item&quot;</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>))</span>
+<span id="cb87-8"><a href="irt.html#cb87-8" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">rirf</span>(ipar), <span class="fu">aes</span>(theta)) <span class="sc">+</span> <span class="fu">scale_y_continuous</span>(<span class="st">&quot;Pr(X)&quot;</span>) <span class="sc">+</span></span>
+<span id="cb87-9"><a href="irt.html#cb87-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> item1), <span class="at">col =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb87-10"><a href="irt.html#cb87-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> item2), <span class="at">col =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb87-11"><a href="irt.html#cb87-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> item3), <span class="at">col =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb87-12"><a href="irt.html#cb87-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> item4), <span class="at">col =</span> <span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb87-13"><a href="irt.html#cb87-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> item5), <span class="at">col =</span> <span class="dv">5</span>)</span></code></pre></div>
+<div class="figure"><span id="fig:irtplot2"></span>
+<img src="0600_irt_files/figure-html/irtplot2-1.png" alt="Comparison of five IRF having different item parameters." width="75%" />
+<p class="caption">
+Figure 22.2: Comparison of five IRF having different item parameters.
+</p>
+</div>
+<p>Examine the remaining IRF in Figure <a href="irt.html#fig:irtplot2">22.2</a>. You should be able to compare the items in terms of easiness and difficulty, low and high discrimination, and low and high predicted probability of guessing correctly. Below are some specific questions and answers for comparing the items.</p>
+<ul>
+<li>Which item has the highest discrimination? Black, with the steepest slope.<br />
+</li>
+<li>Which has the lowest discrimination? Green, with the shallowest slope.<br />
+</li>
+<li>Which item is hardest, requiring the highest ability level, on average, to get it correct? Black, again, as it is furthest to the right.<br />
+</li>
+<li>Which item is easiest? Cyan, followed by green, as they are furthest to the left.<br />
+</li>
+<li>Which item are you most likely to guess correct? Green, cyan, and red appear to have the highest lower asymptotes.</li>
+</ul>
+<p>Two other traditional, dichotomous IRT models are obtained as simplified versions of the three-parameter model in Equation <a href="irt.html#eq:irt3pl">(22.1)</a>. In the two-parameter IRT model or 2PL, we remove the <span class="math inline">\(c\)</span> parameter and ignore the fact that guessing may impact our predictions regarding how well a person will do on an item. As a result,</p>
+<p><span class="math display" id="eq:irt2pl">\[\begin{equation}
+\Pr(X = 1) = \frac{e^{a(\theta - b)}}{1 + e^{a(\theta - b)}}.
+\tag{22.2}
+\end{equation}\]</span></p>
+<p>In the 2PL, we assume that the impact of guessing is negligible. Applying the model to the items shown in Figure <a href="irt.html#fig:irtplot2">22.2</a>, we would see all the lower asymptotes pulled down to zero.</p>
+<p>In the one-parameter model or 1PL, and the Rasch model <span class="citation">(<a href="references.html#ref-rasch1960probabilistic" role="doc-biblioref">Rasch 1960</a>)</span>, we remove the <span class="math inline">\(c\)</span> and <span class="math inline">\(a\)</span> parameters and ignore the impact of guessing and of items having differing discriminations. We assume that guessing is again negligible, and that discrimination is the same for all items. In the Rasch model, we also assume that discrimination is one, that is, <span class="math inline">\(a = 1\)</span> for all items. As a result,</p>
+<p><span class="math display" id="eq:irt1pl">\[\begin{equation}
+\Pr(X = 1) = \frac{e^{(\theta - b)}}{1 + e^{(\theta - b)}}.
+\tag{22.3}
+\end{equation}\]</span></p>
+<p>Zero guessing and constant discrimination may seem like unrealistic assumptions, but the Rasch model is commonly used operationally. The PISA studies, for example, utilize a form of Rasch modeling. The popularity of the model is due to its simplicity. It requires smaller sample sizes (100 to 200 people per item may suffice) than the 2PL and 3PL (requiring 500 or more people). The theta scale produced by the Rasch model can also have certain desirable properties, such as consistent score intervals <span class="citation">(see <a href="references.html#ref-deayala2009theory" role="doc-biblioref">de Ayala 2009</a>)</span>.</p>
+</div>
+<div id="assumptions" class="section level3" number="22.2.3">
+<h3><span class="header-section-number">22.2.3</span> Assumptions</h3>
+<p>The three traditional IRT models discussed above all involve two main assumptions, both of them having to do with the overall requirement that the model we chose is “correct” for a given situation. This correctness is defined based on 1) the dimensionality of the construct, that is, how many constructs are causing people to respond in a certain way to the items, and 2) the shape of the IRF, that is, which of the three item parameters are necessary for modeling item performance.</p>
+<p>In Equations <a href="irt.html#eq:irt3pl">(22.1)</a>, <a href="irt.html#eq:irt2pl">(22.2)</a>, and <a href="irt.html#eq:irt1pl">(22.3)</a> we have a single <span class="math inline">\(\theta\)</span> parameter. Thus, in these IRT models we assume that a single person attribute or ability underlies the item responses. As mentioned above, this person parameter is similar to the true score parameter in CTT. The scale range and values for theta are arbitrary, so a <span class="math inline">\(z\)</span>-score metric is typically used. The first IRT assumption then is that a single attribute underlies the item response process. The result is called a unidimensional IRT model.</p>
+<p>The second assumption in IRT is that we’ve chosen the correct shape for our IRF. This implies that we have a choice regarding which item parameters to include, whether only <span class="math inline">\(b\)</span> in the 1PL or Rasch model, <span class="math inline">\(b\)</span> and <span class="math inline">\(a\)</span> in the 2PL, or <span class="math inline">\(b\)</span>, <span class="math inline">\(a\)</span>, and <span class="math inline">\(c\)</span> in the 3PL. So, in terms of shape, we assume that there is a nonlinear relationship between ability and probability of correct response, and this nonlinear relationship is captured completely by up to three item parameters.</p>
+<p>Note that anytime we assume a given item parameter, for example, the <span class="math inline">\(c\)</span> parameter, is <em>unnecessary</em> in a model, it is fixed to a certain value for all items. For example, in the Rasch and two-parameter IRT models, the <span class="math inline">\(c\)</span> parameter is typically fixed to 0, which means we are assuming that guessing is not an issue. In the Rasch model we also assume that all items discriminate in the same way, and <span class="math inline">\(a\)</span> is fixed to 1; then, the only item parameter we estimate is item difficulty.</p>
+</div>
+</div>
+<div id="irtapplications" class="section level2" number="22.3">
+<h2><span class="header-section-number">22.3</span> Applications</h2>
+<div id="in-practice" class="section level3" number="22.3.1">
+<h3><span class="header-section-number">22.3.1</span> In practice</h3>
+<p>As is true when comparing other statistical models, the choice of Rasch, 1PL, 2PL, or 3PL should be based on considerations of theory, model assumptions, and sample size.</p>
+<p>Because of its simplicity and lower sample size requirements, the Rasch model is commonly used in small-scale achievement and aptitude testing, for example, with assessments developed and used at the district level, or instruments designed for use in research or lower-stakes decision-making. The IGDI measures discussed in Chapter <a href="#measurement"><strong>??</strong></a> are developed using the Rasch model. The MAP tests, published by Northwest Evaluation Association, are also based on a Rasch model. Some consider the Rasch model most appropriate for theoretical reasons. In this case, it is argued that we should seek to develop tests that have items that discriminate equally well; items that differ in discrimination should be replaced with ones that do not. Others utilize the Rasch model as a simplified IRT model, where the sample size needed to accurately estimate different item discriminations and lower asymptotes cannot be obtained. Either way, when using the Rasch model, we should be confident in our assumption that differences between items in discrimination and lower asymptote are negligible.</p>
+<p>The 2PL and 3PL models are often used in larger-scale testing situations, for example, on high-stakes tests such as the GRE and ACT. The large samples available with these tests support the additional estimation required by these models. And proponents of the two-parameter and three-parameter models often argue that it is unreasonable to assume zero lower asymptote, or equal discriminations across items.</p>
+<p>In terms of the properties of the model itself, as mentioned above, IRT overcomes the CTT limitation of sample and item dependence. As a result, ability estimates from an IRT model should not depend on the sample of items used to estimate ability, and item parameter estimates should not depend on the sample of people used to estimate them. An explanation of how this is possible is beyond the scope of this book. Instead, it is important to remember that, in theory, when IRT is correctly applied, the resulting parameters are sample and item independent. As a result, they can be generalized across samples for a given population of people and test items.</p>
+<p>IRT is useful first in item analysis, where we pilot test a set of items and then examine item difficulty and discrimination, as discussed with CTT in Chapter <a href="itemanalysis.html#itemanalysis">16</a>. The benefit of IRT over CTT is that we can accumulate difficulty and discrimination statistics for items over multiple samples of people, and they are, in theory, always expressed on the same scale. So, our item analysis results are sample independent. This is especially useful for tests that are maintained across more than one administration. Many admissions tests, for example, have been in use for decades. State tests, as another example, must also maintain comparable item statistics from year to year, since new groups of students take the tests each year.</p>
+<p>Item banking refers to the process of storing items for use in future, potentially undeveloped, forms of a test. Because IRT allows us to estimate sample independent item parameters, we can estimate parameters for certain items using pilot data, that is, before the items are used operationally. This is what happens in a computer adaptive test. For example, the difficulty of a bank of items is known, typically from pilot administrations. When you sit down to take the test, an item of known average difficulty can then be administered. If you get the item correct, you are given a more difficult item. The process continues, with the difficulty of the items adapting based on your performance, until the computer is confident it has identified your ability level. In this way, computer adaptive testing relies heavily on IRT.</p>
+</div>
+<div id="irtexamples" class="section level3" number="22.3.2">
+<h3><span class="header-section-number">22.3.2</span> Examples</h3>
+<p>The epmr package contains functions for estimating and manipulating results from the Rasch model. Other R packages are available for estimating the 2PL and 3PL <span class="citation">(e.g., <a href="references.html#ref-rizopoulos2006ltm" role="doc-biblioref">Rizopoulos 2006</a>)</span>. Commercial software packages are also available, and are often used when IRT is applied operationally.</p>
+<p>Here, we estimate the Rasch model for <code>PISA09</code> students in Great Britain. The data set was created at the beginning of the chapter. The <code>irtstudy()</code> function in epmr runs the Rasch model and prints some summary results, including model fit indices and variability estimates for random effect. Note that the model is being fit as a generalized linear model with random person and random item effects, using the lme4 package <span class="citation">(<a href="references.html#ref-bates2015lme4" role="doc-biblioref">Bates et al. 2015</a>)</span>. The estimation process won’t be discussed here. For details, see <span class="citation"><a href="references.html#ref-doran2007estimating" role="doc-biblioref">Doran et al.</a> (<a href="references.html#ref-doran2007estimating" role="doc-biblioref">2007</a>)</span> and <span class="citation"><a href="references.html#ref-deboeck2011estimation" role="doc-biblioref">De Boeck et al.</a> (<a href="references.html#ref-deboeck2011estimation" role="doc-biblioref">2011</a>)</span>.</p>
+<div class="sourceCode" id="cb88"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb88-1"><a href="irt.html#cb88-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The irtstudy() function estimates theta and b parameters</span></span>
+<span id="cb88-2"><a href="irt.html#cb88-2" aria-hidden="true" tabindex="-1"></a><span class="co"># for a set of scored item responses</span></span>
+<span id="cb88-3"><a href="irt.html#cb88-3" aria-hidden="true" tabindex="-1"></a>irtgbr <span class="ot">&lt;-</span> <span class="fu">irtstudy</span>(pisagbr[, rsitems])</span>
+<span id="cb88-4"><a href="irt.html#cb88-4" aria-hidden="true" tabindex="-1"></a>irtgbr</span>
+<span id="cb88-5"><a href="irt.html#cb88-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb88-6"><a href="irt.html#cb88-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Item Response Theory Study</span></span>
+<span id="cb88-7"><a href="irt.html#cb88-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb88-8"><a href="irt.html#cb88-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3650 people, 11 items</span></span>
+<span id="cb88-9"><a href="irt.html#cb88-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb88-10"><a href="irt.html#cb88-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Model fit with lme4::glmer</span></span>
+<span id="cb88-11"><a href="irt.html#cb88-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;         AIC         BIC      logLik    deviance df.residual </span></span>
+<span id="cb88-12"><a href="irt.html#cb88-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;       46615       46632      -23306       38746       40148 </span></span>
+<span id="cb88-13"><a href="irt.html#cb88-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb88-14"><a href="irt.html#cb88-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Random effects</span></span>
+<span id="cb88-15"><a href="irt.html#cb88-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;        Std.Dev  Var</span></span>
+<span id="cb88-16"><a href="irt.html#cb88-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; person    1.29 1.66</span></span>
+<span id="cb88-17"><a href="irt.html#cb88-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; item      1.01 1.02</span></span></code></pre></div>
+<p>The R object returned by <code>irtstudy()</code> contains a list of results. The first element in the list, <code>irtgbr$data</code>, contains the original data set with additional columns for the theta estimate and SEM for each person. The next element in the output list, <code>irtgbr$ip</code>, contains a matrix of item parameter estimates, with the first column fixed to 1 for <span class="math inline">\(a\)</span>, the second column containing estimates of <span class="math inline">\(b\)</span>, and the third column fixed to 0 for <span class="math inline">\(c\)</span>.</p>
+<div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb89-1"><a href="irt.html#cb89-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(irtgbr<span class="sc">$</span>ip)</span>
+<span id="cb89-2"><a href="irt.html#cb89-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;          a       b c</span></span>
+<span id="cb89-3"><a href="irt.html#cb89-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r414q02s 1 -0.0254 0</span></span>
+<span id="cb89-4"><a href="irt.html#cb89-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r414q11s 1  0.6118 0</span></span>
+<span id="cb89-5"><a href="irt.html#cb89-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r414q06s 1 -0.1170 0</span></span>
+<span id="cb89-6"><a href="irt.html#cb89-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r414q09s 1 -0.9694 0</span></span>
+<span id="cb89-7"><a href="irt.html#cb89-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r452q03s 1  2.8058 0</span></span>
+<span id="cb89-8"><a href="irt.html#cb89-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r452q04s 1 -0.4885 0</span></span></code></pre></div>
+<p>Figure <a href="irt.html#fig:gbr-irf">22.3</a> shows the IRF for a subset of the <code>PISA09</code> reading items based on data from Great Britain. These items pertain to the prompt “The play’s the thing” in Appendix <a href="#theplay"><strong>??</strong></a>. Item parameters are taken from <code>irtgbr$ip</code> and supplied to the <code>rirf()</code> function from epmr. This function is simply Equation <a href="irt.html#eq:irt3pl">(22.1)</a> translated into R code. Thus, when provided with item parameters and a vector of thetas, <code>rirf()</code> returns the corresponding <span class="math inline">\(\Pr(X = 1)\)</span>.</p>
+<div class="sourceCode" id="cb90"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb90-1"><a href="irt.html#cb90-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get IRF for the set of GBR reading item parameters and a</span></span>
+<span id="cb90-2"><a href="irt.html#cb90-2" aria-hidden="true" tabindex="-1"></a><span class="co"># vector of thetas</span></span>
+<span id="cb90-3"><a href="irt.html#cb90-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Note the default thetas of seq(-4, 4, length = 100)</span></span>
+<span id="cb90-4"><a href="irt.html#cb90-4" aria-hidden="true" tabindex="-1"></a><span class="co"># could also be used</span></span>
+<span id="cb90-5"><a href="irt.html#cb90-5" aria-hidden="true" tabindex="-1"></a>irfgbr <span class="ot">&lt;-</span> <span class="fu">rirf</span>(irtgbr<span class="sc">$</span>ip, <span class="fu">seq</span>(<span class="sc">-</span><span class="dv">6</span>, <span class="dv">6</span>, <span class="at">length =</span> <span class="dv">100</span>))</span>
+<span id="cb90-6"><a href="irt.html#cb90-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot IRF for items r452q03s, r452q04s, r452q06s, and</span></span>
+<span id="cb90-7"><a href="irt.html#cb90-7" aria-hidden="true" tabindex="-1"></a><span class="co"># r452q07s</span></span>
+<span id="cb90-8"><a href="irt.html#cb90-8" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(irfgbr, <span class="fu">aes</span>(theta)) <span class="sc">+</span> <span class="fu">scale_y_continuous</span>(<span class="st">&quot;Pr(X)&quot;</span>) <span class="sc">+</span></span>
+<span id="cb90-9"><a href="irt.html#cb90-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> irfgbr<span class="sc">$</span>r452q03s, <span class="at">col =</span> <span class="st">&quot;r452q03&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb90-10"><a href="irt.html#cb90-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> irfgbr<span class="sc">$</span>r452q04s, <span class="at">col =</span> <span class="st">&quot;r452q04&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb90-11"><a href="irt.html#cb90-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> irfgbr<span class="sc">$</span>r452q06s, <span class="at">col =</span> <span class="st">&quot;r452q06&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb90-12"><a href="irt.html#cb90-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> irfgbr<span class="sc">$</span>r452q07s, <span class="at">col =</span> <span class="st">&quot;r452q07&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb90-13"><a href="irt.html#cb90-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_discrete</span>(<span class="at">name =</span> <span class="st">&quot;item&quot;</span>)</span>
+<span id="cb90-14"><a href="irt.html#cb90-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Warning: Use of `irfgbr$r452q03s` is discouraged. Use `r452q03s` instead.</span></span>
+<span id="cb90-15"><a href="irt.html#cb90-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Warning: Use of `irfgbr$r452q04s` is discouraged. Use `r452q04s` instead.</span></span>
+<span id="cb90-16"><a href="irt.html#cb90-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Warning: Use of `irfgbr$r452q06s` is discouraged. Use `r452q06s` instead.</span></span>
+<span id="cb90-17"><a href="irt.html#cb90-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Warning: Use of `irfgbr$r452q07s` is discouraged. Use `r452q07s` instead.</span></span></code></pre></div>
+<div class="figure"><span id="fig:gbr-irf"></span>
+<img src="0600_irt_files/figure-html/gbr-irf-1.png" alt="IRF for `PISA09` reading items from &quot;The play’s the thing&quot; based on students in Great Britain." width="672" />
+<p class="caption">
+Figure 22.3: IRF for <code>PISA09</code> reading items from “The play’s the thing” based on students in Great Britain.
+</p>
+</div>
+<p>Item <code>pisagbr$r452q03s</code> is estimated to be the most difficult for this set. The remaining three items in Figure <a href="irt.html#fig:gbr-irf">22.3</a> have locations or <span class="math inline">\(b\)</span> parameters near theta 0. Notice that the IRF for these items, which come from the Rasch model, are all parallel, with the same slopes. They also have lower asymptotes of <span class="math inline">\(\Pr = 0\)</span>.</p>
+<p>We can also use the results in <code>irtgbr</code> to examine SEM over theta. The SEM is obtained using the <code>rtef()</code> function from epmr. Figure <a href="irt.html#fig:gbr-sem">22.4</a> compares the SEM over theta for the full set of items (the black line), with SEM for subsets of 4 (blue) and 8 items (green). Fewer items at a given point in the theta scale also results in higher SEM at that theta. Thus, the number and location of items on the scale impact the resulting SEM.</p>
+<div class="sourceCode" id="cb91"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb91-1"><a href="irt.html#cb91-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot SEM curve conditional on theta for full items</span></span>
+<span id="cb91-2"><a href="irt.html#cb91-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Then add SEM for the subset of items 1:8 and 1:4</span></span>
+<span id="cb91-3"><a href="irt.html#cb91-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">rtef</span>(irtgbr<span class="sc">$</span>ip), <span class="fu">aes</span>(theta, se)) <span class="sc">+</span> <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb91-4"><a href="irt.html#cb91-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(theta, se), <span class="at">data =</span> <span class="fu">rtef</span>(irtgbr<span class="sc">$</span>ip[<span class="dv">1</span><span class="sc">:</span><span class="dv">8</span>, ]),</span>
+<span id="cb91-5"><a href="irt.html#cb91-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">col =</span> <span class="st">&quot;blue&quot;</span>) <span class="sc">+</span></span>
+<span id="cb91-6"><a href="irt.html#cb91-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(theta, se), <span class="at">data =</span> <span class="fu">rtef</span>(irtgbr<span class="sc">$</span>ip[<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, ]),</span>
+<span id="cb91-7"><a href="irt.html#cb91-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">col =</span> <span class="st">&quot;green&quot;</span>)</span></code></pre></div>
+<div class="figure"><span id="fig:gbr-sem"></span>
+<img src="0600_irt_files/figure-html/gbr-sem-1.png" alt="SEM for two subsets of `PISA09` reading items based on students in Great Britain." width="75%" />
+<p class="caption">
+Figure 22.4: SEM for two subsets of <code>PISA09</code> reading items based on students in Great Britain.
+</p>
+</div>
+<p>The <code>rtef()</code> function is used above with the default vector of theta <code>seq(-4, 4, length = 100)</code>. However, SEM can be obtained for any theta based on the item parameters provided. Suppose we want to estimate the SEM for a high ability student who only takes low difficulty items. This constitutes a mismatch in item and construct, which produces a higher SEM. These SEM are interpreted like SEM from CTT, as the average variability we’d expect to see in a score due to measurement error. They can be used to build confidence intervals around theta for an individual.</p>
+<div class="sourceCode" id="cb92"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb92-1"><a href="irt.html#cb92-1" aria-hidden="true" tabindex="-1"></a><span class="co"># SEM for theta 3 based on the four easiest and the four</span></span>
+<span id="cb92-2"><a href="irt.html#cb92-2" aria-hidden="true" tabindex="-1"></a><span class="co"># most difficult items</span></span>
+<span id="cb92-3"><a href="irt.html#cb92-3" aria-hidden="true" tabindex="-1"></a><span class="fu">rtef</span>(irtgbr<span class="sc">$</span>ip[<span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">9</span>, <span class="dv">11</span>), ], <span class="at">theta =</span> <span class="dv">3</span>)</span>
+<span id="cb92-4"><a href="irt.html#cb92-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   theta  se</span></span>
+<span id="cb92-5"><a href="irt.html#cb92-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1     3 2.9</span></span>
+<span id="cb92-6"><a href="irt.html#cb92-6" aria-hidden="true" tabindex="-1"></a><span class="fu">rtef</span>(irtgbr<span class="sc">$</span>ip[<span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">10</span>), ], <span class="at">theta =</span> <span class="dv">3</span>)</span>
+<span id="cb92-7"><a href="irt.html#cb92-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   theta se</span></span>
+<span id="cb92-8"><a href="irt.html#cb92-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1     3  2</span></span></code></pre></div>
+<p>The reciprocal of the SEM function, via the TEF, is the test information function. This simply shows us where on the theta scale our test items are accumulating the most discrimination power, and, as a result, where measurement will be the most accurate. Higher information corresponds to higher accuracy and lower SEM. Figure <a href="irt.html#fig:gbr-tif">22.5</a> shows the test information for all the reading items, again based on students in Great Britain. Information is highest where SEM is lowest, at the center of the theta scale.</p>
+<div class="sourceCode" id="cb93"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb93-1"><a href="irt.html#cb93-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the test information function over theta</span></span>
+<span id="cb93-2"><a href="irt.html#cb93-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Information is highest at the center of the theta scale</span></span>
+<span id="cb93-3"><a href="irt.html#cb93-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">rtif</span>(irtgbr<span class="sc">$</span>ip), <span class="fu">aes</span>(theta, i)) <span class="sc">+</span> <span class="fu">geom_line</span>()</span></code></pre></div>
+<div class="figure"><span id="fig:gbr-tif"></span>
+<img src="0600_irt_files/figure-html/gbr-tif-1.png" alt="Test information for `PISA09` reading items based on students in Great Britain." width="75%" />
+<p class="caption">
+Figure 22.5: Test information for <code>PISA09</code> reading items based on students in Great Britain.
+</p>
+</div>
+<p>Finally, just as the IRF can be used to predict probability of correct response on an item, given theta and the item parameters, the TRF can be used to predict total score given theta and parameters for each item in the test. The TRF lets us convert person theta back into the raw score metric for the test. Similar to the IRF, the TRF is asymptotic at 0 and the number of dichotomous items in the test, in this case, 11. Thus, no matter how high or how low theta, our predicted total score can’t exceed the bounds of the raw score scale. Figure <a href="irt.html#fig:gbr-trf">22.6</a> shows the test response function for the Great Britain results.</p>
+<div class="sourceCode" id="cb94"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb94-1"><a href="irt.html#cb94-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the test response function over theta</span></span>
+<span id="cb94-2"><a href="irt.html#cb94-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">rtrf</span>(irtgbr<span class="sc">$</span>ip), <span class="fu">aes</span>(theta, p)) <span class="sc">+</span> <span class="fu">geom_line</span>()</span></code></pre></div>
+<div class="figure"><span id="fig:gbr-trf"></span>
+<img src="0600_irt_files/figure-html/gbr-trf-1.png" alt="Test response function for `PISA09` reading items based on students in Great Britain." width="75%" />
+<p class="caption">
+Figure 22.6: Test response function for <code>PISA09</code> reading items based on students in Great Britain.
+</p>
+</div>
+</div>
+</div>
+<div id="summary-4" class="section level2" number="22.4">
+<h2><span class="header-section-number">22.4</span> Summary</h2>
+<p>This chapter provided an introduction to IRT, with a comparison to CTT, and details regarding the three traditional, dichotomous, unidimensional IRT models. Assumptions of the models and some testing applications were presented. The Rasch model was demonstrated using data from <code>PISA09</code>, with examples of the IRF, TEF, TIF, and TRF.</p>
+<div id="exercises-3" class="section level3" number="22.4.1">
+<h3><span class="header-section-number">22.4.1</span> Exercises</h3>
+<ol style="list-style-type: decimal">
+<li>Sketch out a plot of IRF for the following two items: a difficult item 1 with a high discrimination and negligible lower asymptote, and an easier item 2 with low discrimination and high lower asymptote. Be sure to label the axes of your plot.</li>
+<li>Sketch another plot of IRF for two items having the same difficulties, but different discriminations and lower asymptotes.</li>
+<li>Examine the IRF for the remaining <code>PISA09</code> reading items for Great Britain. Check the content of the items in Appendix <a href="#appendixa"><strong>??</strong></a> to see what features of an item or prompt seemed to make it relatively easier or more difficult.</li>
+<li>Using the <code>PISA09</code> reading test results for Great Britain, find the predicted total scores associated with thetas of -1, 0, and 1.</li>
+<li>Estimate the Rasch model for the <code>PISA09</code> memorization strategies scale. First, dichotomize responses by recoding 1 to 0, and the remaining valid responses to 1. After fitting the model, plot the IRF for each item.</li>
+<li>Based on the distribution of item difficulties for the memorization scale, where should SEM be lowest? Check the SEM by plotting the TEF for the full scale.</li>
+</ol>
+
+</div>
+</div>
+</div>
+
+
+
+<!--AE. Links-->
+<!-- Lab Links-->
+<!--Slides-->
+<!--R Links-->
+<!--RStudio Links-->
+<!--HappyGitWithR Links-->
+<!--Package Links-->
+<!--Shiny links-->
+<!--Publications-->
+<!--R Documentation-->
+<!--Wikipedia Links-->
+<!--Misc. Links-->
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="dimensionality.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="good-resources.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/DataScience4Psych/DataScience4Psych/edit/main/0600_irt.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["https://github.com/DataScience4Psych/DataScience4Psych/raw/main/0600_irt.Rmd", "DS4P.epub"],
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
