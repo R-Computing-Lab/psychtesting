@@ -11,7 +11,7 @@ github-repo: R-Computing-Lab/psychtesting
 twitter-handle: smasongarrison
 cover-image: assets/logo.png
 documentclass: book
-bibliography: [book.bib, packages.bib]
+bibliography: [book.bib, packages.bib,intro-measurement.bib]
 biblio-style: apalike
 link-citations: yes
 description: "PSY 362: Psychological Testing"
@@ -24,7 +24,7 @@ favicon: assets/favicon.ico
 
 # Welcome to PSY 362 {-}
 
-<!-- zero clue why the first chapter and all the nested subchapters are capitalized after an unnumbered part -->
+
 
 ```{r include = FALSE}
 source("common.R")
@@ -54,14 +54,9 @@ embed_url("https://www.youtube.com/watch?v=UBB34FqGjxU") %>%
 
 
 
-<!--
-
-### How to use this book {-}
-
-Every module corresponds to a weeks worth of material. Most modules are dedicated to improving a specific skill or at the very least dedicated to a specific theme. Within each module, there are embedded videos, slides, activities, labs, and tutorials. The skills developed in each module build upon skills you've developed in previous modules. Eventually, this class will have more modules available than weeks in a semester, so that you -- the reader can identify which module you'd like to start with. 
 
 
--->
+
 
 ```{r links, child="links.md"}
 ```
