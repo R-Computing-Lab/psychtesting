@@ -38,7 +38,7 @@ These notes begin with a definition of validity and some related terms. After de
 6. Identify appropriate sources of validity evidence for given testing applications and describe how certain sources are more appropriate than others for certain applications.
 7. Describe the unified view of validity and how it differs from and improves upon the traditional view of validity.
 8. Identify threats to validity, including features of a test, testing process, or score interpretation or use, that impact validity. Consider, for example, the issues of content underrepresentation and misrepresentation, and construct irrelevant variance.
-```
+
 
 R analysis in this chapter is minimal. We'll run correlations and make adjustments to them using the base R functions, and we'll simulate scores using epmr.
 
