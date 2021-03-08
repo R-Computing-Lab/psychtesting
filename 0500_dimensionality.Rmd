@@ -22,7 +22,7 @@ Factor analysis is a multivariate statistical method used to evaluate relationsh
 
 Since Spearman's early research on intelligence, factor analysis has been studied and applied in a variety of fields, including psychology, education, economics, and political science. The common thread in these different fields is the focus on measuring unobserved variables as potential causes of or explanations for observed behavior.
 
-This chapter gives an overview of two popular applications of factor analysis, called exploratory factor analysis or EFA and confirmatory factor analysis or CFA, with details on how each is used in test development. Real data examples come from the PISA data set. The learning objectives for this chapter focus on understanding the basic concepts involved in EFA and CFA, recognizing how they're appropriately applied, including common applications of each, and interpreting results.
+This module gives an overview of two popular applications of factor analysis, called exploratory factor analysis or EFA and confirmatory factor analysis or CFA, with details on how each is used in test development. Real data examples come from the PISA data set. The learning objectives for this module focus on understanding the basic concepts involved in EFA and CFA, recognizing how they're appropriately applied, including common applications of each, and interpreting results.
 
 ## Objectives
 **Learning objectives**
@@ -34,12 +34,12 @@ This chapter gives an overview of two popular applications of factor analysis, c
 5. Use a scree plot to visually compare factors in an EFA.
 6. Explain how a CFA is implemented, including the type of data required and steps in setting up and fitting the model.
 5. Interpret CFA results, including factor loadings and fit indices.
-```
 
-In this chapter we will run EFA and plot results using epmr functions. We'll also install a new package called lavaan for running CFA.
+
+In this module we will run EFA and plot results using epmr functions. We'll also install a new package called lavaan for running CFA.
 
 ```{r eval=FALSE}
-# R setup for this chapter
+# R setup for this module
 library("epmr")
 # We're using a new package for CFA called lavaan
 install.packages("lavaan")
@@ -56,7 +56,7 @@ library("lavaan")
 
 ## Measurement models
 
-In previous chapters, we referred to unobserved variables as *constructs.* These somewhat metaphysical thingamajigs were first introduced within measures of sociability and attitude toward animals (Chapter \@ref(measurement)), and then they returned as the true score in classical test theory (Chapter \@ref(reliability)) and the latent trait in item response theory (Chapter \@ref(irt)). The term *factor* is synonymous with *construct,* and refers to an underlying and unobservable trait, characteristic, or attribute assumed to cause or give rise to the observable behavior we measure and score using test items.
+In previous modules, we referred to unobserved variables as *constructs.* These somewhat metaphysical thingamajigs were first introduced within measures of sociability and attitude toward animals (Module \@ref(measurement)), and then they returned as the true score in classical test theory (Module \@ref(reliability)) and the latent trait in item response theory (Module \@ref(irt)). The term *factor* is synonymous with *construct,* and refers to an underlying and unobservable trait, characteristic, or attribute assumed to cause or give rise to the observable behavior we measure and score using test items.
 
 So, we now have three terms, *construct*, *latent trait*, and *factor*, that all refer essentially to the same thing, the underlying, unobserved variable of interest that we expect is causing people to differ in their test scores.
 
@@ -68,7 +68,7 @@ Note the emphasis here on the number of factors being smaller than the number of
 
 In testing applications, factor analysis will often precede the use of a more specific measurement model such as CTT or IRT. In addition to helping us summarize correlated data in terms of their underlying essential components, factor analysis also tells us how our items relate to or *load on* the factors we analyze. When piloting a test, we might find that some items relate more strongly to one factor than another. Other items may not relate well to any of the identified factors, and these might be investigated further and perhaps removed from the test. After the factor analysis is complete, CTT or IRT could then be used to evaluate the test further, and to estimate test takers' scores on the construct. In this way, factor analysis serves as a tool for examining the different factors underlying our data, and refining our test to include items that best assess the factors we're interested in measuring.
 
-Recall that classical item analysis, discussed in Chapter \@ref(itemanalysis), can also be used to refine a test based on features such as item difficulty and discrimination. Discrimination in CTT, which resembles the slope parameter in IRT, is similar to a *factor loading* in factor analysis. A factor loading is simply an estimate of the relationship between a given item and a given factor. Again, the main difference in factor analysis is that we'll often examine multiple factors, and the loadings of items on each one, rather than a single factor as in CTT.
+Recall that classical item analysis, discussed in Module \@ref(itemanalysis), can also be used to refine a test based on features such as item difficulty and discrimination. Discrimination in CTT, which resembles the slope parameter in IRT, is similar to a *factor loading* in factor analysis. A factor loading is simply an estimate of the relationship between a given item and a given factor. Again, the main difference in factor analysis is that we'll often examine multiple factors, and the loadings of items on each one, rather than a single factor as in CTT.
 
 The model in Figure \@ref(fig:efa-model) contains a visual representation of a factor analysis where two factors are estimated to cause observed responses across a set of items. Remember that unidirectional arrows denote causal relationships. The underlying constructs, in ovals, are assumed to cause the observed item responses, in boxes. Bidirectional arrows denote correlations, where there is no clear cause and effect. The two factors, labeled Factor A and Factor B, each show a causal relationship with responses on all six items. Thus, each item is estimated to load on each factor. This is a unique feature of exploratory factor analysis, discussed next.
 
@@ -82,7 +82,7 @@ Exploratory factor analysis or EFA is used to *explore* the factor structure of 
 
 **The Beck Depression Inventory**
 
-Here's an example. In Chapters \@ref(measurement) and \@ref(development) we referred to the Beck Depression Inventory, the latest version of which, the BDI-II, was published in 1996 [@beck1996manual]. The BDI-II contains 21 items measuring depressive symptomology. Each item is scored from 0 to 3, and a total score is used to determine a person's level of depression, whether minimal (scores of 0 to 13), mild (14 to 19), moderate (20 to 28), or severe (29 to 63).
+Here's an example. In Modules \@ref(measurement) and \@ref(development) we referred to the Beck Depression Inventory, the latest version of which, the BDI-II, was published in 1996 [@beck1996manual]. The BDI-II contains 21 items measuring depressive symptomology. Each item is scored from 0 to 3, and a total score is used to determine a person's level of depression, whether minimal (scores of 0 to 13), mild (14 to 19), moderate (20 to 28), or severe (29 to 63).
 
 The epmr package contains data from the BDI-II in the form of correlation and covariance matrices, as reported in Table 2 of @whisman2000factor. Each value in the correlation matrix is a correlation between scores on a given pair of BDI-II items. These are based on an administration of the BDI-II to 576 undergraduate students. See `?BDI` for details. In the interest of space, we'll just print the first four rows and columns of the correlation matrix. Note that the diagonal elements of the matrix are all 1.00, as a variable always correlates perfectly with itself.
 
@@ -116,7 +116,7 @@ When fitting an EFA, we will allow the model to identify more factors that we ex
 
 **2. Prepare the data and fit the model**
 
-The factor analysis models discussed in this chapter require that our items be measured on continuous scales, and that our factors of interest be expressed in terms of continuous scores. With dichotomously scored items, we need to adjust our data, and this process will not be covered here. Instead, we will examine polytomous items with responses coming from rating scales. These data may not be strictly continuous, but we will assume that they are continuous enough to support the corresponding EFA.
+The factor analysis models discussed in this module require that our items be measured on continuous scales, and that our factors of interest be expressed in terms of continuous scores. With dichotomously scored items, we need to adjust our data, and this process will not be covered here. Instead, we will examine polytomous items with responses coming from rating scales. These data may not be strictly continuous, but we will assume that they are continuous enough to support the corresponding EFA.
 
 Factor analysis requires either a scored data set, with people in rows and observations (scored item responses) in columns, or a correlation matrix based on such a data set. In the first demonstration below we'll use a data set, and in the second we'll use a correlation matrix. When using a data set, the data are prepared simply be ensuring that all of the variables contain scored item responses. We will remove any incomplete cases.
 
@@ -134,7 +134,7 @@ In an EFA, each item has its own unique error term, sometimes referred to as its
 
 **4. Evaluate factor quality**
 
-The EFA model also estimates the amount of variability in observed item scores that is explained by each factor. The concept of explained variability is related to the coefficient of determination from regression, and the reliability coefficient as presented in Chapter \@ref(reliability). In EFA, variability across all of our items can be standardized so that the variance per item is 1, and the sum of all the variances is simply the number of items. On a test with 13 items, the total variability would then be 13.
+The EFA model also estimates the amount of variability in observed item scores that is explained by each factor. The concept of explained variability is related to the coefficient of determination from regression, and the reliability coefficient as presented in Module \@ref(reliability). In EFA, variability across all of our items can be standardized so that the variance per item is 1, and the sum of all the variances is simply the number of items. On a test with 13 items, the total variability would then be 13.
 
 Variability explained for a given factor can be indexed using its standardized *eigenvalue*. An eigenvalue of 1 tells us that a factor only explains as much variability, on average, as a single item. On a test with 13 items, an eigenvalue of 13 (not likely) would tell us that a factor explains all of the available variability. On this same test, an eigenvalue of 3 would indicate that a factor explains as much variability as 3 items, and dividing 3 by 13 gives us 0.23, the proportion of total variability explained by this factor.
 
@@ -393,7 +393,7 @@ Model fit is not as impressive as we would hope. The CFI is 0.71 and the RMSEA i
 
 ## Summary
 
-This chapter presented two popular methods for conducting factor analysis, one that provides descriptive and relatively unstructured information about a test, and the other providing more structured results oriented around formal hypotheses. The main steps involved in fitting EFA and CFA and evaluating results were discussed and demonstrated using real data.
+This module presented two popular methods for conducting factor analysis, one that provides descriptive and relatively unstructured information about a test, and the other providing more structured results oriented around formal hypotheses. The main steps involved in fitting EFA and CFA and evaluating results were discussed and demonstrated using real data.
 
 EFA and CFA can improve the test development process by allowing us to examine and confirm the presence of unobserved constructs that explain variability in our tests. In practice, tests without a confirmed factor structure may not be suitable for testing applications that require a total score calculated across items, in the case of unidimensional factor models, or scores across subscales, in the case of multidimensional models.
 

@@ -40,10 +40,10 @@ These notes begin with a definition of validity and some related terms. After de
 8. Identify threats to validity, including features of a test, testing process, or score interpretation or use, that impact validity. Consider, for example, the issues of content underrepresentation and misrepresentation, and construct irrelevant variance.
 
 
-R analysis in this chapter is minimal. We'll run correlations and make adjustments to them using the base R functions, and we'll simulate scores using epmr.
+R analysis in this module is minimal. We'll run correlations and make adjustments to them using the base R functions, and we'll simulate scores using epmr.
 
 ```{r eval=FALSE}
-# R setup for this chapter
+# R setup for this module
 library("epmr")
 # Functions we'll use
 # cor() from the base package
@@ -54,11 +54,11 @@ library("epmr")
 
 ## Definitions
 
-Suppose you are conducting a research study on the efficacy of a reading intervention. Scores on a reading test will be compared for a treatment group who participated in the intervention and a control group who did not. A statistically significant difference in mean reading scores for the two groups will be taken as evidence of an effective intervention. This is an inferential use of statistics, as discussed in Chapter \@ref(introduction).
+Suppose you are conducting a research study on the efficacy of a reading intervention. Scores on a reading test will be compared for a treatment group who participated in the intervention and a control group who did not. A statistically significant difference in mean reading scores for the two groups will be taken as evidence of an effective intervention. This is an inferential use of statistics, as discussed in Module \@ref(introduction).
 
 In measurement, we step back and evaluate the extent to which our mean scores for each group accurately measure what they are intended to measure. On the surface, the means themselves may differ. But if neither mean actually captures average reading ability, our results are misleading, and our intervention may not actually be effective. Instead, it may appear effective because of systematic or random error in our measurements.
 
-Reliability, from Chapter \@ref(reliability), focuses on the consistency of measurement. With reliability, we estimate the amount of variability in scores that can be attributed to a reliable source, and, conversely, the variability that can be attributed to an unreliable source, that is, random error. While reliability is useful, it does not tell us whether that reliable source of variability is the source we hope it is. This is the job of validity. With validity, we additionally examine the quality of our items as individual components of the target construct. We examine other sources of variability in our scores, such as item and test bias. We also examine relationships between scores on our items and other measures of the target construct.
+Reliability, from Module \@ref(reliability), focuses on the consistency of measurement. With reliability, we estimate the amount of variability in scores that can be attributed to a reliable source, and, conversely, the variability that can be attributed to an unreliable source, that is, random error. While reliability is useful, it does not tell us whether that reliable source of variability is the source we hope it is. This is the job of validity. With validity, we additionally examine the quality of our items as individual components of the target construct. We examine other sources of variability in our scores, such as item and test bias. We also examine relationships between scores on our items and other measures of the target construct.
 
 The Standards for Educational and Psychological Testing [@ncme1999standards] define validity as "the degree to which evidence and theory support the interpretations of test scores entailed by the proposed uses of a test." This definition is simple, but very broad, encompassing a wide range of evidence and theory. We'll focus on three specific types of validity evidence, evidence based on test content, other measures, and theoretical models.
 
@@ -68,9 +68,9 @@ Finally, @kane2013validating also clarifies that validity is a matter of degree.
 
 ## Validity examples
 
-To evaluate the proposed score interpretations and uses for a test, and the extent to which they are valid, we should first examine the purpose of the test itself. As discussed in Chapters \@ref(measurement) and \@ref(applications), a good test purpose articulates key information about the test, including what it measures (the construct), for whom (the intended population), and why (for what purpose). The question then becomes, given the quality of its contents, how they were constructed, and how they are implemented, is the test valid for this purpose?
+To evaluate the proposed score interpretations and uses for a test, and the extent to which they are valid, we should first examine the purpose of the test itself. As discussed in Modules \@ref(measurement) and \@ref(applications), a good test purpose articulates key information about the test, including what it measures (the construct), for whom (the intended population), and why (for what purpose). The question then becomes, given the quality of its contents, how they were constructed, and how they are implemented, is the test valid for this purpose?
 
-As a first example, lets return to the test of early literacy introduced in Chapter \@ref(measurement). Documentation for the test ([www.myigdis.com](http://www.myigdis.com)) claims that,
+As a first example, lets return to the test of early literacy introduced in Module \@ref(measurement). Documentation for the test ([www.myigdis.com](http://www.myigdis.com)) claims that,
 
 > myIGDIs are a comprehensive set of assessments for monitoring the growth and development of young children. myIGDIs are easy to collect, sensitive to small changes in children's achievement, and mark progress toward a long-term desired outcome. For these reasons, myIGDIs are an excellent choice for monitoring English Language Learners and making more informed Special Education evaluations.
 
@@ -107,7 +107,7 @@ The early literacy content domain is broken down into a variety of content areas
 
 **2. Outline the test**
 
-Next, we map the portions of our test that will address each area of the content domain. The test outline can include information about the type of items used, the cognitive skills required, and the difficulty levels that are targeted, among other things. Review Chapter \@ref(development) for additional details on test outlines or blueprints.
+Next, we map the portions of our test that will address each area of the content domain. The test outline can include information about the type of items used, the cognitive skills required, and the difficulty levels that are targeted, among other things. Review Module \@ref(development) for additional details on test outlines or blueprints.
 
 Table \@ref(tab:igdi-outline) contains an example of a test outline for the IGDI measures. The three content areas listed above are shown in the first column. These are then broken down further into cognitive processes or skills. Theory and practical constraints determine reasonable numbers and types of test items or tasks devoted to each cognitive process in the test itself. The final column shows the percentage of the total test that is devoted to each area.
 
@@ -147,7 +147,7 @@ Criterion validity is the degree to which test scores correlate with, predict, o
 
 The keyword in this definition of criterion validity is *correlate*, which is synonymous with relate or predict. The assumption here is that the construct we are hoping to measure with our test is known to be measured well by another test or observed variable. This other test or variable is often referred to as a "gold standard," a label presumably given to it because it is based on strong validity evidence. So, in a way, criterion validity is a form of validity by association. If our test correlates with a known measure of the construct, we can be more confident that our test measures the same construct.
 
-The equation for a validity coefficient is the same as the equations for correlation that we encountered in previous chapters. Here we denote our test as $X$ and the criterion variable as $Y$. The validity coefficient is the correlation between the two, which can be obtained as the covariance divided by the product of the individual standard deviations.
+The equation for a validity coefficient is the same as the equations for correlation that we encountered in previous modules. Here we denote our test as $X$ and the criterion variable as $Y$. The validity coefficient is the correlation between the two, which can be obtained as the covariance divided by the product of the individual standard deviations.
 
 \begin{equation}
 \rho_{XY} = \frac{\sigma_{XY}}{\sigma_{X}\sigma_{Y}}
@@ -185,7 +185,7 @@ criterion <- rsim(rho = .8, x = rtotal, meany = 24,
 cor(rtotal, criterion$y)
 ```
 
-Suppose the internal consistency reliability for our criterion is 0.86. We know from Chapter \@ref(reliability) that internal consistency for the `PISA09` reading items is about 0.77. With a simple formula, we can calculate what the validity coefficient should be for our two measures, if each measure were perfectly reliable. Here, we denote this disattenuated correlation as the correlation between true scores on $X$ and $Y$.
+Suppose the internal consistency reliability for our criterion is 0.86. We know from Module \@ref(reliability) that internal consistency for the `PISA09` reading items is about 0.77. With a simple formula, we can calculate what the validity coefficient should be for our two measures, if each measure were perfectly reliable. Here, we denote this disattenuated correlation as the correlation between true scores on $X$ and $Y$.
 
 \begin{equation}
 \rho_{T_X T_Y} = \frac{\rho_{XY}}{\sqrt{\rho_{X}\rho_{Y}}}
@@ -211,7 +211,7 @@ A popular example of criterion validity is the GRE, which has come up numerous t
 
 The simplest criterion for establishing criterion-related validity evidence for the GRE would be some measure of performance or achievement in graduate school. First-year graduate GPA is a common choice. The GRE has been shown across numerous studies to correlate around 0.30 with first-year graduate GPA. A correlation of 0.30 is evidence of a small positive relationship, suggesting that most of the variability in GPA, our criterion, is *not* predicted by the GRE (91% to be precise). In other words, many students score high or low on the GRE and do not have a similarly high or low graduate GPA.
 
-Although this modest correlation may at first seem disappointing, a few different considerations suggest that it is actually pretty impressive. First, GPA is likely not a reliable measure of graduate performance. It's hardly a "gold standard." Instead, it's the best we have. It's one of the few quantitative measures available for all graduate students. The correlation of 0.30 is likely attenuated due to, at least, measurement error in the criterion. Second, there is likely some restriction of range happening in the relationship between GRE and GPA. People who score low on the GRE are less likely to get into graduate school, so their data are not represented. Restriction of range tends to reduce correlation coefficients. Third, what other measure of pre-graduate school performance correlates at 0.30 with graduate GPA? More importantly, what other measure of pre-graduate school performance that only takes a few hours to obtain correlates at 0.30 with graduate GPA? In conclusion, the GRE isn't perfect, but as far as standardized predictors go, it's currently the best we've got. In practice, admissions programs need to make sure they don't rely too much on it in admissions decisions, as discussed in Chapter \@ref(applications).
+Although this modest correlation may at first seem disappointing, a few different considerations suggest that it is actually pretty impressive. First, GPA is likely not a reliable measure of graduate performance. It's hardly a "gold standard." Instead, it's the best we have. It's one of the few quantitative measures available for all graduate students. The correlation of 0.30 is likely attenuated due to, at least, measurement error in the criterion. Second, there is likely some restriction of range happening in the relationship between GRE and GPA. People who score low on the GRE are less likely to get into graduate school, so their data are not represented. Restriction of range tends to reduce correlation coefficients. Third, what other measure of pre-graduate school performance correlates at 0.30 with graduate GPA? More importantly, what other measure of pre-graduate school performance that only takes a few hours to obtain correlates at 0.30 with graduate GPA? In conclusion, the GRE isn't perfect, but as far as standardized predictors go, it's currently the best we've got. In practice, admissions programs need to make sure they don't rely too much on it in admissions decisions, as discussed in Module \@ref(applications).
 
 Note that a substantial amount of research has been conducted documenting predictive validity evidence for the GRE. See @kuncel2001comprehensive for a meta-analysis of results from this literature.
 
@@ -223,7 +223,7 @@ As noted above, validity focuses on the extent to which our construct is in fact
 
 Construct validity is established when relationships between our test and other variables confirm what is predicted by theory. For example, theory might indicate that the personality traits of conscientiousness and neuroticism should be negatively related. If we develop a test of conscientiousness and then demonstrate that scores on our test correlate negatively with scores on a test of neuroticism, we've established construct validity evidence for our test. Furthermore, theory might indicate that conscientiousness contains three specific dimensions. Statistical analysis of the items within our test could show that the items tend to cluster, or perform similarly, in three specific groups. This too would establish construct validity evidence for our test.
 
-Chapter \@ref(dimensionality) presents EFA and CFA as tools for exploring and confirming the factor structure of a test. Results from these analysis, particularly CFA, are key to establishing construct validity evidence.
+Module \@ref(dimensionality) presents EFA and CFA as tools for exploring and confirming the factor structure of a test. Results from these analysis, particularly CFA, are key to establishing construct validity evidence.
 
 ## Examples
 
@@ -256,12 +256,12 @@ Other specific results of invalid test scores include misplacement of students, 
 
 # Summary
 
-This chapter provides an overview of validity, with examples of content, criterion, and construct validity, and details on how these three sources of validity evidence come together to support the intended interpretations and uses of test scores. The validation process is an incremental one, where sound test development practices and strong empirical results accumulate to establish 
+This module provides an overview of validity, with examples of content, criterion, and construct validity, and details on how these three sources of validity evidence come together to support the intended interpretations and uses of test scores. The validation process is an incremental one, where sound test development practices and strong empirical results accumulate to establish 
 
 ## Exercises
 
 1. Consider your own testing application and how you would define a content domain. What is this definition of the content domain based on? In education, for example, end-of-year testing, it's typically based on a curriculum. In psychology, it's typically based on research and practice. How would you confirm that this content domain is adequate or representative of the construct? And how could content validity be compromised for your test?
 2. Consider your own testing application and a potential criterion measure for it. How do you go about choosing the criterion? How would you confirm that a relationship exists between your test and the criterion? How could criterion validity be compromised in this case?
 3. Construct underrepresentation and misrepresentation are reviewed briefly for the hypothetical test of panic attacks. Explain how underrepresentation and misrepresentation could each impact content validity for the early literacy measures.
-4. Suppose a medical licensure test correlates at 0.50 with a criterion measure based on supervisor evaluations of practicing physicians who have passed the test. Interpret this correlation as a validity coefficient, discussing the issues presented in this chapter.
+4. Suppose a medical licensure test correlates at 0.50 with a criterion measure based on supervisor evaluations of practicing physicians who have passed the test. Interpret this correlation as a validity coefficient, discussing the issues presented in this module.
 5. Consider what threats might impact the validity of your own testing application. How could these threats be identified in practice? How could they be avoided through sound test development?

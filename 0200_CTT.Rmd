@@ -474,7 +474,7 @@ Is it a problem that the correlation ignores systematic score differences? Can y
 
 ## Summary
 
-This chapter provided an overview of reliability within the frameworks of CTT, for items and test forms, for reliability study designs with multiple facets. After a general definition of reliability in terms of consistency in scores, the CTT model was introduced, and two commonly used indices of CTT reliability were discussed: correlation and coefficient alpha. Reliability was then presented as it relates to consistency of scores from raters. Inter-rater agreement indices were compared, along with the correlation coefficient.
+This module provided an overview of reliability within the frameworks of CTT, for items and test forms, for reliability study designs with multiple facets. After a general definition of reliability in terms of consistency in scores, the CTT model was introduced, and two commonly used indices of CTT reliability were discussed: correlation and coefficient alpha. Reliability was then presented as it relates to consistency of scores from raters. Inter-rater agreement indices were compared, along with the correlation coefficient.
 
 
 
