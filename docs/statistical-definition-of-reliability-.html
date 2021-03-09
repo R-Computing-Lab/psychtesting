@@ -231,7 +231,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.1" data-path="statistical-definition-of-reliability-.html"><a href="statistical-definition-of-reliability-.html#estimating-reliability"><i class="fa fa-check"></i><b>6.1</b> Estimating reliability</a></li>
 <li class="chapter" data-level="6.2" data-path="statistical-definition-of-reliability-.html"><a href="statistical-definition-of-reliability-.html#split-half-method"><i class="fa fa-check"></i><b>6.2</b> Split-half method</a></li>
 <li class="chapter" data-level="6.3" data-path="statistical-definition-of-reliability-.html"><a href="statistical-definition-of-reliability-.html#spearman-brown"><i class="fa fa-check"></i><b>6.3</b> Spearman Brown</a></li>
-<li class="chapter" data-level="6.4" data-path="statistical-definition-of-reliability-.html"><a href="statistical-definition-of-reliability-.html#sem"><i class="fa fa-check"></i><b>6.4</b> SEM</a></li>
+<li class="chapter" data-level="6.4" data-path="statistical-definition-of-reliability-.html"><a href="statistical-definition-of-reliability-.html#standard-error-of-measurement"><i class="fa fa-check"></i><b>6.4</b> Standard Error of Measurement</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="interpreting-reliability-and-unreliability.html"><a href="interpreting-reliability-and-unreliability.html"><i class="fa fa-check"></i><b>7</b> Interpreting reliability and unreliability</a></li>
 <li class="chapter" data-level="8" data-path="reliability-study-designs.html"><a href="reliability-study-designs.html"><i class="fa fa-check"></i><b>8</b> Reliability study designs</a>
@@ -422,8 +422,8 @@ r_{new} = \frac{kr_{old}}{(k - 1)r_{old} + 1}.
 \end{equation}\]</span></p>
 <p>Again, <span class="math inline">\(k\)</span> is the factor by which the test length is increased or decreased. It is equal to the number of items in the new test divided by the number of items in the original test. Multiply <span class="math inline">\(k\)</span> by the old reliability, and then divided the result by <span class="math inline">\((k - 1)\)</span> times the old reliability, plus 1. The epmr package contains <code>sb_r()</code>, a simple function for estimating the Spearman-Brown reliability.</p>
 </div>
-<div id="sem" class="section level2" number="6.4">
-<h2><span class="header-section-number">6.4</span> SEM</h2>
+<div id="standard-error-of-measurement" class="section level2" number="6.4">
+<h2><span class="header-section-number">6.4</span> Standard Error of Measurement</h2>
 <p>Typically, we’re more interested in how the unreliability of a test can be expressed in terms of the available observed variability. Thus, we multiply the unreliable proportion of variance by the standard deviation of <span class="math inline">\(X\)</span> to obtain the SEM:</p>
 <p><span class="math display" id="eq:sem">\[\begin{equation}
 SEM = \sigma_X\sqrt{1 - r}.
