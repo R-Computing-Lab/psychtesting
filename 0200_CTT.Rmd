@@ -177,7 +177,7 @@ knitr::include_graphics("img/install_step4.png")
 ```
 
 
-5. Press Install. This action should begin the installation process. If you still cannot get the package to install, please let me know as soon as possible. That way, I can help you during regular business hours. (In other words, don't wait until the last minute)
+5. Press Install. This action should begin the installation process. *If you still cannot get the package to install, please let me know as soon as possible. That way, I can help you during regular business hours. (In other words, don't wait until the last minute)*
 
 
 
@@ -244,7 +244,7 @@ r_{new} = \frac{kr_{old}}{(k - 1)r_{old} + 1}.
 Again, $k$ is the factor by which the test length is increased or decreased. It is equal to the number of items in the new test divided by the number of items in the original test. Multiply $k$ by the old reliability, and then divided the result by $(k - 1)$ times the old reliability, plus 1. The epmr package contains `sb_r()`, a simple function for estimating the Spearman-Brown reliability.
 
 
-## SEM
+## Standard Error of Measurement
 
 Typically, we're more interested in how the unreliability of a test can be expressed in terms of the available observed variability. Thus, we multiply the unreliable proportion of variance by the standard deviation of $X$ to obtain the SEM:
 
