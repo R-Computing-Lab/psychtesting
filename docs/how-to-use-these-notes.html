@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>13 Criterion validity | Psychological Testing</title>
+  <title>1 How to use these notes | Psychological Testing</title>
   <meta name="description" content="PSY 362: Psychological Testing" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="13 Criterion validity | Psychological Testing" />
+  <meta property="og:title" content="1 How to use these notes | Psychological Testing" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://r-computing-lab.github.io/psychtesting" />
   <meta property="og:image" content="https://r-computing-lab.github.io/psychtestingassets/logo.png" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="R-Computing-Lab/psychtesting" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="13 Criterion validity | Psychological Testing" />
+  <meta name="twitter:title" content="1 How to use these notes | Psychological Testing" />
   <meta name="twitter:site" content="@smasongarrison" />
   <meta name="twitter:description" content="PSY 362: Psychological Testing" />
   <meta name="twitter:image" content="https://r-computing-lab.github.io/psychtestingassets/logo.png" />
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="content-validity.html"/>
-<link rel="next" href="construct-validity.html"/>
+<link rel="prev" href="index.html"/>
+<link rel="next" href="attribution.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-3.5.1/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -375,114 +375,46 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="criterion-validity" class="section level1" number="13">
-<h1><span class="header-section-number">13</span> Criterion validity</h1>
-<div id="definition" class="section level2" number="13.1">
-<h2><span class="header-section-number">13.1</span> Definition</h2>
-<p>Criterion validity is the degree to which test scores correlate with, predict, or inform decisions regarding another measure or outcome. If you think of content validity as the extent to which a test <em>correlates with</em> or corresponds to the content domain, criterion validity is similar in that it is the extent to which a test correlates with or corresponds <em>to another test</em>. So, in content validity we compare our test to the content domain, and hope for a strong relationship, and in criterion validity we compare our test to a criterion variable, and again hope for a strong relationship.</p>
-<p><strong>Validity by association</strong></p>
-<p>The keyword in this definition of criterion validity is <em>correlate</em>, which is synonymous with relate or predict. The assumption here is that the construct we are hoping to measure with our test is known to be measured well by another test or observed variable. This other test or variable is often referred to as a “gold standard,” a label presumably given to it because it is based on strong validity evidence. So, in a way, criterion validity is a form of validity by association. If our test correlates with a known measure of the construct, we can be more confident that our test measures the same construct.</p>
-<p>The equation for a validity coefficient is the same as the equations for correlation that we encountered in previous modules. Here we denote our test as <span class="math inline">\(X\)</span> and the criterion variable as <span class="math inline">\(Y\)</span>. The validity coefficient is the correlation between the two, which can be obtained as the covariance divided by the product of the individual standard deviations.</p>
-<p><span class="math display" id="eq:validity">\[\begin{equation}
-\rho_{XY} = \frac{\sigma_{XY}}{\sigma_{X}\sigma_{Y}}
-\tag{13.1}
-\end{equation}\]</span></p>
-<p>Criterion validity is sometimes distinguished further as concurrent validity, where our test and the criterion are administered concurrently, or predictive validity, where our test is measured first and can then be used to predict the future criterion. The distinction is based on the intended use of scores from our test for predictive purposes.</p>
-<p>Criterion validity is limited because it does not actually require that our test be a <em>reasonable</em> measure of the construct, only that it relate strongly with another measure of the construct. <span class="citation"><a href="references.html#ref-nunnally1994psychometric" role="doc-biblioref">Nunnally and Bernstein</a> (<a href="references.html#ref-nunnally1994psychometric" role="doc-biblioref">1994</a>)</span> clarify this point with a hypothetical example:</p>
-<blockquote>
-<p>If it were found that accuracy in horseshoe pitching correlated highly with success in college, horseshoe pitching would be a valid measure for predicting success in college.</p>
-</blockquote>
-<p>The scenario is silly, but it highlights the fact that, on it’s own, criterion validity is insufficient. The take-home message is that you should never use or trust a criterion relationship as your sole source of validity evidence.</p>
-<p>There are two other challenges associated with criterion validity. First, finding a suitable criterion can be difficult, especially if your test targets a new or not well defined construct. Second, a correlation coefficient is attenuated, or reduced in strength, by any unreliability present in the two measures being correlated. So, if your test and the criterion test are unreliable, a low validity coefficient (the correlation between the two tests) may not necessarily represent a lack of relationship between the two tests. It may instead represent a lack of reliable information with which to estimate the criterion validity coefficient.</p>
-<p><strong>Attenuation</strong></p>
-<p>Here’s a demonstration of how attenuation works, based on PISA. Suppose we find a gold standard criterion measure of reading ability, and administer it to students in the US who took the reading items in <code>PISA09</code>. First, we calculate a total score on the PISA reading items, then we compare it to some simulated test scores for our criterion test. Scores have been simulated to correlate at 0.80.</p>
-<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="criterion-validity.html#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get the vector of reading items names</span></span>
-<span id="cb50-2"><a href="criterion-validity.html#cb50-2" aria-hidden="true" tabindex="-1"></a>ritems <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;r414q02&quot;</span>, <span class="st">&quot;r414q11&quot;</span>, <span class="st">&quot;r414q06&quot;</span>, <span class="st">&quot;r414q09&quot;</span>, </span>
-<span id="cb50-3"><a href="criterion-validity.html#cb50-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;r452q03&quot;</span>, <span class="st">&quot;r452q04&quot;</span>, <span class="st">&quot;r452q06&quot;</span>, <span class="st">&quot;r452q07&quot;</span>, <span class="st">&quot;r458q01&quot;</span>, </span>
-<span id="cb50-4"><a href="criterion-validity.html#cb50-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;r458q07&quot;</span>, <span class="st">&quot;r458q04&quot;</span>)</span>
-<span id="cb50-5"><a href="criterion-validity.html#cb50-5" aria-hidden="true" tabindex="-1"></a>rsitems <span class="ot">&lt;-</span> <span class="fu">paste0</span>(ritems, <span class="st">&quot;s&quot;</span>)</span>
-<span id="cb50-6"><a href="criterion-validity.html#cb50-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate total reading scores</span></span>
-<span id="cb50-7"><a href="criterion-validity.html#cb50-7" aria-hidden="true" tabindex="-1"></a>pisausa <span class="ot">&lt;-</span> PISA09[PISA09<span class="sc">$</span>cnt <span class="sc">==</span> <span class="st">&quot;USA&quot;</span>, rsitems]</span>
-<span id="cb50-8"><a href="criterion-validity.html#cb50-8" aria-hidden="true" tabindex="-1"></a>rtotal <span class="ot">&lt;-</span> <span class="fu">rowSums</span>(pisausa, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb50-9"><a href="criterion-validity.html#cb50-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulate a criterion</span></span>
-<span id="cb50-10"><a href="criterion-validity.html#cb50-10" aria-hidden="true" tabindex="-1"></a><span class="co"># using rsim</span></span>
-<span id="cb50-11"><a href="criterion-validity.html#cb50-11" aria-hidden="true" tabindex="-1"></a>criterion <span class="ot">&lt;-</span> <span class="fu">rsim</span>(<span class="at">rho =</span> .<span class="dv">8</span>, <span class="at">x =</span> rtotal, <span class="at">meany =</span> <span class="dv">24</span>,</span>
-<span id="cb50-12"><a href="criterion-validity.html#cb50-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">sdy =</span> <span class="dv">6</span>)</span>
-<span id="cb50-13"><a href="criterion-validity.html#cb50-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Check the correlation</span></span>
-<span id="cb50-14"><a href="criterion-validity.html#cb50-14" aria-hidden="true" tabindex="-1"></a><span class="fu">cor</span>(rtotal, criterion<span class="sc">$</span>y)</span>
-<span id="cb50-15"><a href="criterion-validity.html#cb50-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] 0.789</span></span></code></pre></div>
-<p>Suppose the internal consistency reliability for our criterion is 0.86. We know from Module <a href="#reliability"><strong>??</strong></a> that internal consistency for the <code>PISA09</code> reading items is about 0.77. With a simple formula, we can calculate what the validity coefficient should be for our two measures, if each measure were perfectly reliable. Here, we denote this disattenuated correlation as the correlation between true scores on <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>.</p>
-<p><span class="math display" id="eq:attenuation">\[\begin{equation}
-\rho_{T_X T_Y} = \frac{\rho_{XY}}{\sqrt{\rho_{X}\rho_{Y}}}
-\tag{13.2}
-\end{equation}\]</span></p>
-<p>Correcting for attenuation due to measurement error produces a validity coefficient of 0.97. This is a noteworthy increase from the original correlation of 0.80.</p>
-<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="criterion-validity.html#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Internal consistency for the PISA items</span></span>
-<span id="cb51-2"><a href="criterion-validity.html#cb51-2" aria-hidden="true" tabindex="-1"></a>epmr<span class="sc">::</span><span class="fu">coef_alpha</span>(pisausa)</span>
-<span id="cb51-3"><a href="criterion-validity.html#cb51-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; $alpha</span></span>
-<span id="cb51-4"><a href="criterion-validity.html#cb51-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] 0.774</span></span>
-<span id="cb51-5"><a href="criterion-validity.html#cb51-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb51-6"><a href="criterion-validity.html#cb51-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; $q</span></span>
-<span id="cb51-7"><a href="criterion-validity.html#cb51-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; NULL</span></span>
-<span id="cb51-8"><a href="criterion-validity.html#cb51-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb51-9"><a href="criterion-validity.html#cb51-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; $se</span></span>
-<span id="cb51-10"><a href="criterion-validity.html#cb51-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; NULL</span></span>
-<span id="cb51-11"><a href="criterion-validity.html#cb51-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb51-12"><a href="criterion-validity.html#cb51-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; $ci</span></span>
-<span id="cb51-13"><a href="criterion-validity.html#cb51-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; NULL</span></span>
-<span id="cb51-14"><a href="criterion-validity.html#cb51-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb51-15"><a href="criterion-validity.html#cb51-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; $sigma</span></span>
-<span id="cb51-16"><a href="criterion-validity.html#cb51-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;          r414q02s r414q11s r414q06s r414q09s r452q03s r452q04s r452q06s</span></span>
-<span id="cb51-17"><a href="criterion-validity.html#cb51-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r414q02s   0.2499   0.0464   0.0777   0.0560   0.0325   0.0492   0.0736</span></span>
-<span id="cb51-18"><a href="criterion-validity.html#cb51-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r414q11s   0.0464   0.2454   0.0526   0.0359   0.0165   0.0287   0.0421</span></span>
-<span id="cb51-19"><a href="criterion-validity.html#cb51-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r414q06s   0.0777   0.0526   0.2492   0.0712   0.0299   0.0696   0.0971</span></span>
-<span id="cb51-20"><a href="criterion-validity.html#cb51-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r414q09s   0.0560   0.0359   0.0712   0.2112   0.0210   0.0447   0.0747</span></span>
-<span id="cb51-21"><a href="criterion-validity.html#cb51-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r452q03s   0.0325   0.0165   0.0299   0.0210   0.1092   0.0257   0.0393</span></span>
-<span id="cb51-22"><a href="criterion-validity.html#cb51-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r452q04s   0.0492   0.0287   0.0696   0.0447   0.0257   0.2371   0.0777</span></span>
-<span id="cb51-23"><a href="criterion-validity.html#cb51-23" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r452q06s   0.0736   0.0421   0.0971   0.0747   0.0393   0.0777   0.2486</span></span>
-<span id="cb51-24"><a href="criterion-validity.html#cb51-24" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r452q07s   0.0740   0.0489   0.0820   0.0506   0.0431   0.0648   0.0831</span></span>
-<span id="cb51-25"><a href="criterion-validity.html#cb51-25" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r458q01s   0.0627   0.0356   0.0805   0.0524   0.0325   0.0554   0.0728</span></span>
-<span id="cb51-26"><a href="criterion-validity.html#cb51-26" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r458q07s   0.0634   0.0395   0.0856   0.0686   0.0304   0.0628   0.0825</span></span>
-<span id="cb51-27"><a href="criterion-validity.html#cb51-27" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r458q04s   0.0532   0.0396   0.0505   0.0347   0.0246   0.0497   0.0703</span></span>
-<span id="cb51-28"><a href="criterion-validity.html#cb51-28" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;          r452q07s r458q01s r458q07s r458q04s</span></span>
-<span id="cb51-29"><a href="criterion-validity.html#cb51-29" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r414q02s   0.0740   0.0627   0.0634   0.0532</span></span>
-<span id="cb51-30"><a href="criterion-validity.html#cb51-30" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r414q11s   0.0489   0.0356   0.0395   0.0396</span></span>
-<span id="cb51-31"><a href="criterion-validity.html#cb51-31" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r414q06s   0.0820   0.0805   0.0856   0.0505</span></span>
-<span id="cb51-32"><a href="criterion-validity.html#cb51-32" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r414q09s   0.0506   0.0524   0.0686   0.0347</span></span>
-<span id="cb51-33"><a href="criterion-validity.html#cb51-33" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r452q03s   0.0431   0.0325   0.0304   0.0246</span></span>
-<span id="cb51-34"><a href="criterion-validity.html#cb51-34" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r452q04s   0.0648   0.0554   0.0628   0.0497</span></span>
-<span id="cb51-35"><a href="criterion-validity.html#cb51-35" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r452q06s   0.0831   0.0728   0.0825   0.0703</span></span>
-<span id="cb51-36"><a href="criterion-validity.html#cb51-36" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r452q07s   0.2466   0.0649   0.0678   0.0508</span></span>
-<span id="cb51-37"><a href="criterion-validity.html#cb51-37" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r458q01s   0.0649   0.2478   0.0765   0.0462</span></span>
-<span id="cb51-38"><a href="criterion-validity.html#cb51-38" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r458q07s   0.0678   0.0765   0.2410   0.0512</span></span>
-<span id="cb51-39"><a href="criterion-validity.html#cb51-39" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; r458q04s   0.0508   0.0462   0.0512   0.2501</span></span>
-<span id="cb51-40"><a href="criterion-validity.html#cb51-40" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb51-41"><a href="criterion-validity.html#cb51-41" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; $n</span></span>
-<span id="cb51-42"><a href="criterion-validity.html#cb51-42" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] 1611</span></span>
-<span id="cb51-43"><a href="criterion-validity.html#cb51-43" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb51-44"><a href="criterion-validity.html#cb51-44" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; $ni</span></span>
-<span id="cb51-45"><a href="criterion-validity.html#cb51-45" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] 11</span></span>
-<span id="cb51-46"><a href="criterion-validity.html#cb51-46" aria-hidden="true" tabindex="-1"></a><span class="co"># Correction for attenuation</span></span>
-<span id="cb51-47"><a href="criterion-validity.html#cb51-47" aria-hidden="true" tabindex="-1"></a><span class="fu">cor</span>(rtotal, criterion<span class="sc">$</span>y)<span class="sc">/</span><span class="fu">sqrt</span>(.<span class="dv">77</span> <span class="sc">*</span> .<span class="dv">86</span>)</span>
-<span id="cb51-48"><a href="criterion-validity.html#cb51-48" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] 0.97</span></span></code></pre></div>
-<p>In summary, the steps for establishing criterion validity evidence are relatively simple. After defining the purpose of the test, a suitable criterion is identified. The two tests are administered to the same sample of individuals from the target population, and a correlation is obtained. If reliability estimates are available, we can then estimate the disattenuated coefficient, as shown above.</p>
-<p>Note that a variety of other statistics are available for establishing the predictive power of a test <span class="math inline">\(X\)</span> for a criterion variable <span class="math inline">\(Y\)</span>. Two popular examples are regression models, which provide more detailed information about the bivariate relationship between our test and criterion, and contingency tables, which describe predictions in terms of categorical or ordinal outcomes. In each case, criterion validity can be maximized by writing items for our test that are predictive of or correlate with the criterion.</p>
-</div>
-<div id="criterion-examples" class="section level2" number="13.2">
-<h2><span class="header-section-number">13.2</span> Criterion examples</h2>
-<p>A popular example of criterion validity is the GRE, which has come up numerous times in this book. The GRE is designed to predict performance in graduate school. Admissions programs use it as one indicator of how well you are likely to do as a graduate student. Given this purpose, what is a suitable criterion variable that the GRE should predict? And how strong of a correlation would you expect to see between the GRE and this graduate performance variable?</p>
-<p>The simplest criterion for establishing criterion-related validity evidence for the GRE would be some measure of performance or achievement in graduate school. First-year graduate GPA is a common choice. The GRE has been shown across numerous studies to correlate around 0.30 with first-year graduate GPA. A correlation of 0.30 is evidence of a small positive relationship, suggesting that most of the variability in GPA, our criterion, is <em>not</em> predicted by the GRE (91% to be precise). In other words, many students score high or low on the GRE and do not have a similarly high or low graduate GPA.</p>
-<p>Although this modest correlation may at first seem disappointing, a few different considerations suggest that it is actually pretty impressive. First, GPA is likely not a reliable measure of graduate performance. It’s hardly a “gold standard.” Instead, it’s the best we have. It’s one of the few quantitative measures available for all graduate students. The correlation of 0.30 is likely attenuated due to, at least, measurement error in the criterion. Second, there is likely some restriction of range happening in the relationship between GRE and GPA. People who score low on the GRE are less likely to get into graduate school, so their data are not represented. Restriction of range tends to reduce correlation coefficients. Third, what other measure of pre-graduate school performance correlates at 0.30 with graduate GPA? More importantly, what other measure of pre-graduate school performance that only takes a few hours to obtain correlates at 0.30 with graduate GPA? In conclusion, the GRE isn’t perfect, but as far as standardized predictors go, it’s currently the best we’ve got. In practice, admissions programs need to make sure they don’t rely too much on it in admissions decisions, as discussed in Module <a href="#applications"><strong>??</strong></a>.</p>
-<p>Note that a substantial amount of research has been conducted documenting predictive validity evidence for the GRE. See <span class="citation"><a href="references.html#ref-kuncel2001comprehensive" role="doc-biblioref">Kuncel, Hezlett, and Ones</a> (<a href="references.html#ref-kuncel2001comprehensive" role="doc-biblioref">2001</a>)</span> for a meta-analysis of results from this literature.</p>
-</div>
+<div id="how-to-use-these-notes" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> How to use these notes</h1>
+<!--DS4P Links-->
+<!--AE. Links-->
+<!-- Lab Links-->
+<!--Slides-->
+<!--R Links-->
+<!--RStudio Links-->
+<!--HappyGitWithR Links-->
+<!--Package Links-->
+<!--Shiny links-->
+<!--Publications-->
+<!--R Documentation-->
+<!--Wikipedia Links-->
+<!--Misc. Links-->
+<p>This document is broken down into multiple chapters. Use the table of contents on the left side of the screen to navigate, and use the hamburger icon (horizontal bars) at the top of the document to open or close the table of contents. At the top of the document, you’ll see additional icons which you can click to search the document, change the size, font or color scheme of the page. The document will be updated (unpredictably) throughout the semester.</p>
+<p>Every module corresponds to a weeks worth of material. Most modules are dedicated to improving a specific skill or at the very least dedicated to a specific theme. Within each module, there are embedded videos, slides, activities, labs, and tutorials. The skills developed in each module build upon skills you’ve developed in previous modules. Eventually, this class will have more modules available than weeks in a semester, so that you – the reader can identify which module you’d like to start with.</p>
+<p>Although these notes share some of the features of a textbook, they are neither comprehensive nor completely original. The main purpose is to give you all a set of common materials on which to draw during the course. In class, we will sometimes do things outside the notes. The idea here is that you will read the materials and try to learn from them, just as you will attend classes and try to learn from them.</p>
+
+<!--DS4P Links-->
+<!--AE. Links-->
+<!-- Lab Links-->
+<!--Slides-->
+<!--R Links-->
+<!--RStudio Links-->
+<!--HappyGitWithR Links-->
+<!--Package Links-->
+<!--Shiny links-->
+<!--Publications-->
+<!--R Documentation-->
+<!--Wikipedia Links-->
+<!--Misc. Links-->
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="content-validity.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="construct-validity.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="attribution.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -513,7 +445,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/DataScience4Psych/DataScience4Psych/edit/main/0300_validity.Rmd",
+"link": "https://github.com/DataScience4Psych/DataScience4Psych/edit/main/index.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -524,7 +456,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["https://github.com/DataScience4Psych/DataScience4Psych/raw/main/0300_validity.Rmd", "DS4P.epub"],
+"download": ["https://github.com/DataScience4Psych/DataScience4Psych/raw/main/index.Rmd", "DS4P.epub"],
 "toc": {
 "collapse": "section"
 }
