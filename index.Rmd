@@ -37,9 +37,6 @@ library(readr)
 ```
 
 
-
-
-
 Welcome to class! This website is designed to accompany Mason Garrison's Psychological Testing (Psych Testing). Psych Testing is a undergraduate-level quantitative methods course at Wake Forest University. This website hosts the course notes.  I'm glad you found me and the notes!  They only cover the R aspects of this class. Why are the notes over here? And not on canvas?
 Well, that is a good question! Frankly, because this is much much easier for me to create. 
 Moreover, if I'm teaching you about R, you might as well learn it using R. What does that mean? 
@@ -53,7 +50,7 @@ embed_url("https://www.youtube.com/watch?v=UBB34FqGjxU") %>%
 ```
 
 
-# How to use these notes
+# How to use these notes  {-}
 
 ```{r links, child="links.md"}
 ```
