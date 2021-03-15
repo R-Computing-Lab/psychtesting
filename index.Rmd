@@ -42,7 +42,7 @@ Well, that is a good question! Frankly, because this is much much easier for me 
 Moreover, if I'm teaching you about R, you might as well learn it using R. What does that mean? 
 Well, these notes are written in R (and RMarkdown)! Indeed, this entire website is written in R! 
 
-You can find the current version of the course syllabus [here](https://github.com/smasongarrison/Syllabi/blob/master/syllabus_testing.pdf), along with all of the [other syllabi for my classes]( https://github.com/smasongarrison/Syllabi).
+You can find the current version of the course syllabus [here](https://github.com/smasongarrison/Syllabi/blob/master/syllabus_testing.pdf), along with all of the [other syllabi for my classes]( https://github.com/smasongarrison/Syllabi). You can find the youtube playlist [here](https://www.youtube.com/playlist?list=PLKrrdtYgOUYYgag4erySD7L0jDcZGMlS_)
 
 ```{r,echo=FALSE}
 embed_url("https://www.youtube.com/watch?v=UBB34FqGjxU") %>%
@@ -58,6 +58,6 @@ embed_url("https://www.youtube.com/watch?v=UBB34FqGjxU") %>%
 
 This document is broken down into multiple chapters. Use the table of contents on the left side of the screen to navigate, and use the hamburger icon (horizontal bars) at the top of the document to open or close the table of contents. At the top of the document, you'll see additional icons which you can click to search the document, change the size, font or color scheme of the page. The document will be updated (unpredictably) throughout the semester.
 
-Every module corresponds to a weeks worth of material. Most modules are dedicated to improving a specific skill or at the very least dedicated to a specific theme. Within each module, there are embedded videos, slides, activities, labs, and tutorials. The skills developed in each module build upon skills you've developed in previous modules. Eventually, this class will have more modules available than weeks in a semester, so that you -- the reader can identify which module you'd like to start with.
+Every module corresponds to a weeks worth of material. Most modules are dedicated to improving a specific skill or at the very least dedicated to a specific theme. Within each module, there are embedded videos, slides, activities, labs, and tutorials. The skills developed in each module build upon skills you've developed in previous modules. 
 
 Although these notes share some of the features of a textbook, they are neither comprehensive nor completely original. The main purpose is to give you all a set of common materials on which to draw during the course. In class, we will sometimes do things outside the notes. The idea here is that you will read the materials and try to learn from them, just as you will attend classes and try to learn from them.
