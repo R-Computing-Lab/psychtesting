@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>License | Psychological Testing</title>
+  <title>17 Measurement models | Psychological Testing</title>
   <meta name="description" content="PSY 362: Psychological Testing" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="License | Psychological Testing" />
+  <meta property="og:title" content="17 Measurement models | Psychological Testing" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://r-computing-lab.github.io/psychtesting" />
   <meta property="og:image" content="https://r-computing-lab.github.io/psychtestingassets/logo.png" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="R-Computing-Lab/psychtesting" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="License | Psychological Testing" />
+  <meta name="twitter:title" content="17 Measurement models | Psychological Testing" />
   <meta name="twitter:site" content="@smasongarrison" />
   <meta name="twitter:description" content="PSY 362: Psychological Testing" />
   <meta name="twitter:image" content="https://r-computing-lab.github.io/psychtestingassets/logo.png" />
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="attribution.html"/>
-<link rel="next" href="colophon.html"/>
+<link rel="prev" href="dimensionality.html"/>
+<link rel="next" href="exploratory-factor-analysis.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-3.5.1/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -362,50 +362,30 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="license" class="section level1 unnumbered">
-<h1>License</h1>
-<p>This work is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
-<center>
-<i class="fab fa-creative-commons fa-2x"></i><i class="fab fa-creative-commons-by fa-2x"></i><i class="fab fa-creative-commons-sa fa-2x"></i>
-</center>
-<p><em>This is a human-readable summary of (and not a substitute for) the license.
-Please see <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" class="uri">https://creativecommons.org/licenses/by-sa/4.0/legalcode</a> for the full legal text.</em></p>
-<p><strong>You are free to:</strong></p>
-<ul>
-<li><p><strong>Share</strong>—copy and redistribute the material in any medium or
-format</p></li>
-<li><p><strong>Remix</strong>—remix, transform, and build upon the material for any
-purpose, even commercially.</p></li>
-</ul>
-<p>The licensor cannot revoke these freedoms as long as you follow the
-license terms.</p>
-<p><strong>Under the following terms:</strong></p>
-<ul>
-<li><p><strong>Attribution</strong>—You must give appropriate credit, provide a link
-to the license, and indicate if changes were made. You may do so in
-any reasonable manner, but not in any way that suggests the licensor
-endorses you or your use.</p></li>
-<li><p><strong>ShareAlike</strong>—If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.</p></li>
-<li><p><strong>No additional restrictions</strong>—You may not apply legal terms or
-technological measures that legally restrict others from doing
-anything the license permits.</p></li>
-</ul>
-<p><strong>Notices:</strong></p>
-<p>You do not have to comply with the license for elements of the
-material in the public domain or where your use is permitted by an
-applicable exception or limitation.</p>
-<p>No warranties are given. The license may not give you all of the
-permissions necessary for your intended use. For example, other rights
-such as publicity, privacy, or moral rights may limit how you use the
-material.</p>
+<div id="measurement-models" class="section level1" number="17">
+<h1><span class="header-section-number">17</span> Measurement models</h1>
+<p>In previous modules, we referred to unobserved variables as <em>constructs.</em> These somewhat metaphysical thingamajigs returned as the true score in classical test theory (Module <a href="#reliability"><strong>??</strong></a>). And we will see them again in the latent trait in item response theory (Module <a href="irt.html#irt">25</a>). The term <em>factor</em> is synonymous with <em>construct,</em> and refers to an underlying and unobservable trait, characteristic, or attribute assumed to cause or give rise to the observable behavior we measure and score using test items.</p>
+<p>So, we now have three terms, <em>construct</em>, <em>latent trait</em>, and <em>factor</em>, that all refer essentially to the same thing, the underlying, unobserved variable of interest that we expect is causing people to differ in their test scores.</p>
+<p>The constructs that we encounter in factor analysis, which we will refer to as <em>factors</em>, are qualitatively the same as the ones we encountered with CTT and IRT. In fact, the CTT and IRT models presented in this book could be considered special, focused applications of factor analysis within situations where we assume that <em>a single construct</em> is sufficient for explaining the correlations among observed variables, our test items. In CTT and IRT, we use a measurement model to summarize the similarities in scores across multiple items in terms of <em>a single unobserved variable</em>, the true score or theta, which we identify as the cause or source of variability in scores.</p>
+<p>Factor analysis can be used more generally to identify <em>multiple unobserved variables</em>, or factors, that explain the correlations among our observed variables. So, the primary distinction between factor analysis and the measurement models we’ve seen so far is in the number of factors. The main objective of factor analysis within educational and psychological measurement is to explore the <em>optimal reduced number</em> of factors required to represent <em>a larger number</em> of observed variables, in this case, dichotomous or polytomous test scores.</p>
+<p>Note the emphasis here on the number of factors being smaller than the number of observed variables. Factor analysis is a method for summarizing correlated data, for reducing a set of related observed variables to their essential parts, the unobserved parts they share in common. We cannot analyze more factors than we have observed variables. Instead, we’ll usually aim for the simplest factor structure possible, that is, the fewest factors needed to capture the gist of our data.</p>
+<p>In testing applications, factor analysis will often precede the use of a more specific measurement model such as CTT or IRT. In addition to helping us summarize correlated data in terms of their underlying essential components, factor analysis also tells us how our items relate to or <em>load on</em> the factors we analyze. When piloting a test, we might find that some items relate more strongly to one factor than another. Other items may not relate well to any of the identified factors, and these might be investigated further and perhaps removed from the test. After the factor analysis is complete, CTT or IRT could then be used to evaluate the test further, and to estimate test takers’ scores on the construct. In this way, factor analysis serves as a tool for examining the different factors underlying our data, and refining our test to include items that best assess the factors we’re interested in measuring.</p>
+<p>We’ll dig deeper into classical item analysis in Module <a href="itemanalysis.html#itemanalysis">20</a>, but what you need to know now it that it can also be used to refine a test based on features such as item difficulty and discrimination. Discrimination in CTT, which resembles the slope parameter in IRT, is similar to a <em>factor loading</em> in factor analysis. A factor loading is simply an estimate of the relationship between a given item and a given factor. Again, the main difference in factor analysis is that we’ll often examine multiple factors, and the loadings of items on each one, rather than a single factor as in CTT.</p>
+<p>The model in Figure <a href="measurement-models.html#fig:efa-model">17.1</a> contains a visual representation of a factor analysis where two factors are estimated to cause observed responses across a set of items. Remember that unidirectional arrows denote causal relationships. The underlying constructs, in ovals, are assumed to cause the observed item responses, in boxes. Bidirectional arrows denote correlations, where there is no clear cause and effect. The two factors, labeled Factor A and Factor B, each show a causal relationship with responses on all six items. Thus, each item is estimated to load on each factor. This is a unique feature of exploratory factor analysis, discussed next.</p>
+<div class="figure"><span id="fig:efa-model"></span>
+<img src="img/efamodel.jpg" alt="A simple exploratory factor analysis model for six items loading on two correlated factors." width="50%" />
+<p class="caption">
+Figure 17.1: A simple exploratory factor analysis model for six items loading on two correlated factors.
+</p>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="attribution.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="colophon.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="dimensionality.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="exploratory-factor-analysis.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -436,7 +416,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/DataScience4Psych/DataScience4Psych/edit/main/0000a_front.Rmd",
+"link": "https://github.com/DataScience4Psych/DataScience4Psych/edit/main/0400_dimensionality.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -447,7 +427,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["https://github.com/DataScience4Psych/DataScience4Psych/raw/main/0000a_front.Rmd", "PT.epub"],
+"download": ["https://github.com/DataScience4Psych/DataScience4Psych/raw/main/0400_dimensionality.Rmd", "PT.epub"],
 "toc": {
 "collapse": "section"
 }

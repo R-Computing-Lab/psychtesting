@@ -36,7 +36,7 @@ This module gives an overview of two popular applications of factor analysis, ca
 5. Interpret CFA results, including factor loadings and fit indices.
 
 
-In this module we will run EFA and plot results using epmr functions. We'll also install a new package called lavaan for running CFA.
+In this module, we will run EFA and plot results using epmr functions. We'll also install a new package called lavaan for running CFA.
 
 ```{r eval=FALSE}
 # R setup for this module
@@ -54,9 +54,9 @@ library("epmr")
 library("lavaan")
 ```
 
-## Measurement models
+# Measurement models
 
-In previous modules, we referred to unobserved variables as *constructs.* These somewhat metaphysical thingamajigs were first introduced within measures of sociability and attitude toward animals (Module \@ref(measurement)), and then they returned as the true score in classical test theory (Module \@ref(reliability)) and the latent trait in item response theory (Module \@ref(irt)). The term *factor* is synonymous with *construct,* and refers to an underlying and unobservable trait, characteristic, or attribute assumed to cause or give rise to the observable behavior we measure and score using test items.
+In previous modules, we referred to unobserved variables as *constructs.* These somewhat metaphysical thingamajigs returned as the true score in classical test theory (Module \@ref(reliability)). And we will see them again in the latent trait in item response theory (Module \@ref(irt)). The term *factor* is synonymous with *construct,* and refers to an underlying and unobservable trait, characteristic, or attribute assumed to cause or give rise to the observable behavior we measure and score using test items.
 
 So, we now have three terms, *construct*, *latent trait*, and *factor*, that all refer essentially to the same thing, the underlying, unobserved variable of interest that we expect is causing people to differ in their test scores.
 
@@ -68,7 +68,7 @@ Note the emphasis here on the number of factors being smaller than the number of
 
 In testing applications, factor analysis will often precede the use of a more specific measurement model such as CTT or IRT. In addition to helping us summarize correlated data in terms of their underlying essential components, factor analysis also tells us how our items relate to or *load on* the factors we analyze. When piloting a test, we might find that some items relate more strongly to one factor than another. Other items may not relate well to any of the identified factors, and these might be investigated further and perhaps removed from the test. After the factor analysis is complete, CTT or IRT could then be used to evaluate the test further, and to estimate test takers' scores on the construct. In this way, factor analysis serves as a tool for examining the different factors underlying our data, and refining our test to include items that best assess the factors we're interested in measuring.
 
-Recall that classical item analysis, discussed in Module \@ref(itemanalysis), can also be used to refine a test based on features such as item difficulty and discrimination. Discrimination in CTT, which resembles the slope parameter in IRT, is similar to a *factor loading* in factor analysis. A factor loading is simply an estimate of the relationship between a given item and a given factor. Again, the main difference in factor analysis is that we'll often examine multiple factors, and the loadings of items on each one, rather than a single factor as in CTT.
+We'll dig deeper into classical item analysis in Module \@ref(itemanalysis), but what you need to know now it that it can also be used to refine a test based on features such as item difficulty and discrimination. Discrimination in CTT, which resembles the slope parameter in IRT, is similar to a *factor loading* in factor analysis. A factor loading is simply an estimate of the relationship between a given item and a given factor. Again, the main difference in factor analysis is that we'll often examine multiple factors, and the loadings of items on each one, rather than a single factor as in CTT.
 
 The model in Figure \@ref(fig:efa-model) contains a visual representation of a factor analysis where two factors are estimated to cause observed responses across a set of items. Remember that unidirectional arrows denote causal relationships. The underlying constructs, in ovals, are assumed to cause the observed item responses, in boxes. Bidirectional arrows denote correlations, where there is no clear cause and effect. The two factors, labeled Factor A and Factor B, each show a causal relationship with responses on all six items. Thus, each item is estimated to load on each factor. This is a unique feature of exploratory factor analysis, discussed next.
 
@@ -76,13 +76,13 @@ The model in Figure \@ref(fig:efa-model) contains a visual representation of a f
 knitr::include_graphics("img/efamodel.jpg")
 ```
 
-## Exploratory factor analysis
+# Exploratory factor analysis
 
 Exploratory factor analysis or EFA is used to *explore* the factor structure of a test or instrument. We may not know or understand well the number and types of factors that explain correlations among our items and how these factors relate to one another. So, we explore.
 
 **The Beck Depression Inventory**
 
-Here's an example. In Modules \@ref(measurement) and \@ref(development) we referred to the Beck Depression Inventory, the latest version of which, the BDI-II, was published in 1996 [@beck1996manual]. The BDI-II contains 21 items measuring depressive symptomology. Each item is scored from 0 to 3, and a total score is used to determine a person's level of depression, whether minimal (scores of 0 to 13), mild (14 to 19), moderate (20 to 28), or severe (29 to 63).
+Here's an example. We've referred to the Beck Depression Inventory, the latest version of which, the BDI-II, was published in 1996 [@beck1996manual]. The BDI-II contains 21 items measuring depressive symptomology. Each item is scored from 0 to 3, and a total score is used to determine a person's level of depression, whether minimal (scores of 0 to 13), mild (14 to 19), moderate (20 to 28), or severe (29 to 63).
 
 The epmr package contains data from the BDI-II in the form of correlation and covariance matrices, as reported in Table 2 of @whisman2000factor. Each value in the correlation matrix is a correlation between scores on a given pair of BDI-II items. These are based on an administration of the BDI-II to 576 undergraduate students. See `?BDI` for details. In the interest of space, we'll just print the first four rows and columns of the correlation matrix. Note that the diagonal elements of the matrix are all 1.00, as a variable always correlates perfectly with itself.
 
@@ -102,7 +102,7 @@ The presence of two factors on the BDI-II suggests that subscores based on each 
 
 We'll come back to the BDI-II later on, when we use a confirmatory factor analysis to examine the correlations in `BDI`.
 
-### Steps in EFA
+## Steps in EFA
 
 The BDI-II example above brings up some of the important steps in conducting an EFA. These steps involve choosing an initial number of factors to explore, preparing our data and fitting the EFA model, examining patterns in factor loadings and error terms, and evaluating factor quality and choosing a final factor structure.
 
@@ -151,7 +151,7 @@ In summary, we've outlined here four main steps in conducting an EFA.
 
 Having completed these steps, the EFA should point us in the right direction in terms of finding a suitable number of factors for our test, and determining how our items load on these factors. However, because EFA does not involve any formal hypothesis testing, the results are merely descriptive. The next step involves a confirmatory analysis of the factor structure that we think is most appropriate for our test. Following a demonstration of EFA with PISA data, we'll learn more about the role of CFA in test development.
 
-### Exploring PISA Approaches to Learning
+## Exploring PISA Approaches to Learning
 
 The Approaches to Learning scale from the PISA 2009 student questionnaire contains 13 items measuring the strategies students use when learning. These items were separated by the PISA developers into the three subscales of memorization, elaboration, and control strategies. See the full text for the items in Appendix \@ref(appendixb).
 
@@ -241,7 +241,7 @@ plot(bdiefa, ylim = c(0, 3))
 
 The EFA of the PISA 2009 Approaches to Learning scale leads us to conclude first that the 13 items provide only a limited picture of the three subscales being measured. Four to five items per scale, and per factor, does not appear to be sufficient. Although loadings were moderate, and aligned as expected onto the corresponding subscales, more items would likely improve the variance explained by each factor. Given these limitations, computing theta values based on unidimensional IRT models for each subscale may not be appropriate.
 
-## Confirmatory factor analysis
+# Confirmatory factor analysis
 
 Confirmatory factor analysis or CFA is used to confirm an appropriate factor structure for an instrument. Whereas EFA provides tools for exploring factor structure, it does not allow us to modify specific features of our model beyond the number of factors. Furthermore, EFA does not formally support the testing of model fit or statistical significance in our results. CFA extends EFA by providing a framework for proposing a specific measurement model, fitting the model, and then testing statistically for the appropriateness or accuracy of the model given our instrument and data.
 
@@ -263,7 +263,7 @@ An important feature of factor analysis that we have not yet discussed has to do
 
 Having allowed for correlated error terms, the two unassigned items Pessimism and Loss of Interest in Sex were also specified to load on the cognitive factor. The result was a final model with more acceptable fit statistics, including CFI of 0.90 and RMSEA of 0.06.
 
-### Steps in CFA
+## Steps in CFA
 
 Here, we will fit the final model from @whisman2000factor, while demonstrating the following basic steps in conducting a CFA:
 
@@ -368,7 +368,7 @@ Overall, results for the unidimensional model are no better than for the previou
 
 Taken together, the results of these CFA suggest that the two-factor and unidimensional models may not be appropriate for the BDI-II, at least in the undergraduate population with which the data were collected.
 
-### Confirming PISA Approaches to Learning
+## Confirming PISA Approaches to Learning
 
 In our final demonstration, we'll fit a CFA to the PISA Approaches to Learning items. Our first factor structure is similar to what we explored previously via EFA. However, here, our items are only allowed to load on their intended factors. We're hypothesizing that any cross loadings on other factors are negligible and not essential to the underlying factor structure for the instrument.
 
@@ -397,7 +397,7 @@ This module presented two popular methods for conducting factor analysis, one th
 
 EFA and CFA can improve the test development process by allowing us to examine and confirm the presence of unobserved constructs that explain variability in our tests. In practice, tests without a confirmed factor structure may not be suitable for testing applications that require a total score calculated across items, in the case of unidimensional factor models, or scores across subscales, in the case of multidimensional models.
 
-### Exercises
+## Optional Exercises
 
 1. Suppose an EFA is fit to data collected on a test containing 18 items. Ten factors are explored in the EFA. The eigenvalues for the first three factors are 4.5, 3.0, and 2.5. Describe what these values represent.
 2. Convert the eigenvalues from the previous question to percentages of variance explained. How much variability do the three factors account for together?
