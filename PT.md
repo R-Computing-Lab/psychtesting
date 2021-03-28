@@ -3,7 +3,7 @@ title: "Psychological Testing"
 subtitle: "Course Notes"
 author: 
 - S. Mason Garrison
-date: "2021-03-21"
+date: "2021-03-28"
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 url: 'https\://r-computing-lab.github.io/psychtesting'
@@ -938,15 +938,15 @@ This version of the book was built with:
 #>  collate  English_United States.1252  
 #>  ctype    English_United States.1252  
 #>  tz       America/New_York            
-#>  date     2021-03-21
+#>  date     2021-03-28
 ```
 
 Along with these packages:
 
 
 ```{=html}
-<div id="htmlwidget-d207856d370758eeb8e2" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d207856d370758eeb8e2">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["askpass","assertthat","backports","base64enc","BH","blob","bookdown","brew","brio","broom","cachem","callr","cellranger","checkmate","cli","clipr","colorspace","commonmark","conflicted","covr","cpp11","crayon","credentials","crosstalk","crul","curl","DBI","dbplyr","desc","devtools","dichromat","diffobj","digest","dplyr","DT","ellipsis","evaluate","fansi","farver","fastmap","forcats","fs","gapminder","gender","genderdata","generics","geonames","gert","ggplot2","gh","gitcreds","glue","gridExtra","gt","gtable","haven","highr","hms","htmltools","htmlwidgets","httpcode","httr","ini","isoband","jsonlite","knitr","labeling","later","lattice","lazyeval","lifecycle","lubridate","magrittr","markdown","MASS","Matrix","memoise","mgcv","mime","modelr","munsell","nlme","openssl","pillar","pkgbuild","pkgconfig","pkgload","plyr","praise","prettyunits","processx","progress","promises","ps","purrr","R6","rappdirs","rcmdcheck","RColorBrewer","Rcpp","readr","readxl","rebird","rematch","rematch2","remotes","reprex","reshape2","rex","rjson","rlang","rmarkdown","roxygen2","rplos","rprojroot","rstudioapi","rversions","rvest","sass","scales","selectr","sessioninfo","solrium","stringi","stringr","sys","testthat","tibble","tidyr","tidyselect","tidyverse","tinytex","triebeard","urltools","usethis","utf8","vctrs","viridis","viridisLite","waldo","whisker","withr","xfun","xml2","xopen","yaml","zip"],[null,"0.2.1","1.2.1",null,null,null,"0.21",null,null,"0.7.5","1.0.4","3.5.1","1.1.0",null,"2.3.0",null,"2.0-0",null,null,null,null,"1.4.1",null,null,null,null,"1.1.1","2.1.0","1.2.0","2.3.2",null,null,"0.6.27","1.0.4","0.17","0.3.1","0.14",null,null,"1.1.0","0.5.1","1.5.0",null,null,null,"0.1.0",null,null,"3.3.3",null,null,"1.4.2",null,null,"0.3.0","2.3.1",null,"1.0.0","0.5.1.1","1.5.3",null,"1.4.2",null,null,"1.7.2","1.31",null,null,null,null,"1.0.0","1.7.9.2","2.0.1",null,null,null,"2.0.0",null,null,"0.1.8","0.5.0",null,null,"1.4.7","1.2.0","2.0.3","1.1.0",null,null,"1.1.1","3.4.5",null,null,"1.5.0","0.3.4","2.5.0",null,null,null,"1.0.6","1.4.0","1.3.1",null,null,null,"2.2.0","1.0.0",null,null,null,"0.4.10","2.7",null,null,"2.0.2","0.13",null,"0.3.6","0.3.1","1.1.1",null,"1.1.1",null,"1.5.3","1.4.0",null,"3.0.1","3.0.6","1.1.2","1.1.0","1.3.0",null,null,null,"2.0.1",null,"0.3.6",null,null,null,null,"2.4.1","0.21","1.3.2",null,"2.2.1",null],["2019-01-13","2019-03-21","2020-12-09","2015-07-28","2021-01-11","2020-01-20","2020-10-13","2011-04-13","2021-01-20","2021-02-19","2021-02-13","2020-10-13","2016-07-27","2020-02-06","2021-01-31","2020-10-08","2020-11-11","2018-12-01","2019-06-21","2020-09-16","2021-01-29","2021-02-08","2020-07-21","2021-01-12","2021-02-15","2019-12-02","2021-01-15","2021-02-03","2018-05-01","2020-09-18","2013-01-24","2021-01-07","2020-10-24","2021-02-02","2021-01-06","2020-05-15","2019-05-28","2021-01-15","2020-01-16","2021-01-25","2021-01-27","2020-07-31","2017-10-31","2020-05-15","2020-11-17","2020-10-31","2019-02-19","2021-02-14","2020-12-30","2020-11-27","2020-12-04","2020-08-27","2017-09-09","2020-08-05","2019-03-25","2020-06-01","2019-03-20","2021-01-13","2021-01-22","2020-12-10","2020-04-10","2020-07-20","2018-05-20","2020-12-01","2020-12-09","2021-01-27","2020-10-20","2020-06-05","2020-04-02","2019-03-15","2021-02-15","2020-11-13","2020-11-17","2019-08-07","2020-09-09","2021-01-06","2021-01-26","2020-08-27","2021-02-13","2020-05-19","2018-06-12","2021-02-04","2020-09-18","2020-11-20","2020-12-15","2019-09-22","2020-05-29","2020-03-03","2015-08-11","2020-01-24","2020-11-30","2019-05-16","2021-02-11","2020-12-05","2020-04-17","2020-10-28","2021-01-31","2019-05-07","2014-12-07","2021-01-15","2020-10-05","2019-03-13","2021-01-27","2016-04-21","2020-05-01","2020-07-21","2021-01-27","2020-04-09","2020-04-21","2018-06-08","2020-12-30","2021-02-19","2020-06-27","2020-04-08","2020-11-15","2020-11-12","2020-05-25","2020-07-25","2021-01-24","2020-05-11","2019-11-20","2018-11-05","2019-11-02","2020-09-09","2019-02-10","2020-07-23","2020-12-17","2021-01-29","2020-08-27","2020-05-11","2019-11-21","2021-02-15","2016-08-04","2019-04-14","2021-02-10","2018-05-24","2020-12-17","2018-03-29","2018-02-01","2021-02-11","2019-08-28","2021-01-26","2021-02-10","2020-04-23","2018-09-17","2020-02-01","2020-08-27"],["CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","local","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.4)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.4)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","Github (yihui/tinytex@b2d1bae)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.3)"]],"container":"<table class=\"cell-border stripe\">\n  <thead>\n    <tr>\n      <th>package<\/th>\n      <th>loadedversion<\/th>\n      <th>date<\/th>\n      <th>source<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":147,"autoWidth":true,"bInfo":false,"paging":false,"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[10,25,50,100,147]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-4dddc266f99874e74734" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4dddc266f99874e74734">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["askpass","assertthat","backports","base64enc","BH","blob","bookdown","brew","brio","broom","cachem","callr","cellranger","checkmate","cli","clipr","colorspace","commonmark","conflicted","covr","cpp11","crayon","credentials","crosstalk","crul","curl","DBI","dbplyr","desc","devtools","dichromat","diffobj","digest","dplyr","DT","ellipsis","evaluate","fansi","farver","fastmap","forcats","fs","gapminder","gender","genderdata","generics","geonames","gert","ggplot2","gh","gitcreds","glue","gridExtra","gt","gtable","haven","highr","hms","htmltools","htmlwidgets","httpcode","httr","ini","isoband","jsonlite","knitr","labeling","later","lattice","lazyeval","lifecycle","lubridate","magrittr","markdown","MASS","Matrix","memoise","mgcv","mime","modelr","munsell","nlme","openssl","pillar","pkgbuild","pkgconfig","pkgload","plyr","praise","prettyunits","processx","progress","promises","ps","purrr","R6","rappdirs","rcmdcheck","RColorBrewer","Rcpp","readr","readxl","rebird","rematch","rematch2","remotes","reprex","reshape2","rex","rjson","rlang","rmarkdown","roxygen2","rplos","rprojroot","rstudioapi","rversions","rvest","sass","scales","selectr","sessioninfo","solrium","stringi","stringr","sys","testthat","tibble","tidyr","tidyselect","tidyverse","tinytex","triebeard","urltools","usethis","utf8","vctrs","viridis","viridisLite","waldo","whisker","withr","xfun","xml2","xopen","yaml","zip"],[null,"0.2.1","1.2.1",null,null,null,"0.21",null,null,"0.7.5","1.0.4","3.5.1","1.1.0",null,"2.3.0",null,"2.0-0",null,null,null,null,"1.4.1",null,null,null,null,"1.1.1","2.1.0","1.2.0","2.3.2",null,null,"0.6.27","1.0.4","0.17","0.3.1","0.14",null,null,"1.1.0","0.5.1","1.5.0",null,null,null,"0.1.0",null,null,"3.3.3",null,null,"1.4.2",null,null,"0.3.0","2.3.1",null,"1.0.0","0.5.1.1","1.5.3",null,"1.4.2",null,null,"1.7.2","1.31",null,null,null,null,"1.0.0","1.7.9.2","2.0.1",null,null,null,"2.0.0",null,null,"0.1.8","0.5.0",null,null,"1.4.7","1.2.0","2.0.3","1.1.0",null,null,"1.1.1","3.4.5",null,null,"1.5.0","0.3.4","2.5.0",null,null,null,"1.0.6","1.4.0","1.3.1",null,null,null,"2.2.0","1.0.0",null,null,null,"0.4.10","2.7",null,null,"2.0.2","0.13",null,"0.3.6","0.3.1","1.1.1",null,"1.1.1",null,"1.5.3","1.4.0",null,"3.0.1","3.0.6","1.1.2","1.1.0","1.3.0",null,null,null,"2.0.1",null,"0.3.6",null,null,null,null,"2.4.1","0.21","1.3.2",null,"2.2.1",null],["2019-01-13","2019-03-21","2020-12-09","2015-07-28","2021-01-11","2020-01-20","2020-10-13","2011-04-13","2021-01-20","2021-02-19","2021-02-13","2020-10-13","2016-07-27","2020-02-06","2021-01-31","2020-10-08","2020-11-11","2018-12-01","2019-06-21","2020-09-16","2021-01-29","2021-02-08","2020-07-21","2021-01-12","2021-02-15","2019-12-02","2021-01-15","2021-02-03","2018-05-01","2020-09-18","2013-01-24","2021-01-07","2020-10-24","2021-02-02","2021-01-06","2020-05-15","2019-05-28","2021-01-15","2020-01-16","2021-01-25","2021-01-27","2020-07-31","2017-10-31","2020-05-15","2020-11-17","2020-10-31","2019-02-19","2021-02-14","2020-12-30","2020-11-27","2020-12-04","2020-08-27","2017-09-09","2020-08-05","2019-03-25","2020-06-01","2019-03-20","2021-01-13","2021-01-22","2020-12-10","2020-04-10","2020-07-20","2018-05-20","2020-12-01","2020-12-09","2021-01-27","2020-10-20","2020-06-05","2020-04-02","2019-03-15","2021-02-15","2020-11-13","2020-11-17","2019-08-07","2020-09-09","2021-01-06","2021-01-26","2020-08-27","2021-02-13","2020-05-19","2018-06-12","2021-02-04","2020-09-18","2020-11-20","2020-12-15","2019-09-22","2020-05-29","2020-03-03","2015-08-11","2020-01-24","2020-11-30","2019-05-16","2021-02-11","2020-12-05","2020-04-17","2020-10-28","2021-01-31","2019-05-07","2014-12-07","2021-01-15","2020-10-05","2019-03-13","2021-01-27","2016-04-21","2020-05-01","2020-07-21","2021-01-27","2020-04-09","2020-04-21","2018-06-08","2020-12-30","2021-02-19","2020-06-27","2020-04-08","2020-11-15","2020-11-12","2020-05-25","2020-07-25","2021-01-24","2020-05-11","2019-11-20","2018-11-05","2019-11-02","2020-09-09","2019-02-10","2020-07-23","2020-12-17","2021-01-29","2020-08-27","2020-05-11","2019-11-21","2021-02-15","2016-08-04","2019-04-14","2021-02-10","2018-05-24","2020-12-17","2018-03-29","2018-02-01","2021-02-11","2019-08-28","2021-01-26","2021-02-10","2020-04-23","2018-09-17","2020-02-01","2020-08-27"],["CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","local","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.4)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.4)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","Github (yihui/tinytex@b2d1bae)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.3)"]],"container":"<table class=\"cell-border stripe\">\n  <thead>\n    <tr>\n      <th>package<\/th>\n      <th>loadedversion<\/th>\n      <th>date<\/th>\n      <th>source<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":147,"autoWidth":true,"bInfo":false,"paging":false,"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[10,25,50,100,147]}},"evals":[],"jsHooks":[]}</script>
 ```
 
 
@@ -2121,7 +2121,7 @@ Not all functions have (or require) arguments:
 
 ```r
 date()
-#> [1] "Sun Mar 21 18:39:26 2021"
+#> [1] "Sun Mar 28 14:56:09 2021"
 ```
 
 Now look at your workspace -- in the upper right pane. The workspace is where user-defined objects accumulate. You can also get a listing of these objects with commands:
@@ -2259,7 +2259,7 @@ sig_sq <- 0.5
 x <- runif(40)
 y <- a + b * x + rnorm(40, sd = sqrt(sig_sq))
 (avg_x <- mean(x))
-#> [1] 0.47
+#> [1] 0.5
 write(avg_x, "avg_x.txt")
 plot(x, y)
 abline(a, b, col = "purple")
@@ -4304,7 +4304,7 @@ criterion <- rsim(rho = .8, x = rtotal, meany = 24,
   sdy = 6)
 # Check the correlation
 cor(rtotal, criterion$y)
-#> [1] 0.792
+#> [1] 0.807
 ```
 
 Suppose the internal consistency reliability for our criterion is 0.86. We know from Module \@ref(reliability) that internal consistency for the `PISA09` reading items is about 0.77. With a simple formula, we can calculate what the validity coefficient should be for our two measures, if each measure were perfectly reliable. Here, we denote this disattenuated correlation as the correlation between true scores on $X$ and $Y$.
@@ -4314,7 +4314,7 @@ Suppose the internal consistency reliability for our criterion is 0.86. We know 
 (\#eq:attenuation)
 \end{equation}
 
-Correcting for attenuation due to measurement error produces a validity coefficient of 0.97. This is a noteworthy increase from the original correlation of 0.80.
+Correcting for attenuation due to measurement error produces a validity coefficient of 0.99. This is a noteworthy increase from the original correlation of 0.80.
 
 
 ```r
@@ -4365,7 +4365,7 @@ epmr::coef_alpha(pisausa)
 #> [1] 11
 # Correction for attenuation
 cor(rtotal, criterion$y)/sqrt(.77 * .86)
-#> [1] 0.973
+#> [1] 0.991
 ```
 
 In summary, the steps for establishing criterion validity evidence are relatively simple. After defining the purpose of the test, a suitable criterion is identified. The two tests are administered to the same sample of individuals from the target population, and a correlation is obtained. If reliability estimates are available, we can then estimate the disattenuated coefficient, as shown above.
@@ -6564,7 +6564,7 @@ Item analysis, as described in this module, is based on a CTT model of test perf
 
 <!--chapter:end:0500_itemanalysis.Rmd-->
 
-# (PART) Module 10 {-}
+# (PART) Module 11 {-}
 
 
 
@@ -7008,11 +7008,11 @@ library("ggplot2")
 # rtif() from epmr for getting a test information function
 ```
 
-## IRT versus CTT
+# IRT versus CTT
 
 Since its development in the 1950s and 1960s [@lord1952theory; @rasch1960probabilistic], IRT has become the preferred statistical methodology for item analysis and test development. The success of IRT over its predecessor CTT comes primarily from the focus in IRT on the individual components that make up a test, that is, the items themselves. By modeling outcomes at the item level, rather than at the test level as in CTT, IRT is more complex but also more comprehensive in terms of the information it provides about test performance.
 
-### CTT review
+## CTT review
 
 As presented in Module \@ref(reliability), CTT gives us a model for the observed total score $X$. This model decomposes $X$ into two parts, truth $T$ and error $E$:
 
@@ -7028,7 +7028,7 @@ For example, suppose an instructor gives the same final exam to a new classroom 
 
 A second major limitation of CTT results from the fact that the model is specified using total scores. Because we rely on total scores in CTT, a given test only produces one estimate of reliability and, thus, one estimate of SEM, and these are assumed to be unchanging for all people taking the test. The measurement error we expect to see in scores would be the same regardless of level on the construct. This limitation is especially problematic when test items do not match the ability level of a particular group of people. For example, consider a comprehensive vocabulary test covering all of the words taught in a fourth grade classroom. The test is given to a group of students just starting fourth grade, and another group who just completed fourth grade and is starting fifth. Students who have had the opportunity to learn the test content should respond more reliably than students who have not. Yet, the test itself has a single reliability and SEM that would be used to estimate measurement error for any score. Thus, the second major limitation of CTT is that reliability and SEM are constant and do not depend on the construct.
 
-### Comparing with IRT
+## Comparing with IRT
 
 IRT addresses the limitations of CTT, the limitations of sample and test dependence and a single constant SEM. As in CTT, IRT also provides a model of test performance. However, the model is defined at the item level, meaning there is, essentially, a separate model equation for each item in the test. So, IRT involves multiple item score models, as opposed to a single total score model. When the assumptions of the model are met, IRT parameters are, in theory, sample and item *independent*. This means that a person should have the same ability estimate no matter which set of items she or he takes, assuming the items pertain to the same test. And in IRT, a given item should have the same difficulty and discrimination no matter who is taking the test.
 
@@ -7078,9 +7078,9 @@ ggplot(pisagbr, aes(rtotal, r414q06s)) +
 
 In IRT, the relationship between item and construct is similar to CTT, but the line follows what's called a logistic curve. To demonstrate the usefulness of a logistic curve, we calculate a set of $p$-values for item `r452q06s` *conditional on the construct*. In Figure \@ref(fig:irtplot1), the green points are $p$-values calculated within each group of people having the same total reading score. For example, the $p$-value on this item for students with a total score of 3 is about 0.20. As expected, people with lower totals have more incorrect than correct responses. As total scores increase, the number of people getting the item correct steadily increases. At a certain total score, around 5.5, we see roughly half the people get the item correct. Then, as we continue up the theta scale, more and more people get the item correct. IRT is used to capture the trend shown by the conditional $p$-values in Figure \@ref(fig:irtplot1).
 
-## Traditional IRT models
+# Traditional IRT models
 
-### Terminology
+## Terminology
 
 Understanding IRT requires that we master some new terms. First, in IRT the underlying construct is referred to as theta or $\theta$. Theta refers to the same construct we discussed in CTT, reliability, and our earlier measurement models. The underlying construct is the unobserved variable that we assume causes the behavior we observe in item responses. Different test takers are at different levels on the construct, and this results in them having different response patterns. In IRT we model these response patterns as a function of the construct theta. The theta scale is another name for the ability or trait scale.
 
@@ -7108,7 +7108,7 @@ Here's a recap of the key terms we'll be using throughout this module:
 * Functions are simply equations that produce a single output value for each value on the theta scale. IRT functions include the IRF, TRF, IIF, TIF, and TEF.
 * Information refers to a summary of the discriminating power provided by an item or test.
 
-### The IRT models
+## The IRT models
 
 We'll now use the terminology above to compare three traditional IRT models. Equation \@ref(eq:irt3pl) contains what is referred to as the three-parameter IRT model, because it includes all three available item parameters. The model is usually labeled 3PL, for 3 parameter logistic. As noted above, in IRT we model the probability of correct response on a given item ($\Pr(X = 1)$) as a function of person ability ($\theta$) and certain properties of the item itself, namely: $a$, how well the item discriminates between low and high ability examinees; $b$, how difficult the item is, or the construct level at which we'd expect people to have a probability $\Pr = 0.50$ of getting the keyed item response; and $c$, the lowest $\Pr$ that we'd expect to see on the item by chance alone.
 
@@ -7171,7 +7171,7 @@ In the one-parameter model or 1PL, and the Rasch model [@rasch1960probabilistic]
 
 Zero guessing and constant discrimination may seem like unrealistic assumptions, but the Rasch model is commonly used operationally. The PISA studies, for example, utilize a form of Rasch modeling. The popularity of the model is due to its simplicity. It requires smaller sample sizes (100 to 200 people per item may suffice) than the 2PL and 3PL (requiring 500 or more people). The theta scale produced by the Rasch model can also have certain desirable properties, such as consistent score intervals [see @deayala2009theory].
 
-### Assumptions
+## Assumptions
 
 The three traditional IRT models discussed above all involve two main assumptions, both of them having to do with the overall requirement that the model we chose is "correct" for a given situation. This correctness is defined based on 1) the dimensionality of the construct, that is, how many constructs are causing people to respond in a certain way to the items, and 2) the shape of the IRF, that is, which of the three item parameters are necessary for modeling item performance.
 
@@ -7181,9 +7181,9 @@ The second assumption in IRT is that we've chosen the correct shape for our IRF.
 
 Note that anytime we assume a given item parameter, for example, the $c$ parameter, is *unnecessary* in a model, it is fixed to a certain value for all items. For example, in the Rasch and two-parameter IRT models, the $c$ parameter is typically fixed to 0, which means we are assuming that guessing is not an issue. In the Rasch model we also assume that all items discriminate in the same way, and $a$ is fixed to 1; then, the only item parameter we estimate is item difficulty.
 
-## Applications {#irtapplications}
+# Applications {#irtapplications}
 
-### In practice
+## In practice
 
 As is true when comparing other statistical models, the choice of Rasch, 1PL, 2PL, or 3PL should be based on considerations of theory, model assumptions, and sample size.
 
@@ -7197,7 +7197,7 @@ IRT is useful first in item analysis, where we pilot test a set of items and the
 
 Item banking refers to the process of storing items for use in future, potentially undeveloped, forms of a test. Because IRT allows us to estimate sample independent item parameters, we can estimate parameters for certain items using pilot data, that is, before the items are used operationally. This is what happens in a computer adaptive test. For example, the difficulty of a bank of items is known, typically from pilot administrations. When you sit down to take the test, an item of known average difficulty can then be administered. If you get the item correct, you are given a more difficult item. The process continues, with the difficulty of the items adapting based on your performance, until the computer is confident it has identified your ability level. In this way, computer adaptive testing relies heavily on IRT.
 
-### Examples {#irtexamples}
+## Examples {#irtexamples}
 
 The epmr package contains functions for estimating and manipulating results from the Rasch model. Other R packages are available for estimating the 2PL and 3PL [e.g., @rizopoulos2006ltm]. Commercial software packages are also available, and are often used when IRT is applied operationally.
 

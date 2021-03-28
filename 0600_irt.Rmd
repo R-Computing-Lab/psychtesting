@@ -1,4 +1,4 @@
-# (PART) Module 10 {-}
+# (PART) Module 11 {-}
 
 ```{r include = FALSE}
 #install.packages("devtools")
@@ -49,11 +49,11 @@ library("ggplot2")
 # rtif() from epmr for getting a test information function
 ```
 
-## IRT versus CTT
+# IRT versus CTT
 
 Since its development in the 1950s and 1960s [@lord1952theory; @rasch1960probabilistic], IRT has become the preferred statistical methodology for item analysis and test development. The success of IRT over its predecessor CTT comes primarily from the focus in IRT on the individual components that make up a test, that is, the items themselves. By modeling outcomes at the item level, rather than at the test level as in CTT, IRT is more complex but also more comprehensive in terms of the information it provides about test performance.
 
-### CTT review
+## CTT review
 
 As presented in Module \@ref(reliability), CTT gives us a model for the observed total score $X$. This model decomposes $X$ into two parts, truth $T$ and error $E$:
 
@@ -69,7 +69,7 @@ For example, suppose an instructor gives the same final exam to a new classroom 
 
 A second major limitation of CTT results from the fact that the model is specified using total scores. Because we rely on total scores in CTT, a given test only produces one estimate of reliability and, thus, one estimate of SEM, and these are assumed to be unchanging for all people taking the test. The measurement error we expect to see in scores would be the same regardless of level on the construct. This limitation is especially problematic when test items do not match the ability level of a particular group of people. For example, consider a comprehensive vocabulary test covering all of the words taught in a fourth grade classroom. The test is given to a group of students just starting fourth grade, and another group who just completed fourth grade and is starting fifth. Students who have had the opportunity to learn the test content should respond more reliably than students who have not. Yet, the test itself has a single reliability and SEM that would be used to estimate measurement error for any score. Thus, the second major limitation of CTT is that reliability and SEM are constant and do not depend on the construct.
 
-### Comparing with IRT
+## Comparing with IRT
 
 IRT addresses the limitations of CTT, the limitations of sample and test dependence and a single constant SEM. As in CTT, IRT also provides a model of test performance. However, the model is defined at the item level, meaning there is, essentially, a separate model equation for each item in the test. So, IRT involves multiple item score models, as opposed to a single total score model. When the assumptions of the model are met, IRT parameters are, in theory, sample and item *independent*. This means that a person should have the same ability estimate no matter which set of items she or he takes, assuming the items pertain to the same test. And in IRT, a given item should have the same difficulty and discrimination no matter who is taking the test.
 
@@ -111,9 +111,9 @@ ggplot(pisagbr, aes(rtotal, r414q06s)) +
 
 In IRT, the relationship between item and construct is similar to CTT, but the line follows what's called a logistic curve. To demonstrate the usefulness of a logistic curve, we calculate a set of $p$-values for item `r452q06s` *conditional on the construct*. In Figure \@ref(fig:irtplot1), the green points are $p$-values calculated within each group of people having the same total reading score. For example, the $p$-value on this item for students with a total score of 3 is about 0.20. As expected, people with lower totals have more incorrect than correct responses. As total scores increase, the number of people getting the item correct steadily increases. At a certain total score, around 5.5, we see roughly half the people get the item correct. Then, as we continue up the theta scale, more and more people get the item correct. IRT is used to capture the trend shown by the conditional $p$-values in Figure \@ref(fig:irtplot1).
 
-## Traditional IRT models
+# Traditional IRT models
 
-### Terminology
+## Terminology
 
 Understanding IRT requires that we master some new terms. First, in IRT the underlying construct is referred to as theta or $\theta$. Theta refers to the same construct we discussed in CTT, reliability, and our earlier measurement models. The underlying construct is the unobserved variable that we assume causes the behavior we observe in item responses. Different test takers are at different levels on the construct, and this results in them having different response patterns. In IRT we model these response patterns as a function of the construct theta. The theta scale is another name for the ability or trait scale.
 
@@ -141,7 +141,7 @@ Here's a recap of the key terms we'll be using throughout this module:
 * Functions are simply equations that produce a single output value for each value on the theta scale. IRT functions include the IRF, TRF, IIF, TIF, and TEF.
 * Information refers to a summary of the discriminating power provided by an item or test.
 
-### The IRT models
+## The IRT models
 
 We'll now use the terminology above to compare three traditional IRT models. Equation \@ref(eq:irt3pl) contains what is referred to as the three-parameter IRT model, because it includes all three available item parameters. The model is usually labeled 3PL, for 3 parameter logistic. As noted above, in IRT we model the probability of correct response on a given item ($\Pr(X = 1)$) as a function of person ability ($\theta$) and certain properties of the item itself, namely: $a$, how well the item discriminates between low and high ability examinees; $b$, how difficult the item is, or the construct level at which we'd expect people to have a probability $\Pr = 0.50$ of getting the keyed item response; and $c$, the lowest $\Pr$ that we'd expect to see on the item by chance alone.
 
@@ -198,7 +198,7 @@ In the one-parameter model or 1PL, and the Rasch model [@rasch1960probabilistic]
 
 Zero guessing and constant discrimination may seem like unrealistic assumptions, but the Rasch model is commonly used operationally. The PISA studies, for example, utilize a form of Rasch modeling. The popularity of the model is due to its simplicity. It requires smaller sample sizes (100 to 200 people per item may suffice) than the 2PL and 3PL (requiring 500 or more people). The theta scale produced by the Rasch model can also have certain desirable properties, such as consistent score intervals [see @deayala2009theory].
 
-### Assumptions
+## Assumptions
 
 The three traditional IRT models discussed above all involve two main assumptions, both of them having to do with the overall requirement that the model we chose is "correct" for a given situation. This correctness is defined based on 1) the dimensionality of the construct, that is, how many constructs are causing people to respond in a certain way to the items, and 2) the shape of the IRF, that is, which of the three item parameters are necessary for modeling item performance.
 
@@ -208,9 +208,9 @@ The second assumption in IRT is that we've chosen the correct shape for our IRF.
 
 Note that anytime we assume a given item parameter, for example, the $c$ parameter, is *unnecessary* in a model, it is fixed to a certain value for all items. For example, in the Rasch and two-parameter IRT models, the $c$ parameter is typically fixed to 0, which means we are assuming that guessing is not an issue. In the Rasch model we also assume that all items discriminate in the same way, and $a$ is fixed to 1; then, the only item parameter we estimate is item difficulty.
 
-## Applications {#irtapplications}
+# Applications {#irtapplications}
 
-### In practice
+## In practice
 
 As is true when comparing other statistical models, the choice of Rasch, 1PL, 2PL, or 3PL should be based on considerations of theory, model assumptions, and sample size.
 
@@ -224,7 +224,7 @@ IRT is useful first in item analysis, where we pilot test a set of items and the
 
 Item banking refers to the process of storing items for use in future, potentially undeveloped, forms of a test. Because IRT allows us to estimate sample independent item parameters, we can estimate parameters for certain items using pilot data, that is, before the items are used operationally. This is what happens in a computer adaptive test. For example, the difficulty of a bank of items is known, typically from pilot administrations. When you sit down to take the test, an item of known average difficulty can then be administered. If you get the item correct, you are given a more difficult item. The process continues, with the difficulty of the items adapting based on your performance, until the computer is confident it has identified your ability level. In this way, computer adaptive testing relies heavily on IRT.
 
-### Examples {#irtexamples}
+## Examples {#irtexamples}
 
 The epmr package contains functions for estimating and manipulating results from the Rasch model. Other R packages are available for estimating the 2PL and 3PL [e.g., @rizopoulos2006ltm]. Commercial software packages are also available, and are often used when IRT is applied operationally.
 

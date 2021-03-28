@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Public Health Dashboards | Psychological Testing</title>
+  <title>26 IRT versus CTT | Psychological Testing</title>
   <meta name="description" content="PSY 362: Psychological Testing" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Public Health Dashboards | Psychological Testing" />
+  <meta property="og:title" content="26 IRT versus CTT | Psychological Testing" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://r-computing-lab.github.io/psychtesting" />
   <meta property="og:image" content="https://r-computing-lab.github.io/psychtestingassets/logo.png" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="R-Computing-Lab/psychtesting" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Public Health Dashboards | Psychological Testing" />
+  <meta name="twitter:title" content="26 IRT versus CTT | Psychological Testing" />
   <meta name="twitter:site" content="@smasongarrison" />
   <meta name="twitter:description" content="PSY 362: Psychological Testing" />
   <meta name="twitter:image" content="https://r-computing-lab.github.io/psychtestingassets/logo.png" />
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="colophon.html"/>
-<link rel="next" href="meet-our-toolbox.html"/>
+<link rel="prev" href="irt.html"/>
+<link rel="next" href="traditional-irt-models.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-3.5.1/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -362,63 +362,67 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="public-health-dashboards" class="section level1 unnumbered">
-<h1>Public Health Dashboards</h1>
-<p>Ok, so I know that this class is about testing, measurement, and R… However, I figured that it might be helpful for us all to have some public health dashboards in one easy place. If you want, we can pretend that this section is course content related…</p>
-<div id="wake-forest" class="section level2 unnumbered">
-<h2>Wake Forest</h2>
-<p>The embedded dashboards are maintained by Wake Forest University and are made using <a href="https://powerbi.microsoft.com/en-us/what-is-power-bi/">Microsoft Power BI</a>. More info about the dashboard can be found here <a href="https://ourwayforward.wfu.edu/covid-19-dashboard">here</a></p>
-<p><br></p>
-<iframe src="https://ourwayforward.wfu.edu/covid-19-dashboard/#powerbi-embedded-1946" scrolling="no" style="width: 100%; height:775px">
-</iframe>
+<div id="irt-versus-ctt" class="section level1" number="26">
+<h1><span class="header-section-number">26</span> IRT versus CTT</h1>
+<p>Since its development in the 1950s and 1960s <span class="citation">(<a href="references.html#ref-lord1952theory" role="doc-biblioref">Lord 1952</a>; <a href="references.html#ref-rasch1960probabilistic" role="doc-biblioref">Rasch 1960</a>)</span>, IRT has become the preferred statistical methodology for item analysis and test development. The success of IRT over its predecessor CTT comes primarily from the focus in IRT on the individual components that make up a test, that is, the items themselves. By modeling outcomes at the item level, rather than at the test level as in CTT, IRT is more complex but also more comprehensive in terms of the information it provides about test performance.</p>
+<div id="ctt-review" class="section level2" number="26.1">
+<h2><span class="header-section-number">26.1</span> CTT review</h2>
+<p>As presented in Module <a href="#reliability"><strong>??</strong></a>, CTT gives us a model for the observed total score <span class="math inline">\(X\)</span>. This model decomposes <span class="math inline">\(X\)</span> into two parts, truth <span class="math inline">\(T\)</span> and error <span class="math inline">\(E\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+X = T + E.
+\end{equation}\]</span></p>
+<p>The true score <span class="math inline">\(T\)</span> is the construct we’re intending to measure, and we assume it plays some systematic role in causing people to obtain observed scores on <span class="math inline">\(X\)</span>. The error <span class="math inline">\(E\)</span> is everything randomly unrelated to the construct we’re intending to measure. Error also has a direct impact on <span class="math inline">\(X\)</span>. From Module <a href="itemanalysis.html#itemanalysis">20</a>, two item statistics that come from CTT are the mean performance on a given item, referred to as the <span class="math inline">\(p\)</span>-value for dichotomous items, and the (corrected) item-total correlation for an item. Before moving on, you should be familiar with these two statistics, item difficulty and item discrimination, how they are related, and what they tell us about the items in a test.</p>
+<p>It should be apparent that CTT is a relatively simple model of test performance. The simplicity of the model brings up its main limitation: the score scale is dependent on the items in the test and the people taking the test. The results of CTT are said to be <em>sample dependent</em> because 1) any <span class="math inline">\(X\)</span>, <span class="math inline">\(T\)</span>, or <span class="math inline">\(E\)</span> that you obtain for a particular test taker only has meaning within the test she or he took, and 2) any item difficulty or discrimination statistics you estimate only have meaning within a particular sample of test takers. So, the person parameters are dependent on the test we use, and the item parameters are dependent on the test takers.</p>
+<p>For example, suppose an instructor gives the same final exam to a new classroom of students each semester. At the first administration, the CITC discrimination for one item is 0.08. That’s low, and it suggests that there’s a problem with the item. However, in the second administration of the same exam to another group of students, the same item is found to have a CITC of 0.52. Which of these discriminations is correct? According to CTT, they’re both correct, for the sample with which they are calculated. In CTT there is technically no absolute item difficulty or discrimination that generalizes across samples or populations of examinees. The same goes for ability estimates. If two students take different final exams for the same course, each with different items but the same number of items, ability estimates will depend on the difficulty and quality of the respective exams. There is no absolute ability estimate that generalizes across samples of items. This is the main limitation of CTT: parameters that come from the model are sample and test dependent.</p>
+<p>A second major limitation of CTT results from the fact that the model is specified using total scores. Because we rely on total scores in CTT, a given test only produces one estimate of reliability and, thus, one estimate of SEM, and these are assumed to be unchanging for all people taking the test. The measurement error we expect to see in scores would be the same regardless of level on the construct. This limitation is especially problematic when test items do not match the ability level of a particular group of people. For example, consider a comprehensive vocabulary test covering all of the words taught in a fourth grade classroom. The test is given to a group of students just starting fourth grade, and another group who just completed fourth grade and is starting fifth. Students who have had the opportunity to learn the test content should respond more reliably than students who have not. Yet, the test itself has a single reliability and SEM that would be used to estimate measurement error for any score. Thus, the second major limitation of CTT is that reliability and SEM are constant and do not depend on the construct.</p>
 </div>
-<div id="forsyth-county" class="section level2 unnumbered">
-<h2>Forsyth County</h2>
-<p>The embedded maps are maintained by Forsyth County’s department of public health. More info <a href="https://www.co.forsyth.nc.us/covidupdate/">here</a></p>
-<div id="vaccinations" class="section level3 unnumbered">
-<h3>Vaccinations</h3>
-<iframe src="https://mapf.maps.arcgis.com/apps/opsdashboard/index.html#/80838562a4c64050abf201c0e8beb441" style="width:100%;height:600px">
-</iframe>
+<div id="comparing-with-irt" class="section level2" number="26.2">
+<h2><span class="header-section-number">26.2</span> Comparing with IRT</h2>
+<p>IRT addresses the limitations of CTT, the limitations of sample and test dependence and a single constant SEM. As in CTT, IRT also provides a model of test performance. However, the model is defined at the item level, meaning there is, essentially, a separate model equation for each item in the test. So, IRT involves multiple item score models, as opposed to a single total score model. When the assumptions of the model are met, IRT parameters are, in theory, sample and item <em>independent</em>. This means that a person should have the same ability estimate no matter which set of items she or he takes, assuming the items pertain to the same test. And in IRT, a given item should have the same difficulty and discrimination no matter who is taking the test.</p>
+<p>IRT also takes into account the difficulty of the items that a person responds to when estimating the person’s ability or trait level. Although the construct estimate itself, in theory, does not depend on the items, the precision with which we estimate it does depend on the items taken. Estimates of the ability or trait are more precise when they’re based on items that are close to a person’s construct level. Precision decreases when there are mismatches between person construct and item difficulty. Thus, SEM in IRT can vary by the ability of the person and the characteristics of the items given.</p>
+<p>The main limitation of IRT is that it is a complex model requiring much larger samples of people than would be needed to utilize CTT. Whereas in CTT the recommended minimum is 100 examinees for conducting an item analysis (see Module <a href="itemanalysis.html#itemanalysis">20</a>), in IRT, as many as 500 or 1000 examinees may be needed to obtain stable results, depending on the complexity of the chosen model.</p>
+<div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb85-1"><a href="irt-versus-ctt.html#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Prepping data for examples</span></span>
+<span id="cb85-2"><a href="irt-versus-ctt.html#cb85-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Create subset of data for Great Britain, then reduce to </span></span>
+<span id="cb85-3"><a href="irt-versus-ctt.html#cb85-3" aria-hidden="true" tabindex="-1"></a><span class="co"># complete data</span></span>
+<span id="cb85-4"><a href="irt-versus-ctt.html#cb85-4" aria-hidden="true" tabindex="-1"></a>ritems <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;r414q02&quot;</span>, <span class="st">&quot;r414q11&quot;</span>, <span class="st">&quot;r414q06&quot;</span>, <span class="st">&quot;r414q09&quot;</span>,</span>
+<span id="cb85-5"><a href="irt-versus-ctt.html#cb85-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;r452q03&quot;</span>, <span class="st">&quot;r452q04&quot;</span>, <span class="st">&quot;r452q06&quot;</span>, <span class="st">&quot;r452q07&quot;</span>, <span class="st">&quot;r458q01&quot;</span>,</span>
+<span id="cb85-6"><a href="irt-versus-ctt.html#cb85-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;r458q07&quot;</span>, <span class="st">&quot;r458q04&quot;</span>)</span>
+<span id="cb85-7"><a href="irt-versus-ctt.html#cb85-7" aria-hidden="true" tabindex="-1"></a>rsitems <span class="ot">&lt;-</span> <span class="fu">paste0</span>(ritems, <span class="st">&quot;s&quot;</span>)</span>
+<span id="cb85-8"><a href="irt-versus-ctt.html#cb85-8" aria-hidden="true" tabindex="-1"></a>PISA09<span class="sc">$</span>rtotal <span class="ot">&lt;-</span> <span class="fu">rowSums</span>(PISA09[, rsitems])</span>
+<span id="cb85-9"><a href="irt-versus-ctt.html#cb85-9" aria-hidden="true" tabindex="-1"></a>pisagbr <span class="ot">&lt;-</span> PISA09[PISA09<span class="sc">$</span>cnt <span class="sc">==</span> <span class="st">&quot;GBR&quot;</span>,</span>
+<span id="cb85-10"><a href="irt-versus-ctt.html#cb85-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(rsitems, <span class="st">&quot;rtotal&quot;</span>)]</span>
+<span id="cb85-11"><a href="irt-versus-ctt.html#cb85-11" aria-hidden="true" tabindex="-1"></a>pisagbr <span class="ot">&lt;-</span> pisagbr[<span class="fu">complete.cases</span>(pisagbr), ]</span></code></pre></div>
+<p>Another key difference between IRT and CTT has to do with the shape of the relationship that we estimate between item score and construct score. The CTT discrimination models a simple linear relationship between the two, whereas IRT models a curvilinear relationship between them. Recall from Module <a href="itemanalysis.html#itemanalysis">20</a> that the discrimination for an item can be visualized within a scatter plot, with the construct on the <span class="math inline">\(x\)</span>-axis and item scores on the <span class="math inline">\(y\)</span>-axis. A strong positive item discrimination would be shown by points for incorrect scores bunching up at the bottom of the scale, and points for correct scores bunching up at the top. A line passing through these points would then have a positive slope. Because they’re based on correlations, ITC and CITC discriminations are always represented by a straight line. See Figure <a href="irt-versus-ctt.html#fig:irtplot1">26.1</a> for an example based on <code>PISA09</code> reading item <code>r452q06s</code>.</p>
+<div class="sourceCode" id="cb86"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb86-1"><a href="irt-versus-ctt.html#cb86-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get p-values conditional on rtotal</span></span>
+<span id="cb86-2"><a href="irt-versus-ctt.html#cb86-2" aria-hidden="true" tabindex="-1"></a><span class="co"># tapply() applies a function to the first argument over</span></span>
+<span id="cb86-3"><a href="irt-versus-ctt.html#cb86-3" aria-hidden="true" tabindex="-1"></a><span class="co"># subsets of data defined by the second argument</span></span>
+<span id="cb86-4"><a href="irt-versus-ctt.html#cb86-4" aria-hidden="true" tabindex="-1"></a>pvalues <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">rtotal =</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">11</span>,</span>
+<span id="cb86-5"><a href="irt-versus-ctt.html#cb86-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">p =</span> <span class="fu">tapply</span>(pisagbr<span class="sc">$</span>r452q06s, pisagbr<span class="sc">$</span>rtotal, mean))</span>
+<span id="cb86-6"><a href="irt-versus-ctt.html#cb86-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot CTT discrimination over scatter plot of scored item</span></span>
+<span id="cb86-7"><a href="irt-versus-ctt.html#cb86-7" aria-hidden="true" tabindex="-1"></a><span class="co"># responses</span></span>
+<span id="cb86-8"><a href="irt-versus-ctt.html#cb86-8" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(pisagbr, <span class="fu">aes</span>(rtotal, r414q06s)) <span class="sc">+</span></span>
+<span id="cb86-9"><a href="irt-versus-ctt.html#cb86-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">position =</span> <span class="fu">position_jitter</span>(<span class="at">w =</span> <span class="fl">0.1</span>,</span>
+<span id="cb86-10"><a href="irt-versus-ctt.html#cb86-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">h =</span> <span class="fl">0.1</span>)) <span class="sc">+</span></span>
+<span id="cb86-11"><a href="irt-versus-ctt.html#cb86-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="at">fill =</span> <span class="cn">NA</span>) <span class="sc">+</span></span>
+<span id="cb86-12"><a href="irt-versus-ctt.html#cb86-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(rtotal, p), <span class="at">data =</span> pvalues,</span>
+<span id="cb86-13"><a href="irt-versus-ctt.html#cb86-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">col =</span> <span class="st">&quot;green&quot;</span>, <span class="at">size =</span> <span class="dv">3</span>)</span>
+<span id="cb86-14"><a href="irt-versus-ctt.html#cb86-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; `geom_smooth()` using formula &#39;y ~ x&#39;</span></span></code></pre></div>
+<div class="figure"><span id="fig:irtplot1"></span>
+<img src="0600_irt_files/figure-html/irtplot1-1.png" alt="Scatter plots showing the relationship between total scores on the x-axis and scores from PISA item `r452q06s` on the y-axis. Lines represent the relationship between the construct and item scores for CTT (straight) and IRT (curved)." width="75%" />
+<p class="caption">
+Figure 26.1: Scatter plots showing the relationship between total scores on the x-axis and scores from PISA item <code>r452q06s</code> on the y-axis. Lines represent the relationship between the construct and item scores for CTT (straight) and IRT (curved).
+</p>
 </div>
-<div id="case-counts" class="section level3 unnumbered">
-<h3>Case Counts</h3>
-<iframe src="https://mapf.maps.arcgis.com/apps/opsdashboard/index.html#/2a7cc9a3b6a842228f489c080c48ccc6" style="width:100%;height:600px">
-</iframe>
+<p>In IRT, the relationship between item and construct is similar to CTT, but the line follows what’s called a logistic curve. To demonstrate the usefulness of a logistic curve, we calculate a set of <span class="math inline">\(p\)</span>-values for item <code>r452q06s</code> <em>conditional on the construct</em>. In Figure <a href="irt-versus-ctt.html#fig:irtplot1">26.1</a>, the green points are <span class="math inline">\(p\)</span>-values calculated within each group of people having the same total reading score. For example, the <span class="math inline">\(p\)</span>-value on this item for students with a total score of 3 is about 0.20. As expected, people with lower totals have more incorrect than correct responses. As total scores increase, the number of people getting the item correct steadily increases. At a certain total score, around 5.5, we see roughly half the people get the item correct. Then, as we continue up the theta scale, more and more people get the item correct. IRT is used to capture the trend shown by the conditional <span class="math inline">\(p\)</span>-values in Figure <a href="irt-versus-ctt.html#fig:irtplot1">26.1</a>.</p>
 </div>
-</div>
-<div id="north-carolina" class="section level2 unnumbered">
-<h2>North Carolina</h2>
-<iframe src="https://mapf.maps.arcgis.com/apps/opsdashboard/index.html#/926f40a0fb9d43729fbc0f42f0f5a940" style="width:100%;height:600px">
-</iframe>
-<p><br></p>
-<iframe title="covid-19 nc county alert system" aria-label="Map" id="datawrapper-chart-rc1kL" src="https://datawrapper.dwcdn.net/rc1kL/2/" scrolling="no" frameborder="0" style="width: 0px; border: none; min-width: 100% !important; height: 408px;" height="437">
-</iframe>
-
-</div>
-</div>
-
-
-
-<!--AE. Links-->
-<!-- Lab Links-->
-<!--Slides-->
-<!--R Links-->
-<!--RStudio Links-->
-<!--HappyGitWithR Links-->
-<!--Package Links-->
-<!--Shiny links-->
-<!--Publications-->
-<!--R Documentation-->
-<!--Wikipedia Links-->
-<!--Misc. Links-->
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="colophon.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="meet-our-toolbox.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="irt.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="traditional-irt-models.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -449,7 +453,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/DataScience4Psych/DataScience4Psych/edit/main/0000b_publichealth.Rmd",
+"link": "https://github.com/DataScience4Psych/DataScience4Psych/edit/main/0600_irt.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -460,7 +464,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["https://github.com/DataScience4Psych/DataScience4Psych/raw/main/0000b_publichealth.Rmd", "PT.epub"],
+"download": ["https://github.com/DataScience4Psych/DataScience4Psych/raw/main/0600_irt.Rmd", "PT.epub"],
 "toc": {
 "collapse": "section"
 }
