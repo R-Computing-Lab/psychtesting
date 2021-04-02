@@ -25,7 +25,7 @@ Given its role and influence in educational and psychological measurement, the t
 This module begins with a comparison of IRT with classical test theory (CTT), including a discussion of strengths and weaknesses and some typical uses of each. Next, the traditional dichotomous IRT models are introduced with definitions of key terms and a comparison based on assumptions, benefits, limitations, and uses. Finally, details are provided on applications of IRT in item analysis, test development, item banking, and computer adaptive testing.
 
 
-## Learning objectives**
+## Learning objectives
 
 1. Compare and contrast IRT and CTT in terms of their strengths and weaknesses.
 2. Identify the two main assumptions that are made when using a traditional IRT model, regarding dimensionality and functional form or the number of model parameters.
@@ -55,7 +55,7 @@ Since its development in the 1950s and 1960s [@lord1952theory; @rasch1960probabi
 
 ## CTT review
 
-As presented in Module \@ref(reliability), CTT gives us a model for the observed total score $X$. This model decomposes $X$ into two parts, truth $T$ and error $E$:
+As discussed previously, CTT gives us a model for the observed total score $X$. This model decomposes $X$ into two parts, truth $T$ and error $E$:
 
 \begin{equation}
 X = T + E.
@@ -210,7 +210,7 @@ Note that anytime we assume a given item parameter, for example, the $c$ paramet
 
 # Applications {#irtapplications}
 
-## In practice
+## In practice...
 
 As is true when comparing other statistical models, the choice of Rasch, 1PL, 2PL, or 3PL should be based on considerations of theory, model assumptions, and sample size.
 
