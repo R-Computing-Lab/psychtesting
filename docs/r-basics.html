@@ -24,7 +24,7 @@
 <meta name="author" content="S. Mason Garrison" />
 
 
-<meta name="date" content="2021-03-28" />
+<meta name="date" content="2021-04-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -310,7 +310,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="part"><span><b>VI Module 11</b></span></li>
 <li class="chapter" data-level="25" data-path="irt.html"><a href="irt.html"><i class="fa fa-check"></i><b>25</b> Item Response Theory</a>
 <ul>
-<li class="chapter" data-level="25.1" data-path="irt.html"><a href="irt.html#learning-objectives"><i class="fa fa-check"></i><b>25.1</b> Learning objectives**</a></li>
+<li class="chapter" data-level="25.1" data-path="irt.html"><a href="irt.html#learning-objectives"><i class="fa fa-check"></i><b>25.1</b> Learning objectives</a></li>
 </ul></li>
 <li class="chapter" data-level="26" data-path="irt-versus-ctt.html"><a href="irt-versus-ctt.html"><i class="fa fa-check"></i><b>26</b> IRT versus CTT</a>
 <ul>
@@ -325,7 +325,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="28" data-path="irtapplications.html"><a href="irtapplications.html"><i class="fa fa-check"></i><b>28</b> Applications</a>
 <ul>
-<li class="chapter" data-level="28.1" data-path="irtapplications.html"><a href="irtapplications.html#in-practice"><i class="fa fa-check"></i><b>28.1</b> In practice</a></li>
+<li class="chapter" data-level="28.1" data-path="irtapplications.html"><a href="irtapplications.html#in-practice"><i class="fa fa-check"></i><b>28.1</b> In practice…</a></li>
 <li class="chapter" data-level="28.2" data-path="irtapplications.html"><a href="irtapplications.html#irtexamples"><i class="fa fa-check"></i><b>28.2</b> Examples</a></li>
 <li class="chapter" data-level="28.3" data-path="irtapplications.html"><a href="irtapplications.html#summary-4"><i class="fa fa-check"></i><b>28.3</b> Summary</a>
 <ul>
@@ -463,7 +463,7 @@ evenOthersUseCamelCase</code></pre>
 <span id="cb19-2"><a href="r-basics.html#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [1]  1  2  3  4  5  6  7  8  9 10</span></span></code></pre></div>
 <p>Not all functions have (or require) arguments:</p>
 <div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="r-basics.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">date</span>()</span>
-<span id="cb20-2"><a href="r-basics.html#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;Sun Mar 28 14:56:09 2021&quot;</span></span></code></pre></div>
+<span id="cb20-2"><a href="r-basics.html#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;Fri Apr 02 12:43:00 2021&quot;</span></span></code></pre></div>
 <p>Now look at your workspace – in the upper right pane. The workspace is where user-defined objects accumulate. You can also get a listing of these objects with commands:</p>
 <div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="r-basics.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">objects</span>()</span>
 <span id="cb21-2"><a href="r-basics.html#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [1] &quot;check_quietly&quot;              &quot;ds4p_urls&quot;                 </span></span>
@@ -544,7 +544,7 @@ evenOthersUseCamelCase</code></pre>
 <span id="cb29-4"><a href="r-basics.html#cb29-4" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">40</span>)</span>
 <span id="cb29-5"><a href="r-basics.html#cb29-5" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> a <span class="sc">+</span> b <span class="sc">*</span> x <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="dv">40</span>, <span class="at">sd =</span> <span class="fu">sqrt</span>(sig_sq))</span>
 <span id="cb29-6"><a href="r-basics.html#cb29-6" aria-hidden="true" tabindex="-1"></a>(avg_x <span class="ot">&lt;-</span> <span class="fu">mean</span>(x))</span>
-<span id="cb29-7"><a href="r-basics.html#cb29-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] 0.5</span></span>
+<span id="cb29-7"><a href="r-basics.html#cb29-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] 0.438</span></span>
 <span id="cb29-8"><a href="r-basics.html#cb29-8" aria-hidden="true" tabindex="-1"></a><span class="fu">write</span>(avg_x, <span class="st">&quot;avg_x.txt&quot;</span>)</span>
 <span id="cb29-9"><a href="r-basics.html#cb29-9" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x, y)</span>
 <span id="cb29-10"><a href="r-basics.html#cb29-10" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(a, b, <span class="at">col =</span> <span class="st">&quot;purple&quot;</span>)</span></code></pre></div>

@@ -3,7 +3,7 @@ title: "Psychological Testing"
 subtitle: "Course Notes"
 author: 
 - S. Mason Garrison
-date: "2021-03-28"
+date: "2021-04-02"
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 url: 'https\://r-computing-lab.github.io/psychtesting'
@@ -938,15 +938,15 @@ This version of the book was built with:
 #>  collate  English_United States.1252  
 #>  ctype    English_United States.1252  
 #>  tz       America/New_York            
-#>  date     2021-03-28
+#>  date     2021-04-02
 ```
 
 Along with these packages:
 
 
 ```{=html}
-<div id="htmlwidget-4dddc266f99874e74734" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4dddc266f99874e74734">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["askpass","assertthat","backports","base64enc","BH","blob","bookdown","brew","brio","broom","cachem","callr","cellranger","checkmate","cli","clipr","colorspace","commonmark","conflicted","covr","cpp11","crayon","credentials","crosstalk","crul","curl","DBI","dbplyr","desc","devtools","dichromat","diffobj","digest","dplyr","DT","ellipsis","evaluate","fansi","farver","fastmap","forcats","fs","gapminder","gender","genderdata","generics","geonames","gert","ggplot2","gh","gitcreds","glue","gridExtra","gt","gtable","haven","highr","hms","htmltools","htmlwidgets","httpcode","httr","ini","isoband","jsonlite","knitr","labeling","later","lattice","lazyeval","lifecycle","lubridate","magrittr","markdown","MASS","Matrix","memoise","mgcv","mime","modelr","munsell","nlme","openssl","pillar","pkgbuild","pkgconfig","pkgload","plyr","praise","prettyunits","processx","progress","promises","ps","purrr","R6","rappdirs","rcmdcheck","RColorBrewer","Rcpp","readr","readxl","rebird","rematch","rematch2","remotes","reprex","reshape2","rex","rjson","rlang","rmarkdown","roxygen2","rplos","rprojroot","rstudioapi","rversions","rvest","sass","scales","selectr","sessioninfo","solrium","stringi","stringr","sys","testthat","tibble","tidyr","tidyselect","tidyverse","tinytex","triebeard","urltools","usethis","utf8","vctrs","viridis","viridisLite","waldo","whisker","withr","xfun","xml2","xopen","yaml","zip"],[null,"0.2.1","1.2.1",null,null,null,"0.21",null,null,"0.7.5","1.0.4","3.5.1","1.1.0",null,"2.3.0",null,"2.0-0",null,null,null,null,"1.4.1",null,null,null,null,"1.1.1","2.1.0","1.2.0","2.3.2",null,null,"0.6.27","1.0.4","0.17","0.3.1","0.14",null,null,"1.1.0","0.5.1","1.5.0",null,null,null,"0.1.0",null,null,"3.3.3",null,null,"1.4.2",null,null,"0.3.0","2.3.1",null,"1.0.0","0.5.1.1","1.5.3",null,"1.4.2",null,null,"1.7.2","1.31",null,null,null,null,"1.0.0","1.7.9.2","2.0.1",null,null,null,"2.0.0",null,null,"0.1.8","0.5.0",null,null,"1.4.7","1.2.0","2.0.3","1.1.0",null,null,"1.1.1","3.4.5",null,null,"1.5.0","0.3.4","2.5.0",null,null,null,"1.0.6","1.4.0","1.3.1",null,null,null,"2.2.0","1.0.0",null,null,null,"0.4.10","2.7",null,null,"2.0.2","0.13",null,"0.3.6","0.3.1","1.1.1",null,"1.1.1",null,"1.5.3","1.4.0",null,"3.0.1","3.0.6","1.1.2","1.1.0","1.3.0",null,null,null,"2.0.1",null,"0.3.6",null,null,null,null,"2.4.1","0.21","1.3.2",null,"2.2.1",null],["2019-01-13","2019-03-21","2020-12-09","2015-07-28","2021-01-11","2020-01-20","2020-10-13","2011-04-13","2021-01-20","2021-02-19","2021-02-13","2020-10-13","2016-07-27","2020-02-06","2021-01-31","2020-10-08","2020-11-11","2018-12-01","2019-06-21","2020-09-16","2021-01-29","2021-02-08","2020-07-21","2021-01-12","2021-02-15","2019-12-02","2021-01-15","2021-02-03","2018-05-01","2020-09-18","2013-01-24","2021-01-07","2020-10-24","2021-02-02","2021-01-06","2020-05-15","2019-05-28","2021-01-15","2020-01-16","2021-01-25","2021-01-27","2020-07-31","2017-10-31","2020-05-15","2020-11-17","2020-10-31","2019-02-19","2021-02-14","2020-12-30","2020-11-27","2020-12-04","2020-08-27","2017-09-09","2020-08-05","2019-03-25","2020-06-01","2019-03-20","2021-01-13","2021-01-22","2020-12-10","2020-04-10","2020-07-20","2018-05-20","2020-12-01","2020-12-09","2021-01-27","2020-10-20","2020-06-05","2020-04-02","2019-03-15","2021-02-15","2020-11-13","2020-11-17","2019-08-07","2020-09-09","2021-01-06","2021-01-26","2020-08-27","2021-02-13","2020-05-19","2018-06-12","2021-02-04","2020-09-18","2020-11-20","2020-12-15","2019-09-22","2020-05-29","2020-03-03","2015-08-11","2020-01-24","2020-11-30","2019-05-16","2021-02-11","2020-12-05","2020-04-17","2020-10-28","2021-01-31","2019-05-07","2014-12-07","2021-01-15","2020-10-05","2019-03-13","2021-01-27","2016-04-21","2020-05-01","2020-07-21","2021-01-27","2020-04-09","2020-04-21","2018-06-08","2020-12-30","2021-02-19","2020-06-27","2020-04-08","2020-11-15","2020-11-12","2020-05-25","2020-07-25","2021-01-24","2020-05-11","2019-11-20","2018-11-05","2019-11-02","2020-09-09","2019-02-10","2020-07-23","2020-12-17","2021-01-29","2020-08-27","2020-05-11","2019-11-21","2021-02-15","2016-08-04","2019-04-14","2021-02-10","2018-05-24","2020-12-17","2018-03-29","2018-02-01","2021-02-11","2019-08-28","2021-01-26","2021-02-10","2020-04-23","2018-09-17","2020-02-01","2020-08-27"],["CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","local","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.4)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.4)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","Github (yihui/tinytex@b2d1bae)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.3)"]],"container":"<table class=\"cell-border stripe\">\n  <thead>\n    <tr>\n      <th>package<\/th>\n      <th>loadedversion<\/th>\n      <th>date<\/th>\n      <th>source<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":147,"autoWidth":true,"bInfo":false,"paging":false,"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[10,25,50,100,147]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-d0372cc3a8b9f2714993" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d0372cc3a8b9f2714993">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["askpass","assertthat","backports","base64enc","BH","blob","bookdown","brew","brio","broom","cachem","callr","cellranger","checkmate","cli","clipr","colorspace","commonmark","conflicted","covr","cpp11","crayon","credentials","crosstalk","crul","curl","DBI","dbplyr","desc","devtools","dichromat","diffobj","digest","dplyr","DT","ellipsis","evaluate","fansi","farver","fastmap","forcats","fs","gapminder","gender","genderdata","generics","geonames","gert","ggplot2","gh","gitcreds","glue","gridExtra","gt","gtable","haven","highr","hms","htmltools","htmlwidgets","httpcode","httr","ini","isoband","jsonlite","knitr","labeling","later","lattice","lazyeval","lifecycle","lubridate","magrittr","markdown","MASS","Matrix","memoise","mgcv","mime","modelr","munsell","nlme","openssl","pillar","pkgbuild","pkgconfig","pkgload","plyr","praise","prettyunits","processx","progress","promises","ps","purrr","R6","rappdirs","rcmdcheck","RColorBrewer","Rcpp","readr","readxl","rebird","rematch","rematch2","remotes","reprex","reshape2","rex","rjson","rlang","rmarkdown","roxygen2","rplos","rprojroot","rstudioapi","rversions","rvest","sass","scales","selectr","sessioninfo","solrium","stringi","stringr","sys","testthat","tibble","tidyr","tidyselect","tidyverse","tinytex","triebeard","urltools","usethis","utf8","vctrs","viridis","viridisLite","waldo","whisker","withr","xfun","xml2","xopen","yaml","zip"],[null,"0.2.1","1.2.1",null,null,null,"0.21",null,null,"0.7.5","1.0.4","3.6.0","1.1.0",null,"2.3.1",null,"2.0-0",null,null,null,null,"1.4.1",null,null,null,null,"1.1.1","2.1.0","1.3.0","2.3.2",null,null,"0.6.27","1.0.5","0.17","0.3.1","0.14","0.4.2",null,"1.1.0","0.5.1","1.5.0",null,null,null,"0.1.0",null,null,"3.3.3",null,null,"1.4.2",null,null,"0.3.0","2.3.1",null,"1.0.0","0.5.1.1","1.5.3",null,"1.4.2",null,null,"1.7.2","1.31",null,null,null,null,"1.0.0","1.7.10","2.0.1",null,null,null,"2.0.0",null,null,"0.1.8","0.5.0",null,null,"1.5.1","1.2.0","2.0.3","1.2.0",null,null,"1.1.1","3.5.0",null,null,"1.6.0","0.3.4","2.5.0",null,null,null,"1.0.6","1.4.0","1.3.1",null,null,null,"2.2.0","1.0.0",null,null,null,"0.4.10","2.7",null,null,"2.0.2","0.13",null,"1.0.0","0.3.1","1.1.1",null,"1.1.1",null,"1.5.3","1.4.0",null,"3.0.2","3.1.0","1.1.3","1.1.0","1.3.0",null,null,null,"2.0.1","1.2.1","0.3.7",null,null,null,null,"2.4.1","0.22","1.3.2",null,"2.2.1",null],["2019-01-13","2019-03-21","2020-12-09","2015-07-28","2021-01-11","2020-01-20","2020-10-13","2011-04-13","2021-01-20","2021-02-19","2021-02-13","2021-03-28","2016-07-27","2020-02-06","2021-02-23","2020-10-08","2020-11-11","2018-12-01","2019-06-21","2020-09-16","2021-03-29","2021-02-08","2020-07-21","2021-01-12","2021-02-15","2019-12-02","2021-01-15","2021-02-03","2021-03-05","2020-09-18","2013-01-24","2021-03-22","2020-10-24","2021-03-05","2021-01-06","2020-05-15","2019-05-28","2021-01-15","2021-02-28","2021-01-25","2021-01-27","2020-07-31","2017-10-31","2020-05-15","2020-11-17","2020-10-31","2019-02-19","2021-03-29","2020-12-30","2020-11-27","2020-12-04","2020-08-27","2017-09-09","2020-08-05","2019-03-25","2020-06-01","2019-03-20","2021-01-13","2021-01-22","2020-12-10","2020-04-10","2020-07-20","2018-05-20","2021-03-03","2020-12-09","2021-01-27","2020-10-20","2020-06-05","2020-04-02","2019-03-15","2021-02-15","2021-02-26","2020-11-17","2019-08-07","2020-09-09","2021-01-06","2021-01-26","2020-08-27","2021-02-13","2020-05-19","2018-06-12","2021-02-04","2020-09-18","2021-03-05","2020-12-15","2019-09-22","2021-02-23","2020-03-03","2015-08-11","2020-01-24","2021-03-23","2019-05-16","2021-02-11","2021-02-28","2020-04-17","2020-10-28","2021-01-31","2019-05-07","2014-12-07","2021-01-15","2020-10-05","2019-03-13","2021-01-27","2016-04-21","2020-05-01","2020-07-21","2021-01-27","2020-04-09","2020-04-21","2018-06-08","2020-12-30","2021-02-19","2020-06-27","2021-02-23","2020-11-15","2020-11-12","2020-05-25","2021-03-09","2021-01-24","2020-05-11","2019-11-20","2018-11-05","2019-11-02","2020-09-09","2019-02-10","2020-07-23","2021-02-14","2021-02-25","2021-03-03","2020-05-11","2019-11-21","2021-03-30","2016-08-04","2019-04-14","2021-02-10","2021-03-12","2021-03-29","2018-03-29","2018-02-01","2021-03-08","2019-08-28","2021-01-26","2021-03-11","2020-04-23","2018-09-17","2020-02-01","2020-08-27"],["CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","local","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.4)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.4)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.4)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.3)"]],"container":"<table class=\"cell-border stripe\">\n  <thead>\n    <tr>\n      <th>package<\/th>\n      <th>loadedversion<\/th>\n      <th>date<\/th>\n      <th>source<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":147,"autoWidth":true,"bInfo":false,"paging":false,"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[10,25,50,100,147]}},"evals":[],"jsHooks":[]}</script>
 ```
 
 
@@ -2121,7 +2121,7 @@ Not all functions have (or require) arguments:
 
 ```r
 date()
-#> [1] "Sun Mar 28 14:56:09 2021"
+#> [1] "Fri Apr 02 12:43:00 2021"
 ```
 
 Now look at your workspace -- in the upper right pane. The workspace is where user-defined objects accumulate. You can also get a listing of these objects with commands:
@@ -2259,7 +2259,7 @@ sig_sq <- 0.5
 x <- runif(40)
 y <- a + b * x + rnorm(40, sd = sqrt(sig_sq))
 (avg_x <- mean(x))
-#> [1] 0.5
+#> [1] 0.438
 write(avg_x, "avg_x.txt")
 plot(x, y)
 abline(a, b, col = "purple")
@@ -4304,7 +4304,7 @@ criterion <- rsim(rho = .8, x = rtotal, meany = 24,
   sdy = 6)
 # Check the correlation
 cor(rtotal, criterion$y)
-#> [1] 0.807
+#> [1] 0.787
 ```
 
 Suppose the internal consistency reliability for our criterion is 0.86. We know from Module \@ref(reliability) that internal consistency for the `PISA09` reading items is about 0.77. With a simple formula, we can calculate what the validity coefficient should be for our two measures, if each measure were perfectly reliable. Here, we denote this disattenuated correlation as the correlation between true scores on $X$ and $Y$.
@@ -4314,7 +4314,7 @@ Suppose the internal consistency reliability for our criterion is 0.86. We know 
 (\#eq:attenuation)
 \end{equation}
 
-Correcting for attenuation due to measurement error produces a validity coefficient of 0.99. This is a noteworthy increase from the original correlation of 0.80.
+Correcting for attenuation due to measurement error produces a validity coefficient of 0.97. This is a noteworthy increase from the original correlation of 0.80.
 
 
 ```r
@@ -4365,7 +4365,7 @@ epmr::coef_alpha(pisausa)
 #> [1] 11
 # Correction for attenuation
 cor(rtotal, criterion$y)/sqrt(.77 * .86)
-#> [1] 0.991
+#> [1] 0.967
 ```
 
 In summary, the steps for establishing criterion validity evidence are relatively simple. After defining the purpose of the test, a suitable criterion is identified. The two tests are administered to the same sample of individuals from the target population, and a correlation is obtained. If reliability estimates are available, we can then estimate the disattenuated coefficient, as shown above.
@@ -5233,11 +5233,11 @@ Standardized factor loadings are shown in the last column of the Latent Variable
 ```r
 # Print fit indices, loadings, and other output
 summary(bdicfa, fit = TRUE, standardized = TRUE)
-#> lavaan 0.6-7 ended normally after 41 iterations
+#> lavaan 0.6-8 ended normally after 41 iterations
 #> 
 #>   Estimator                                         ML
 #>   Optimization method                           NLMINB
-#>   Number of free parameters                         46
+#>   Number of model parameters                        46
 #>                                                       
 #>   Number of observations                           576
 #>                                                       
@@ -5371,11 +5371,11 @@ bdicfa2 <- cfa(bdimod2, sample.cov = BDI$S,
   sample.nobs = 576)
 # Print output
 summary(bdicfa2, fit = TRUE, standardized = TRUE)
-#> lavaan 0.6-7 ended normally after 29 iterations
+#> lavaan 0.6-8 ended normally after 29 iterations
 #> 
 #>   Estimator                                         ML
 #>   Optimization method                           NLMINB
-#>   Number of free parameters                         42
+#>   Number of model parameters                        42
 #>                                                       
 #>   Number of observations                           576
 #>                                                       
@@ -5516,11 +5516,11 @@ alcfa <- cfa(almod, sample.cov = cov(pisagbr[, alitems]),
   sample.nobs = 3514)
 # Print output
 summary(alcfa, fit = TRUE, standardized = TRUE)
-#> lavaan 0.6-7 ended normally after 20 iterations
+#> lavaan 0.6-8 ended normally after 20 iterations
 #> 
 #>   Estimator                                         ML
 #>   Optimization method                           NLMINB
-#>   Number of free parameters                         29
+#>   Number of model parameters                        29
 #>                                                       
 #>   Number of observations                          3514
 #>                                                       
@@ -6978,7 +6978,7 @@ Given its role and influence in educational and psychological measurement, the t
 This module begins with a comparison of IRT with classical test theory (CTT), including a discussion of strengths and weaknesses and some typical uses of each. Next, the traditional dichotomous IRT models are introduced with definitions of key terms and a comparison based on assumptions, benefits, limitations, and uses. Finally, details are provided on applications of IRT in item analysis, test development, item banking, and computer adaptive testing.
 
 
-## Learning objectives**
+## Learning objectives
 
 1. Compare and contrast IRT and CTT in terms of their strengths and weaknesses.
 2. Identify the two main assumptions that are made when using a traditional IRT model, regarding dimensionality and functional form or the number of model parameters.
@@ -7014,7 +7014,7 @@ Since its development in the 1950s and 1960s [@lord1952theory; @rasch1960probabi
 
 ## CTT review
 
-As presented in Module \@ref(reliability), CTT gives us a model for the observed total score $X$. This model decomposes $X$ into two parts, truth $T$ and error $E$:
+As discussed previously, CTT gives us a model for the observed total score $X$. This model decomposes $X$ into two parts, truth $T$ and error $E$:
 
 \begin{equation}
 X = T + E.
@@ -7183,7 +7183,7 @@ Note that anytime we assume a given item parameter, for example, the $c$ paramet
 
 # Applications {#irtapplications}
 
-## In practice
+## In practice...
 
 As is true when comparing other statistical models, the choice of Rasch, 1PL, 2PL, or 3PL should be based on considerations of theory, model assumptions, and sample size.
 

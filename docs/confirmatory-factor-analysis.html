@@ -24,7 +24,7 @@
 <meta name="author" content="S. Mason Garrison" />
 
 
-<meta name="date" content="2021-03-28" />
+<meta name="date" content="2021-04-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -310,7 +310,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="part"><span><b>VI Module 11</b></span></li>
 <li class="chapter" data-level="25" data-path="irt.html"><a href="irt.html"><i class="fa fa-check"></i><b>25</b> Item Response Theory</a>
 <ul>
-<li class="chapter" data-level="25.1" data-path="irt.html"><a href="irt.html#learning-objectives"><i class="fa fa-check"></i><b>25.1</b> Learning objectives**</a></li>
+<li class="chapter" data-level="25.1" data-path="irt.html"><a href="irt.html#learning-objectives"><i class="fa fa-check"></i><b>25.1</b> Learning objectives</a></li>
 </ul></li>
 <li class="chapter" data-level="26" data-path="irt-versus-ctt.html"><a href="irt-versus-ctt.html"><i class="fa fa-check"></i><b>26</b> IRT versus CTT</a>
 <ul>
@@ -325,7 +325,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="28" data-path="irtapplications.html"><a href="irtapplications.html"><i class="fa fa-check"></i><b>28</b> Applications</a>
 <ul>
-<li class="chapter" data-level="28.1" data-path="irtapplications.html"><a href="irtapplications.html#in-practice"><i class="fa fa-check"></i><b>28.1</b> In practice</a></li>
+<li class="chapter" data-level="28.1" data-path="irtapplications.html"><a href="irtapplications.html#in-practice"><i class="fa fa-check"></i><b>28.1</b> In practice…</a></li>
 <li class="chapter" data-level="28.2" data-path="irtapplications.html"><a href="irtapplications.html#irtexamples"><i class="fa fa-check"></i><b>28.2</b> Examples</a></li>
 <li class="chapter" data-level="28.3" data-path="irtapplications.html"><a href="irtapplications.html#summary-4"><i class="fa fa-check"></i><b>28.3</b> Summary</a>
 <ul>
@@ -423,11 +423,11 @@ Figure 19.1: CFA model for the BDI-II, with factor loadings and error variances.
 <p>Standardized factor loadings are shown in the last column of the Latent Variables output. Some of the loadings match up well with those reported in the original study. Others are different. The discrepancies may be due to the fact that our CFA was run on correlations rounded to two decimal places that were converted using standard deviations to covariances, whereas raw data were used in the original study. Rounding can result in a loss of meaningful information.</p>
 <div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="confirmatory-factor-analysis.html#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Print fit indices, loadings, and other output</span></span>
 <span id="cb62-2"><a href="confirmatory-factor-analysis.html#cb62-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(bdicfa, <span class="at">fit =</span> <span class="cn">TRUE</span>, <span class="at">standardized =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb62-3"><a href="confirmatory-factor-analysis.html#cb62-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; lavaan 0.6-7 ended normally after 41 iterations</span></span>
+<span id="cb62-3"><a href="confirmatory-factor-analysis.html#cb62-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; lavaan 0.6-8 ended normally after 41 iterations</span></span>
 <span id="cb62-4"><a href="confirmatory-factor-analysis.html#cb62-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
 <span id="cb62-5"><a href="confirmatory-factor-analysis.html#cb62-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   Estimator                                         ML</span></span>
 <span id="cb62-6"><a href="confirmatory-factor-analysis.html#cb62-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   Optimization method                           NLMINB</span></span>
-<span id="cb62-7"><a href="confirmatory-factor-analysis.html#cb62-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   Number of free parameters                         46</span></span>
+<span id="cb62-7"><a href="confirmatory-factor-analysis.html#cb62-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   Number of model parameters                        46</span></span>
 <span id="cb62-8"><a href="confirmatory-factor-analysis.html#cb62-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;                                                       </span></span>
 <span id="cb62-9"><a href="confirmatory-factor-analysis.html#cb62-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   Number of observations                           576</span></span>
 <span id="cb62-10"><a href="confirmatory-factor-analysis.html#cb62-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;                                                       </span></span>
@@ -554,11 +554,11 @@ Figure 19.1: CFA model for the BDI-II, with factor loadings and error variances.
 <span id="cb63-13"><a href="confirmatory-factor-analysis.html#cb63-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">sample.nobs =</span> <span class="dv">576</span>)</span>
 <span id="cb63-14"><a href="confirmatory-factor-analysis.html#cb63-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Print output</span></span>
 <span id="cb63-15"><a href="confirmatory-factor-analysis.html#cb63-15" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(bdicfa2, <span class="at">fit =</span> <span class="cn">TRUE</span>, <span class="at">standardized =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb63-16"><a href="confirmatory-factor-analysis.html#cb63-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; lavaan 0.6-7 ended normally after 29 iterations</span></span>
+<span id="cb63-16"><a href="confirmatory-factor-analysis.html#cb63-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; lavaan 0.6-8 ended normally after 29 iterations</span></span>
 <span id="cb63-17"><a href="confirmatory-factor-analysis.html#cb63-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
 <span id="cb63-18"><a href="confirmatory-factor-analysis.html#cb63-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   Estimator                                         ML</span></span>
 <span id="cb63-19"><a href="confirmatory-factor-analysis.html#cb63-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   Optimization method                           NLMINB</span></span>
-<span id="cb63-20"><a href="confirmatory-factor-analysis.html#cb63-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   Number of free parameters                         42</span></span>
+<span id="cb63-20"><a href="confirmatory-factor-analysis.html#cb63-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   Number of model parameters                        42</span></span>
 <span id="cb63-21"><a href="confirmatory-factor-analysis.html#cb63-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;                                                       </span></span>
 <span id="cb63-22"><a href="confirmatory-factor-analysis.html#cb63-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   Number of observations                           576</span></span>
 <span id="cb63-23"><a href="confirmatory-factor-analysis.html#cb63-23" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;                                                       </span></span>
@@ -686,11 +686,11 @@ Figure 19.1: CFA model for the BDI-II, with factor loadings and error variances.
 <span id="cb65-12"><a href="confirmatory-factor-analysis.html#cb65-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">sample.nobs =</span> <span class="dv">3514</span>)</span>
 <span id="cb65-13"><a href="confirmatory-factor-analysis.html#cb65-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Print output</span></span>
 <span id="cb65-14"><a href="confirmatory-factor-analysis.html#cb65-14" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(alcfa, <span class="at">fit =</span> <span class="cn">TRUE</span>, <span class="at">standardized =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb65-15"><a href="confirmatory-factor-analysis.html#cb65-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; lavaan 0.6-7 ended normally after 20 iterations</span></span>
+<span id="cb65-15"><a href="confirmatory-factor-analysis.html#cb65-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; lavaan 0.6-8 ended normally after 20 iterations</span></span>
 <span id="cb65-16"><a href="confirmatory-factor-analysis.html#cb65-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
 <span id="cb65-17"><a href="confirmatory-factor-analysis.html#cb65-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   Estimator                                         ML</span></span>
 <span id="cb65-18"><a href="confirmatory-factor-analysis.html#cb65-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   Optimization method                           NLMINB</span></span>
-<span id="cb65-19"><a href="confirmatory-factor-analysis.html#cb65-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   Number of free parameters                         29</span></span>
+<span id="cb65-19"><a href="confirmatory-factor-analysis.html#cb65-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   Number of model parameters                        29</span></span>
 <span id="cb65-20"><a href="confirmatory-factor-analysis.html#cb65-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;                                                       </span></span>
 <span id="cb65-21"><a href="confirmatory-factor-analysis.html#cb65-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   Number of observations                          3514</span></span>
 <span id="cb65-22"><a href="confirmatory-factor-analysis.html#cb65-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;                                                       </span></span>
