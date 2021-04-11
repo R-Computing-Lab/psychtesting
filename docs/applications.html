@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>26 IRT versus CTT | Psychological Testing</title>
+  <title>29 Practical Testing Applications | Psychological Testing</title>
   <meta name="description" content="PSY 362: Psychological Testing" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="26 IRT versus CTT | Psychological Testing" />
+  <meta property="og:title" content="29 Practical Testing Applications | Psychological Testing" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://r-computing-lab.github.io/psychtesting" />
   <meta property="og:image" content="https://r-computing-lab.github.io/psychtestingassets/logo.png" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="R-Computing-Lab/psychtesting" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="26 IRT versus CTT | Psychological Testing" />
+  <meta name="twitter:title" content="29 Practical Testing Applications | Psychological Testing" />
   <meta name="twitter:site" content="@smasongarrison" />
   <meta name="twitter:description" content="PSY 362: Psychological Testing" />
   <meta name="twitter:image" content="https://r-computing-lab.github.io/psychtestingassets/logo.png" />
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="irt.html"/>
-<link rel="next" href="traditional-irt-models.html"/>
+<link rel="prev" href="irtapplications.html"/>
+<link rel="next" href="evaluation.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-3.5.1/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -396,58 +396,178 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="irt-versus-ctt" class="section level1" number="26">
-<h1><span class="header-section-number">26</span> IRT versus CTT</h1>
-<p>Since its development in the 1950s and 1960s <span class="citation">(<a href="references.html#ref-lord1952theory" role="doc-biblioref">Lord 1952</a>; <a href="references.html#ref-rasch1960probabilistic" role="doc-biblioref">Rasch 1960</a>)</span>, IRT has become the preferred statistical methodology for item analysis and test development. The success of IRT over its predecessor CTT comes primarily from the focus in IRT on the individual components that make up a test, that is, the items themselves. By modeling outcomes at the item level, rather than at the test level as in CTT, IRT is more complex but also more comprehensive in terms of the information it provides about test performance.</p>
-<div id="ctt-review" class="section level2" number="26.1">
-<h2><span class="header-section-number">26.1</span> CTT review</h2>
-<p>As discussed previously, CTT gives us a model for the observed total score <span class="math inline">\(X\)</span>. This model decomposes <span class="math inline">\(X\)</span> into two parts, truth <span class="math inline">\(T\)</span> and error <span class="math inline">\(E\)</span>:</p>
-<p><span class="math display">\[\begin{equation}
-X = T + E.
-\end{equation}\]</span></p>
-<p>The true score <span class="math inline">\(T\)</span> is the construct we’re intending to measure, and we assume it plays some systematic role in causing people to obtain observed scores on <span class="math inline">\(X\)</span>. The error <span class="math inline">\(E\)</span> is everything randomly unrelated to the construct we’re intending to measure. Error also has a direct impact on <span class="math inline">\(X\)</span>. From Module <a href="itemanalysis.html#itemanalysis">20</a>, two item statistics that come from CTT are the mean performance on a given item, referred to as the <span class="math inline">\(p\)</span>-value for dichotomous items, and the (corrected) item-total correlation for an item. Before moving on, you should be familiar with these two statistics, item difficulty and item discrimination, how they are related, and what they tell us about the items in a test.</p>
-<p>It should be apparent that CTT is a relatively simple model of test performance. The simplicity of the model brings up its main limitation: the score scale is dependent on the items in the test and the people taking the test. The results of CTT are said to be <em>sample dependent</em> because 1) any <span class="math inline">\(X\)</span>, <span class="math inline">\(T\)</span>, or <span class="math inline">\(E\)</span> that you obtain for a particular test taker only has meaning within the test she or he took, and 2) any item difficulty or discrimination statistics you estimate only have meaning within a particular sample of test takers. So, the person parameters are dependent on the test we use, and the item parameters are dependent on the test takers.</p>
-<p>For example, suppose an instructor gives the same final exam to a new classroom of students each semester. At the first administration, the CITC discrimination for one item is 0.08. That’s low, and it suggests that there’s a problem with the item. However, in the second administration of the same exam to another group of students, the same item is found to have a CITC of 0.52. Which of these discriminations is correct? According to CTT, they’re both correct, for the sample with which they are calculated. In CTT there is technically no absolute item difficulty or discrimination that generalizes across samples or populations of examinees. The same goes for ability estimates. If two students take different final exams for the same course, each with different items but the same number of items, ability estimates will depend on the difficulty and quality of the respective exams. There is no absolute ability estimate that generalizes across samples of items. This is the main limitation of CTT: parameters that come from the model are sample and test dependent.</p>
-<p>A second major limitation of CTT results from the fact that the model is specified using total scores. Because we rely on total scores in CTT, a given test only produces one estimate of reliability and, thus, one estimate of SEM, and these are assumed to be unchanging for all people taking the test. The measurement error we expect to see in scores would be the same regardless of level on the construct. This limitation is especially problematic when test items do not match the ability level of a particular group of people. For example, consider a comprehensive vocabulary test covering all of the words taught in a fourth grade classroom. The test is given to a group of students just starting fourth grade, and another group who just completed fourth grade and is starting fifth. Students who have had the opportunity to learn the test content should respond more reliably than students who have not. Yet, the test itself has a single reliability and SEM that would be used to estimate measurement error for any score. Thus, the second major limitation of CTT is that reliability and SEM are constant and do not depend on the construct.</p>
-</div>
-<div id="comparing-with-irt" class="section level2" number="26.2">
-<h2><span class="header-section-number">26.2</span> Comparing with IRT</h2>
-<p>IRT addresses the limitations of CTT, the limitations of sample and test dependence and a single constant SEM. As in CTT, IRT also provides a model of test performance. However, the model is defined at the item level, meaning there is, essentially, a separate model equation for each item in the test. So, IRT involves multiple item score models, as opposed to a single total score model. When the assumptions of the model are met, IRT parameters are, in theory, sample and item <em>independent</em>. This means that a person should have the same ability estimate no matter which set of items she or he takes, assuming the items pertain to the same test. And in IRT, a given item should have the same difficulty and discrimination no matter who is taking the test.</p>
-<p>IRT also takes into account the difficulty of the items that a person responds to when estimating the person’s ability or trait level. Although the construct estimate itself, in theory, does not depend on the items, the precision with which we estimate it does depend on the items taken. Estimates of the ability or trait are more precise when they’re based on items that are close to a person’s construct level. Precision decreases when there are mismatches between person construct and item difficulty. Thus, SEM in IRT can vary by the ability of the person and the characteristics of the items given.</p>
-<p>The main limitation of IRT is that it is a complex model requiring much larger samples of people than would be needed to utilize CTT. Whereas in CTT the recommended minimum is 100 examinees for conducting an item analysis (see Module <a href="itemanalysis.html#itemanalysis">20</a>), in IRT, as many as 500 or 1000 examinees may be needed to obtain stable results, depending on the complexity of the chosen model.</p>
-<div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb85-1"><a href="irt-versus-ctt.html#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Prepping data for examples</span></span>
-<span id="cb85-2"><a href="irt-versus-ctt.html#cb85-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Create subset of data for Great Britain, then reduce to </span></span>
-<span id="cb85-3"><a href="irt-versus-ctt.html#cb85-3" aria-hidden="true" tabindex="-1"></a><span class="co"># complete data</span></span>
-<span id="cb85-4"><a href="irt-versus-ctt.html#cb85-4" aria-hidden="true" tabindex="-1"></a>ritems <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;r414q02&quot;</span>, <span class="st">&quot;r414q11&quot;</span>, <span class="st">&quot;r414q06&quot;</span>, <span class="st">&quot;r414q09&quot;</span>,</span>
-<span id="cb85-5"><a href="irt-versus-ctt.html#cb85-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;r452q03&quot;</span>, <span class="st">&quot;r452q04&quot;</span>, <span class="st">&quot;r452q06&quot;</span>, <span class="st">&quot;r452q07&quot;</span>, <span class="st">&quot;r458q01&quot;</span>,</span>
-<span id="cb85-6"><a href="irt-versus-ctt.html#cb85-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;r458q07&quot;</span>, <span class="st">&quot;r458q04&quot;</span>)</span>
-<span id="cb85-7"><a href="irt-versus-ctt.html#cb85-7" aria-hidden="true" tabindex="-1"></a>rsitems <span class="ot">&lt;-</span> <span class="fu">paste0</span>(ritems, <span class="st">&quot;s&quot;</span>)</span>
-<span id="cb85-8"><a href="irt-versus-ctt.html#cb85-8" aria-hidden="true" tabindex="-1"></a>PISA09<span class="sc">$</span>rtotal <span class="ot">&lt;-</span> <span class="fu">rowSums</span>(PISA09[, rsitems])</span>
-<span id="cb85-9"><a href="irt-versus-ctt.html#cb85-9" aria-hidden="true" tabindex="-1"></a>pisagbr <span class="ot">&lt;-</span> PISA09[PISA09<span class="sc">$</span>cnt <span class="sc">==</span> <span class="st">&quot;GBR&quot;</span>,</span>
-<span id="cb85-10"><a href="irt-versus-ctt.html#cb85-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(rsitems, <span class="st">&quot;rtotal&quot;</span>)]</span>
-<span id="cb85-11"><a href="irt-versus-ctt.html#cb85-11" aria-hidden="true" tabindex="-1"></a>pisagbr <span class="ot">&lt;-</span> pisagbr[<span class="fu">complete.cases</span>(pisagbr), ]</span></code></pre></div>
-<p>Another key difference between IRT and CTT has to do with the shape of the relationship that we estimate between item score and construct score. The CTT discrimination models a simple linear relationship between the two, whereas IRT models a curvilinear relationship between them. Recall from Module <a href="itemanalysis.html#itemanalysis">20</a> that the discrimination for an item can be visualized within a scatter plot, with the construct on the <span class="math inline">\(x\)</span>-axis and item scores on the <span class="math inline">\(y\)</span>-axis. A strong positive item discrimination would be shown by points for incorrect scores bunching up at the bottom of the scale, and points for correct scores bunching up at the top. A line passing through these points would then have a positive slope. Because they’re based on correlations, ITC and CITC discriminations are always represented by a straight line. See Figure <a href="irt-versus-ctt.html#fig:irtplot1">26.1</a> for an example based on <code>PISA09</code> reading item <code>r452q06s</code>.</p>
-<div class="sourceCode" id="cb86"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb86-1"><a href="irt-versus-ctt.html#cb86-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get p-values conditional on rtotal</span></span>
-<span id="cb86-2"><a href="irt-versus-ctt.html#cb86-2" aria-hidden="true" tabindex="-1"></a><span class="co"># tapply() applies a function to the first argument over</span></span>
-<span id="cb86-3"><a href="irt-versus-ctt.html#cb86-3" aria-hidden="true" tabindex="-1"></a><span class="co"># subsets of data defined by the second argument</span></span>
-<span id="cb86-4"><a href="irt-versus-ctt.html#cb86-4" aria-hidden="true" tabindex="-1"></a>pvalues <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">rtotal =</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">11</span>,</span>
-<span id="cb86-5"><a href="irt-versus-ctt.html#cb86-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">p =</span> <span class="fu">tapply</span>(pisagbr<span class="sc">$</span>r452q06s, pisagbr<span class="sc">$</span>rtotal, mean))</span>
-<span id="cb86-6"><a href="irt-versus-ctt.html#cb86-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot CTT discrimination over scatter plot of scored item</span></span>
-<span id="cb86-7"><a href="irt-versus-ctt.html#cb86-7" aria-hidden="true" tabindex="-1"></a><span class="co"># responses</span></span>
-<span id="cb86-8"><a href="irt-versus-ctt.html#cb86-8" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(pisagbr, <span class="fu">aes</span>(rtotal, r414q06s)) <span class="sc">+</span></span>
-<span id="cb86-9"><a href="irt-versus-ctt.html#cb86-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">position =</span> <span class="fu">position_jitter</span>(<span class="at">w =</span> <span class="fl">0.1</span>,</span>
-<span id="cb86-10"><a href="irt-versus-ctt.html#cb86-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">h =</span> <span class="fl">0.1</span>)) <span class="sc">+</span></span>
-<span id="cb86-11"><a href="irt-versus-ctt.html#cb86-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="at">fill =</span> <span class="cn">NA</span>) <span class="sc">+</span></span>
-<span id="cb86-12"><a href="irt-versus-ctt.html#cb86-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(rtotal, p), <span class="at">data =</span> pvalues,</span>
-<span id="cb86-13"><a href="irt-versus-ctt.html#cb86-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">col =</span> <span class="st">&quot;green&quot;</span>, <span class="at">size =</span> <span class="dv">3</span>)</span>
-<span id="cb86-14"><a href="irt-versus-ctt.html#cb86-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; `geom_smooth()` using formula &#39;y ~ x&#39;</span></span></code></pre></div>
-<div class="figure"><span id="fig:irtplot1"></span>
-<img src="0600_irt_files/figure-html/irtplot1-1.png" alt="Scatter plots showing the relationship between total scores on the x-axis and scores from PISA item `r452q06s` on the y-axis. Lines represent the relationship between the construct and item scores for CTT (straight) and IRT (curved)." width="75%" />
-<p class="caption">
-Figure 26.1: Scatter plots showing the relationship between total scores on the x-axis and scores from PISA item <code>r452q06s</code> on the y-axis. Lines represent the relationship between the construct and item scores for CTT (straight) and IRT (curved).
+<div id="applications" class="section level1" number="29">
+<h1><span class="header-section-number">29</span> Practical Testing Applications</h1>
+<blockquote>
+<p>If my future were determined just by my performance on a standardized test, I wouldn’t be here.<br />
+— Michelle Obama</p>
+</blockquote>
+<p>Standardized tests are often used to inform high-stakes decisions, including decisions that limit access to educational programs, career paths, and other valuable opportunities. Ideally, test scores supplement other relevant information in these decisions, from sources such as interviews, recommendations, observations, and portfolios of work. In many situations, standardized test scores are considered essential because they provide a common objective measure of knowledge, achievement, and skills.</p>
+<p>Unfortunately, standardized test scores can be misused when the information they provide is inaccurate or when they have an undue influence on these decisions. A number of studies and reports refer to bias in standardized tests and an over-reliance on scores in high-stakes decision making <span class="citation">(e.g., <a href="references.html#ref-sternberg1997gre" role="doc-biblioref">Sternberg and Williams 1997</a>; <a href="references.html#ref-santelices2010unfair" role="doc-biblioref">Santelices and Wilson 2010</a>)</span>. As noted in the quote above, some people do not perform well on standardized tests, despite having what it takes to succeed.</p>
+<p>This module gives an overview of the various different types of tests, including standardized and unstandardized ones, that are used to support decision making in education and psychology. In this module we’ll compare types of tests in terms of their purposes. We’ll examine how these purposes are associated with certain features in a test, and we’ll look again at how the quality or validity of a test score can impact the effectiveness of score interpretations. We’ll end with an introduction to so-called next generation assessments, which are distinguished from more traditional item-based instruments by their leveraging of dynamic digital technologies for test administration and statistical learning for scoring and decision-making.</p>
+<div class="objectives">
+<p>
+<strong>Learning objectives</strong>
 </p>
+<ol style="list-style-type: decimal">
+<li>
+Provide examples of how testing supports low-stakes and high-stakes decision making in education and psychology.
+</li>
+<li>
+Describe the general purpose of aptitude testing and some common applications.
+</li>
+<li>
+Identify the distinctive features of aptitude tests and the main benefits and limitations in using aptitude tests to inform decision-making.
+</li>
+<li>
+Describe the general purpose of standardized achievement testing and some common applications.
+</li>
+<li>
+Identify the distinctive features of standardized achievement tests and the main benefits and limitations in using standardized achievement tests to inform decision-making.
+</li>
+<li>
+Compare and contrast different types of tests and test uses and identify examples of each, including summative, formative, mastery, and performance.
+</li>
+</ol>
 </div>
-<p>In IRT, the relationship between item and construct is similar to CTT, but the line follows what’s called a logistic curve. To demonstrate the usefulness of a logistic curve, we calculate a set of <span class="math inline">\(p\)</span>-values for item <code>r452q06s</code> <em>conditional on the construct</em>. In Figure <a href="irt-versus-ctt.html#fig:irtplot1">26.1</a>, the green points are <span class="math inline">\(p\)</span>-values calculated within each group of people having the same total reading score. For example, the <span class="math inline">\(p\)</span>-value on this item for students with a total score of 3 is about 0.20. As expected, people with lower totals have more incorrect than correct responses. As total scores increase, the number of people getting the item correct steadily increases. At a certain total score, around 5.5, we see roughly half the people get the item correct. Then, as we continue up the theta scale, more and more people get the item correct. IRT is used to capture the trend shown by the conditional <span class="math inline">\(p\)</span>-values in Figure <a href="irt-versus-ctt.html#fig:irtplot1">26.1</a>.</p>
+<div id="tests-and-decision-making" class="section level2" number="29.1">
+<h2><span class="header-section-number">29.1</span> Tests and decision making</h2>
+<p>As mentioned in other sections, tests are designed for different purposes, for example, to inform decisions impacting accountability, admissions, employment, graduation, licensing, and placement (see Table <a href="#tab:testpurposes"><strong>??</strong></a>). Test results can also impact decisions regarding treatment in mental health and counseling settings, interventions in special education, and policy and legal issues.</p>
+<div id="educational-decisions" class="section level3" number="29.1.1">
+<h3><span class="header-section-number">29.1.1</span> Educational decisions</h3>
+<p>Educational tests support decision making in both <em>low-stakes</em> and <em>high-stakes</em> situations. These terms refer to the consequences and impact of test results for those involved, where low-stakes testing has low impact and high-stakes can have large or lasting impact. Low-stakes tests address decision making for instructional planning and student placement. The myIGDI testing program involves low-stakes decisions regarding the selection of instructional interventions to support student learning. PISA could be considered a low-stakes test, at least for the student, as scores do not impact decisions made at the student level. Teacher-made classroom assessments and other tools for measuring student growth are also considered low-stakes tests.</p>
+<p>Let’s look at one of the oldest and best known standardized tests as an example of high-stakes decision making. Development of the first college admissions test began in the late 1800s when a group of universities in the US came together to form the College Entrance Examination Board (now called the College Board). In 1901, this group administered the original version of what would later be called the SAT. This original version consisted only of essay questions in select subject areas such as Latin, history, and physics. Some of these questions resemble ones we might find in standardized tests today. For example, from the physics section:</p>
+<blockquote>
+<p>A steamer is moving eastward at the rate of 240 meters per minute. A man runs northward across her deck at the rate of 180 meters per minute. Show by a drawing his actual path and compute his actual velocity in centimeters per second.</p>
+</blockquote>
+<p>The original test was intended only for limited use within the College Board. However, in 1926, the SAT was redesigned to appeal to institutions across the US. The 1926 version included nine content areas: analogies, antonyms, arithmetic, artificial classification, language, logical inference, number series, reading, and word definitions. It was based almost entirely on multiple-choice questions. For additional details, see <a href="http://sat.collegeboard.org">sat.collegeboard.org</a>.</p>
+<p>The College Board notes that the SAT was initially intended to be a universal measure of preparation for college. It was the first test to be utilized across multiple institutions, and it provided the only common metric with which to evaluate applicants. In this way, the authors assert it helped to level the playing field for applicants of diverse socio-economic backgrounds, to “democratize access to higher education for all students” <span class="citation">(<a href="references.html#ref-college2012sat" role="doc-biblioref">College Board 2012, 3</a>)</span>. For example, those who may have otherwise received preferential treatment because of connections with alumni could be compared directly to applicants without legacy connections.</p>
+<p>Since it was formally standardized in 1926, the SAT has become the most widely used college admissions exam, with over 1.5 million administrations annually (as of 2015). The test itself has changed substantially over the years; however, its stated purpose remains the same <span class="citation">(<a href="references.html#ref-college2012sat" role="doc-biblioref">College Board 2012</a>)</span>:</p>
+<blockquote>
+<p>Today the SAT serves as both a measure of students’ college readiness and as a valid and reliable predictor of college outcomes. Developed with input from teachers and educators, the SAT covers core content areas presented as part of a rigorous high school curriculum and deemed critical for success in college: critical reading, mathematics, and writing. The SAT measures knowledge and skills that are considered important by both high school teachers and college faculty.</p>
+</blockquote>
+<p>As we’ve seen in module <a href="validity.html#validity">9</a>, test developers such as the College Board are responsible for backing up claims such as these with validity evidence. However, in the end, colleges must evaluate whether or not these claims are met, and, if not, whether admission decisions can be made without a standardized test. Colleges are responsible for choosing how much weight test scores have in admissions decisions, and whether or not minimum cutoff scores are used.</p>
+<p>Criticism of the SAT, primarily regarding perceived bias in item content and scoring <span class="citation">(e.g., <a href="references.html#ref-santelices2010unfair" role="doc-biblioref">Santelices and Wilson 2010</a>)</span>, has led a number of colleges to drop it as an admissions requirement. These colleges base admissions decisions on other information, such as in-person interviews with applicants <span class="citation">(<a href="references.html#ref-miller2014test" role="doc-biblioref">Miller and Stassun 2014</a>)</span>.</p>
+<p>A 2009 survey of 246 colleges in the US found that 73% used the SAT in admissions decisions <span class="citation">(<a href="references.html#ref-briggs2009preparation" role="doc-biblioref">Briggs 2009</a>)</span>. Of those colleges using the SAT, 78% reported using scores holistically, that is, as supporting information within a portfolio of work contained in an application. On the other hand, 31% reported using SAT scores for quantitative rankings of applicants, and 21% reported further to have defined cut-off scores below which applicants would be disqualified for admission.</p>
+<p>Another controversial high-stakes use of educational testing involves accountability decisions within the US education system. For reviews of these issues in the context of the No Child Left Behind Act of 2001 (NCLB; Public Law 107-110), see <span class="citation"><a href="references.html#ref-hursh2005growth" role="doc-biblioref">Hursh</a> (<a href="references.html#ref-hursh2005growth" role="doc-biblioref">2005</a>)</span> and <span class="citation"><a href="references.html#ref-linn2002accountability" role="doc-biblioref">Linn, Baker, and Betebenner</a> (<a href="references.html#ref-linn2002accountability" role="doc-biblioref">2002</a>)</span>. <span class="citation"><a href="references.html#ref-abedi2004nclb" role="doc-biblioref">Abedi</a> (<a href="references.html#ref-abedi2004nclb" role="doc-biblioref">2004</a>)</span> discusses validity implications of NCLB for English language learners.</p>
+</div>
+<div id="psychological-decisions" class="section level3" number="29.1.2">
+<h3><span class="header-section-number">29.1.2</span> Psychological decisions</h3>
+<p>As an example of decision making in the context of psychology, we’ll look at one of the most widely used standardized personality tests. In the 1930s and 1940s, two researchers at the University of Minnesota pioneered an empirical and atheoretical method for developing personality and pathology scales. This method involved administering hundreds of short items to patients with known diagnoses. Items measuring specific personality traits and pathologies were identified based on consistent patterns of response for patients with those traits and pathologies. For example, patients diagnosed with depression responded in similar ways across certain items. Regardless of the content of the items (hence the atheoretical nature of the method), if depressed individuals responded in consistent ways, the items were assumed to measure depression. Table <a href="applications.html#tab:mmpi">29.1</a> contains names and descriptions for the original clinical scales of the Minnesota Multiphasic Personality Inventory (MMPI; for details, see <a href="http://en.wikipedia.org/wiki/Minnesota_Multiphasic_Personality_Inventory">wikipedia.org</a>).</p>
+<table>
+<caption><span id="tab:mmpi">Table 29.1: </span>Original Clinical Scales of the MMPI</caption>
+<thead>
+<tr class="header">
+<th align="left">Scale</th>
+<th align="left">What is measured</th>
+<th align="left">Items</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Hypochondriasis</td>
+<td align="left">Concern with bodily symptoms</td>
+<td align="left">32</td>
+</tr>
+<tr class="even">
+<td align="left">Depression</td>
+<td align="left">Depressive symptoms</td>
+<td align="left">57</td>
+</tr>
+<tr class="odd">
+<td align="left">Hysteria</td>
+<td align="left">Awareness of problems and vulnerabilities</td>
+<td align="left">60</td>
+</tr>
+<tr class="even">
+<td align="left">Psychopathic Deviate</td>
+<td align="left">Conflict, struggle, anger, respect for rules</td>
+<td align="left">50</td>
+</tr>
+<tr class="odd">
+<td align="left">Masculinity/Femininity</td>
+<td align="left">Stereotypical interests and behaviors</td>
+<td align="left">56</td>
+</tr>
+<tr class="even">
+<td align="left">Paranoia</td>
+<td align="left">Level of trust, suspiciousness, sensitivity</td>
+<td align="left">40</td>
+</tr>
+<tr class="odd">
+<td align="left">Psychasthenia</td>
+<td align="left">Worry, anxiety, tension, doubts, obsessiveness</td>
+<td align="left">48</td>
+</tr>
+<tr class="even">
+<td align="left">Schizophrenia</td>
+<td align="left">Odd thinking and social alienation</td>
+<td align="left">78</td>
+</tr>
+<tr class="odd">
+<td align="left">Hypomania</td>
+<td align="left">Level of excitability</td>
+<td align="left">46</td>
+</tr>
+<tr class="even">
+<td align="left">Social Introversion</td>
+<td align="left">People orientation</td>
+<td align="left">69</td>
+</tr>
+</tbody>
+</table>
+<p>The MMPI and other personality and psychopathology measures are used to support decisions in a variety of clinical settings, including diagnosis and treatment and therapy planning and evaluation. They are also used in personnel selection, where certain personality traits have been shown to correlate strongly with certain aspects of job performance. However, because of its emphasis on pathology and implications regarding mental illness, the MMPI can only be used in the US in employment decisions for high-risk or security-related positions such as police officer and fire fighter. Measures such as the MMPI can also be used in forensics, criminal investigations, and in court <span class="citation">(<a href="references.html#ref-pope2006mmpi" role="doc-biblioref">Pope, Butcher, and Seelen 2006</a>)</span>. Given their impact on mental health outcomes, career choices, and legal proceedings, these could all be considered high-stakes decisions.</p>
+</div>
+</div>
+<div id="test-types-and-features" class="section level2" number="29.2">
+<h2><span class="header-section-number">29.2</span> Test types and features</h2>
+<p>Over the past hundred years numerous terms have been introduced to distinguish different tests from one another based on certain features of the tests themselves and what they are intended to measure. Educational tests have been described as measuring constructs that are the focus of instruction and learning, whereas psychological tests measure constructs that are not the focus of teaching and learning. Thus, educational and psychological tests differ in the constructs they measure. Related distinctions are made between cognitive and affective tests, and achievement and aptitude tests. Other distinctions include summative versus formative, mastery versus growth, and knowledge versus performance.</p>
+<div id="cognitive-and-affective" class="section level3" number="29.2.1">
+<h3><span class="header-section-number">29.2.1</span> Cognitive and affective</h3>
+<p>Cognitive testing refers to testing where the construct of interest is a cognitive ability. Cognition includes mental processes related to knowledge, comprehension, language acquisition and production, memory, reasoning, problem solving, and decision making. Intelligence tests, achievement tests, and aptitude tests are all considered cognitive tests because they assess constructs involving cognitive abilities and processing. Other examples of cognitive tests include educational admissions tests and certification tests.</p>
+<p>In affective testing, the construct of interest relates to psychological attributes not involving mental processing. Affective constructs include personality traits, psychopathologies, interests, attitudes, and perceptions, as discussed below. Note that cognitive measures are often used in both educational and psychological settings. However, affective measures are more common in psychological settings.</p>
+</div>
+<div id="achievement-and-aptitude" class="section level3" number="29.2.2">
+<h3><span class="header-section-number">29.2.2</span> Achievement and aptitude</h3>
+<p>Achievement and aptitude describe two related forms of cognitive tests. Both types of tests measure similar cognitive abilities and processes, but typically for slightly different purposes. Achievement tests are intended to describe learning and growth, for example, in order to identify how much content students have mastered in a unit of study. Accountability tests required by NCLB are achievement tests built on the educational curricula for states in the US. State curricula are divided into what are called <em>learning standards</em> or <em>curriculum standards</em>. These standards operationalize the curriculum in terms of what proficient students should know or be able to do.</p>
+<p>In contrast to achievement tests, aptitude tests are typically intended to measure cognitive abilities that are predictive of future performance. This future performance could be measured in terms of the same or a similar cognitive ability, or in terms of performance on other constructs and in other situations. For example, intelligence or IQ tests are used to identify individuals with developmental and learning disabilities and to predict job performance <span class="citation">(e.g., <a href="references.html#ref-carter2002matching" role="doc-biblioref">Carter 2002</a>)</span>. The Stanford Binet Intelligence Scales, originally developed in the early 1900s, were the first standardized aptitude tests. Others include the Wechsler Scales and the Woodcock-Johnson Psycho-Educational Battery.</p>
+<p>Intelligence tests and related measures of cognitive functioning have traditionally been used in the US to identify students in need of special education services. However, an over-reliance on test scores in these screening and placement decisions has led to criticism of the practice. A federal report <span class="citation">(<a href="references.html#ref-us2002revitalizing" role="doc-biblioref">US Department of Education 2002, 25</a>)</span> concluded that,</p>
+<blockquote>
+<p>Eliminating IQ tests from the identification process would help shift the emphasis in special education away from the current focus, which is on determining whether students are eligible for services, towards providing students the interventions they need to successfully learn.</p>
+</blockquote>
+<p>The myIGDI testing program is one example of a special education screening and placement measure that focuses on intervention to support student learning. Note that the emphasis on student learning in this context has resulted in tests that measure both aptitude and achievement, as they predict future performance while also describing student learning. Thus, tests for screening and placement of students with disabilities are now designed for multiple purposes.</p>
+<p>Tests that distinctly measure either achievement or aptitude usually differ in content and scope as well as purpose. Achievement tests are designed around a well defined content domain using a <em>test outline</em>. The test outline presents the content areas and learning standards or objectives needed to represent the underlying construct. An achievement test includes test questions that map directly to these content areas and objectives. As a result, a given question on an achievement test should have high <em>face validity</em>, that is, it should be clear what content the question is intended to measure. Furthermore, a correct response to such a question should depend directly on an individual’s learning of that content.</p>
+<p>On the other hand, aptitude tests, which are not intended to assess learning or mastery of a specific content domain, need not be restricted to specific content. They are still designed using a test outline. However, this outline captures the abilities and skills that are most related to or predictive of the construct, rather than content areas and learning objectives. Aptitude tests typically measure abilities and skills that generalize to other constructs and outcomes. As a result, the content of an aptitude question is not as important as the cognitive reasoning or processes used to respond correctly. Aptitude questions may not have high face validity, that is, it may not be clear what they are intended to measure and how the resulting scores will be used.</p>
+</div>
+<div id="other-distinctions" class="section level3" number="29.2.3">
+<h3><span class="header-section-number">29.2.3</span> Other distinctions</h3>
+<p>In the 1970s and 1980s, researchers in the areas of education and school psychology began to highlight a need for educational assessments tied directly to the curriculum and instructional objectives of the classroom in which they would be used. The term <em>performance assessment</em> was introduced to describe a more authentic form of assessment requiring students to demonstrate skills and competencies relevant to key outcomes of instruction <span class="citation"><a href="references.html#ref-stiggins1987design" role="doc-biblioref">Stiggins</a> (<a href="references.html#ref-stiggins1987design" role="doc-biblioref">1987</a>)</span>. Various types of performance assessment were developed specifically as alternatives to the summative tests that were then often created outside the classroom. For example, curriculum-based measurement (CBM), developed in the early 1980s <span class="citation">(<a href="references.html#ref-deno1985curriculum" role="doc-biblioref">Deno 1985</a>)</span>, involved brief, performance-based measures used to monitor student progress in core subject areas such as reading, writing, and math. Reading CBM assessed students’ oral reading fluency in the basal texts for the course; the content of the reading assessments came directly from the readings that students would encounter during the academic year. These assessments produced scores that could be used to model growth, and predict performance on end-of-year tests <span class="citation"><a href="references.html#ref-fuchs1999monitoring" role="doc-biblioref">Fuchs and Fuchs</a> (<a href="references.html#ref-fuchs1999monitoring" role="doc-biblioref">1999</a>)</span>.</p>
+<p>Although CBM and other forms of performance assessment remain popular today, the term <em>formative assessment</em> is now commonly used as a general label for the classroom-focused alternative to the traditional <em>summative</em> or end-of-year test. The main distinction between formative and summative is in the purpose or intended use of the resulting test score. Formative assessments are described as measuring incrementally, where the purpose is to directly encourage student growth <span class="citation">(<a href="references.html#ref-black1998inside" role="doc-biblioref">Black and Wiliam 1998</a>)</span>. They can be spread across multiple administrations, or used in conjunction with other versions of an assessment, so as to monitor and promote progress. Thus, formative assessments are designed to inform teaching and form learning. They seek to answer the question, “how are we doing?” <span class="citation"><a href="references.html#ref-wiliam1996meanings" role="doc-biblioref">Wiliam and Black</a> (<a href="references.html#ref-wiliam1996meanings" role="doc-biblioref">1996</a>)</span> further assert that in order to be formative, an assessment must provide information that is used to address a need or a gap in the student’s understanding; in other words, beyond an intent, there must be an attempt to apply the results. Note that it is less appropriate to label a test as formative, and preferable to instead label the process or use of scores as formative.</p>
+<p>On the other hand, summative assessments, or assessments used summatively, measures conclusively, usually at a single time point, where the intention is to describe current status. Summative assessment encourages growth only indirectly. In contrast to formative, it is designed to sum or summarize, to answer the question, “how did we do?” <span class="citation"><a href="references.html#ref-cizek2010introduction" role="doc-biblioref">Cizek</a> (<a href="references.html#ref-cizek2010introduction" role="doc-biblioref">2010</a>)</span> describes summative as an assessment that is administered at the end of an instructional unit the purpose of which is “primarily to categorize the performance of a student or system.” <span class="citation"><a href="references.html#ref-wiliam1996meanings" role="doc-biblioref">Wiliam and Black</a> (<a href="references.html#ref-wiliam1996meanings" role="doc-biblioref">1996</a>)</span> go further by saying that summative assessments cannot be formative, by definition.</p>
+<p>Despite debate over what specifically constitutes a formative assessment <span class="citation">(e.g., <a href="references.html#ref-bennett2011formative" role="doc-biblioref">Bennett 2011</a>)</span>, numerous studies have documented at least some positive impact resulting from the use of assessments that inform instruction during the school year <span class="citation">(<a href="references.html#ref-black1998inside" role="doc-biblioref">Black and Wiliam 1998</a>)</span>. Formative assessments have become a key component in many educational assessment systems <span class="citation">(<a href="references.html#ref-militello2010formative" role="doc-biblioref">Militello, Schweid, and Sireci 2010</a>)</span>.</p>
+</div>
+<div id="summary-5" class="section level3" number="29.2.4">
+<h3><span class="header-section-number">29.2.4</span> Summary</h3>
+<p>Although a variety of terms are available for describing educational and psychological tests, many tests can be described in different ways. The myIGDI measures was mentioned as an example of how achievement and aptitude tests can be difficult to distinguish from one another. Summative and formative tests often overlap as well, where a test can be used to both summarize and inform learning. In the end, the purpose of the test should be the main source of information for determining what type of test you’re dealing with and what that test is intended to do.</p>
+</div>
+</div>
+<div id="finding-test-information" class="section level2" number="29.3">
+<h2><span class="header-section-number">29.3</span> Finding test information</h2>
+<p>Information for commercially available tests can usually be found by searching online, with test publishers sharing summaries and technical documentation for their tests. Repositories of test information are also available online. ETS provides a searchable data base of over 25,000 tests at <a href="https://www.ets.org/test_link/">www.ets.org/test_link</a>. A search for the term “creativity” returns 213 records, including the Adult Playfulness Scale, “a personality measure which assesses the degree to which an individual tends to define an activity in an imaginative, nonserious or metaphoric manner so as to enhance intrinsic enjoyment, involvement, and satisfaction,” and the Fantasy Measure, where “Children complete stories in which the main character is a child under stress of failure.” In addition to a title and abstract, the data base includes basic information on publication date and authorship, sometimes with links to publisher websites.</p>
+<p>The Buros Center for Testing <a href="http://buros.org/">buros.org</a> also publishes a comprehensive data base of educational and psychological measures. In addition to descriptive information, they include peer evaluations of the psychometric properties of tests in what is called the <em>Mental Measurements Yearbook</em>. Buros peer reviews are available through university library subscriptions, or can be accessed online for a fee.</p>
+</div>
+<div id="summary-6" class="section level2" number="29.4">
+<h2><span class="header-section-number">29.4</span> Summary</h2>
+<p>This module provides an overview of how different types of tests are designed to inform a variety of decisions in education and psychology. For the most part, tests are designed merely to <em>inform</em> decision making processes, and test authors are often careful to clarify that no decision should be made based solely on test scores. Online data bases provide access to descriptive summaries and peer reviews of tests.</p>
+<div id="exercises-3" class="section level3" number="29.4.1">
+<h3><span class="header-section-number">29.4.1</span> Exercises</h3>
+<ol style="list-style-type: decimal">
+<li>Is it appropriate for colleges and graduate programs to have minimum cutoffs when reviewing standardized test scores in the admissions process? How would you recommend that scores from admissions tests be incorporated into admissions decisions?</li>
+<li>Describe the challenges involved in using a single test for multiple purposes, such as to measure both achievement and aptitude, or both status and growth, or both formative and summative information.</li>
+<li>Would you describe admissions tests like the SAT and GRE as aptitude or achievement tests? Explain your reasoning.</li>
+<li>Conduct an online search for information on one of the tests referenced in these notes. Look for details on the publication date, authors, and accessibility of the test. From the available information, summarize the test using the terms presented in this module.</li>
+</ol>
+</div>
 </div>
 </div>
             </section>
@@ -455,8 +575,8 @@ Figure 26.1: Scatter plots showing the relationship between total scores on the 
           </div>
         </div>
       </div>
-<a href="irt.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="traditional-irt-models.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="irtapplications.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="evaluation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -487,7 +607,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/DataScience4Psych/DataScience4Psych/edit/main/0600_irt.Rmd",
+"link": "https://github.com/DataScience4Psych/DataScience4Psych/edit/main/0700_applications.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -498,7 +618,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["https://github.com/DataScience4Psych/DataScience4Psych/raw/main/0600_irt.Rmd", "PT.epub"],
+"download": ["https://github.com/DataScience4Psych/DataScience4Psych/raw/main/0700_applications.Rmd", "PT.epub"],
 "toc": {
 "collapse": "section"
 }

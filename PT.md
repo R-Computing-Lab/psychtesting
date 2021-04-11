@@ -3,7 +3,7 @@ title: "Psychological Testing"
 subtitle: "Course Notes"
 author: 
 - S. Mason Garrison
-date: "2021-04-02"
+date: "2021-04-11"
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 url: 'https\://r-computing-lab.github.io/psychtesting'
@@ -938,15 +938,15 @@ This version of the book was built with:
 #>  collate  English_United States.1252  
 #>  ctype    English_United States.1252  
 #>  tz       America/New_York            
-#>  date     2021-04-02
+#>  date     2021-04-11
 ```
 
 Along with these packages:
 
 
 ```{=html}
-<div id="htmlwidget-d0372cc3a8b9f2714993" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d0372cc3a8b9f2714993">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["askpass","assertthat","backports","base64enc","BH","blob","bookdown","brew","brio","broom","cachem","callr","cellranger","checkmate","cli","clipr","colorspace","commonmark","conflicted","covr","cpp11","crayon","credentials","crosstalk","crul","curl","DBI","dbplyr","desc","devtools","dichromat","diffobj","digest","dplyr","DT","ellipsis","evaluate","fansi","farver","fastmap","forcats","fs","gapminder","gender","genderdata","generics","geonames","gert","ggplot2","gh","gitcreds","glue","gridExtra","gt","gtable","haven","highr","hms","htmltools","htmlwidgets","httpcode","httr","ini","isoband","jsonlite","knitr","labeling","later","lattice","lazyeval","lifecycle","lubridate","magrittr","markdown","MASS","Matrix","memoise","mgcv","mime","modelr","munsell","nlme","openssl","pillar","pkgbuild","pkgconfig","pkgload","plyr","praise","prettyunits","processx","progress","promises","ps","purrr","R6","rappdirs","rcmdcheck","RColorBrewer","Rcpp","readr","readxl","rebird","rematch","rematch2","remotes","reprex","reshape2","rex","rjson","rlang","rmarkdown","roxygen2","rplos","rprojroot","rstudioapi","rversions","rvest","sass","scales","selectr","sessioninfo","solrium","stringi","stringr","sys","testthat","tibble","tidyr","tidyselect","tidyverse","tinytex","triebeard","urltools","usethis","utf8","vctrs","viridis","viridisLite","waldo","whisker","withr","xfun","xml2","xopen","yaml","zip"],[null,"0.2.1","1.2.1",null,null,null,"0.21",null,null,"0.7.5","1.0.4","3.6.0","1.1.0",null,"2.3.1",null,"2.0-0",null,null,null,null,"1.4.1",null,null,null,null,"1.1.1","2.1.0","1.3.0","2.3.2",null,null,"0.6.27","1.0.5","0.17","0.3.1","0.14","0.4.2",null,"1.1.0","0.5.1","1.5.0",null,null,null,"0.1.0",null,null,"3.3.3",null,null,"1.4.2",null,null,"0.3.0","2.3.1",null,"1.0.0","0.5.1.1","1.5.3",null,"1.4.2",null,null,"1.7.2","1.31",null,null,null,null,"1.0.0","1.7.10","2.0.1",null,null,null,"2.0.0",null,null,"0.1.8","0.5.0",null,null,"1.5.1","1.2.0","2.0.3","1.2.0",null,null,"1.1.1","3.5.0",null,null,"1.6.0","0.3.4","2.5.0",null,null,null,"1.0.6","1.4.0","1.3.1",null,null,null,"2.2.0","1.0.0",null,null,null,"0.4.10","2.7",null,null,"2.0.2","0.13",null,"1.0.0","0.3.1","1.1.1",null,"1.1.1",null,"1.5.3","1.4.0",null,"3.0.2","3.1.0","1.1.3","1.1.0","1.3.0",null,null,null,"2.0.1","1.2.1","0.3.7",null,null,null,null,"2.4.1","0.22","1.3.2",null,"2.2.1",null],["2019-01-13","2019-03-21","2020-12-09","2015-07-28","2021-01-11","2020-01-20","2020-10-13","2011-04-13","2021-01-20","2021-02-19","2021-02-13","2021-03-28","2016-07-27","2020-02-06","2021-02-23","2020-10-08","2020-11-11","2018-12-01","2019-06-21","2020-09-16","2021-03-29","2021-02-08","2020-07-21","2021-01-12","2021-02-15","2019-12-02","2021-01-15","2021-02-03","2021-03-05","2020-09-18","2013-01-24","2021-03-22","2020-10-24","2021-03-05","2021-01-06","2020-05-15","2019-05-28","2021-01-15","2021-02-28","2021-01-25","2021-01-27","2020-07-31","2017-10-31","2020-05-15","2020-11-17","2020-10-31","2019-02-19","2021-03-29","2020-12-30","2020-11-27","2020-12-04","2020-08-27","2017-09-09","2020-08-05","2019-03-25","2020-06-01","2019-03-20","2021-01-13","2021-01-22","2020-12-10","2020-04-10","2020-07-20","2018-05-20","2021-03-03","2020-12-09","2021-01-27","2020-10-20","2020-06-05","2020-04-02","2019-03-15","2021-02-15","2021-02-26","2020-11-17","2019-08-07","2020-09-09","2021-01-06","2021-01-26","2020-08-27","2021-02-13","2020-05-19","2018-06-12","2021-02-04","2020-09-18","2021-03-05","2020-12-15","2019-09-22","2021-02-23","2020-03-03","2015-08-11","2020-01-24","2021-03-23","2019-05-16","2021-02-11","2021-02-28","2020-04-17","2020-10-28","2021-01-31","2019-05-07","2014-12-07","2021-01-15","2020-10-05","2019-03-13","2021-01-27","2016-04-21","2020-05-01","2020-07-21","2021-01-27","2020-04-09","2020-04-21","2018-06-08","2020-12-30","2021-02-19","2020-06-27","2021-02-23","2020-11-15","2020-11-12","2020-05-25","2021-03-09","2021-01-24","2020-05-11","2019-11-20","2018-11-05","2019-11-02","2020-09-09","2019-02-10","2020-07-23","2021-02-14","2021-02-25","2021-03-03","2020-05-11","2019-11-21","2021-03-30","2016-08-04","2019-04-14","2021-02-10","2021-03-12","2021-03-29","2018-03-29","2018-02-01","2021-03-08","2019-08-28","2021-01-26","2021-03-11","2020-04-23","2018-09-17","2020-02-01","2020-08-27"],["CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","local","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.4)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.4)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.4)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.3)"]],"container":"<table class=\"cell-border stripe\">\n  <thead>\n    <tr>\n      <th>package<\/th>\n      <th>loadedversion<\/th>\n      <th>date<\/th>\n      <th>source<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":147,"autoWidth":true,"bInfo":false,"paging":false,"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[10,25,50,100,147]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-21f84f1f5c1b697dd354" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-21f84f1f5c1b697dd354">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["askpass","assertthat","backports","base64enc","BH","blob","bookdown","brew","brio","broom","cachem","callr","cellranger","checkmate","cli","clipr","colorspace","commonmark","conflicted","covr","cpp11","crayon","credentials","crosstalk","crul","curl","DBI","dbplyr","desc","devtools","dichromat","diffobj","digest","dplyr","DT","ellipsis","evaluate","fansi","farver","fastmap","forcats","fs","gapminder","gender","genderdata","generics","geonames","gert","ggplot2","gh","gitcreds","glue","gridExtra","gt","gtable","haven","highr","hms","htmltools","htmlwidgets","httpcode","httr","ini","isoband","jsonlite","knitr","labeling","later","lattice","lazyeval","lifecycle","lubridate","magrittr","markdown","MASS","Matrix","memoise","mgcv","mime","modelr","munsell","nlme","openssl","pillar","pkgbuild","pkgconfig","pkgload","plyr","praise","prettyunits","processx","progress","promises","ps","purrr","R6","rappdirs","rcmdcheck","RColorBrewer","Rcpp","readr","readxl","rebird","rematch","rematch2","remotes","reprex","reshape2","rex","rjson","rlang","rmarkdown","roxygen2","rplos","rprojroot","rstudioapi","rversions","rvest","sass","scales","selectr","sessioninfo","solrium","stringi","stringr","sys","testthat","tibble","tidyr","tidyselect","tidyverse","tinytex","triebeard","urltools","usethis","utf8","vctrs","viridis","viridisLite","waldo","whisker","withr","xfun","xml2","xopen","yaml","zip"],[null,"0.2.1","1.2.1",null,null,null,"0.21",null,null,"0.7.5","1.0.4","3.6.0","1.1.0",null,"2.3.1",null,"2.0-0",null,null,null,null,"1.4.1",null,null,null,null,"1.1.1","2.1.0","1.3.0","2.3.2",null,null,"0.6.27","1.0.5","0.17","0.3.1","0.14","0.4.2",null,"1.1.0","0.5.1","1.5.0",null,null,null,"0.1.0",null,null,"3.3.3",null,null,"1.4.2",null,null,"0.3.0","2.3.1",null,"1.0.0","0.5.1.1","1.5.3",null,"1.4.2",null,null,"1.7.2","1.31",null,null,null,null,"1.0.0","1.7.10","2.0.1",null,null,null,"2.0.0",null,null,"0.1.8","0.5.0",null,null,"1.5.1","1.2.0","2.0.3","1.2.0",null,null,"1.1.1","3.5.0",null,null,"1.6.0","0.3.4","2.5.0",null,null,null,"1.0.6","1.4.0","1.3.1",null,null,null,"2.2.0","1.0.0",null,null,null,"0.4.10","2.7",null,null,"2.0.2","0.13",null,"1.0.0","0.3.1","1.1.1",null,"1.1.1",null,"1.5.3","1.4.0",null,"3.0.2","3.1.0","1.1.3","1.1.0","1.3.0",null,null,null,"2.0.1","1.2.1","0.3.7",null,null,null,null,"2.4.1","0.22","1.3.2",null,"2.2.1",null],["2019-01-13","2019-03-21","2020-12-09","2015-07-28","2021-01-11","2020-01-20","2020-10-13","2011-04-13","2021-01-20","2021-02-19","2021-02-13","2021-03-28","2016-07-27","2020-02-06","2021-02-23","2020-10-08","2020-11-11","2018-12-01","2019-06-21","2020-09-16","2021-03-29","2021-02-08","2020-07-21","2021-01-12","2021-02-15","2019-12-02","2021-01-15","2021-02-03","2021-03-05","2020-09-18","2013-01-24","2021-03-22","2020-10-24","2021-03-05","2021-01-06","2020-05-15","2019-05-28","2021-01-15","2021-02-28","2021-01-25","2021-01-27","2020-07-31","2017-10-31","2020-05-15","2020-11-17","2020-10-31","2019-02-19","2021-03-29","2020-12-30","2020-11-27","2020-12-04","2020-08-27","2017-09-09","2020-08-05","2019-03-25","2020-06-01","2019-03-20","2021-01-13","2021-01-22","2020-12-10","2020-04-10","2020-07-20","2018-05-20","2021-03-03","2020-12-09","2021-01-27","2020-10-20","2020-06-05","2020-04-02","2019-03-15","2021-02-15","2021-02-26","2020-11-17","2019-08-07","2020-09-09","2021-01-06","2021-01-26","2020-08-27","2021-02-13","2020-05-19","2018-06-12","2021-02-04","2020-09-18","2021-03-05","2020-12-15","2019-09-22","2021-02-23","2020-03-03","2015-08-11","2020-01-24","2021-03-23","2019-05-16","2021-02-11","2021-02-28","2020-04-17","2020-10-28","2021-01-31","2019-05-07","2014-12-07","2021-01-15","2020-10-05","2019-03-13","2021-01-27","2016-04-21","2020-05-01","2020-07-21","2021-01-27","2020-04-09","2020-04-21","2018-06-08","2020-12-30","2021-02-19","2020-06-27","2021-02-23","2020-11-15","2020-11-12","2020-05-25","2021-03-09","2021-01-24","2020-05-11","2019-11-20","2018-11-05","2019-11-02","2020-09-09","2019-02-10","2020-07-23","2021-02-14","2021-02-25","2021-03-03","2020-05-11","2019-11-21","2021-03-30","2016-08-04","2019-04-14","2021-02-10","2021-03-12","2021-03-29","2018-03-29","2018-02-01","2021-03-08","2019-08-28","2021-01-26","2021-03-11","2020-04-23","2018-09-17","2020-02-01","2020-08-27"],["CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","local","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.4)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.4)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.4)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.3)"]],"container":"<table class=\"cell-border stripe\">\n  <thead>\n    <tr>\n      <th>package<\/th>\n      <th>loadedversion<\/th>\n      <th>date<\/th>\n      <th>source<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":147,"autoWidth":true,"bInfo":false,"paging":false,"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[10,25,50,100,147]}},"evals":[],"jsHooks":[]}</script>
 ```
 
 
@@ -2121,7 +2121,7 @@ Not all functions have (or require) arguments:
 
 ```r
 date()
-#> [1] "Fri Apr 02 12:43:00 2021"
+#> [1] "Sun Apr 11 19:12:13 2021"
 ```
 
 Now look at your workspace -- in the upper right pane. The workspace is where user-defined objects accumulate. You can also get a listing of these objects with commands:
@@ -2259,7 +2259,7 @@ sig_sq <- 0.5
 x <- runif(40)
 y <- a + b * x + rnorm(40, sd = sqrt(sig_sq))
 (avg_x <- mean(x))
-#> [1] 0.438
+#> [1] 0.532
 write(avg_x, "avg_x.txt")
 plot(x, y)
 abline(a, b, col = "purple")
@@ -4304,7 +4304,7 @@ criterion <- rsim(rho = .8, x = rtotal, meany = 24,
   sdy = 6)
 # Check the correlation
 cor(rtotal, criterion$y)
-#> [1] 0.787
+#> [1] 0.801
 ```
 
 Suppose the internal consistency reliability for our criterion is 0.86. We know from Module \@ref(reliability) that internal consistency for the `PISA09` reading items is about 0.77. With a simple formula, we can calculate what the validity coefficient should be for our two measures, if each measure were perfectly reliable. Here, we denote this disattenuated correlation as the correlation between true scores on $X$ and $Y$.
@@ -4314,7 +4314,7 @@ Suppose the internal consistency reliability for our criterion is 0.86. We know 
 (\#eq:attenuation)
 \end{equation}
 
-Correcting for attenuation due to measurement error produces a validity coefficient of 0.97. This is a noteworthy increase from the original correlation of 0.80.
+Correcting for attenuation due to measurement error produces a validity coefficient of 0.98. This is a noteworthy increase from the original correlation of 0.80.
 
 
 ```r
@@ -4365,7 +4365,7 @@ epmr::coef_alpha(pisausa)
 #> [1] 11
 # Correction for attenuation
 cor(rtotal, criterion$y)/sqrt(.77 * .86)
-#> [1] 0.967
+#> [1] 0.984
 ```
 
 In summary, the steps for establishing criterion validity evidence are relatively simple. After defining the purpose of the test, a suitable criterion is identified. The two tests are administered to the same sample of individuals from the target population, and a correlation is obtained. If reliability estimates are available, we can then estimate the disattenuated coefficient, as shown above.
@@ -7341,6 +7341,685 @@ This module provided an introduction to IRT, with a comparison to CTT, and detai
 6. Based on the distribution of item difficulties for the memorization scale, where should SEM be lowest? Check the SEM by plotting the TEF for the full scale.
 
 <!--chapter:end:0600_irt.Rmd-->
+
+# (PART) Module 12 {-}
+
+
+
+
+
+<!--DS4P Links-->
+[ds4p-web]: https://datascience4psych.github.io/DataScience4Psych
+[ds4p-git]: https://github.com/DataScience4Psych/DataScience4Psych
+[ds4p-slides]: https://github.com/DataScience4Psych/slides
+
+[ds4p-pl-all]: https://www.youtube.com/playlist?list=PLKrrdtYgOUYbWGmSnbLIYwdLOnGm6une6
+[ds4p-pl-00]: https://www.youtube.com/playlist?list=PLKrrdtYgOUYaEAnJX20Ryy4OSie375rVY
+[ds4p-pl-01]: https://www.youtube.com/playlist?list=PLKrrdtYgOUYao_7t5ycK4KDXNKaY-ECup
+[ds4p-pl-02]: https://www.youtube.com/playlist?list=PLKrrdtYgOUYZmr_T3PnuxjVIlj0C0kUNI
+[ds4p-pl-03]: https://www.youtube.com/playlist?list=PLKrrdtYgOUYaHmjzdRvfg0yhOIYQnfjwE
+[ds4p-pl-04]: https://www.youtube.com/playlist?list=PLKrrdtYgOUYYWFcel6_vp8__RUKLxhX4y
+[ds4p-pl-15]: https://www.youtube.com/playlist?list=PLKrrdtYgOUYa5MoYrV8EsWQ5jIr5ZYMpM
+
+
+<!--AE. Links-->
+[ae-02-bechdel]: https://github.com/DataScience4Psych/ae-02-bechdel-rmarkdown
+[ae-01a-un-votes]: https://github.com/DataScience4Psych/ae-01a-un-votes
+[ae-01b-covid]: https://github.com/DataScience4Psych/ae-01b-covid
+[ae-03-starwars-dataviz]: https://github.com/DataScience4Psych/ae-03-starwars-dataviz
+
+
+<!-- Lab Links-->
+
+[lab-01-hello]: https://github.com/DataScience4Psych/lab-01-hello-r
+
+<!--Slides-->
+[d01_welcome]: https://datascience4psych.github.io/slides/d01_welcome/d01_welcome.html
+[d02_toolkit]: https://datascience4psych.github.io/slides/d02_toolkit/d02_toolkit.html
+[d03_dataviz]: https://datascience4psych.github.io/slides/d03_dataviz/d03_dataviz.html
+[d04_ggplot2]: https://datascience4psych.github.io/slides/d04_ggplot2/d04_ggplot2.html
+[d05_viznum]: https://datascience4psych.github.io/slides/d05_viznum/d05_viznum.html
+[d06_vizcat]: https://datascience4psych.github.io/slides/d06_vizcat/d06_vizcat.html
+[d07_tidy]: https://datascience4psych.github.io/slides/d07_tidy/d07_tidy.html
+[d08_grammar]: https://datascience4psych.github.io/slides/d08_grammar/d08_grammar.html
+[d09_wrangle]: https://datascience4psych.github.io/slides/d09_wrangle/d09_wrangle.html
+[d10_dfs]: https://datascience4psych.github.io/slides/d10_dfs/d10_dfs.html
+[d11_types]: https://datascience4psych.github.io/slides/d11_types/d11_types.html
+[d12_import]: https://datascience4psych.github.io/slides/d12_import/d12_import.html
+[d13_goodviz]: https://datascience4psych.github.io/slides/d13_goodviz/d13_goodviz.html
+[d14_confound]: https://datascience4psych.github.io/slides/d14_confound/d14_confound.html
+[d15_goodtalk]: https://datascience4psych.github.io/slides/d15_goodtalk/d15_goodtalk.html
+[d16_webscraping]: https://datascience4psych.github.io/slides/d16_webscraping/d16_webscraping.html
+[d17_functions]: https://datascience4psych.github.io/slides/d17_functions/d17_functions.html
+
+<!--R Links-->
+[cran]: https://cloud.r-project.org
+[cran-faq]: https://cran.r-project.org/faqs.html
+[cran-R-admin]: http://cran.r-project.org/doc/manuals/R-admin.html
+[cran-add-ons]: https://cran.r-project.org/doc/manuals/R-admin.html#Add_002don-packages
+[r-proj]: https://www.r-project.org
+[stat-545]: https://stat545.com
+[software-carpentry]: https://software-carpentry.org
+[cran-r-extensions]: https://cran.r-project.org/doc/manuals/r-release/R-exts.html
+
+<!--RStudio Links-->
+[rstudio-preview]: https://www.rstudio.com/products/rstudio/download/preview/
+[rstudio-official]: https://www.rstudio.com/products/rstudio/#Desktop
+[rstudio-workbench]: https://www.rstudio.com/wp-content/uploads/2014/04/rstudio-workbench.png
+[rstudio-support]: https://support.rstudio.com/hc/en-us
+[rstudio-R-help]: https://support.rstudio.com/hc/en-us/articles/200552336-Getting-Help-with-R
+[rstudio-customizing]: https://support.rstudio.com/hc/en-us/articles/200549016-Customizing-RStudio
+[rstudio-key-shortcuts]: https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts
+[rstudio-command-history]: https://support.rstudio.com/hc/en-us/articles/200526217-Command-History
+[rstudio-using-projects]: https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects
+[rstudio-code-snippets]: https://support.rstudio.com/hc/en-us/articles/204463668-Code-Snippets
+[rstudio-dplyr-cheatsheet-download]: https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf
+[rstudio-regex-cheatsheet]: https://www.rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf
+[rstudio-devtools]: https://www.rstudio.com/products/rpackages/devtools/
+
+<!--HappyGitWithR Links-->
+[happy-git]: https://happygitwithr.com
+[hg-install-git]: https://happygitwithr.com/install-git.html
+[hg-git-client]: https://happygitwithr.com/git-client.html
+[hg-github-account]: https://happygitwithr.com/github-acct.html
+[hg-install-r-rstudio]: https://happygitwithr.com/install-r-rstudio.html
+[hg-connect-intro]: https://happygitwithr.com/connect-intro.html
+[hg-browsability]: https://happygitwithr.com/workflows-browsability.html
+[hg-shell]: https://happygitwithr.com/shell.html
+
+<!--Package Links-->
+[rmarkdown]: https://rmarkdown.rstudio.com
+[knitr-faq]: https://yihui.name/knitr/faq/
+
+[tidyverse-main-page]: https://www.tidyverse.org
+[tidyverse-web]: https://tidyverse.tidyverse.org
+[tidyverse-github]: https://github.com/hadley/tidyverse
+
+[dplyr-web]: https://dplyr.tidyverse.org
+[dplyr-cran]: https://CRAN.R-project.org/package=dplyr
+[dplyr-github]: https://github.com/hadley/dplyr
+[dplyr-vignette-intro]: https://cran.r-project.org/web/packages/dplyr/vignettes/dplyr.html
+[dplyr-vignette-window-fxns]: https://cran.r-project.org/web/packages/dplyr/vignettes/window-functions.html
+[dplyr-vignette-two-table]: https://dplyr.tidyverse.org/articles/two-table.html
+
+[lubridate-web]: https://lubridate.tidyverse.org
+[lubridate-cran]: https://CRAN.R-project.org/package=lubridate
+[lubridate-github]: https://github.com/tidyverse/lubridate
+[lubridate-vignette]: https://cran.r-project.org/web/packages/lubridate/vignettes/lubridate.html
+
+[tidyr-web]: https://tidyr.tidyverse.org
+[tidyr-cran]: https://CRAN.R-project.org/package=tidyr 
+
+[readr-web]: https://readr.tidyverse.org
+[readr-vignette-intro]: https://cran.r-project.org/web/packages/readr/vignettes/readr.html
+
+[stringr-web]: https://stringr.tidyverse.org
+[stringr-cran]: https://CRAN.R-project.org/package=stringr
+
+[ggplot2-web]: https://ggplot2.tidyverse.org
+[ggplot2-tutorial]: https://github.com/jennybc/ggplot2-tutorial
+[ggplot2-reference]: https://docs.ggplot2.org/current/
+[ggplot2-cran]: https://CRAN.R-project.org/package=ggplot2
+[ggplot2-github]: https://github.com/tidyverse/ggplot2
+[ggplot2-theme-args]: https://ggplot2.tidyverse.org/reference/ggtheme.html#arguments
+
+[gapminder-web]: https://www.gapminder.org
+[gapminder-cran]: https://CRAN.R-project.org/package=gapminder
+
+[assertthat-cran]: https://CRAN.R-project.org/package=assertthat
+[assertthat-github]: https://github.com/hadley/assertthat
+
+[ensurer-cran]: https://CRAN.R-project.org/package=ensurer
+[ensurer-github]: https://github.com/smbache/ensurer
+
+[assertr-cran]: https://CRAN.R-project.org/package=assertr
+[assertr-github]: https://github.com/ropensci/assertr
+
+[assertive-cran]: https://CRAN.R-project.org/package=assertive
+[assertive-bitbucket]: https://bitbucket.org/richierocks/assertive/src/master/
+
+[testthat-cran]: https://CRAN.R-project.org/package=testthat
+[testthat-github]: https://github.com/r-lib/testthat
+[testthat-web]: https://testthat.r-lib.org
+
+[viridis-cran]: https://CRAN.R-project.org/package=viridis
+[viridis-github]: https://github.com/sjmgarnier/viridis
+[viridis-vignette]: https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html
+
+[colorspace-cran]: https://CRAN.R-project.org/package=colorspace
+[colorspace-vignette]: https://cran.r-project.org/web/packages/colorspace/vignettes/hcl-colors.pdf
+
+[cowplot-cran]: https://CRAN.R-project.org/package=cowplot
+[cowplot-github]: https://github.com/wilkelab/cowplot
+[cowplot-vignette]: https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html
+
+[devtools-cran]: https://CRAN.R-project.org/package=devtools
+[devtools-github]: https://github.com/r-lib/devtools
+[devtools-web]: https://devtools.r-lib.org
+[devtools-cheatsheet]: https://www.rstudio.com/wp-content/uploads/2015/03/devtools-cheatsheet.pdf
+[devtools-cheatsheet-old]: https://rawgit.com/rstudio/cheatsheets/master/package-development.pdf
+[devtools-1-6]: https://blog.rstudio.com/2014/10/02/devtools-1-6/
+[devtools-1-8]: https://blog.rstudio.com/2015/05/11/devtools-1-9-0/
+[devtools-1-9-1]: https://blog.rstudio.com/2015/09/13/devtools-1-9-1/
+
+[googlesheets-cran]: https://CRAN.R-project.org/package=googlesheets
+[googlesheets-github]: https://github.com/jennybc/googlesheets
+
+[tidycensus-cran]: https://CRAN.R-project.org/package=tidycensus
+[tidycensus-github]: https://github.com/walkerke/tidycensus
+[tidycensus-web]: https://walkerke.github.io/tidycensus/index.html
+
+[fs-web]: https://fs.r-lib.org/index.html
+[fs-cran]: https://CRAN.R-project.org/package=fs
+[fs-github]: https://github.com/r-lib/fs
+
+[plumber-web]: https://www.rplumber.io
+[plumber-docs]: https://www.rplumber.io/docs/
+[plumber-github]: https://github.com/trestletech/plumber
+[plumber-cran]: https://CRAN.R-project.org/package=plumber
+
+[plyr-web]: http://plyr.had.co.nz
+
+[magrittr-web]: https://magrittr.tidyverse.org
+[forcats-web]: https://forcats.tidyverse.org
+[glue-web]: https://glue.tidyverse.org
+[stringi-cran]: https://CRAN.R-project.org/package=stringi
+[rex-github]: https://github.com/kevinushey/rex
+[rcolorbrewer-cran]: https://CRAN.R-project.org/package=RColorBrewer
+[dichromat-cran]: https://CRAN.R-project.org/package=dichromat
+
+[rdryad-web]: https://docs.ropensci.org/rdryad/
+[rdryad-cran]: https://CRAN.R-project.org/package=rdryad
+[rdryad-github]: https://github.com/ropensci/rdryad
+
+[roxygen2-cran]: https://CRAN.R-project.org/package=roxygen2
+[roxygen2-vignette]: https://cran.r-project.org/web/packages/roxygen2/vignettes/rd.html
+
+[shinythemes-web]: https://rstudio.github.io/shinythemes/
+[shinythemes-cran]: https://CRAN.R-project.org/package=shinythemes
+
+[shinyjs-web]: https://deanattali.com/shinyjs/
+[shinyjs-cran]: https://CRAN.R-project.org/package=shinyjs
+[shinyjs-github]: https://github.com/daattali/shinyjs
+
+[leaflet-web]: https://rstudio.github.io/leaflet/
+[leaflet-cran]: https://CRAN.R-project.org/package=leaflet
+[leaflet-github]: https://github.com/rstudio/leaflet
+
+[ggvis-web]: https://ggvis.rstudio.com
+[ggvis-cran]: https://CRAN.R-project.org/package=ggvis
+ 
+[usethis-web]: https://usethis.r-lib.org
+[usethis-cran]: https://CRAN.R-project.org/package=usethis
+[usethis-github]: https://github.com/r-lib/usethis
+
+[pkgdown-web]: https://pkgdown.r-lib.org
+[gh-github]: https://github.com/r-lib/gh
+
+[httr-web]: https://httr.r-lib.org
+[httr-cran]: https://CRAN.R-project.org/package=httr
+[httr-github]: https://github.com/r-lib/httr
+
+[gistr-web]: https://docs.ropensci.org/gistr
+[gistr-cran]: https://CRAN.R-project.org/package=gistr
+[gistr-github]: https://github.com/ropensci/gistr
+
+[rvest-web]: https://rvest.tidyverse.org
+[rvest-cran]: https://CRAN.R-project.org/package=rvest
+[rvest-github]: https://github.com/tidyverse/rvest
+
+[xml2-web]: https://xml2.r-lib.org
+[xml2-cran]: https://CRAN.R-project.org/package=xml2
+[xml2-github]: https://github.com/r-lib/xml2
+
+[jsonlite-paper]: https://arxiv.org/abs/1403.2805
+[jsonlite-cran]: https://CRAN.R-project.org/package=jsonlite
+[jsonlite-github]: https://github.com/jeroen/jsonlite
+
+[readxl-web]: https://readxl.tidyverse.org
+[readxl-github]: https://github.com/tidyverse/readxl
+[readxl-cran]: https://CRAN.R-project.org/package=readxl
+
+[janitor-web]: http://sfirke.github.io/janitor/
+[janitor-cran]: https://CRAN.R-project.org/package=janitor
+[janitor-github]: https://github.com/sfirke/janitor
+
+[purrr-web]: https://purrr.tidyverse.org
+[curl-cran]: https://CRAN.R-project.org/package=curl
+
+<!--Shiny links-->
+[shinydashboard-web]: https://rstudio.github.io/shinydashboard/
+[shinydashboard-cran]: https://CRAN.R-project.org/package=shinydashboard
+[shinydashboard-github]: https://github.com/rstudio/shinydashboard
+
+
+[shiny-official-web]: https://shiny.rstudio.com
+[shiny-official-tutorial]: https://shiny.rstudio.com/tutorial/
+[shiny-cheatsheet]: https://shiny.rstudio.com/images/shiny-cheatsheet.pdf
+[shiny-articles]: https://shiny.rstudio.com/articles/
+[shiny-bookdown]: https://bookdown.org/yihui/rmarkdown/shiny-documents.html
+[shiny-google-groups]: https://groups.google.com/forum/#!forum/shiny-discuss
+[shiny-stack-overflow]: https://stackoverflow.com/questions/tagged/shiny
+[shinyapps-web]: https://www.shinyapps.io
+[shiny-server-setup]: https://deanattali.com/2015/05/09/setup-rstudio-shiny-server-digital-ocean/
+[shiny-reactivity]: https://shiny.rstudio.com/articles/understanding-reactivity.html
+[shiny-debugging]: https://shiny.rstudio.com/articles/debugging.html
+[shiny-server]: https://www.rstudio.com/products/shiny/shiny-server/
+
+<!--Publications--> 
+[adv-r]: http://adv-r.had.co.nz
+[adv-r-fxns]: http://adv-r.had.co.nz/Functions.html
+[adv-r-dsl]: http://adv-r.had.co.nz/dsl.html
+[adv-r-defensive-programming]: http://adv-r.had.co.nz/Exceptions-Debugging.html#defensive-programming
+[adv-r-fxn-args]: http://adv-r.had.co.nz/Functions.html#function-arguments
+[adv-r-return-values]: http://adv-r.had.co.nz/Functions.html#return-values
+[adv-r-closures]: http://adv-r.had.co.nz/Functional-programming.html#closures
+
+[r4ds]: https://r4ds.had.co.nz
+[r4ds-transform]: https://r4ds.had.co.nz/transform.html
+[r4ds-strings]: https://r4ds.had.co.nz/strings.html
+[r4ds-readr-strings]: https://r4ds.had.co.nz/data-import.html#readr-strings
+[r4ds-dates-times]: https://r4ds.had.co.nz/dates-and-times.html
+[r4ds-data-import]: http://r4ds.had.co.nz/data-import.html
+[r4ds-relational-data]: https://r4ds.had.co.nz/relational-data.html
+[r4ds-pepper-shaker]: https://r4ds.had.co.nz/vectors.html#lists-of-condiments
+
+[r-pkgs2]: https://r-pkgs.org/index.html
+[r-pkgs2-whole-game]: https://r-pkgs.org/whole-game.html
+[r-pkgs2-description]: https://r-pkgs.org/description.html
+[r-pkgs2-man]: https://r-pkgs.org/man.htm
+[r-pkgs2-tests]: https://r-pkgs.org/tests.html
+[r-pkgs2-namespace]: https://r-pkgs.org/namespace.html
+[r-pkgs2-vignettes]: https://r-pkgs.org/vignettes.html
+[r-pkgs2-release]: https://r-pkgs.org/release.html
+[r-pkgs2-r-code]: https://r-pkgs.org/r.html#r
+
+[r-graphics-cookbook]: http://shop.oreilly.com/product/0636920023135.do
+
+[cookbook-for-r]: http://www.cookbook-r.com 
+[cookbook-for-r-graphs]: http://www.cookbook-r.com/Graphs/
+[cookbook-for-r-multigraphs]: http://www.cookbook-r.com/Graphs/Multiple_graphs_on_one_page_(ggplot2)/
+
+[elegant-graphics-springer]: https://www.springer.com/gp/book/9780387981413
+
+[testthat-article]: https://journal.r-project.org/archive/2011-1/RJournal_2011-1_Wickham.pdf
+[worry-about-color]: https://github.com/DataScience4Psych/DataScience4Psych/blob/master/admin/pdfs/Why%20Should%20Engineers%20and%20Scientists%20Be%20Worried%20About%20Color.pdf
+[escaping-rgbland-pdf]: https://eeecon.uibk.ac.at/~zeileis/papers/Zeileis+Hornik+Murrell-2009.pdf
+[escaping-rgbland-doi]: https://doi.org/10.1016/j.csda.2008.11.033
+
+
+<!--R Documentation-->
+[rdocs-extremes]: https://rdrr.io/r/base/Extremes.html
+[rdocs-range]: https://rdrr.io/r/base/range.html
+[rdocs-quantile]: https://rdrr.io/r/stats/quantile.html
+[rdocs-c]: https://rdrr.io/r/base/c.html
+[rdocs-list]: https://rdrr.io/r/base/list.html
+[rdocs-lm]: https://rdrr.io/r/stats/lm.html
+[rdocs-coef]: https://rdrr.io/r/stats/coef.html
+[rdocs-devices]: https://rdrr.io/r/grDevices/Devices.html
+[rdocs-ggsave]: https://rdrr.io/cran/ggplot2/man/ggsave.html
+[rdocs-dev]: https://rdrr.io/r/grDevices/dev.html
+
+
+<!--Wikipedia Links-->
+[wiki-snake-case]: https://en.wikipedia.org/wiki/Snake_case
+[wiki-hello-world]: https://en.wikipedia.org/wiki/%22Hello,_world!%22_program
+[wiki-janus]: https://en.wikipedia.org/wiki/Janus
+[wiki-nesting-dolls]: https://en.wikipedia.org/wiki/Matryoshka_doll
+[wiki-pure-fxns]: https://en.wikipedia.org/wiki/Pure_function
+[wiki-camel-case]: https://en.wikipedia.org/wiki/Camel_case
+[wiki-mojibake]: https://en.wikipedia.org/wiki/Mojibake
+[wiki-row-col-major-order]: https://en.wikipedia.org/wiki/Row-_and_column-major_order
+[wiki-boxplot]: https://en.wikipedia.org/wiki/Box_plot
+[wiki-brewer]: https://en.wikipedia.org/wiki/Cynthia_Brewer
+[wiki-vector-graphics]: https://en.wikipedia.org/wiki/Vector_graphics
+[wiki-raster-graphics]: https://en.wikipedia.org/wiki/Raster_graphics
+[wiki-dry]: https://en.wikipedia.org/wiki/Don%27t_repeat_yourself
+[wiki-web-scraping]: https://en.wikipedia.org/wiki/Web_scraping
+[wiki-xpath]: https://en.wikipedia.org/wiki/XPath
+[wiki-css-selector]: https://en.wikipedia.org/wiki/Cascading_Style_Sheets#Selector
+
+
+<!--Misc. Links-->
+[split-apply-combine]: https://www.jstatsoft.org/article/view/v040i01
+[useR-2014-dropbox]: https://www.dropbox.com/sh/i8qnluwmuieicxc/AAAgt9tIKoIm7WZKIyK25lh6a
+[gh-pages]: https://pages.github.com
+[html-preview]: http://htmlpreview.github.io
+[tj-mahr-slides]: https://github.com/tjmahr/MadR_Pipelines
+[dataschool-dplyr]: https://www.dataschool.io/dplyr-tutorial-for-faster-data-manipulation-in-r/
+[xckd-randall-munroe]: https://fivethirtyeight.com/features/xkcd-randall-munroe-qanda-what-if/
+[athena-zeus-forehead]: https://tinyurl.com/athenaforehead
+[tidydata-lotr]: https://github.com/jennybc/lotr-tidy#readme
+[minimal-make]: https://kbroman.org/minimal_make/
+[write-data-tweet]: https://twitter.com/vsbuffalo/statuses/358699162679787521
+[belt-and-suspenders]: https://www.wisegeek.com/what-does-it-mean-to-wear-belt-and-suspenders.htm
+[research-workflow]: https://www.carlboettiger.info/2012/05/06/research-workflow.html
+[yak-shaving]: https://seths.blog/2005/03/dont_shave_that/
+[yaml-with-csv]: https://blog.datacite.org/using-yaml-frontmatter-with-csv/
+[reproducible-examples]: https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example
+[blog-strings-as-factors]: https://notstatschat.tumblr.com/post/124987394001/stringsasfactors-sigh
+[bio-strings-as-factors]: https://simplystatistics.org/2015/07/24/stringsasfactors-an-unauthorized-biography
+[stackexchange-outage]: https://stackstatus.net/post/147710624694/outage-postmortem-july-20-2016
+[email-regex]: https://emailregex.com
+[fix-atom-bug]: https://davidvgalbraith.com/how-i-fixed-atom/
+[icu-regex]: http://userguide.icu-project.org/strings/regexp
+[regex101]: https://regex101.com
+[regexr]: https://regexr.com
+[utf8-debug]: http://www.i18nqa.com/debug/utf8-debug.html
+[unicode-no-excuses]: https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/
+[programmers-encoding]: http://kunststube.net/encoding/
+[encoding-probs-ruby]: https://www.justinweiss.com/articles/3-steps-to-fix-encoding-problems-in-ruby/
+[theyre-to-theyre]: https://www.justinweiss.com/articles/how-to-get-from-theyre-to-theyre/
+[lubridate-ex1]: https://www.r-exercises.com/2016/08/15/dates-and-times-simple-and-easy-with-lubridate-part-1/
+[lubridate-ex2]: https://www.r-exercises.com/2016/08/29/dates-and-times-simple-and-easy-with-lubridate-exercises-part-2/
+[lubridate-ex3]: https://www.r-exercises.com/2016/10/04/dates-and-times-simple-and-easy-with-lubridate-exercises-part-3/
+[google-sql-join]: https://www.google.com/search?q=sql+join&tbm=isch
+[min-viable-product]: https://blog.fastmonkeys.com/
+[telescope-rule]: http://c2.com/cgi/wiki?TelescopeRule
+[unix-philosophy]: http://www.faqs.org/docs/artu/ch01s06.html
+[twitter-wrathematics]: https://twitter.com/wrathematics
+[robbins-effective-graphs]: https://www.amazon.com/Creating-Effective-Graphs-Naomi-Robbins/dp/0985911123
+[r-graph-catalog-github]: https://github.com/jennybc/r-graph-catalog
+[google-pie-charts]: https://www.google.com/search?q=pie+charts+suck
+[why-pie-charts-suck]: https://www.richardhollins.com/blog/why-pie-charts-suck/
+[worst-figure]: https://robjhyndman.com/hyndsight/worst-figure/
+[naomi-robbins]: http://www.nbr-graphs.com
+[hadley-github-index]: https://hadley.github.io
+[scipy-2015-matplotlib-colors]: https://www.youtube.com/watch?v=xAoljeRJ3lU
+[winston-chang-github]: https://github.com/wch
+[favorite-rgb-color]: https://manyworldstheory.com/2013/01/15/my-favorite-rgb-color/
+[stowers-color-chart]: https://web.archive.org/web/20121022044903/http://research.stowers-institute.org/efg/R/Color/Chart/
+[stowers-using-color-in-R]: https://www.uv.es/conesa/CursoR/material/UsingColorInR.pdf
+[zombie-project]: https://imgur.com/ewmBeQG
+[tweet-project-resurfacing]: https://twitter.com/JohnDCook/status/522377493417033728
+[rgraphics-looks-tips]: https://blog.revolutionanalytics.com/2009/01/10-tips-for-making-your-r-graphics-look-their-best.html
+[rgraphics-svg-tips]: https://blog.revolutionanalytics.com/2011/07/r-svg-graphics.html
+[zev-ross-cheatsheet]: http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/
+[parker-writing-r-packages]: https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/
+[broman-r-packages]: https://kbroman.org/pkg_primer/
+[broman-tools4rr]: https://kbroman.org/Tools4RR/
+[leeks-r-packages]: https://github.com/jtleek/rpackages
+[build-maintain-r-packages]: https://thepoliticalmethodologist.com/2014/08/14/building-and-maintaining-r-packages-with-devtools-and-roxygen2/
+[murdoch-package-vignette-slides]: https://web.archive.org/web/20160824010213/http://www.stats.uwo.ca/faculty/murdoch/ism2013/5Vignettes.pdf
+[how-r-searches]: http://blog.obeautifulcode.com/R/How-R-Searches-And-Finds-Stuff/
+
+
+# Practical Testing Applications {#applications}
+
+> If my future were determined just by my performance on a standardized test, I wouldn't be here.  
+> --- Michelle Obama
+
+Standardized tests are often used to inform high-stakes decisions, including decisions that limit access to educational programs, career paths, and other valuable opportunities. Ideally, test scores supplement other relevant information in these decisions, from sources such as interviews, recommendations, observations, and portfolios of work. In many situations, standardized test scores are considered essential because they provide a common objective measure of knowledge, achievement, and skills.
+
+Unfortunately, standardized test scores can be misused when the information they provide is inaccurate or when they have an undue influence on these decisions. A number of studies and reports refer to bias in standardized tests and an over-reliance on scores in high-stakes decision making [e.g., @sternberg1997gre; @santelices2010unfair]. As noted in the quote above, some people do not perform well on standardized tests, despite having what it takes to succeed.
+
+This module gives an overview of the various different types of tests, including standardized and unstandardized ones, that are used to support decision making in education and psychology. In this module we'll compare types of tests in terms of their purposes. We'll examine how these purposes are associated with certain features in a test, and we'll look again at how the quality or validity of a test score can impact the effectiveness of score interpretations. We'll end with an introduction to so-called next generation assessments, which are distinguished from more traditional item-based instruments by their leveraging of dynamic digital technologies for test administration and statistical learning for scoring and decision-making.
+
+<div class="objectives">
+<p><strong>Learning objectives</strong></p>
+<ol style="list-style-type: decimal">
+<li>Provide examples of how testing supports low-stakes and high-stakes decision making in education and psychology.</li>
+<li>Describe the general purpose of aptitude testing and some common applications.</li>
+<li>Identify the distinctive features of aptitude tests and the main benefits and limitations in using aptitude tests to inform decision-making.</li>
+<li>Describe the general purpose of standardized achievement testing and some common applications.</li>
+<li>Identify the distinctive features of standardized achievement tests and the main benefits and limitations in using standardized achievement tests to inform decision-making.</li>
+<li>Compare and contrast different types of tests and test uses and identify examples of each, including summative, formative, mastery, and performance.</li>
+</ol>
+</div>
+
+## Tests and decision making
+
+As mentioned in other sections, tests are designed for different purposes, for example, to inform decisions impacting accountability, admissions, employment, graduation, licensing, and placement (see Table \@ref(tab:testpurposes)). Test results can also impact decisions regarding treatment in mental health and counseling settings, interventions in special education, and policy and legal issues.
+
+### Educational decisions
+
+Educational tests support decision making in both *low-stakes* and *high-stakes* situations. These terms refer to the consequences and impact of test results for those involved, where low-stakes testing has low impact and high-stakes can have large or lasting impact. Low-stakes tests address decision making for instructional planning and student placement. The myIGDI testing program involves low-stakes decisions regarding the selection of instructional interventions to support student learning. PISA could be considered a low-stakes test, at least for the student, as scores do not impact decisions made at the student level. Teacher-made classroom assessments and other tools for measuring student growth are also considered low-stakes tests.
+
+Let's look at one of the oldest and best known standardized tests as an example of high-stakes decision making. Development of the first college admissions test began in the late 1800s when a group of universities in the US came together to form the College Entrance Examination Board (now called the College Board). In 1901, this group administered the original version of what would later be called the SAT. This original version consisted only of essay questions in select subject areas such as Latin, history, and physics. Some of these questions resemble ones we might find in standardized tests today. For example, from the physics section:
+
+> A steamer is moving eastward at the rate of 240 meters per minute. A man runs northward across her deck at the rate of 180 meters per minute. Show by a drawing his actual path and compute his actual velocity in centimeters per second.
+
+The original test was intended only for limited use within the College Board. However, in 1926, the SAT was redesigned to appeal to institutions across the US. The 1926 version included nine content areas: analogies, antonyms, arithmetic, artificial classification, language, logical inference, number series, reading, and word definitions. It was based almost entirely on multiple-choice questions. For additional details, see [sat.collegeboard.org](http://sat.collegeboard.org).
+
+The College Board notes that the SAT was initially intended to be a universal measure of preparation for college. It was the first test to be utilized across multiple institutions, and it provided the only common metric with which to evaluate applicants. In this way, the authors assert it helped to level the playing field for applicants of diverse socio-economic backgrounds, to "democratize access to higher education for all students" [@college2012sat, p. 3]. For example, those who may have otherwise received preferential treatment because of connections with alumni could be compared directly to applicants without legacy connections.
+
+Since it was formally standardized in 1926, the SAT has become the most widely used college admissions exam, with over 1.5 million administrations annually (as of 2015). The test itself has changed substantially over the years; however, its stated purpose remains the same [@college2012sat]:
+
+> Today the SAT serves as both a measure of students' college readiness and as a valid and reliable predictor of college outcomes. Developed with input from teachers and educators, the SAT covers core content areas presented as part of a rigorous high school curriculum and deemed critical for success in college: critical reading, mathematics, and writing. The SAT measures knowledge and skills that are considered important by both high school teachers and college faculty.
+
+As we've seen in module \@ref(validity), test developers such as the College Board are responsible for backing up claims such as these with validity evidence. However, in the end, colleges must evaluate whether or not these claims are met, and, if not, whether admission decisions can be made without a standardized test. Colleges are responsible for choosing how much weight test scores have in admissions decisions, and whether or not minimum cutoff scores are used.
+
+Criticism of the SAT, primarily regarding perceived bias in item content and scoring [e.g., @santelices2010unfair], has led a number of colleges to drop it as an admissions requirement. These colleges base admissions decisions on other information, such as in-person interviews with applicants [@miller2014test].
+
+A 2009 survey of 246 colleges in the US found that 73% used the SAT in admissions decisions [@briggs2009preparation]. Of those colleges using the SAT, 78% reported using scores holistically, that is, as supporting information within a portfolio of work contained in an application. On the other hand, 31% reported using SAT scores for quantitative rankings of applicants, and 21% reported further to have defined cut-off scores below which applicants would be disqualified for admission.
+
+Another controversial high-stakes use of educational testing involves accountability decisions within the US education system. For reviews of these issues in the context of the No Child Left Behind Act of 2001 (NCLB; Public Law 107-110), see @hursh2005growth and @linn2002accountability. @abedi2004nclb discusses validity implications of NCLB for English language learners.
+
+### Psychological decisions
+
+As an example of decision making in the context of psychology, we'll look at one of the most widely used standardized personality tests. In the 1930s and 1940s, two researchers at the University of Minnesota pioneered an empirical and atheoretical method for developing personality and pathology scales. This method involved administering hundreds of short items to patients with known diagnoses. Items measuring specific personality traits and pathologies were identified based on consistent patterns of response for patients with those traits and pathologies. For example, patients diagnosed with depression responded in similar ways across certain items. Regardless of the content of the items (hence the atheoretical nature of the method), if depressed individuals responded in consistent ways, the items were assumed to measure depression. Table \@ref(tab:mmpi) contains names and descriptions for the original clinical scales of the Minnesota Multiphasic Personality Inventory (MMPI; for details, see [wikipedia.org](http://en.wikipedia.org/wiki/Minnesota_Multiphasic_Personality_Inventory)).
+
+
+Table: (\#tab:mmpi)Original Clinical Scales of the MMPI
+
+|Scale                  |What is measured                               |Items |
+|:----------------------|:----------------------------------------------|:-----|
+|Hypochondriasis        |Concern with bodily symptoms                   |32    |
+|Depression             |Depressive symptoms                            |57    |
+|Hysteria               |Awareness of problems and vulnerabilities      |60    |
+|Psychopathic Deviate   |Conflict, struggle, anger, respect for rules   |50    |
+|Masculinity/Femininity |Stereotypical interests and behaviors          |56    |
+|Paranoia               |Level of trust, suspiciousness, sensitivity    |40    |
+|Psychasthenia          |Worry, anxiety, tension, doubts, obsessiveness |48    |
+|Schizophrenia          |Odd thinking and social alienation             |78    |
+|Hypomania              |Level of excitability                          |46    |
+|Social Introversion    |People orientation                             |69    |
+
+The MMPI and other personality and psychopathology measures are used to support decisions in a variety of clinical settings, including diagnosis and treatment and therapy planning and evaluation. They are also used in personnel selection, where certain personality traits have been shown to correlate strongly with certain aspects of job performance. However, because of its emphasis on pathology and implications regarding mental illness, the MMPI can only be used in the US in employment decisions for high-risk or security-related positions such as police officer and fire fighter. Measures such as the MMPI can also be used in forensics, criminal investigations, and in court [@pope2006mmpi]. Given their impact on mental health outcomes, career choices, and legal proceedings, these could all be considered high-stakes decisions.
+
+## Test types and features
+
+Over the past hundred years numerous terms have been introduced to distinguish different tests from one another based on certain features of the tests themselves and what they are intended to measure. Educational tests have been described as measuring constructs that are the focus of instruction and learning, whereas psychological tests measure constructs that are not the focus of teaching and learning. Thus, educational and psychological tests differ in the constructs they measure. Related distinctions are made between cognitive and affective tests, and achievement and aptitude tests. Other distinctions include summative versus formative, mastery versus growth, and knowledge versus performance.
+
+
+### Cognitive and affective
+
+Cognitive testing refers to testing where the construct of interest is a cognitive ability. Cognition includes mental processes related to knowledge, comprehension, language acquisition and production, memory, reasoning, problem solving, and decision making. Intelligence tests, achievement tests, and aptitude tests are all considered cognitive tests because they assess constructs involving cognitive abilities and processing. Other examples of cognitive tests include educational admissions tests and certification tests.
+
+In affective testing, the construct of interest relates to psychological attributes not involving mental processing. Affective constructs include personality traits, psychopathologies, interests, attitudes, and perceptions, as discussed below. Note that cognitive measures are often used in both educational and psychological settings. However, affective measures are more common in psychological settings.
+
+### Achievement and aptitude
+
+Achievement and aptitude describe two related forms of cognitive tests. Both types of tests measure similar cognitive abilities and processes, but typically for slightly different purposes. Achievement tests are intended to describe learning and growth, for example, in order to identify how much content students have mastered in a unit of study. Accountability tests required by NCLB are achievement tests built on the educational curricula for states in the US. State curricula are divided into what are called *learning standards* or *curriculum standards*. These standards operationalize the curriculum in terms of what proficient students should know or be able to do.
+
+In contrast to achievement tests, aptitude tests are typically intended to measure cognitive abilities that are predictive of future performance. This future performance could be measured in terms of the same or a similar cognitive ability, or in terms of performance on other constructs and in other situations. For example, intelligence or IQ tests are used to identify individuals with developmental and learning disabilities and to predict job performance [e.g., @carter2002matching]. The Stanford Binet Intelligence Scales, originally developed in the early 1900s, were the first standardized aptitude tests. Others include the Wechsler Scales and the Woodcock-Johnson Psycho-Educational Battery.
+
+Intelligence tests and related measures of cognitive functioning have traditionally been used in the US to identify students in need of special education services. However, an over-reliance on test scores in these screening and placement decisions has led to criticism of the practice. A federal report [@us2002revitalizing, p. 25] concluded that,
+
+> Eliminating IQ tests from the identification process would help shift the emphasis in special education away from the current focus, which is on determining whether students are eligible for services, towards providing students the interventions they need to successfully learn.
+
+The myIGDI testing program is one example of a special education screening and placement measure that focuses on intervention to support student learning. Note that the emphasis on student learning in this context has resulted in tests that measure both aptitude and achievement, as they predict future performance while also describing student learning. Thus, tests for screening and placement of students with disabilities are now designed for multiple purposes.
+
+Tests that distinctly measure either achievement or aptitude usually differ in content and scope as well as purpose. Achievement tests are designed around a well defined content domain using a *test outline*. The test outline presents the content areas and learning standards or objectives needed to represent the underlying construct. An achievement test includes test questions that map directly to these content areas and objectives. As a result, a given question on an achievement test should have high *face validity*, that is, it should be clear what content the question is intended to measure. Furthermore, a correct response to such a question should depend directly on an individual's learning of that content.
+
+On the other hand, aptitude tests, which are not intended to assess learning or mastery of a specific content domain, need not be restricted to specific content. They are still designed using a test outline. However, this outline captures the abilities and skills that are most related to or predictive of the construct, rather than content areas and learning objectives. Aptitude tests typically measure abilities and skills that generalize to other constructs and outcomes. As a result, the content of an aptitude question is not as important as the cognitive reasoning or processes used to respond correctly. Aptitude questions may not have high face validity, that is, it may not be clear what they are intended to measure and how the resulting scores will be used.
+
+### Other distinctions
+
+In the 1970s and 1980s, researchers in the areas of education and school psychology began to highlight a need for educational assessments tied directly to the curriculum and instructional objectives of the classroom in which they would be used. The term *performance assessment* was introduced to describe a more authentic form of assessment requiring students to demonstrate skills and competencies relevant to key outcomes of instruction [@mehrens1992using, @stiggins1987design]. Various types of performance assessment were developed specifically as alternatives to the summative tests that were then often created outside the classroom. For example, curriculum-based measurement (CBM), developed in the early 1980s [@deno1985curriculum], involved brief, performance-based measures used to monitor student progress in core subject areas such as reading, writing, and math. Reading CBM assessed students' oral reading fluency in the basal texts for the course; the content of the reading assessments came directly from the readings that students would encounter during the academic year. These assessments produced scores that could be used to model growth, and predict performance on end-of-year tests [@deno2001using, @fuchs1999monitoring].
+
+Although CBM and other forms of performance assessment remain popular today, the term *formative assessment* is now commonly used as a general label for the classroom-focused alternative to the traditional *summative* or end-of-year test. The main distinction between formative and summative is in the purpose or intended use of the resulting test score. Formative assessments are described as measuring incrementally, where the purpose is to directly encourage student growth [@black1998inside]. They can be spread across multiple administrations, or used in conjunction with other versions of an assessment, so as to monitor and promote progress. Thus, formative assessments are designed to inform teaching and form learning. They seek to answer the question, "how are we doing?" @wiliam1996meanings further assert that in order to be formative, an assessment must provide information that is used to address a need or a gap in the student's understanding; in other words, beyond an intent, there must be an attempt to apply the results. Note that it is less appropriate to label a test as formative, and preferable to instead label the process or use of scores as formative.
+
+On the other hand, summative assessments, or assessments used summatively, measures conclusively, usually at a single time point, where the intention is to describe current status. Summative assessment encourages growth only indirectly. In contrast to formative, it is designed to sum or summarize, to answer the question, "how did we do?" @cizek2010introduction describes summative as an assessment that is administered at the end of an instructional unit the purpose of which is "primarily to categorize the performance of a student or system." @wiliam1996meanings go further by saying that summative assessments cannot be formative, by definition.
+
+Despite debate over what specifically constitutes a formative assessment [e.g., @bennett2011formative], numerous studies have documented at least some positive impact resulting from the use of assessments that inform instruction during the school year [@black1998inside]. Formative assessments have become a key component in many educational assessment systems [@militello2010formative].
+
+### Summary
+
+Although a variety of terms are available for describing educational and psychological tests, many tests can be described in different ways. The myIGDI measures was mentioned as an example of how achievement and aptitude tests can be difficult to distinguish from one another. Summative and formative tests often overlap as well, where a test can be used to both summarize and inform learning. In the end, the purpose of the test should be the main source of information for determining what type of test you're dealing with and what that test is intended to do.
+
+## Finding test information
+
+Information for commercially available tests can usually be found by searching online, with test publishers sharing summaries and technical documentation for their tests. Repositories of test information are also available online. ETS provides a searchable data base of over 25,000 tests at [www.ets.org/test_link](https://www.ets.org/test_link/). A search for the term "creativity" returns 213 records, including the Adult Playfulness Scale, "a personality measure which assesses the degree to which an individual tends to define an activity in an imaginative, nonserious or metaphoric manner so as to enhance intrinsic enjoyment, involvement, and satisfaction," and the Fantasy Measure, where "Children complete stories in which the main character is a child under stress of failure." In addition to a title and abstract, the data base includes basic information on publication date and authorship, sometimes with links to publisher websites.
+
+The Buros Center for Testing [buros.org](http://buros.org/) also publishes a comprehensive data base of educational and psychological measures. In addition to descriptive information, they include peer evaluations of the psychometric properties of tests in what is called the *Mental Measurements Yearbook*. Buros peer reviews are available through university library subscriptions, or can be accessed online for a fee.
+
+## Summary
+
+This module provides an overview of how different types of tests are designed to inform a variety of decisions in education and psychology. For the most part, tests are designed merely to *inform* decision making processes, and test authors are often careful to clarify that no decision should be made based solely on test scores. Online data bases provide access to descriptive summaries and peer reviews of tests.
+
+### Exercises
+
+1. Is it appropriate for colleges and graduate programs to have minimum cutoffs when reviewing standardized test scores in the admissions process? How would you recommend that scores from admissions tests be incorporated into admissions decisions?
+2. Describe the challenges involved in using a single test for multiple purposes, such as to measure both achievement and aptitude, or both status and growth, or both formative and summative information.
+3. Would you describe admissions tests like the SAT and GRE as aptitude or achievement tests? Explain your reasoning.
+4. Conduct an online search for information on one of the tests referenced in these notes. Look for details on the publication date, authors, and accessibility of the test. From the available information, summarize the test using the terms presented in this module.
+
+
+# Test Evaluation {#evaluation}
+
+Test evaluation summarizes many of the topics that precede it in this book, including test purpose, study design and results for reliability and validity, scoring and reporting guidelines, and recommendations for test use. The new material for this module includes the process of evaluating this information within a test review or technical manual when considering one or more tests for a particular use. Our perspective will be that of a test consumer, for example, a researcher or practitioner in the market for a test to inform some application, for example, a research question or some decision making process.
+
+This module utilizes the construct of *creativity*, specifically, *creative problem solving*, to demonstrate some of the more important considerations in the test evaluation process. Within this context, a few published tests are reviewed, and recommendations are provided regarding test purpose, study design, reliability, validity, scoring, and test use within a hypothetical measurement application.
+
+<div class="objectives">
+<p><strong>Learning objectives</strong></p>
+<ol style="list-style-type: decimal">
+<li>Review and critique the documentation contained in a test review, test manual, or technical report, including:
+<ol style="list-style-type: lower-alpha">
+<li>Data collection and test administration designs,<br />
+</li>
+<li>Reliability analysis results,<br />
+</li>
+<li>Validity analysis results,<br />
+</li>
+<li>Scoring and reporting guidelines,<br />
+</li>
+<li>Recommendations for test use.<br />
+</li>
+</ol></li>
+<li>Compare and contrast tests using reported information.<br />
+</li>
+<li>Use information reported for a test to determine the appropriateness of the test for a given application.</li>
+</ol>
+</div>
+
+## Test purpose
+
+We'll begin, as usual, with a review of test purpose. Suppose you have a research question that requires measurement of some kind, and you don't have the time or resources to develop your own test. So, you start looking for an existing measure that will meet your needs. How do you go about finding such a measure?
+
+It is possible that the gold standard measures for your field or area of work will be well known to you. But, if they aren't, you will need to compare tests based on their stated purposes. Some initial questions are, what construct(s) are you hoping to measure, for what population, and for what reason? And what tests have purposes that match your particular application?
+
+As noted above, in this module we'll consider a scenario involving the construct of *creativity*. In the late 1990s, a national committee in Britain reported on the critical importance of creative and cultural education, both of which, it was argued, were missing in many education systems [@robinson1999all]. Creative education was defined as "forms of education that develop young people's capacities for original ideas and action." Cultural education referred to "forms of education that enable them [students] to engage positively with the growing complexity and diversity of social values and ways of life." The report sought to dispell a common myth that creativity is an inborn and static ability. Instead, it was argued that creativity can and must be taught, both to teachers and students, if our education systems are to succeed.
+
+This idea that creativity is critical to effective education provides a backdrop for the hypothetical testing application we'll focus on in this module. Suppose we are studying the efficacy of different classroom curriculae for improving teachers' and students' creative thinking. In addition to qualitative measures of effectiveness, for example, interviews and reports on participants' experiences, we also need a standardized, quantitative measure of creativity that we can administer to participants at the start and end of our program.
+
+To research and evaluate potential measures of creativity, we turn to the Buros test database [buros.org/](http://buros.org/). The Buros Center for Testing includes a test review library. The library is physically located at the University of Nebraska-Lincoln. Electronic access to library resources is available online. Each year, Buros solicits and publishes reviews of newly published tests in what is called the *Mental Measurements Yearbook* (MMY). These reviews are written by testing professionals and they summarize and evaluate the information that test users need to know about a test before using it. This review information is essentially what we will cover in this module.
+
+If you have access to the electronic version of MMY, for example, through a university library, you should go there and search for a test of creative problem solving. If you use the search terms "creative problem solving," you probably won't get many results. I only had ten at the time of writing this. Judging by their titles, some of the results sounded like they might be appropriate, but I decided to try again with just the search term "creativity." This returned 182 results.
+
+> Creativity is the process of having original ideas that have value. Creativity now, in education, is as important as literacy. And we should treat it with the same status.  
+> --- Sir Ken Robinson
+
+As you browse through these tests, think about the construct of creative problem solving, and creativity in general. How could we test a construct like this? What types of tasks would we expect children to respond to, and how would we score their responses? It turns out, creativity is not easily measured, primarily because a standardized test with a structured scoring guide does not leave room for responses that come from "outside the box," or that represent divergent thinking, or that we would consider novel or... "creative." In a way, the term *standardized* suggests the opposite of creativity. Still, quite a few commercial measures of creativity exist.
+
+
+Table: (\#tab:creativity)Comparison of Two Tests of Creativity
+
+|                  |CAPSAT            |CAP                         |
+|:-----------------|:-----------------|:---------------------------|
+|Publication year  |2011              |1980                        |
+|Format            |Self-administered |Parent and teacher ratings  |
+|Number of scales  |4                 |8                           |
+|Number of items   |36                |48 SR, 4 CR                 |
+|Score scale range |0 to 100          |Three-point frequency scale |
+|Referencing       |Criterion         |Norm                        |
+|Population        |Adults 17 to 40   |Children 6 to 18            |
+
+Table \@ref(tab:creativity) contains information for two tests of creativity, the Creativity and Problem-Solving Aptitude Test (CAPSAT) and the Creativity Assessment Packet (CAP). Only one test (the CAP) is available in the electronic version of MMY. When you perform your search on MMY with search term "creativity" you should see the CAP near the top of your results. Neither test purpose is stated clearly in the technical documentation, so we'll have to assume that they're both intended to describe creativity and problem-solving for the stated populations. The intended uses of these tests are also not clear.
+
+Given the limited information in Table \@ref(tab:creativity), which test would be more appropriate for our program? The CAP seems right, given that it's designed for children 6 to 18. Unfortunately, as we dig deeper into the technical information for the test, we discover that there is essentially no reliability or validity evidence for it. One MMY review states that test-retest reliability and criterion validity were established for the CAP in the 1960s, but no coefficients are actually reported in the CAP documentation.
+
+No matter how well a test purpose matches our own, a lack of reliability and validity evidence makes a test unusable. The only solution for the CAP would be to conduct our own reliability and validity studies. Technical documentation for the CAPSAT indicates that internal consistency (alpha) for the entire test is 0.90, with subscales having coefficient alphas between 0.72 and 0.87. Those are all acceptable. However, as noted in the MMY reviews, validity information for the CAPSAT is missing.
+
+We clearly need a better test. In MMY, let's search for information on the Torrance Tests of Creative Thinking (TTCT). Read through the two reviews and try to find any weaknesses or limitations that put this test in the unusable category, along with the CAPSAT and the CAP. First, you need to make sure that the test purpose is acceptable, since there's no point in using a test that has been validated for the wrong purpose.
+
+For the uninitiated, the MMY provides a brief statement of purpose for the TTCT: "to identify and evaluate creative potential through words (verbal forms) and pictures (figural forms)." And here's a short summary of the TTCT from one reviewer:
+
+> In the complex and still-evolving domain of creativity assessment, the TTCT can be recommended as sound examples of instruments useful for research, evaluation, and general instructional planning decisions.
+
+Given this background information, the TTCT sounds like a viable solution. Next, we need to look into the reliability and validity information for the test.
+
+## Study design
+
+Because the CAPSAT and the CAP both lacked reliability and validity evidence, there really wasn't anything to evaluate. Most tests will include some form of evidence supporting reliability and validity, and we will need to evaluate this evidence both in terms of its *strength* and its *relevance to the test purpose*.
+
+In modules \@ref(reliability) and \@ref(validity), we discussed how to evaluate the reliability and validity evidence for a test. Whether or not reliability and validity coefficients are acceptable depends on guidelines established in a particular field, based on previous work. This also depends on the test purpose. For example, when making high-stakes decisions, coefficients should be in the 0.90s. When making low-stakes decisions, lower values are acceptable. A minimum of 0.70 reliability is sometimes discussed, but values below it are common and may not be cause for alarm, depending on the context, such as with shorter tests. Validity coefficients, correlations with a criterion variable, can vary widely and must be interpreted in-context.
+
+To interpret and evaluate reliability and validity, we should first consider the strength of the reliability or validity *study designs*. Keep in mind that reliability and validity are based on actual test data (except for a theoretical foundation in construct validity). The quality of data depends on the quality of the test administration design and data collection procedures. Here are some basic questions to ask when evaluating reliability and validity study designs for a test.
+
+* Is the study sample representative?  
+* Is the sample randomly or intentionally selected?  
+* Are appropriate age/gender/ethnic other groups included?  
+* Are administration conditions standardized?  
+* Are accommodations made when necessary, and do they impact results?
+
+Regardless of strength or magnitude, reliability and validity coefficients may be irrelevant if they are based on a weak (e.g., non-random or biased) study design or the wrong population. These questions help us determine how relevant and appropriate the reliability and validity evidence is. Note that answers to these questions will typically not be found in test reviews. Instead, you may have to go to published articles or the technical documentation published with the test. For example, a number of reliability and validity studies have been conducted with the TTCT [e.g., @torrance1981empirical; @torrance1981predicting].
+
+## Reliability
+
+Here are some of the questions that you need to ask when evaluating the relevance of reliability evidence for your test purpose. What types of reliability are estimated? Are these types appropriate given the test purpose? Are the study designs appropriate given the chosen types? Are the resulting reliability estimates strong or supportive? These, along with the questions presented below, simply review what we have covered in previous modules. The point here is to highlight how these features of a test (reliability, validity, scoring, and test use) are important when evaluating a test for a particular use.
+
+So, what type of reliability is reported for the TTCT? The test reviews note that a "collection of reliability and validity data" are available. Tests of creativity, like the TTCT, require that individuals create things, that is, perform tasks. Given that the TTCT involves performance assessment, we need to know about interrater consistency. One review highlights interrater reliabilities ranging from 0.66 to 0.99 for trained scorers and classroom teachers. The 0.66 is low, but acceptable, given the low-stakes nature of our test use. The 0.99 is optimal, and is something we would expect when correlating scores given by two well trained test administrators. Are we concerned that correlations were reported, and not generalizability coefficients? Given the ordinal/interval nature of the scale (discussed further below), percentage agreement and kappa are not as appropriate. Generalizability coefficients, taking into account systematic scoring differences, would be more informative than correlations.
+
+According to the test reviews, we also have test-retest reliabilities from the 0.50s in one study to 0.93 in another. A reviewer notes that these different results could be due to differences in the variability in the samples of students used in each study; a wider age range was used to obtain the test-retest of 0.93. Other studies reported test-retest reliabilities in the 0.60s and 0.70s, which the reviewer states are acceptable, given the number of weeks that pass between administrations.
+
+## Validity
+
+Here are some questions that you need to ask when evaluating the relevance of validity evidence for your test purpose. These are essentially the same as the questions for reliability. What types of validity evidence are examined? Are these types appropriate given the test purpose? Are the study designs appropriate given the chosen types of validity evidence? Does the resulting evidence support the intended uses and inferences of the test?
+
+Remember, factors impacting construct validity fall into two categories. Construct underrepresentation is failure to represent what the construct contains or consists of. Construct misrepresentation happens when we measure other constructs or factors, including measurement error.
+
+One reviewer of the TTCT notes that "validity data are provided relating TTCT scores to various measures of personality and intelligence without structuring a theory of creativity to describe what the relationship of these variables to creativity should be." However, the same reviewer then makes this comment, which is especially relevant to our purpose:
+
+> A second type of construct validation deals with the impact of treatment to alter creative performance and its relation to changing scores on the TTCT. If the theory says that treatment X should increase scores on tests of creativity, then pre and posttest differences should be found on the TTCT, with treatment intervening. The manual reports a broad summary of these studies, and the conclusion is that when the treatment deals with tasks somewhat like those on the test, posttest scores do indeed show significant gains on the TTCT.
+
+Although we don't have specific details, I think we can be confident, based on this MMY review, that the TTCT is suitable for a test-retest study. In reality, we would go to the specific studies in the references that provide this information.
+
+## Scoring
+
+Methods for creating and reporting scores for a test can vary widely from one test to the next. However, there are a few key questions to ask when evaluating the scoring that is implemented with a test. What types of scores are produced? That is, what type of measurement scale is used? What is the score scale range? How is meaning given to scores? And what type of score referencing is used, and does this seem reasonable? Finally, what kinds of score reporting guidelines are provided, and do they seem appropriate? As with reliability and validity, these questions should be considered in reference to the purpose of the test.
+
+As with many educational and psychological tests, the score scale for the TTCT is based on a sum of individual item/task scores. In this case, scores come from a trained rater. We assume this is an interval scale of measurement. The score scale range isn't important for our test purpose, as long as it can capture growth, which we assume it can, given the information presented above. However, note that a small scale range, for example, 1 to 5 points, might be problematic in a pre/post test administration, depending on how much growth is expected to take place.
+
+Regarding scoring, one MMY reviewer notes:
+
+> The scoring system for the tests also has some problems. For example, the assignment of points to responses on the Originality scale was based on the frequency of appearance of these responses among 500 unspecified test takers. For the Asking subtest, for example, responses that appeared in less than 2\% of the protocols receive a weight of 2. What is the basis for setting this criterion? How would it alter scores if 2s were assigned to 10%, for example? Or 7%? How does one decide? No empirical basis for this scoring decision is given. Further, not all tests use the same frequency criteria. This further complicates the rationale. Also, 2s may be awarded for unlisted items on the basis of their "creative strength." A feel for this "variable" is hard to get.
+
+This statement clarifies how meaning is given to scores. If an individual's response only matches with 2% or less of the sample of 500 test takers, it is considered creative enough to merit 2 points, instead of, presumably, 1. Although the appropriateness of this process is questioned by this reviewer, it should be evident what type of score referencing this is.
+
+In terms of evaluating the scoring process, the reference to "500 unspecified test takers" and the use of different percentages without empirical basis is concerning. This weighting in the scoring process could introduce bias that leads to construct misrepresentation. But this is an issue we might be willing to overlook, as it only seems to influence the relative weighting of scores for each task, in comparison to one another, as opposed to the overall score given. In other words, we could assume this would introduce a systematic error that could impact how creative we determine a student or teacher to be at a given test administration, but not how much change in creativity we measure over time.
+
+## Test use
+
+As a final general consideration, we need to examine the recommended uses for the test we are evaluating. Here are the questions we should ask. What are the recommended uses or test score inferences or interpretations? Do these uses match the test purpose? Does the test development process support the intended use? And are there appropriate cautions against unsupported test uses?
+
+Regarding the TTCT, the test purpose according to the MMY summary is broad and vague: "To identify and evaluate creative potential through words (verbal forms) and pictures (figural forms)." However, research and technical information cited in the reviews demonstrates test use in pre/post studies similar to the hypothetical one we have devised here. Thus, the TTCT does appear to match our test purpose.
+
+Note that we did not get into the development process of the TTCT. This would require a literature review. Established tests like the TTCT typically have published research documenting their development and use in practice. For example, after using the test, we could publish our own reliability and validity evidence, and other important results from our study. This would contribute to the body of work supporting (or not) its further use.
+
+## Summary
+
+This module provides a brief overview of the test evaluation process, using tests of creative problem solving as a context. Some key questions are discussed, including questions about test purpose, study design, reliability, validity, scoring, and test use.
+
+### Exercises
+
+1. Suppose you are asked to provide measurement advice to a university committee tasked with evaluating a new test of English as a foreign language for use in student admissions. Summarize the advice you would give in this scenario, based on the considerations presented in this module.
+2. Why is it important to consider first the purpose of a test when evaluating it for use in your own work or research?  
+3. Conduct a literature review on the TTCT summarizing the main themes that have been addressed in previous studies.  
+4. Search the MMY reviews for a test on a topic that interests you. Use the information in the reviews for a given test to evaluate the test for its intended purpose.
+
+<!--chapter:end:0700_applications.Rmd-->
 
 # (PART) Other Coolness {-}
 
