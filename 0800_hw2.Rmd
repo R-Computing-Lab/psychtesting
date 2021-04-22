@@ -1,0 +1,20 @@
+# (PART) Homework 2 {-}
+
+```{r include = FALSE}
+#install.packages("devtools")
+#devtools::install_github("talbano/epmr")
+source("common.R")
+library(tweetrmd) #... embedding tweets
+library(tidyverse)
+library(psych)
+library(epmr)
+```
+
+```{r links, child="links.md"}
+```
+
+# Homework Instructions
+
+This homework assignment is a take-home assessment. You are allowed to use notes, books, internet, and your computer. You cannot solicit help from other people (either in-person or online, or other medium). However, you can ask me (Mason Garrison) questions. You may use any means to calculate the requested numbers, including statistical software or hand calculations. However, you must clearly demonstrate how you arrived at your numbers by explicitly stating what means you used and show the steps / statistical output you used. 
+
+For this assignment, you must answer 5 exercise questions from this website. Each is worth 10 points. At least one of them must be statistical. And they must come from at least 3 different modules. 

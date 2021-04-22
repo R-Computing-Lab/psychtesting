@@ -479,3 +479,16 @@ This module provided an overview of reliability within the frameworks of CTT, fo
 
 
 
+### Exercises
+
+1. Use the R object `scores` to find the average variability in `x1` for a given value on `t`. How does this compare to the SEM?
+2. Use `PISA09` to calculate split-half reliabilities with different combinations of reading items in each half. Then, use these in the Spearman-Brown formula to estimate reliabilities for the full-length test. Why do the results differ?
+3. Suppose you want to reduce the SEM for a final exam in a course you are teaching. Identify three sources of measurement error that could contribute to the SEM, and three that could not. Then, consider strategies for reducing error from these sources.
+4. Estimate the internal consistency reliability for the attitude toward school scale. Remember to reverse code items as needed.
+5. Dr. Phil is developing a measure of relationship quality to be used in counseling settings with couples. He intends to administer the measure to couples multiple times over a series of counseling sessions. Describe an appropriate study design for examining the reliability of this measure.
+6. More and more TV shows lately seem to involve people performing some talent on stage and then being critiqued by a panel of judges, one of whom is British. Describe the ``true score'' for a performer in this scenario, and identify sources of measurement error that could result from the judging process, including both systematic and random sources of error.
+7. With proportion agreement, consider the following questions. When would we expect to see 0% or nearly 0% agreement, if ever? What would the counts in the table look like if there were 0% agreement? When would we expect to see 100% or nearly 100% agreement, if ever?  What would the counts in the table look like if there were 100% agreement?
+8. What is the maximum possible value for kappa? And what would we expect the minimum possible value to be?
+9. Given the strengths and limitations of correlation as a measure of interrater reliability, with what type of score referencing is this measure of reliability most appropriate?
+10. Compare the interrater agreement indices with interrater reliability based on Pearson correlation. What makes the correlation coefficient useful with interval data? What does it tell us, or what does it do, that an agreement index does not?
+
