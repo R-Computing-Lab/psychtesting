@@ -299,11 +299,11 @@ Finally, just as the IRF can be used to predict probability of correct response 
 ggplot(rtrf(irtgbr$ip), aes(theta, p)) + geom_line()
 ```
 
-## Summary
+# Summary
 
 This module provided an introduction to IRT, with a comparison to CTT, and details regarding the three traditional, dichotomous, unidimensional IRT models. Assumptions of the models and some testing applications were presented. The Rasch model was demonstrated using data from `PISA09`, with examples of the IRF, TEF, TIF, and TRF.
 
-### Exercises
+## Exercises
 
 1. Sketch out a plot of IRF for the following two items: a difficult item 1 with a high discrimination and negligible lower asymptote, and an easier item 2 with low discrimination and high lower asymptote. Be sure to label the axes of your plot.
 2. Sketch another plot of IRF for two items having the same difficulties, but different discriminations and lower asymptotes.
