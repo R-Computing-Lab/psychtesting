@@ -945,8 +945,8 @@ Along with these packages:
 
 
 ```{=html}
-<div id="htmlwidget-048fbc8728d2c4180810" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-048fbc8728d2c4180810">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["askpass","assertthat","backports","base64enc","BH","blob","bookdown","brew","brio","broom","cachem","callr","cellranger","checkmate","cli","clipr","colorspace","commonmark","conflicted","cpp11","crayon","credentials","crosstalk","crul","curl","data.table","DBI","dbplyr","desc","devtools","dichromat","diffobj","digest","dplyr","DT","dtplyr","ellipsis","evaluate","fansi","farver","fastmap","forcats","fs","gapminder","gargle","gender","genderdata","generics","geonames","gert","ggplot2","gh","gitcreds","glue","googledrive","googlesheets4","gridExtra","gt","gtable","haven","highr","hms","htmltools","htmlwidgets","httpcode","httr","ids","ini","isoband","jsonlite","knitr","labeling","later","lattice","lazyeval","lifecycle","lubridate","magrittr","markdown","MASS","Matrix","memoise","mgcv","mime","modelr","munsell","nlme","openssl","pillar","pkgbuild","pkgconfig","pkgload","plyr","praise","prettyunits","processx","progress","promises","ps","purrr","R6","rappdirs","rcmdcheck","RColorBrewer","Rcpp","readr","readxl","rebird","rematch","rematch2","remotes","reprex","reshape2","rjson","rlang","rmarkdown","roxygen2","rplos","rprojroot","rstudioapi","rversions","rvest","sass","scales","selectr","sessioninfo","solrium","stringi","stringr","sys","testthat","tibble","tidyr","tidyselect","tidyverse","tinytex","triebeard","urltools","usethis","utf8","uuid","vctrs","viridis","viridisLite","waldo","whisker","withr","xfun","xml2","xopen","yaml","zip"],[null,"0.2.1","1.2.1",null,null,null,"0.22",null,null,"0.7.6","1.0.4","3.7.0","1.1.0",null,"2.5.0",null,"2.0-0",null,null,null,"1.4.1",null,null,null,null,null,"1.1.1","2.1.1","1.3.0","2.4.1",null,null,"0.6.27","1.0.5","0.18",null,"0.3.2","0.14","0.4.2",null,"1.1.0","0.5.1","1.5.0",null,null,null,null,"0.1.0",null,null,"3.3.3",null,null,"1.4.2",null,null,null,null,"0.3.0","2.4.1",null,"1.0.0","0.5.1.1","1.5.3",null,"1.4.2",null,null,null,"1.7.2","1.33",null,null,null,null,"1.0.0","1.7.10","2.0.1",null,null,null,"2.0.0",null,null,"0.1.8","0.5.0",null,null,"1.6.0","1.2.0","2.0.3","1.2.1",null,null,"1.1.1","3.5.2",null,null,"1.6.0","0.3.4","2.5.0",null,null,null,"1.0.6","1.4.0","1.3.1",null,null,null,"2.3.0","2.0.0",null,null,"0.4.10","2.8",null,null,"2.0.2","0.13",null,"1.0.0","0.3.1","1.1.1",null,"1.1.1",null,"1.5.3","1.4.0",null,"3.0.2","3.1.1","1.1.3","1.1.1","1.3.1",null,null,null,"2.0.1","1.2.1",null,"0.3.8",null,null,null,null,"2.4.2","0.22","1.3.2",null,"2.2.1",null],["2019-01-13","2019-03-21","2020-12-09","2015-07-28","2021-01-11","2020-01-20","2021-04-22","2011-04-13","2021-04-23","2021-04-05","2021-02-13","2021-04-20","2016-07-27","2020-02-06","2021-04-26","2020-10-08","2020-11-11","2018-12-01","2019-06-21","2021-03-29","2021-02-08","2020-07-21","2021-01-12","2021-02-15","2021-04-30","2021-02-21","2021-01-15","2021-04-06","2021-03-05","2021-05-05","2013-01-24","2021-03-22","2020-10-24","2021-03-05","2021-04-14","2021-02-20","2021-04-29","2019-05-28","2021-01-15","2021-02-28","2021-01-25","2021-01-27","2020-07-31","2017-10-31","2021-04-02","2020-05-15","2020-11-17","2020-10-31","2019-02-19","2021-03-29","2020-12-30","2021-04-30","2020-12-04","2020-08-27","2020-05-05","2021-03-04","2017-09-09","2020-08-05","2019-03-25","2021-04-23","2021-04-16","2021-01-13","2021-01-22","2020-12-10","2020-04-10","2020-07-20","2017-05-31","2018-05-20","2021-03-03","2020-12-09","2021-04-24","2020-10-20","2021-04-23","2020-04-02","2019-03-15","2021-02-15","2021-02-26","2020-11-17","2019-08-07","2021-02-12","2021-01-06","2021-01-26","2021-02-16","2021-02-13","2020-05-19","2018-06-12","2021-02-04","2021-04-30","2021-04-13","2020-12-15","2019-09-22","2021-04-06","2020-03-03","2015-08-11","2020-01-24","2021-04-30","2019-05-16","2021-02-11","2021-02-28","2020-04-17","2020-10-28","2021-01-31","2019-05-07","2014-12-07","2021-01-15","2020-10-05","2019-03-13","2021-01-27","2016-04-21","2020-05-01","2021-04-01","2021-04-02","2020-04-09","2018-06-08","2020-12-30","2021-05-07","2020-06-27","2021-02-23","2020-11-15","2020-11-12","2020-05-25","2021-03-09","2021-01-24","2020-05-11","2019-11-20","2018-11-05","2019-11-02","2020-09-09","2019-02-10","2020-07-23","2021-02-14","2021-04-18","2021-03-03","2021-04-30","2021-04-15","2021-03-30","2016-08-04","2019-04-14","2021-02-10","2021-03-12","2020-02-26","2021-04-29","2021-04-15","2021-04-13","2021-03-08","2019-08-28","2021-04-18","2021-03-11","2020-04-23","2018-09-17","2020-02-01","2020-08-27"],["CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.5)","CRAN (R 4.0.0)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.3)","CRAN (R 4.0.5)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.5)","CRAN (R 4.0.3)","CRAN (R 4.0.5)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.5)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.5)","CRAN (R 4.0.4)","CRAN (R 4.0.5)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.5)","CRAN (R 4.0.3)","local","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.5)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.5)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.5)","CRAN (R 4.0.3)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.3)","CRAN (R 4.0.5)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.5)","CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.5)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.5)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.5)","CRAN (R 4.0.4)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.5)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.3)"]],"container":"<table class=\"cell-border stripe\">\n  <thead>\n    <tr>\n      <th>package<\/th>\n      <th>loadedversion<\/th>\n      <th>date<\/th>\n      <th>source<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":152,"autoWidth":true,"bInfo":false,"paging":false,"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[10,25,50,100,152]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-1c5690a9baf1ccd2f9b1" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1c5690a9baf1ccd2f9b1">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["askpass","assertthat","backports","base64enc","BH","blob","bookdown","brew","brio","broom","cachem","callr","cellranger","checkmate","cli","clipr","colorspace","commonmark","conflicted","cpp11","crayon","credentials","crosstalk","crul","curl","data.table","DBI","dbplyr","desc","devtools","dichromat","diffobj","digest","dplyr","DT","dtplyr","ellipsis","evaluate","fansi","farver","fastmap","forcats","fs","gapminder","gargle","gender","genderdata","generics","geonames","gert","ggplot2","gh","gitcreds","glue","googledrive","googlesheets4","gridExtra","gt","gtable","haven","highr","hms","htmltools","htmlwidgets","httpcode","httr","ids","ini","isoband","jsonlite","knitr","labeling","later","lattice","lazyeval","lifecycle","lubridate","magrittr","markdown","MASS","Matrix","memoise","mgcv","mime","modelr","munsell","nlme","openssl","pillar","pkgbuild","pkgconfig","pkgload","plyr","praise","prettyunits","processx","progress","promises","ps","purrr","R6","rappdirs","rcmdcheck","RColorBrewer","Rcpp","readr","readxl","rebird","rematch","rematch2","remotes","reprex","reshape2","rjson","rlang","rmarkdown","roxygen2","rplos","rprojroot","rstudioapi","rversions","rvest","sass","scales","selectr","sessioninfo","solrium","stringi","stringr","sys","testthat","tibble","tidyr","tidyselect","tidyverse","tinytex","triebeard","urltools","usethis","utf8","uuid","vctrs","viridis","viridisLite","waldo","whisker","withr","xfun","xml2","xopen","yaml","zip"],[null,"0.2.1","1.2.1",null,null,null,"0.22",null,null,"0.7.6","1.0.4","3.7.0","1.1.0",null,"2.5.0",null,"2.0-0",null,null,null,"1.4.1",null,null,null,null,null,"1.1.1","2.1.1","1.3.0","2.4.1",null,null,"0.6.27","1.0.5","0.18",null,"0.3.2","0.14","0.4.2",null,"1.1.0","0.5.1","1.5.0",null,null,null,null,"0.1.0",null,null,"3.3.3",null,null,"1.4.2",null,null,null,null,"0.3.0","2.4.1",null,"1.0.0","0.5.1.1","1.5.3",null,"1.4.2",null,null,null,"1.7.2","1.33",null,null,null,null,"1.0.0","1.7.10","2.0.1",null,null,null,"2.0.0",null,null,"0.1.8","0.5.0",null,null,"1.6.0","1.2.0","2.0.3","1.2.1",null,null,"1.1.1","3.5.2",null,null,"1.6.0","0.3.4","2.5.0",null,null,null,"1.0.6","1.4.0","1.3.1",null,null,null,"2.3.0","2.0.0",null,null,"0.4.10","2.8",null,null,"2.0.2","0.13",null,"1.0.0","0.3.1","1.1.1",null,"1.1.1",null,"1.5.3","1.4.0",null,"3.0.2","3.1.1","1.1.3","1.1.1","1.3.1",null,null,null,"2.0.1","1.2.1",null,"0.3.8",null,null,null,null,"2.4.2","0.22","1.3.2",null,"2.2.1",null],["2019-01-13","2019-03-21","2020-12-09","2015-07-28","2021-01-11","2020-01-20","2021-04-22","2011-04-13","2021-04-23","2021-04-05","2021-02-13","2021-04-20","2016-07-27","2020-02-06","2021-04-26","2020-10-08","2020-11-11","2018-12-01","2019-06-21","2021-03-29","2021-02-08","2020-07-21","2021-01-12","2021-02-15","2021-04-30","2021-02-21","2021-01-15","2021-04-06","2021-03-05","2021-05-05","2013-01-24","2021-03-22","2020-10-24","2021-03-05","2021-04-14","2021-02-20","2021-04-29","2019-05-28","2021-01-15","2021-02-28","2021-01-25","2021-01-27","2020-07-31","2017-10-31","2021-04-02","2020-05-15","2020-11-17","2020-10-31","2019-02-19","2021-03-29","2020-12-30","2021-04-30","2020-12-04","2020-08-27","2020-05-05","2021-03-04","2017-09-09","2020-08-05","2019-03-25","2021-04-23","2021-04-16","2021-01-13","2021-01-22","2020-12-10","2020-04-10","2020-07-20","2017-05-31","2018-05-20","2021-03-03","2020-12-09","2021-04-24","2020-10-20","2021-04-23","2020-04-02","2019-03-15","2021-02-15","2021-02-26","2020-11-17","2019-08-07","2021-02-12","2021-01-06","2021-01-26","2021-02-16","2021-02-13","2020-05-19","2018-06-12","2021-02-04","2021-04-30","2021-04-13","2020-12-15","2019-09-22","2021-04-06","2020-03-03","2015-08-11","2020-01-24","2021-04-30","2019-05-16","2021-02-11","2021-02-28","2020-04-17","2020-10-28","2021-01-31","2019-05-07","2014-12-07","2021-01-15","2020-10-05","2019-03-13","2021-01-27","2016-04-21","2020-05-01","2021-04-01","2021-04-02","2020-04-09","2018-06-08","2020-12-30","2021-05-07","2020-06-27","2021-02-23","2020-11-15","2020-11-12","2020-05-25","2021-03-09","2021-01-24","2020-05-11","2019-11-20","2018-11-05","2019-11-02","2020-09-09","2019-02-10","2020-07-23","2021-02-14","2021-04-18","2021-03-03","2021-04-30","2021-04-15","2021-03-30","2016-08-04","2019-04-14","2021-02-10","2021-03-12","2020-02-26","2021-04-29","2021-04-15","2021-04-13","2021-03-08","2019-08-28","2021-04-18","2021-03-11","2020-04-23","2018-09-17","2020-02-01","2020-08-27"],["CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.5)","CRAN (R 4.0.0)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.3)","CRAN (R 4.0.5)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.5)","CRAN (R 4.0.3)","CRAN (R 4.0.5)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.5)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.5)","CRAN (R 4.0.4)","CRAN (R 4.0.5)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.5)","CRAN (R 4.0.3)","local","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.5)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.5)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.5)","CRAN (R 4.0.3)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.3)","CRAN (R 4.0.5)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.5)","CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.5)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.5)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.0)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.2)","CRAN (R 4.0.4)","CRAN (R 4.0.5)","CRAN (R 4.0.4)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.3)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.5)","CRAN (R 4.0.4)","CRAN (R 4.0.0)","CRAN (R 4.0.5)","CRAN (R 4.0.4)","CRAN (R 4.0.3)","CRAN (R 4.0.2)","CRAN (R 4.0.0)","CRAN (R 4.0.3)"]],"container":"<table class=\"cell-border stripe\">\n  <thead>\n    <tr>\n      <th>package<\/th>\n      <th>loadedversion<\/th>\n      <th>date<\/th>\n      <th>source<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":152,"autoWidth":true,"bInfo":false,"paging":false,"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[10,25,50,100,152]}},"evals":[],"jsHooks":[]}</script>
 ```
 
 
@@ -2121,7 +2121,7 @@ Not all functions have (or require) arguments:
 
 ```r
 date()
-#> [1] "Tue May 11 09:33:00 2021"
+#> [1] "Tue May 11 09:57:10 2021"
 ```
 
 Now look at your workspace -- in the upper right pane. The workspace is where user-defined objects accumulate. You can also get a listing of these objects with commands:
@@ -2259,7 +2259,7 @@ sig_sq <- 0.5
 x <- runif(40)
 y <- a + b * x + rnorm(40, sd = sqrt(sig_sq))
 (avg_x <- mean(x))
-#> [1] 0.572
+#> [1] 0.481
 write(avg_x, "avg_x.txt")
 plot(x, y)
 abline(a, b, col = "purple")
@@ -3211,7 +3211,7 @@ p
 #> `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
-<img src="0200_CTT_files/figure-html/unnamed-chunk-2-1.png" width="672" />
+<img src="0500_CTT_files/figure-html/unnamed-chunk-2-1.png" width="672" />
 
 
 ## PISA total reading scores with simulated error and true scores based on CTT
@@ -3265,7 +3265,7 @@ ggplot(scores, aes(x1, t)) +
   geom_abline(col = "blue")
 ```
 
-<img src="0200_CTT_files/figure-html/unnamed-chunk-5-1.png" width="672" />
+<img src="0500_CTT_files/figure-html/unnamed-chunk-5-1.png" width="672" />
 
 
 ## Reliability and unreliability Illustrated
@@ -3284,7 +3284,7 @@ ggplot(scores, aes(x1, y)) +
 ```
 
 <div class="figure">
-<img src="0200_CTT_files/figure-html/cttplot2-1.png" alt="PISA total reading scores and scores on a simulated second form of the reading test." width="672" />
+<img src="0500_CTT_files/figure-html/cttplot2-1.png" alt="PISA total reading scores and scores on a simulated second form of the reading test." width="672" />
 <p class="caption">(\#fig:cttplot2)PISA total reading scores and scores on a simulated second form of the reading test.</p>
 </div>
 
@@ -3472,7 +3472,7 @@ ggplot(beldat, aes(factor(x), x)) +
 ```
 
 <div class="figure">
-<img src="0200_CTT_files/figure-html/cttplot3-1.png" alt="The PISA09 reading scale shown with 68 and 95 percent confidence intervals around each point." width="75%" />
+<img src="0500_CTT_files/figure-html/cttplot3-1.png" alt="The PISA09 reading scale shown with 68 and 95 percent confidence intervals around each point." width="75%" />
 <p class="caption">(\#fig:cttplot3)The PISA09 reading scale shown with 68 and 95 percent confidence intervals around each point.</p>
 </div>
 Figure \@ref(fig:cttplot3) helps us visualize the impact of unreliable measurement on score comparisons. For example, note that the top of the 95% confidence interval for $X$ of 2 extends nearly to 5 points, and thus overlaps with the CI for adjacent scores 3 through 7. It isn't until $X$ of 8 that the CI no longer overlap. With a CI of `belsem` 1.425, we're 95% confident that students with observed scores differing at least by `belsem * 4` 5.7 have different true scores. Students with observed scores closer than `belsem * 4` may actually have the same true scores.
@@ -3703,7 +3703,7 @@ ggplot(essays, aes(r1, r2 + 1)) +
 ```
 
 <div class="figure">
-<img src="0200_CTT_files/figure-html/essays-1.png" alt="Scatter plots of simulated essay scores with a systematic difference around 0.5 points." width="50%" /><img src="0200_CTT_files/figure-html/essays-2.png" alt="Scatter plots of simulated essay scores with a systematic difference around 0.5 points." width="50%" />
+<img src="0500_CTT_files/figure-html/essays-1.png" alt="Scatter plots of simulated essay scores with a systematic difference around 0.5 points." width="50%" /><img src="0500_CTT_files/figure-html/essays-2.png" alt="Scatter plots of simulated essay scores with a systematic difference around 0.5 points." width="50%" />
 <p class="caption">(\#fig:essays)Scatter plots of simulated essay scores with a systematic difference around 0.5 points.</p>
 </div>
 
@@ -3731,7 +3731,7 @@ This module provided an overview of reliability within the frameworks of CTT, fo
 10. Compare the interrater agreement indices with interrater reliability based on Pearson correlation. What makes the correlation coefficient useful with interval data? What does it tell us, or what does it do, that an agreement index does not?
 
 
-<!--chapter:end:0200_CTT.Rmd-->
+<!--chapter:end:0500_CTT.Rmd-->
 
 
 # (PART) Module 08 {-}
@@ -4317,7 +4317,7 @@ criterion <- rsim(rho = .8, x = rtotal, meany = 24,
   sdy = 6)
 # Check the correlation
 cor(rtotal, criterion$y)
-#> [1] 0.79
+#> [1] 0.803
 ```
 
 Suppose the internal consistency reliability for our criterion is 0.86. We know from Module \@ref(reliability) that internal consistency for the `PISA09` reading items is about 0.77. With a simple formula, we can calculate what the validity coefficient should be for our two measures, if each measure were perfectly reliable. Here, we denote this disattenuated correlation as the correlation between true scores on $X$ and $Y$.
@@ -4327,7 +4327,7 @@ Suppose the internal consistency reliability for our criterion is 0.86. We know 
 (\#eq:attenuation)
 \end{equation}
 
-Correcting for attenuation due to measurement error produces a validity coefficient of 0.97. This is a noteworthy increase from the original correlation of 0.80.
+Correcting for attenuation due to measurement error produces a validity coefficient of 0.99. This is a noteworthy increase from the original correlation of 0.80.
 
 
 ```r
@@ -4378,7 +4378,7 @@ epmr::coef_alpha(pisausa)
 #> [1] 11
 # Correction for attenuation
 cor(rtotal, criterion$y)/sqrt(.77 * .86)
-#> [1] 0.971
+#> [1] 0.986
 ```
 
 In summary, the steps for establishing criterion validity evidence are relatively simple. After defining the purpose of the test, a suitable criterion is identified. The two tests are administered to the same sample of individuals from the target population, and a correlation is obtained. If reliability estimates are available, we can then estimate the disattenuated coefficient, as shown above.
@@ -4447,7 +4447,7 @@ This module provides an overview of validity, with examples of content, criterio
 4. Suppose a medical licensure test correlates at 0.50 with a criterion measure based on supervisor evaluations of practicing physicians who have passed the test. Interpret this correlation as a validity coefficient, discussing the issues presented in this module.
 5. Consider what threats might impact the validity of your own testing application. How could these threats be identified in practice? How could they be avoided through sound test development?
 
-<!--chapter:end:0300_validity.Rmd-->
+<!--chapter:end:0800_validity.Rmd-->
 
 # (PART) Module 09 {-}
 
@@ -5137,7 +5137,7 @@ plot(alefa, ylim = c(0, 3))
 #> Did you mean `limits = factor(...)` or `scale_*_continuous()`?
 ```
 
-<img src="0400_dimensionality_files/figure-html/unnamed-chunk-10-1.png" width="672" />
+<img src="0900_dimensionality_files/figure-html/unnamed-chunk-10-1.png" width="672" />
 
 The scree plot for the Approaches to Learning EFA with three factors resembles more of a plain than a cliff edge. The eigenvalues are all above 1, which is sometimes used as a cutoff for acceptability. They're also all nearly equal.
 
@@ -5153,7 +5153,7 @@ plot(bdiefa, ylim = c(0, 3))
 #> Did you mean `limits = factor(...)` or `scale_*_continuous()`?
 ```
 
-<img src="0400_dimensionality_files/figure-html/unnamed-chunk-11-1.png" width="672" />
+<img src="0900_dimensionality_files/figure-html/unnamed-chunk-11-1.png" width="672" />
 
 The EFA of the PISA 2009 Approaches to Learning scale leads us to conclude first that the 13 items provide only a limited picture of the three subscales being measured. Four to five items per scale, and per factor, does not appear to be sufficient. Although loadings were moderate, and aligned as expected onto the corresponding subscales, more items would likely improve the variance explained by each factor. Given these limitations, computing theta values based on unidimensional IRT models for each subscale may not be appropriate.
 
@@ -5629,7 +5629,7 @@ summary(alcfa, fit = TRUE, standardized = TRUE)
 
 Model fit is not as impressive as we would hope. The CFI is 0.71 and the RMSEA is 0.13. As with the BDI-II, loadings are moderately positive, but they leave the majority of the item variance unexplained. These results suggest that the Approaches to Learning constructs may not be strong enough or distinct enough to warrant the calculation of scale scores across the memorization, elaboration, and control items.
 
-## Summary
+# Summary
 
 This module presented two popular methods for conducting factor analysis, one that provides descriptive and relatively unstructured information about a test, and the other providing more structured results oriented around formal hypotheses. The main steps involved in fitting EFA and CFA and evaluating results were discussed and demonstrated using real data.
 
@@ -5642,7 +5642,7 @@ EFA and CFA can improve the test development process by allowing us to examine a
 3. Draw a scree plot for the EFA described in the previous two questions, using the eigenvalues given for the first three factors and eigenvalues of 0.8 for the remaining factors.
 4. Run three separate CFA models, with one factor each, on the memorization, elaboration, and control strategy scales. Evaluate the results based on model fit and factor loadings.
 
-<!--chapter:end:0400_dimensionality.Rmd-->
+<!--chapter:end:0900_dimensionality.Rmd-->
 
 # (PART) Module 10 {-}
 
@@ -6345,7 +6345,7 @@ ggplot(pisadeu, aes(rtotal, factor(r452q03s))) +
 ```
 
 <div class="figure">
-<img src="0500_itemanalysis_files/figure-html/item-cor-1.png" alt="Scatter plots showing the relationship between total scores on the x-axis with dichotomous item response on two PISA items on the y-axis." width="50%" /><img src="0500_itemanalysis_files/figure-html/item-cor-2.png" alt="Scatter plots showing the relationship between total scores on the x-axis with dichotomous item response on two PISA items on the y-axis." width="50%" />
+<img src="1000_itemanalysis_files/figure-html/item-cor-1.png" alt="Scatter plots showing the relationship between total scores on the x-axis with dichotomous item response on two PISA items on the y-axis." width="50%" /><img src="1000_itemanalysis_files/figure-html/item-cor-2.png" alt="Scatter plots showing the relationship between total scores on the x-axis with dichotomous item response on two PISA items on the y-axis." width="50%" />
 <p class="caption">(\#fig:item-cor)Scatter plots showing the relationship between total scores on the x-axis with dichotomous item response on two PISA items on the y-axis.</p>
 </div>
 
@@ -6575,7 +6575,7 @@ Item analysis, as described in this module, is based on a CTT model of test perf
 6. Conduct an item analysis on the `PISA09` reading items for students in Great Britain (`PISA09$cnt == "GBR"`). Examine and interpret results for item difficulty, discrimination, and AID.
 7. Conduct a option analysis on SR reading item `r414q09`, with an interpretation of results.
 
-<!--chapter:end:0500_itemanalysis.Rmd-->
+<!--chapter:end:1000_itemanalysis.Rmd-->
 
 # (PART) Module 11 {-}
 
@@ -7085,7 +7085,7 @@ ggplot(pisagbr, aes(rtotal, r414q06s)) +
 ```
 
 <div class="figure">
-<img src="0600_irt_files/figure-html/irtplot1-1.png" alt="Scatter plots showing the relationship between total scores on the x-axis and scores from PISA item `r452q06s` on the y-axis. Lines represent the relationship between the construct and item scores for CTT (straight) and IRT (curved)." width="75%" />
+<img src="1100_irt_files/figure-html/irtplot1-1.png" alt="Scatter plots showing the relationship between total scores on the x-axis and scores from PISA item `r452q06s` on the y-axis. Lines represent the relationship between the construct and item scores for CTT (straight) and IRT (curved)." width="75%" />
 <p class="caption">(\#fig:irtplot1)Scatter plots showing the relationship between total scores on the x-axis and scores from PISA item `r452q06s` on the y-axis. Lines represent the relationship between the construct and item scores for CTT (straight) and IRT (curved).</p>
 </div>
 
@@ -7154,7 +7154,7 @@ ggplot(rirf(ipar), aes(theta)) + scale_y_continuous("Pr(X)") +
 ```
 
 <div class="figure">
-<img src="0600_irt_files/figure-html/irtplot2-1.png" alt="Comparison of five IRF having different item parameters." width="75%" />
+<img src="1100_irt_files/figure-html/irtplot2-1.png" alt="Comparison of five IRF having different item parameters." width="75%" />
 <p class="caption">(\#fig:irtplot2)Comparison of five IRF having different item parameters.</p>
 </div>
 
@@ -7275,7 +7275,7 @@ ggplot(irfgbr, aes(theta)) + scale_y_continuous("Pr(X)") +
 ```
 
 <div class="figure">
-<img src="0600_irt_files/figure-html/gbr-irf-1.png" alt="IRF for `PISA09` reading items from &quot;The play’s the thing&quot; based on students in Great Britain." width="672" />
+<img src="1100_irt_files/figure-html/gbr-irf-1.png" alt="IRF for `PISA09` reading items from &quot;The play’s the thing&quot; based on students in Great Britain." width="672" />
 <p class="caption">(\#fig:gbr-irf)IRF for `PISA09` reading items from "The play’s the thing" based on students in Great Britain.</p>
 </div>
 
@@ -7295,7 +7295,7 @@ ggplot(rtef(irtgbr$ip), aes(theta, se)) + geom_line() +
 ```
 
 <div class="figure">
-<img src="0600_irt_files/figure-html/gbr-sem-1.png" alt="SEM for two subsets of `PISA09` reading items based on students in Great Britain." width="75%" />
+<img src="1100_irt_files/figure-html/gbr-sem-1.png" alt="SEM for two subsets of `PISA09` reading items based on students in Great Britain." width="75%" />
 <p class="caption">(\#fig:gbr-sem)SEM for two subsets of `PISA09` reading items based on students in Great Britain.</p>
 </div>
 
@@ -7323,7 +7323,7 @@ ggplot(rtif(irtgbr$ip), aes(theta, i)) + geom_line()
 ```
 
 <div class="figure">
-<img src="0600_irt_files/figure-html/gbr-tif-1.png" alt="Test information for `PISA09` reading items based on students in Great Britain." width="75%" />
+<img src="1100_irt_files/figure-html/gbr-tif-1.png" alt="Test information for `PISA09` reading items based on students in Great Britain." width="75%" />
 <p class="caption">(\#fig:gbr-tif)Test information for `PISA09` reading items based on students in Great Britain.</p>
 </div>
 
@@ -7336,15 +7336,15 @@ ggplot(rtrf(irtgbr$ip), aes(theta, p)) + geom_line()
 ```
 
 <div class="figure">
-<img src="0600_irt_files/figure-html/gbr-trf-1.png" alt="Test response function for `PISA09` reading items based on students in Great Britain." width="75%" />
+<img src="1100_irt_files/figure-html/gbr-trf-1.png" alt="Test response function for `PISA09` reading items based on students in Great Britain." width="75%" />
 <p class="caption">(\#fig:gbr-trf)Test response function for `PISA09` reading items based on students in Great Britain.</p>
 </div>
 
-## Summary
+# Summary
 
 This module provided an introduction to IRT, with a comparison to CTT, and details regarding the three traditional, dichotomous, unidimensional IRT models. Assumptions of the models and some testing applications were presented. The Rasch model was demonstrated using data from `PISA09`, with examples of the IRF, TEF, TIF, and TRF.
 
-### Exercises
+## Exercises
 
 1. Sketch out a plot of IRF for the following two items: a difficult item 1 with a high discrimination and negligible lower asymptote, and an easier item 2 with low discrimination and high lower asymptote. Be sure to label the axes of your plot.
 2. Sketch another plot of IRF for two items having the same difficulties, but different discriminations and lower asymptotes.
@@ -7353,7 +7353,7 @@ This module provided an introduction to IRT, with a comparison to CTT, and detai
 5. Estimate the Rasch model for the `PISA09` memorization strategies scale. First, dichotomize responses by recoding 1 to 0, and the remaining valid responses to 1. After fitting the model, plot the IRF for each item.
 6. Based on the distribution of item difficulties for the memorization scale, where should SEM be lowest? Check the SEM by plotting the TEF for the full scale.
 
-<!--chapter:end:0600_irt.Rmd-->
+<!--chapter:end:1100_irt.Rmd-->
 
 # (PART) Module 12 {-}
 
@@ -7766,7 +7766,7 @@ Standardized tests are often used to inform high-stakes decisions, including dec
 
 Unfortunately, standardized test scores can be misused when the information they provide is inaccurate or when they have an undue influence on these decisions. A number of studies and reports refer to bias in standardized tests and an over-reliance on scores in high-stakes decision making [e.g., @sternberg1997gre; @santelices2010unfair]. As noted in the quote above, some people do not perform well on standardized tests, despite having what it takes to succeed.
 
-This module gives an overview of the various different types of tests, including standardized and unstandardized ones, that are used to support decision making in education and psychology. In this module we'll compare types of tests in terms of their purposes. We'll examine how these purposes are associated with certain features in a test, and we'll look again at how the quality or validity of a test score can impact the effectiveness of score interpretations. We'll end with an introduction to so-called next generation assessments, which are distinguished from more traditional item-based instruments by their leveraging of dynamic digital technologies for test administration and statistical learning for scoring and decision-making.
+This module gives an overview of the various different types of tests, including standardized and unstandardized ones, that are used to support decision making in education and psychology. In this module, we'll compare types of tests in terms of their purposes. We'll examine how these purposes are associated with certain features in a test, and we'll look again at how the quality or validity of a test score can impact the effectiveness of score interpretations. We'll end with an introduction to so-called next generation assessments, which are distinguished from more traditional item-based instruments by their leveraging of dynamic digital technologies for test administration and statistical learning for scoring and decision-making.
 
 <div class="objectives">
 <p><strong>Learning objectives</strong></p>
@@ -7867,7 +7867,7 @@ On the other hand, summative assessments, or assessments used summatively, measu
 
 Despite debate over what specifically constitutes a formative assessment [e.g., @bennett2011formative], numerous studies have documented at least some positive impact resulting from the use of assessments that inform instruction during the school year [@black1998inside]. Formative assessments have become a key component in many educational assessment systems [@militello2010formative].
 
-### Summary
+## Summary
 
 Although a variety of terms are available for describing educational and psychological tests, many tests can be described in different ways. The myIGDI measures was mentioned as an example of how achievement and aptitude tests can be difficult to distinguish from one another. Summative and formative tests often overlap as well, where a test can be used to both summarize and inform learning. In the end, the purpose of the test should be the main source of information for determining what type of test you're dealing with and what that test is intended to do.
 
@@ -7877,11 +7877,11 @@ Information for commercially available tests can usually be found by searching o
 
 The Buros Center for Testing [buros.org](http://buros.org/) also publishes a comprehensive data base of educational and psychological measures. In addition to descriptive information, they include peer evaluations of the psychometric properties of tests in what is called the *Mental Measurements Yearbook*. Buros peer reviews are available through university library subscriptions, or can be accessed online for a fee.
 
-## Summary
+# Summary
 
 This module provides an overview of how different types of tests are designed to inform a variety of decisions in education and psychology. For the most part, tests are designed merely to *inform* decision making processes, and test authors are often careful to clarify that no decision should be made based solely on test scores. Online data bases provide access to descriptive summaries and peer reviews of tests.
 
-### Exercises
+## Exercises
 
 1. Is it appropriate for colleges and graduate programs to have minimum cutoffs when reviewing standardized test scores in the admissions process? How would you recommend that scores from admissions tests be incorporated into admissions decisions?
 2. Describe the challenges involved in using a single test for multiple purposes, such as to measure both achievement and aptitude, or both status and growth, or both formative and summative information.
@@ -8021,18 +8021,18 @@ Regarding the TTCT, the test purpose according to the MMY summary is broad and v
 
 Note that we did not get into the development process of the TTCT. This would require a literature review. Established tests like the TTCT typically have published research documenting their development and use in practice. For example, after using the test, we could publish our own reliability and validity evidence, and other important results from our study. This would contribute to the body of work supporting (or not) its further use.
 
-## Summary
+# Summary
 
 This module provides a brief overview of the test evaluation process, using tests of creative problem solving as a context. Some key questions are discussed, including questions about test purpose, study design, reliability, validity, scoring, and test use.
 
-### Exercises
+## Exercises
 
 1. Suppose you are asked to provide measurement advice to a university committee tasked with evaluating a new test of English as a foreign language for use in student admissions. Summarize the advice you would give in this scenario, based on the considerations presented in this module.
 2. Why is it important to consider first the purpose of a test when evaluating it for use in your own work or research?  
 3. Conduct a literature review on the TTCT summarizing the main themes that have been addressed in previous studies.  
 4. Search the MMY reviews for a test on a topic that interests you. Use the information in the reviews for a given test to evaluate the test for its intended purpose.
 
-<!--chapter:end:0700_applications.Rmd-->
+<!--chapter:end:1200_applications.Rmd-->
 
 # (PART) Homework 2 {-}
 
@@ -8442,7 +8442,7 @@ This homework assignment is a take-home assessment. You are allowed to use notes
 
 For this assignment, you must answer 5 exercise questions from this website. Each is worth 10 points. At least one of them must be statistical. And they must come from at least 3 different modules. 
 
-<!--chapter:end:0800_hw2.Rmd-->
+<!--chapter:end:2000_hw2.Rmd-->
 
 # (PART) Other Coolness {-}
 
@@ -8848,18 +8848,30 @@ For this assignment, you must answer 5 exercise questions from this website. Eac
 
 # Good Resources
 
+## Learning R
 * https://psychnerdjae.github.io/into-the-tidyverse/
 * [Automatic Grading with RMarkdown example](https://github.com/rundel/hw01)
 * [Git/Github for virtual learning](https://afredston.github.io/learn-git/learn-git.html) (from [this tweet](https://twitter.com/AFredston/status/1354865931772682243))
 * [Learn-Datascience-for-Free](https://github.com/therealsreehari/Learn-Datascience-for-Free)
 * https://allisonhorst.shinyapps.io/dplyr-learnr/
 
+## Psychology Scales
 
-<!--chapter:end:2039_resources.Rmd-->
+* [International Personality Item Pool](https://ipip.ori.org/)
+* [Open-Source Psychometrics Project](https://openpsychometrics.org/)
+* [APA PsycTests](https://www.apa.org/pubs/databases/psyctests)
+* [Measurement Instrument Database for the Social Sciences](https://www.midss.org/)
+* [Paul Spector’s assessment archive](https://paulspector.com/assessments/assessment-archive/)
+* [GESIS Open Access Repository for Measurement Instruments](https://zis.gesis.org/en)
+* [REDCap's library of scales](https://redcap.vanderbilt.edu/consortium/library/search.php)
+* [PhenX Toolkit](https://www.phenxtoolkit.org/)
+* [Registry of Scales and Measures: Psychological Tests, Scales, Questionnaires and Checklists](http://www.scalesandmeasures.net/)
+
+<!--chapter:end:3039_resources.Rmd-->
 
 
 # References {-}
 
 
-<!--chapter:end:2040_references.Rmd-->
+<!--chapter:end:3040_references.Rmd-->
 
