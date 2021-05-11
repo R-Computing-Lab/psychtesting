@@ -22,7 +22,7 @@ Standardized tests are often used to inform high-stakes decisions, including dec
 
 Unfortunately, standardized test scores can be misused when the information they provide is inaccurate or when they have an undue influence on these decisions. A number of studies and reports refer to bias in standardized tests and an over-reliance on scores in high-stakes decision making [e.g., @sternberg1997gre; @santelices2010unfair]. As noted in the quote above, some people do not perform well on standardized tests, despite having what it takes to succeed.
 
-This module gives an overview of the various different types of tests, including standardized and unstandardized ones, that are used to support decision making in education and psychology. In this module we'll compare types of tests in terms of their purposes. We'll examine how these purposes are associated with certain features in a test, and we'll look again at how the quality or validity of a test score can impact the effectiveness of score interpretations. We'll end with an introduction to so-called next generation assessments, which are distinguished from more traditional item-based instruments by their leveraging of dynamic digital technologies for test administration and statistical learning for scoring and decision-making.
+This module gives an overview of the various different types of tests, including standardized and unstandardized ones, that are used to support decision making in education and psychology. In this module, we'll compare types of tests in terms of their purposes. We'll examine how these purposes are associated with certain features in a test, and we'll look again at how the quality or validity of a test score can impact the effectiveness of score interpretations. We'll end with an introduction to so-called next generation assessments, which are distinguished from more traditional item-based instruments by their leveraging of dynamic digital technologies for test administration and statistical learning for scoring and decision-making.
 
 ```{block, type="objectives"}
 **Learning objectives**
@@ -117,7 +117,7 @@ On the other hand, summative assessments, or assessments used summatively, measu
 
 Despite debate over what specifically constitutes a formative assessment [e.g., @bennett2011formative], numerous studies have documented at least some positive impact resulting from the use of assessments that inform instruction during the school year [@black1998inside]. Formative assessments have become a key component in many educational assessment systems [@militello2010formative].
 
-### Summary
+## Summary
 
 Although a variety of terms are available for describing educational and psychological tests, many tests can be described in different ways. The myIGDI measures was mentioned as an example of how achievement and aptitude tests can be difficult to distinguish from one another. Summative and formative tests often overlap as well, where a test can be used to both summarize and inform learning. In the end, the purpose of the test should be the main source of information for determining what type of test you're dealing with and what that test is intended to do.
 
@@ -127,11 +127,11 @@ Information for commercially available tests can usually be found by searching o
 
 The Buros Center for Testing [buros.org](http://buros.org/) also publishes a comprehensive data base of educational and psychological measures. In addition to descriptive information, they include peer evaluations of the psychometric properties of tests in what is called the *Mental Measurements Yearbook*. Buros peer reviews are available through university library subscriptions, or can be accessed online for a fee.
 
-## Summary
+# Summary
 
 This module provides an overview of how different types of tests are designed to inform a variety of decisions in education and psychology. For the most part, tests are designed merely to *inform* decision making processes, and test authors are often careful to clarify that no decision should be made based solely on test scores. Online data bases provide access to descriptive summaries and peer reviews of tests.
 
-### Exercises
+## Exercises
 
 1. Is it appropriate for colleges and graduate programs to have minimum cutoffs when reviewing standardized test scores in the admissions process? How would you recommend that scores from admissions tests be incorporated into admissions decisions?
 2. Describe the challenges involved in using a single test for multiple purposes, such as to measure both achievement and aptitude, or both status and growth, or both formative and summative information.
@@ -259,11 +259,11 @@ Regarding the TTCT, the test purpose according to the MMY summary is broad and v
 
 Note that we did not get into the development process of the TTCT. This would require a literature review. Established tests like the TTCT typically have published research documenting their development and use in practice. For example, after using the test, we could publish our own reliability and validity evidence, and other important results from our study. This would contribute to the body of work supporting (or not) its further use.
 
-## Summary
+# Summary
 
 This module provides a brief overview of the test evaluation process, using tests of creative problem solving as a context. Some key questions are discussed, including questions about test purpose, study design, reliability, validity, scoring, and test use.
 
-### Exercises
+## Exercises
 
 1. Suppose you are asked to provide measurement advice to a university committee tasked with evaluating a new test of English as a foreign language for use in student admissions. Summarize the advice you would give in this scenario, based on the considerations presented in this module.
 2. Why is it important to consider first the purpose of a test when evaluating it for use in your own work or research?  
