@@ -16,9 +16,20 @@ library(knitr)
 
 # Good Resources
 
+## Learning R
 * https://psychnerdjae.github.io/into-the-tidyverse/
 * [Automatic Grading with RMarkdown example](https://github.com/rundel/hw01)
 * [Git/Github for virtual learning](https://afredston.github.io/learn-git/learn-git.html) (from [this tweet](https://twitter.com/AFredston/status/1354865931772682243))
 * [Learn-Datascience-for-Free](https://github.com/therealsreehari/Learn-Datascience-for-Free)
 * https://allisonhorst.shinyapps.io/dplyr-learnr/
 
+## Psychology Scales
+
+* [International Personality Item Pool](https://ipip.ori.org/)
+* [Open-Source Psychometrics Project](https://openpsychometrics.org/)
+* [APA PsycTests](https://www.apa.org/pubs/databases/psyctests)
+* [Measurement Instrument Database for the Social Sciences](https://www.midss.org/)
+* [Paul Spector’s assessment archive](https://paulspector.com/assessments/assessment-archive/)
+* [GESIS Open Access Repository for Measurement Instruments](https://zis.gesis.org/en)
+* [REDCap's library of scales](https://redcap.vanderbilt.edu/consortium/library/search.php)
+* [PhenX Toolkit](https://www.phenxtoolkit.org/)
