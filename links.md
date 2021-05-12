@@ -1,47 +1,21 @@
 
 <!--DS4P Links-->
-[ds4p-web]: https://datascience4psych.github.io/DataScience4Psych
-[ds4p-git]: https://github.com/DataScience4Psych/DataScience4Psych
-[ds4p-slides]: https://github.com/DataScience4Psych/slides
+[pt4p-web]: https://datascience4psych.github.io/DataScience4Psych
+[pt4p-git]: https://github.com/DataScience4Psych/DataScience4Psych
+[pt4p-slides]: https://github.com/DataScience4Psych/slides
 
-[ds4p-pl-all]: https://www.youtube.com/playlist?list=PLKrrdtYgOUYbWGmSnbLIYwdLOnGm6une6
-[ds4p-pl-00]: https://www.youtube.com/playlist?list=PLKrrdtYgOUYaEAnJX20Ryy4OSie375rVY
-[ds4p-pl-01]: https://www.youtube.com/playlist?list=PLKrrdtYgOUYao_7t5ycK4KDXNKaY-ECup
-[ds4p-pl-02]: https://www.youtube.com/playlist?list=PLKrrdtYgOUYZmr_T3PnuxjVIlj0C0kUNI
-[ds4p-pl-03]: https://www.youtube.com/playlist?list=PLKrrdtYgOUYaHmjzdRvfg0yhOIYQnfjwE
-[ds4p-pl-04]: https://www.youtube.com/playlist?list=PLKrrdtYgOUYYWFcel6_vp8__RUKLxhX4y
-[ds4p-pl-15]: https://www.youtube.com/playlist?list=PLKrrdtYgOUYa5MoYrV8EsWQ5jIr5ZYMpM
-
-
-<!--AE. Links-->
-[ae-02-bechdel]: https://github.com/DataScience4Psych/ae-02-bechdel-rmarkdown
-[ae-01a-un-votes]: https://github.com/DataScience4Psych/ae-01a-un-votes
-[ae-01b-covid]: https://github.com/DataScience4Psych/ae-01b-covid
-[ae-03-starwars-dataviz]: https://github.com/DataScience4Psych/ae-03-starwars-dataviz
+[pt4p-pl-all]: https://www.youtube.com/playlist?list=PLKrrdtYgOUYbWGmSnbLIYwdLOnGm6une6
+[pt4p-pl-00]: https://www.youtube.com/playlist?list=PLKrrdtYgOUYaEAnJX20Ryy4OSie375rVY
+[pt4p-pl-01]: https://www.youtube.com/playlist?list=PLKrrdtYgOUYao_7t5ycK4KDXNKaY-ECup
+[pt4p-pl-02]: https://www.youtube.com/playlist?list=PLKrrdtYgOUYZmr_T3PnuxjVIlj0C0kUNI
+[pt4p-pl-03]: https://www.youtube.com/playlist?list=PLKrrdtYgOUYaHmjzdRvfg0yhOIYQnfjwE
+[pt4p-pl-05]: https://www.youtube.com/playlist?list=PLKrrdtYgOUYbfBd4s0i3TzwtHXUxwyswA
 
 
-<!-- Lab Links-->
 
-[lab-01-hello]: https://github.com/DataScience4Psych/lab-01-hello-r
 
-<!--Slides-->
-[d01_welcome]: https://datascience4psych.github.io/slides/d01_welcome/d01_welcome.html
-[d02_toolkit]: https://datascience4psych.github.io/slides/d02_toolkit/d02_toolkit.html
-[d03_dataviz]: https://datascience4psych.github.io/slides/d03_dataviz/d03_dataviz.html
-[d04_ggplot2]: https://datascience4psych.github.io/slides/d04_ggplot2/d04_ggplot2.html
-[d05_viznum]: https://datascience4psych.github.io/slides/d05_viznum/d05_viznum.html
-[d06_vizcat]: https://datascience4psych.github.io/slides/d06_vizcat/d06_vizcat.html
-[d07_tidy]: https://datascience4psych.github.io/slides/d07_tidy/d07_tidy.html
-[d08_grammar]: https://datascience4psych.github.io/slides/d08_grammar/d08_grammar.html
-[d09_wrangle]: https://datascience4psych.github.io/slides/d09_wrangle/d09_wrangle.html
-[d10_dfs]: https://datascience4psych.github.io/slides/d10_dfs/d10_dfs.html
-[d11_types]: https://datascience4psych.github.io/slides/d11_types/d11_types.html
-[d12_import]: https://datascience4psych.github.io/slides/d12_import/d12_import.html
-[d13_goodviz]: https://datascience4psych.github.io/slides/d13_goodviz/d13_goodviz.html
-[d14_confound]: https://datascience4psych.github.io/slides/d14_confound/d14_confound.html
-[d15_goodtalk]: https://datascience4psych.github.io/slides/d15_goodtalk/d15_goodtalk.html
-[d16_webscraping]: https://datascience4psych.github.io/slides/d16_webscraping/d16_webscraping.html
-[d17_functions]: https://datascience4psych.github.io/slides/d17_functions/d17_functions.html
+
+
 
 <!--R Links-->
 [cran]: https://cloud.r-project.org

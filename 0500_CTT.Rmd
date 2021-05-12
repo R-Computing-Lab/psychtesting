@@ -1,4 +1,4 @@
-# R Code for Module 5
+
 
 ```{r include = FALSE}
 #install.packages("devtools")
@@ -12,6 +12,50 @@ library(psych)
 
 ```{r links, child="links.md"}
 ```
+
+# Welcome to Classical Test Theory
+
+This module introduces the idea of classical test theory. Please watch the videos and work your way through the notes. **The videos start on the next page.**  You can find the video playlist for this module [here][pt4p-pl-05]. Most of the slides used to make the videos in this module can be found on canvas.
+
+
+
+# Big Ideas in Classical Test Theory
+
+```{r, echo=FALSE}
+
+video_url="https://www.youtube.com/watch?v=zLeArwu2S2I"
+embed_url(video_url) %>%
+  use_align("center")
+```
+
+## Modeling Classic Test Theory
+
+```{r, echo=FALSE}
+
+video_url="https://www.youtube.com/watch?v=o_5DD74oa1E"
+embed_url(video_url) %>%
+  use_align("center")
+```
+
+## Model Applications
+
+```{r, echo=FALSE}
+
+video_url="https://www.youtube.com/watch?v=R2bQZUwSYGQ"
+embed_url(video_url) %>%
+  use_align("center")
+```
+
+
+# Systematic Error and Unreliability
+
+```{r, echo=FALSE}
+
+video_url="https://www.youtube.com/watch?v=agw9R1hcqK8"
+embed_url(video_url) %>%
+  use_align("center")
+```
+
 
 ## Simulate a constant true score
 
@@ -84,7 +128,7 @@ ggplot(scores, aes(x1, t)) +
 ```
 
 
-## Reliability and unreliability Illustrated
+## Reliability and unreliability illustrated
 
 
 Here we have simulated scores for a new form of the reading test called y. Note that rho is the made up reliability, which is set to 0.80, and x is the original reading total scores. Form y, which is slightly easier than x, has a mean of 6 and SD of 3.
@@ -97,6 +141,19 @@ ggplot(scores, aes(x1, y)) +
   geom_point(position = position_jitter(w = .3, h = .3)) +
   geom_abline(col = "blue")
 ```
+
+
+# Domain Sampling Theory
+
+
+```{r, echo=FALSE}
+
+video_url="https://www.youtube.com/watch?v=XrkNO7hiKvE"
+embed_url(video_url) %>%
+  use_align("center")
+```
+
+
 
 
 

@@ -57,3 +57,16 @@ If the check option is TRUE, variables that are categorical or logical are conve
 
 ## Correlation
 -->
+
+## Measures of Covariation
+
+### Correlation Refresh
+
+```{r, echo=FALSE}
+
+video_url="https://www.youtube.com/watch?v=crd4sF9C3oM"
+embed_url(video_url) %>%
+  use_align("center")
+```
+
+
