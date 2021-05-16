@@ -426,10 +426,8 @@ essays <- round(setrange(essays, to = c(0, 6)))
 # ifelse() takes a vector of TRUEs and FALSEs as its first
 # argument, and returns here "Pass" for TRUE and "Fail" 
 # for FALSE
-essays$f1 <- factor(ifelse(essays$r1 >= 3, "Pass", 
-  "Fail"))
-essays$f2 <- factor(ifelse(essays$r2 >= 3, "Pass", 
-  "Fail"))
+essays$f1 <- factor(ifelse(essays$r1 >= 3, "Pass",   "Fail"))
+essays$f2 <- factor(ifelse(essays$r2 >= 3, "Pass",   "Fail"))
 table(essays$f1, essays$f2)
 ```
 
