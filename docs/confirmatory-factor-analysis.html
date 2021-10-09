@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>22 Confirmatory factor analysis | Psychological Testing</title>
+  <title>24 Confirmatory factor analysis | Psychological Testing</title>
   <meta name="description" content="PSY 362: Psychological Testing" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="22 Confirmatory factor analysis | Psychological Testing" />
+  <meta property="og:title" content="24 Confirmatory factor analysis | Psychological Testing" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://r-computing-lab.github.io/psychtesting" />
   <meta property="og:image" content="https://r-computing-lab.github.io/psychtesting/assets/logo.png" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="R-Computing-Lab/psychtesting" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="22 Confirmatory factor analysis | Psychological Testing" />
+  <meta name="twitter:title" content="24 Confirmatory factor analysis | Psychological Testing" />
   <meta name="twitter:site" content="@smasongarrison" />
   <meta name="twitter:description" content="PSY 362: Psychological Testing" />
   <meta name="twitter:image" content="https://r-computing-lab.github.io/psychtesting/assets/logo.png" />
@@ -24,7 +24,7 @@
 <meta name="author" content="S. Mason Garrison" />
 
 
-<meta name="date" content="2021-05-12" />
+<meta name="date" content="2021-10-09" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,8 +33,9 @@
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
 <link rel="prev" href="exploratory-factor-analysis.html"/>
 <link rel="next" href="summary-2.html"/>
-<script src="libs/header-attrs-2.8/header-attrs.js"></script>
-<script src="libs/jquery-3.5.1/jquery.min.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -50,15 +51,14 @@
 
 
 
-
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <link href="libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 <link href="libs/vembedr-0.1.4/css/vembedr.css" rel="stylesheet" />
-<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
 <link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
-<script src="libs/datatables-binding-0.18/datatables.js"></script>
+<script src="libs/datatables-binding-0.19/datatables.js"></script>
 <link href="libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
 <link href="libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
 <script src="libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
@@ -224,17 +224,17 @@ div.csl-indent {
 <li class="chapter" data-level="1.2.1" data-path="meet-our-toolbox.html"><a href="meet-our-toolbox.html#further-resources"><i class="fa fa-check"></i><b>1.2.1</b> Further resources</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="r-basics.html"><a href="r-basics.html"><i class="fa fa-check"></i><b>2</b> R basics and workflows</a>
+<li class="chapter" data-level="2" data-path="r_basics.html"><a href="r_basics.html"><i class="fa fa-check"></i><b>2</b> R basics and workflows</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="r-basics.html"><a href="r-basics.html#introducing-functions"><i class="fa fa-check"></i><b>2.1</b> Introducing Functions</a></li>
-<li class="chapter" data-level="2.2" data-path="r-basics.html"><a href="r-basics.html#introduction-to-objects"><i class="fa fa-check"></i><b>2.2</b> Introduction to Objects</a></li>
-<li class="chapter" data-level="2.3" data-path="r-basics.html"><a href="r-basics.html#workspace-and-working-directory"><i class="fa fa-check"></i><b>2.3</b> Workspace and working directory</a>
+<li class="chapter" data-level="2.1" data-path="r_basics.html"><a href="r_basics.html#introducing-functions"><i class="fa fa-check"></i><b>2.1</b> Introducing Functions</a></li>
+<li class="chapter" data-level="2.2" data-path="r_basics.html"><a href="r_basics.html#introduction-to-objects"><i class="fa fa-check"></i><b>2.2</b> Introduction to Objects</a></li>
+<li class="chapter" data-level="2.3" data-path="r_basics.html"><a href="r_basics.html#workspace-and-working-directory"><i class="fa fa-check"></i><b>2.3</b> Workspace and working directory</a>
 <ul>
-<li class="chapter" data-level="2.3.1" data-path="r-basics.html"><a href="r-basics.html#workspace-.rdata"><i class="fa fa-check"></i><b>2.3.1</b> Workspace, <code>.RData</code></a></li>
-<li class="chapter" data-level="2.3.2" data-path="r-basics.html"><a href="r-basics.html#working-directory"><i class="fa fa-check"></i><b>2.3.2</b> Working directory</a></li>
+<li class="chapter" data-level="2.3.1" data-path="r_basics.html"><a href="r_basics.html#workspace-.rdata"><i class="fa fa-check"></i><b>2.3.1</b> Workspace, <code>.RData</code></a></li>
+<li class="chapter" data-level="2.3.2" data-path="r_basics.html"><a href="r_basics.html#working-directory"><i class="fa fa-check"></i><b>2.3.2</b> Working directory</a></li>
 </ul></li>
-<li class="chapter" data-level="2.4" data-path="r-basics.html"><a href="r-basics.html#rprojs"><i class="fa fa-check"></i><b>2.4</b> RStudio projects</a></li>
-<li class="chapter" data-level="2.5" data-path="r-basics.html"><a href="r-basics.html#saving-files-and-protips"><i class="fa fa-check"></i><b>2.5</b> Saving Files and Protips</a></li>
+<li class="chapter" data-level="2.4" data-path="r_basics.html"><a href="r_basics.html#rprojs"><i class="fa fa-check"></i><b>2.4</b> RStudio projects</a></li>
+<li class="chapter" data-level="2.5" data-path="r_basics.html"><a href="r_basics.html#saving-files-and-protips"><i class="fa fa-check"></i><b>2.5</b> Saving Files and Protips</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="refreshers-and-examples.html"><a href="refreshers-and-examples.html"><i class="fa fa-check"></i><b>3</b> Refreshers and Examples</a>
 <ul>
@@ -245,183 +245,207 @@ div.csl-indent {
 <li class="chapter" data-level="3.3.1" data-path="refreshers-and-examples.html"><a href="refreshers-and-examples.html#correlation-refresh"><i class="fa fa-check"></i><b>3.3.1</b> Correlation Refresh</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="welcome-to-classical-test-theory.html"><a href="welcome-to-classical-test-theory.html"><i class="fa fa-check"></i><b>4</b> Welcome to Classical Test Theory</a></li>
-<li class="chapter" data-level="5" data-path="big-ideas-in-classical-test-theory.html"><a href="big-ideas-in-classical-test-theory.html"><i class="fa fa-check"></i><b>5</b> Big Ideas in Classical Test Theory</a>
+<li class="part"><span><b>II Module 04</b></span></li>
+<li class="chapter" data-level="4" data-path="welcome-to-norms-and-meanings-of-test-scores.html"><a href="welcome-to-norms-and-meanings-of-test-scores.html"><i class="fa fa-check"></i><b>4</b> Welcome to Norms and Meanings of Test Scores</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="big-ideas-in-classical-test-theory.html"><a href="big-ideas-in-classical-test-theory.html#modeling-classic-test-theory"><i class="fa fa-check"></i><b>5.1</b> Modeling Classic Test Theory</a></li>
-<li class="chapter" data-level="5.2" data-path="big-ideas-in-classical-test-theory.html"><a href="big-ideas-in-classical-test-theory.html#model-applications"><i class="fa fa-check"></i><b>5.2</b> Model Applications</a></li>
-</ul></li>
-<li class="chapter" data-level="6" data-path="systematic-error-and-unreliability.html"><a href="systematic-error-and-unreliability.html"><i class="fa fa-check"></i><b>6</b> Systematic Error and Unreliability</a>
+<li class="chapter" data-level="4.1" data-path="welcome-to-norms-and-meanings-of-test-scores.html"><a href="welcome-to-norms-and-meanings-of-test-scores.html#learning-goals"><i class="fa fa-check"></i><b>4.1</b> Learning Goals</a></li>
+<li class="chapter" data-level="4.2" data-path="welcome-to-norms-and-meanings-of-test-scores.html"><a href="welcome-to-norms-and-meanings-of-test-scores.html#module-materials"><i class="fa fa-check"></i><b>4.2</b> Module Materials</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="systematic-error-and-unreliability.html"><a href="systematic-error-and-unreliability.html#simulate-a-constant-true-score"><i class="fa fa-check"></i><b>6.1</b> Simulate a constant true score</a></li>
-<li class="chapter" data-level="6.2" data-path="systematic-error-and-unreliability.html"><a href="systematic-error-and-unreliability.html#pisa-total-reading-scores-with-simulated-error-and-true-scores-based-on-ctt"><i class="fa fa-check"></i><b>6.2</b> PISA total reading scores with simulated error and true scores based on CTT</a></li>
-<li class="chapter" data-level="6.3" data-path="systematic-error-and-unreliability.html"><a href="systematic-error-and-unreliability.html#reliability-and-unreliability-illustrated"><i class="fa fa-check"></i><b>6.3</b> Reliability and unreliability illustrated</a></li>
-</ul></li>
-<li class="chapter" data-level="7" data-path="domain-sampling-theory.html"><a href="domain-sampling-theory.html"><i class="fa fa-check"></i><b>7</b> Domain Sampling Theory</a></li>
-<li class="part"><span><b>II Module 06</b></span></li>
-<li class="chapter" data-level="8" data-path="installing-epmr.html"><a href="installing-epmr.html"><i class="fa fa-check"></i><b>8</b> Installing epmr</a></li>
-<li class="chapter" data-level="9" data-path="statistical-definition-of-reliability-.html"><a href="statistical-definition-of-reliability-.html"><i class="fa fa-check"></i><b>9</b> Statistical definition of reliability.</a>
-<ul>
-<li class="chapter" data-level="9.1" data-path="statistical-definition-of-reliability-.html"><a href="statistical-definition-of-reliability-.html#estimating-reliability"><i class="fa fa-check"></i><b>9.1</b> Estimating reliability</a></li>
-<li class="chapter" data-level="9.2" data-path="statistical-definition-of-reliability-.html"><a href="statistical-definition-of-reliability-.html#split-half-method"><i class="fa fa-check"></i><b>9.2</b> Split-half method</a></li>
-<li class="chapter" data-level="9.3" data-path="statistical-definition-of-reliability-.html"><a href="statistical-definition-of-reliability-.html#spearman-brown"><i class="fa fa-check"></i><b>9.3</b> Spearman Brown</a></li>
-<li class="chapter" data-level="9.4" data-path="statistical-definition-of-reliability-.html"><a href="statistical-definition-of-reliability-.html#standard-error-of-measurement"><i class="fa fa-check"></i><b>9.4</b> Standard Error of Measurement</a></li>
-</ul></li>
-<li class="chapter" data-level="10" data-path="interpreting-reliability-and-unreliability.html"><a href="interpreting-reliability-and-unreliability.html"><i class="fa fa-check"></i><b>10</b> Interpreting reliability and unreliability</a></li>
-<li class="chapter" data-level="11" data-path="reliability-study-designs.html"><a href="reliability-study-designs.html"><i class="fa fa-check"></i><b>11</b> Reliability study designs</a>
-<ul>
-<li class="chapter" data-level="11.1" data-path="reliability-study-designs.html"><a href="reliability-study-designs.html#interrater-reliability"><i class="fa fa-check"></i><b>11.1</b> Interrater reliability</a>
-<ul>
-<li class="chapter" data-level="11.1.1" data-path="reliability-study-designs.html"><a href="reliability-study-designs.html#proportion-agreement"><i class="fa fa-check"></i><b>11.1.1</b> Proportion agreement</a></li>
-<li class="chapter" data-level="11.1.2" data-path="reliability-study-designs.html"><a href="reliability-study-designs.html#kappa-agreement"><i class="fa fa-check"></i><b>11.1.2</b> Kappa agreement</a></li>
-<li class="chapter" data-level="11.1.3" data-path="reliability-study-designs.html"><a href="reliability-study-designs.html#pearson-correlation"><i class="fa fa-check"></i><b>11.1.3</b> Pearson correlation</a></li>
-</ul></li>
-<li class="chapter" data-level="11.2" data-path="reliability-study-designs.html"><a href="reliability-study-designs.html#summary"><i class="fa fa-check"></i><b>11.2</b> Summary</a>
-<ul>
-<li class="chapter" data-level="11.2.1" data-path="reliability-study-designs.html"><a href="reliability-study-designs.html#exercises"><i class="fa fa-check"></i><b>11.2.1</b> Exercises</a></li>
+<li class="chapter" data-level="4.2.1" data-path="welcome-to-norms-and-meanings-of-test-scores.html"><a href="welcome-to-norms-and-meanings-of-test-scores.html#explore"><i class="fa fa-check"></i><b>4.2.1</b> Explore</a></li>
+<li class="chapter" data-level="4.2.2" data-path="welcome-to-norms-and-meanings-of-test-scores.html"><a href="welcome-to-norms-and-meanings-of-test-scores.html#engage"><i class="fa fa-check"></i><b>4.2.2</b> Engage</a></li>
+<li class="chapter" data-level="4.2.3" data-path="welcome-to-norms-and-meanings-of-test-scores.html"><a href="welcome-to-norms-and-meanings-of-test-scores.html#evaluate"><i class="fa fa-check"></i><b>4.2.3</b> Evaluate</a></li>
+<li class="chapter" data-level="4.2.4" data-path="welcome-to-norms-and-meanings-of-test-scores.html"><a href="welcome-to-norms-and-meanings-of-test-scores.html#estimated-video-length"><i class="fa fa-check"></i><b>4.2.4</b> Estimated Video Length</a></li>
 </ul></li>
 </ul></li>
-<li class="part"><span><b>III Module 08</b></span></li>
-<li class="chapter" data-level="12" data-path="validity.html"><a href="validity.html"><i class="fa fa-check"></i><b>12</b> Validity</a>
+<li class="chapter" data-level="5" data-path="lecture-norms-and-meaning-of-test-scores.html"><a href="lecture-norms-and-meaning-of-test-scores.html"><i class="fa fa-check"></i><b>5</b> Lecture: Norms and Meaning of Test Scores</a>
 <ul>
-<li class="chapter" data-level="12.1" data-path="validity.html"><a href="validity.html#objectives"><i class="fa fa-check"></i><b>12.1</b> Objectives</a></li>
+<li class="chapter" data-level="5.1" data-path="lecture-norms-and-meaning-of-test-scores.html"><a href="lecture-norms-and-meaning-of-test-scores.html#norms-and-meaning-of-test-scores-04.01"><i class="fa fa-check"></i><b>5.1</b> Norms and Meaning of Test Scores (04.01)</a></li>
+<li class="chapter" data-level="5.2" data-path="lecture-norms-and-meaning-of-test-scores.html"><a href="lecture-norms-and-meaning-of-test-scores.html#statistics-as-summary-04.02"><i class="fa fa-check"></i><b>5.2</b> Statistics as Summary (04.02)</a></li>
+<li class="chapter" data-level="5.3" data-path="lecture-norms-and-meaning-of-test-scores.html"><a href="lecture-norms-and-meaning-of-test-scores.html#measures-of-spread-04.03"><i class="fa fa-check"></i><b>5.3</b> Measures of Spread (04.03)</a></li>
+<li class="chapter" data-level="5.4" data-path="lecture-norms-and-meaning-of-test-scores.html"><a href="lecture-norms-and-meaning-of-test-scores.html#transforming-raw-scores-04.04"><i class="fa fa-check"></i><b>5.4</b> Transforming Raw Scores (04.04)</a></li>
+<li class="chapter" data-level="5.5" data-path="lecture-norms-and-meaning-of-test-scores.html"><a href="lecture-norms-and-meaning-of-test-scores.html#developmental-norms-04.05"><i class="fa fa-check"></i><b>5.5</b> Developmental Norms (04.05)</a></li>
+<li class="chapter" data-level="5.6" data-path="lecture-norms-and-meaning-of-test-scores.html"><a href="lecture-norms-and-meaning-of-test-scores.html#within-group-norms-04.06"><i class="fa fa-check"></i><b>5.6</b> Within-Group Norms (04.06)</a></li>
+<li class="chapter" data-level="5.7" data-path="lecture-norms-and-meaning-of-test-scores.html"><a href="lecture-norms-and-meaning-of-test-scores.html#referenced-tests-types-04.07"><i class="fa fa-check"></i><b>5.7</b> Referenced Tests Types (04.07)</a></li>
+<li class="chapter" data-level="5.8" data-path="lecture-norms-and-meaning-of-test-scores.html"><a href="lecture-norms-and-meaning-of-test-scores.html#minimums-cutoffs-and-expectancy-tables-04.08"><i class="fa fa-check"></i><b>5.8</b> Minimums, Cutoffs, and Expectancy Tables (04.08)</a></li>
+<li class="chapter" data-level="5.9" data-path="lecture-norms-and-meaning-of-test-scores.html"><a href="lecture-norms-and-meaning-of-test-scores.html#interpreting-test-scores-realistically-remastered-04.09"><i class="fa fa-check"></i><b>5.9</b> Interpreting Test Scores Realistically: Remastered (04.09)</a></li>
 </ul></li>
-<li class="chapter" data-level="13" data-path="overview-of-validity.html"><a href="overview-of-validity.html"><i class="fa fa-check"></i><b>13</b> Overview of validity</a>
+<li class="chapter" data-level="6" data-path="welcome-to-classical-test-theory.html"><a href="welcome-to-classical-test-theory.html"><i class="fa fa-check"></i><b>6</b> Welcome to Classical Test Theory</a></li>
+<li class="chapter" data-level="7" data-path="big-ideas-in-classical-test-theory.html"><a href="big-ideas-in-classical-test-theory.html"><i class="fa fa-check"></i><b>7</b> Big Ideas in Classical Test Theory</a>
 <ul>
-<li class="chapter" data-level="13.1" data-path="overview-of-validity.html"><a href="overview-of-validity.html#definitions"><i class="fa fa-check"></i><b>13.1</b> Definitions</a></li>
-<li class="chapter" data-level="13.2" data-path="overview-of-validity.html"><a href="overview-of-validity.html#validity-examples"><i class="fa fa-check"></i><b>13.2</b> Validity examples</a></li>
-<li class="chapter" data-level="13.3" data-path="overview-of-validity.html"><a href="overview-of-validity.html#sources-of-validity-evidence"><i class="fa fa-check"></i><b>13.3</b> Sources of validity evidence</a></li>
+<li class="chapter" data-level="7.1" data-path="big-ideas-in-classical-test-theory.html"><a href="big-ideas-in-classical-test-theory.html#modeling-classic-test-theory"><i class="fa fa-check"></i><b>7.1</b> Modeling Classic Test Theory</a></li>
+<li class="chapter" data-level="7.2" data-path="big-ideas-in-classical-test-theory.html"><a href="big-ideas-in-classical-test-theory.html#model-applications"><i class="fa fa-check"></i><b>7.2</b> Model Applications</a></li>
 </ul></li>
-<li class="chapter" data-level="14" data-path="content-validity.html"><a href="content-validity.html"><i class="fa fa-check"></i><b>14</b> Content validity</a></li>
-<li class="chapter" data-level="15" data-path="criterion-validity.html"><a href="criterion-validity.html"><i class="fa fa-check"></i><b>15</b> Criterion validity</a>
+<li class="chapter" data-level="8" data-path="systematic-error-and-unreliability.html"><a href="systematic-error-and-unreliability.html"><i class="fa fa-check"></i><b>8</b> Systematic Error and Unreliability</a>
 <ul>
-<li class="chapter" data-level="15.1" data-path="criterion-validity.html"><a href="criterion-validity.html#definition"><i class="fa fa-check"></i><b>15.1</b> Definition</a></li>
-<li class="chapter" data-level="15.2" data-path="criterion-validity.html"><a href="criterion-validity.html#criterion-examples"><i class="fa fa-check"></i><b>15.2</b> Criterion examples</a></li>
+<li class="chapter" data-level="8.1" data-path="systematic-error-and-unreliability.html"><a href="systematic-error-and-unreliability.html#simulate-a-constant-true-score"><i class="fa fa-check"></i><b>8.1</b> Simulate a constant true score</a></li>
+<li class="chapter" data-level="8.2" data-path="systematic-error-and-unreliability.html"><a href="systematic-error-and-unreliability.html#pisa-total-reading-scores-with-simulated-error-and-true-scores-based-on-ctt"><i class="fa fa-check"></i><b>8.2</b> PISA total reading scores with simulated error and true scores based on CTT</a></li>
+<li class="chapter" data-level="8.3" data-path="systematic-error-and-unreliability.html"><a href="systematic-error-and-unreliability.html#reliability-and-unreliability-illustrated"><i class="fa fa-check"></i><b>8.3</b> Reliability and unreliability illustrated</a></li>
 </ul></li>
-<li class="chapter" data-level="16" data-path="construct-validity.html"><a href="construct-validity.html"><i class="fa fa-check"></i><b>16</b> Construct validity</a>
+<li class="chapter" data-level="9" data-path="domain-sampling-theory.html"><a href="domain-sampling-theory.html"><i class="fa fa-check"></i><b>9</b> Domain Sampling Theory</a></li>
+<li class="part"><span><b>III Module 06</b></span></li>
+<li class="chapter" data-level="10" data-path="installing-epmr.html"><a href="installing-epmr.html"><i class="fa fa-check"></i><b>10</b> Installing epmr</a></li>
+<li class="chapter" data-level="11" data-path="statistical-definition-of-reliability..html"><a href="statistical-definition-of-reliability..html"><i class="fa fa-check"></i><b>11</b> Statistical definition of reliability.</a>
 <ul>
-<li class="chapter" data-level="16.1" data-path="construct-validity.html"><a href="construct-validity.html#definition-1"><i class="fa fa-check"></i><b>16.1</b> Definition</a></li>
-<li class="chapter" data-level="16.2" data-path="construct-validity.html"><a href="construct-validity.html#examples"><i class="fa fa-check"></i><b>16.2</b> Examples</a></li>
+<li class="chapter" data-level="11.1" data-path="statistical-definition-of-reliability..html"><a href="statistical-definition-of-reliability..html#estimating-reliability"><i class="fa fa-check"></i><b>11.1</b> Estimating reliability</a></li>
+<li class="chapter" data-level="11.2" data-path="statistical-definition-of-reliability..html"><a href="statistical-definition-of-reliability..html#split-half-method"><i class="fa fa-check"></i><b>11.2</b> Split-half method</a></li>
+<li class="chapter" data-level="11.3" data-path="statistical-definition-of-reliability..html"><a href="statistical-definition-of-reliability..html#spearman-brown"><i class="fa fa-check"></i><b>11.3</b> Spearman Brown</a></li>
+<li class="chapter" data-level="11.4" data-path="statistical-definition-of-reliability..html"><a href="statistical-definition-of-reliability..html#standard-error-of-measurement"><i class="fa fa-check"></i><b>11.4</b> Standard Error of Measurement</a></li>
 </ul></li>
-<li class="chapter" data-level="17" data-path="unified-validity-and-threats.html"><a href="unified-validity-and-threats.html"><i class="fa fa-check"></i><b>17</b> Unified validity and threats</a></li>
-<li class="chapter" data-level="18" data-path="summary-1.html"><a href="summary-1.html"><i class="fa fa-check"></i><b>18</b> Summary</a>
+<li class="chapter" data-level="12" data-path="interpreting-reliability-and-unreliability.html"><a href="interpreting-reliability-and-unreliability.html"><i class="fa fa-check"></i><b>12</b> Interpreting reliability and unreliability</a></li>
+<li class="chapter" data-level="13" data-path="reliability-study-designs.html"><a href="reliability-study-designs.html"><i class="fa fa-check"></i><b>13</b> Reliability study designs</a>
 <ul>
-<li class="chapter" data-level="18.1" data-path="summary-1.html"><a href="summary-1.html#exercises-1"><i class="fa fa-check"></i><b>18.1</b> Exercises</a></li>
+<li class="chapter" data-level="13.1" data-path="reliability-study-designs.html"><a href="reliability-study-designs.html#interrater-reliability"><i class="fa fa-check"></i><b>13.1</b> Interrater reliability</a>
+<ul>
+<li class="chapter" data-level="13.1.1" data-path="reliability-study-designs.html"><a href="reliability-study-designs.html#proportion-agreement"><i class="fa fa-check"></i><b>13.1.1</b> Proportion agreement</a></li>
+<li class="chapter" data-level="13.1.2" data-path="reliability-study-designs.html"><a href="reliability-study-designs.html#kappa-agreement"><i class="fa fa-check"></i><b>13.1.2</b> Kappa agreement</a></li>
+<li class="chapter" data-level="13.1.3" data-path="reliability-study-designs.html"><a href="reliability-study-designs.html#pearson-correlation"><i class="fa fa-check"></i><b>13.1.3</b> Pearson correlation</a></li>
 </ul></li>
-<li class="part"><span><b>IV Module 09</b></span></li>
-<li class="chapter" data-level="19" data-path="dimensionality.html"><a href="dimensionality.html"><i class="fa fa-check"></i><b>19</b> Factor Analysis</a>
+<li class="chapter" data-level="13.2" data-path="reliability-study-designs.html"><a href="reliability-study-designs.html#summary"><i class="fa fa-check"></i><b>13.2</b> Summary</a>
 <ul>
-<li class="chapter" data-level="19.1" data-path="dimensionality.html"><a href="dimensionality.html#objectives-1"><i class="fa fa-check"></i><b>19.1</b> Objectives</a></li>
+<li class="chapter" data-level="13.2.1" data-path="reliability-study-designs.html"><a href="reliability-study-designs.html#exercises"><i class="fa fa-check"></i><b>13.2.1</b> Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="20" data-path="measurement-models.html"><a href="measurement-models.html"><i class="fa fa-check"></i><b>20</b> Measurement models</a></li>
-<li class="chapter" data-level="21" data-path="exploratory-factor-analysis.html"><a href="exploratory-factor-analysis.html"><i class="fa fa-check"></i><b>21</b> Exploratory factor analysis</a>
-<ul>
-<li class="chapter" data-level="21.1" data-path="exploratory-factor-analysis.html"><a href="exploratory-factor-analysis.html#steps-in-efa"><i class="fa fa-check"></i><b>21.1</b> Steps in EFA</a></li>
-<li class="chapter" data-level="21.2" data-path="exploratory-factor-analysis.html"><a href="exploratory-factor-analysis.html#exploring-pisa-approaches-to-learning"><i class="fa fa-check"></i><b>21.2</b> Exploring PISA Approaches to Learning</a></li>
 </ul></li>
-<li class="chapter" data-level="22" data-path="confirmatory-factor-analysis.html"><a href="confirmatory-factor-analysis.html"><i class="fa fa-check"></i><b>22</b> Confirmatory factor analysis</a>
+<li class="part"><span><b>IV Module 08</b></span></li>
+<li class="chapter" data-level="14" data-path="validity.html"><a href="validity.html"><i class="fa fa-check"></i><b>14</b> Validity</a>
 <ul>
-<li class="chapter" data-level="22.1" data-path="confirmatory-factor-analysis.html"><a href="confirmatory-factor-analysis.html#steps-in-cfa"><i class="fa fa-check"></i><b>22.1</b> Steps in CFA</a></li>
-<li class="chapter" data-level="22.2" data-path="confirmatory-factor-analysis.html"><a href="confirmatory-factor-analysis.html#confirming-pisa-approaches-to-learning"><i class="fa fa-check"></i><b>22.2</b> Confirming PISA Approaches to Learning</a></li>
+<li class="chapter" data-level="14.1" data-path="validity.html"><a href="validity.html#objectives"><i class="fa fa-check"></i><b>14.1</b> Objectives</a></li>
 </ul></li>
-<li class="chapter" data-level="23" data-path="summary-2.html"><a href="summary-2.html"><i class="fa fa-check"></i><b>23</b> Summary</a>
+<li class="chapter" data-level="15" data-path="overview-of-validity.html"><a href="overview-of-validity.html"><i class="fa fa-check"></i><b>15</b> Overview of validity</a>
 <ul>
-<li class="chapter" data-level="23.1" data-path="summary-2.html"><a href="summary-2.html#optional-exercises"><i class="fa fa-check"></i><b>23.1</b> Optional Exercises</a></li>
+<li class="chapter" data-level="15.1" data-path="overview-of-validity.html"><a href="overview-of-validity.html#definitions"><i class="fa fa-check"></i><b>15.1</b> Definitions</a></li>
+<li class="chapter" data-level="15.2" data-path="overview-of-validity.html"><a href="overview-of-validity.html#validity-examples"><i class="fa fa-check"></i><b>15.2</b> Validity examples</a></li>
+<li class="chapter" data-level="15.3" data-path="overview-of-validity.html"><a href="overview-of-validity.html#sources-of-validity-evidence"><i class="fa fa-check"></i><b>15.3</b> Sources of validity evidence</a></li>
 </ul></li>
-<li class="part"><span><b>V Module 10</b></span></li>
-<li class="chapter" data-level="24" data-path="itemanalysis.html"><a href="itemanalysis.html"><i class="fa fa-check"></i><b>24</b> Item Analysis</a>
+<li class="chapter" data-level="16" data-path="content-validity.html"><a href="content-validity.html"><i class="fa fa-check"></i><b>16</b> Content validity</a></li>
+<li class="chapter" data-level="17" data-path="criterion-validity.html"><a href="criterion-validity.html"><i class="fa fa-check"></i><b>17</b> Criterion validity</a>
 <ul>
-<li class="chapter" data-level="24.1" data-path="itemanalysis.html"><a href="itemanalysis.html#objectives-2"><i class="fa fa-check"></i><b>24.1</b> Objectives</a></li>
+<li class="chapter" data-level="17.1" data-path="criterion-validity.html"><a href="criterion-validity.html#definition"><i class="fa fa-check"></i><b>17.1</b> Definition</a></li>
+<li class="chapter" data-level="17.2" data-path="criterion-validity.html"><a href="criterion-validity.html#criterion-examples"><i class="fa fa-check"></i><b>17.2</b> Criterion examples</a></li>
 </ul></li>
-<li class="chapter" data-level="25" data-path="preparing-for-item-analysis.html"><a href="preparing-for-item-analysis.html"><i class="fa fa-check"></i><b>25</b> Preparing for item analysis</a>
+<li class="chapter" data-level="18" data-path="construct-validity.html"><a href="construct-validity.html"><i class="fa fa-check"></i><b>18</b> Construct validity</a>
 <ul>
-<li class="chapter" data-level="25.1" data-path="preparing-for-item-analysis.html"><a href="preparing-for-item-analysis.html#item-quality"><i class="fa fa-check"></i><b>25.1</b> Item quality</a></li>
-<li class="chapter" data-level="25.2" data-path="preparing-for-item-analysis.html"><a href="preparing-for-item-analysis.html#piloting"><i class="fa fa-check"></i><b>25.2</b> Piloting</a></li>
-<li class="chapter" data-level="25.3" data-path="preparing-for-item-analysis.html"><a href="preparing-for-item-analysis.html#data-entry"><i class="fa fa-check"></i><b>25.3</b> Data entry</a></li>
-<li class="chapter" data-level="25.4" data-path="preparing-for-item-analysis.html"><a href="preparing-for-item-analysis.html#scoring"><i class="fa fa-check"></i><b>25.4</b> Scoring</a></li>
+<li class="chapter" data-level="18.1" data-path="construct-validity.html"><a href="construct-validity.html#definition-1"><i class="fa fa-check"></i><b>18.1</b> Definition</a></li>
+<li class="chapter" data-level="18.2" data-path="construct-validity.html"><a href="construct-validity.html#examples"><i class="fa fa-check"></i><b>18.2</b> Examples</a></li>
 </ul></li>
-<li class="chapter" data-level="26" data-path="traditional-item-statistics.html"><a href="traditional-item-statistics.html"><i class="fa fa-check"></i><b>26</b> Traditional item statistics</a>
+<li class="chapter" data-level="19" data-path="unified-validity-and-threats.html"><a href="unified-validity-and-threats.html"><i class="fa fa-check"></i><b>19</b> Unified validity and threats</a></li>
+<li class="chapter" data-level="20" data-path="summary-1.html"><a href="summary-1.html"><i class="fa fa-check"></i><b>20</b> Summary</a>
 <ul>
-<li class="chapter" data-level="26.1" data-path="traditional-item-statistics.html"><a href="traditional-item-statistics.html#item-difficulty"><i class="fa fa-check"></i><b>26.1</b> Item difficulty</a></li>
-<li class="chapter" data-level="26.2" data-path="traditional-item-statistics.html"><a href="traditional-item-statistics.html#item-discrimination"><i class="fa fa-check"></i><b>26.2</b> Item discrimination</a></li>
-<li class="chapter" data-level="26.3" data-path="traditional-item-statistics.html"><a href="traditional-item-statistics.html#internal-consistency"><i class="fa fa-check"></i><b>26.3</b> Internal consistency</a></li>
-<li class="chapter" data-level="26.4" data-path="traditional-item-statistics.html"><a href="traditional-item-statistics.html#item-analysis-applications"><i class="fa fa-check"></i><b>26.4</b> Item analysis applications</a></li>
+<li class="chapter" data-level="20.1" data-path="summary-1.html"><a href="summary-1.html#exercises-1"><i class="fa fa-check"></i><b>20.1</b> Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="27" data-path="additional-analyses.html"><a href="additional-analyses.html"><i class="fa fa-check"></i><b>27</b> Additional analyses</a>
+<li class="part"><span><b>V Module 09</b></span></li>
+<li class="chapter" data-level="21" data-path="dimensionality.html"><a href="dimensionality.html"><i class="fa fa-check"></i><b>21</b> Factor Analysis</a>
 <ul>
-<li class="chapter" data-level="27.1" data-path="additional-analyses.html"><a href="additional-analyses.html#option-analysis"><i class="fa fa-check"></i><b>27.1</b> Option analysis</a></li>
-<li class="chapter" data-level="27.2" data-path="additional-analyses.html"><a href="additional-analyses.html#differential-item-functioning"><i class="fa fa-check"></i><b>27.2</b> Differential item functioning</a></li>
+<li class="chapter" data-level="21.1" data-path="dimensionality.html"><a href="dimensionality.html#objectives-1"><i class="fa fa-check"></i><b>21.1</b> Objectives</a></li>
 </ul></li>
-<li class="chapter" data-level="28" data-path="summary-3.html"><a href="summary-3.html"><i class="fa fa-check"></i><b>28</b> Summary</a>
+<li class="chapter" data-level="22" data-path="measurement-models.html"><a href="measurement-models.html"><i class="fa fa-check"></i><b>22</b> Measurement models</a></li>
+<li class="chapter" data-level="23" data-path="exploratory-factor-analysis.html"><a href="exploratory-factor-analysis.html"><i class="fa fa-check"></i><b>23</b> Exploratory factor analysis</a>
 <ul>
-<li class="chapter" data-level="28.1" data-path="summary-3.html"><a href="summary-3.html#exercises-2"><i class="fa fa-check"></i><b>28.1</b> Exercises</a></li>
+<li class="chapter" data-level="23.1" data-path="exploratory-factor-analysis.html"><a href="exploratory-factor-analysis.html#steps-in-efa"><i class="fa fa-check"></i><b>23.1</b> Steps in EFA</a></li>
+<li class="chapter" data-level="23.2" data-path="exploratory-factor-analysis.html"><a href="exploratory-factor-analysis.html#exploring-pisa-approaches-to-learning"><i class="fa fa-check"></i><b>23.2</b> Exploring PISA Approaches to Learning</a></li>
 </ul></li>
-<li class="part"><span><b>VI Module 11</b></span></li>
-<li class="chapter" data-level="29" data-path="irt.html"><a href="irt.html"><i class="fa fa-check"></i><b>29</b> Item Response Theory</a>
+<li class="chapter" data-level="24" data-path="confirmatory-factor-analysis.html"><a href="confirmatory-factor-analysis.html"><i class="fa fa-check"></i><b>24</b> Confirmatory factor analysis</a>
 <ul>
-<li class="chapter" data-level="29.1" data-path="irt.html"><a href="irt.html#learning-objectives"><i class="fa fa-check"></i><b>29.1</b> Learning objectives</a></li>
+<li class="chapter" data-level="24.1" data-path="confirmatory-factor-analysis.html"><a href="confirmatory-factor-analysis.html#steps-in-cfa"><i class="fa fa-check"></i><b>24.1</b> Steps in CFA</a></li>
+<li class="chapter" data-level="24.2" data-path="confirmatory-factor-analysis.html"><a href="confirmatory-factor-analysis.html#confirming-pisa-approaches-to-learning"><i class="fa fa-check"></i><b>24.2</b> Confirming PISA Approaches to Learning</a></li>
 </ul></li>
-<li class="chapter" data-level="30" data-path="irt-versus-ctt.html"><a href="irt-versus-ctt.html"><i class="fa fa-check"></i><b>30</b> IRT versus CTT</a>
+<li class="chapter" data-level="25" data-path="summary-2.html"><a href="summary-2.html"><i class="fa fa-check"></i><b>25</b> Summary</a>
 <ul>
-<li class="chapter" data-level="30.1" data-path="irt-versus-ctt.html"><a href="irt-versus-ctt.html#ctt-review"><i class="fa fa-check"></i><b>30.1</b> CTT review</a></li>
-<li class="chapter" data-level="30.2" data-path="irt-versus-ctt.html"><a href="irt-versus-ctt.html#comparing-with-irt"><i class="fa fa-check"></i><b>30.2</b> Comparing with IRT</a></li>
+<li class="chapter" data-level="25.1" data-path="summary-2.html"><a href="summary-2.html#optional-exercises"><i class="fa fa-check"></i><b>25.1</b> Optional Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="31" data-path="traditional-irt-models.html"><a href="traditional-irt-models.html"><i class="fa fa-check"></i><b>31</b> Traditional IRT models</a>
+<li class="part"><span><b>VI Module 10</b></span></li>
+<li class="chapter" data-level="26" data-path="itemanalysis.html"><a href="itemanalysis.html"><i class="fa fa-check"></i><b>26</b> Item Analysis</a>
 <ul>
-<li class="chapter" data-level="31.1" data-path="traditional-irt-models.html"><a href="traditional-irt-models.html#terminology"><i class="fa fa-check"></i><b>31.1</b> Terminology</a></li>
-<li class="chapter" data-level="31.2" data-path="traditional-irt-models.html"><a href="traditional-irt-models.html#the-irt-models"><i class="fa fa-check"></i><b>31.2</b> The IRT models</a></li>
-<li class="chapter" data-level="31.3" data-path="traditional-irt-models.html"><a href="traditional-irt-models.html#assumptions"><i class="fa fa-check"></i><b>31.3</b> Assumptions</a></li>
+<li class="chapter" data-level="26.1" data-path="itemanalysis.html"><a href="itemanalysis.html#objectives-2"><i class="fa fa-check"></i><b>26.1</b> Objectives</a></li>
 </ul></li>
-<li class="chapter" data-level="32" data-path="irtapplications.html"><a href="irtapplications.html"><i class="fa fa-check"></i><b>32</b> Applications</a>
+<li class="chapter" data-level="27" data-path="preparing-for-item-analysis.html"><a href="preparing-for-item-analysis.html"><i class="fa fa-check"></i><b>27</b> Preparing for item analysis</a>
 <ul>
-<li class="chapter" data-level="32.1" data-path="irtapplications.html"><a href="irtapplications.html#in-practice"><i class="fa fa-check"></i><b>32.1</b> In practice…</a></li>
-<li class="chapter" data-level="32.2" data-path="irtapplications.html"><a href="irtapplications.html#irtexamples"><i class="fa fa-check"></i><b>32.2</b> Examples</a></li>
+<li class="chapter" data-level="27.1" data-path="preparing-for-item-analysis.html"><a href="preparing-for-item-analysis.html#item-quality"><i class="fa fa-check"></i><b>27.1</b> Item quality</a></li>
+<li class="chapter" data-level="27.2" data-path="preparing-for-item-analysis.html"><a href="preparing-for-item-analysis.html#piloting"><i class="fa fa-check"></i><b>27.2</b> Piloting</a></li>
+<li class="chapter" data-level="27.3" data-path="preparing-for-item-analysis.html"><a href="preparing-for-item-analysis.html#data-entry"><i class="fa fa-check"></i><b>27.3</b> Data entry</a></li>
+<li class="chapter" data-level="27.4" data-path="preparing-for-item-analysis.html"><a href="preparing-for-item-analysis.html#scoring"><i class="fa fa-check"></i><b>27.4</b> Scoring</a></li>
 </ul></li>
-<li class="chapter" data-level="33" data-path="summary-4.html"><a href="summary-4.html"><i class="fa fa-check"></i><b>33</b> Summary</a>
+<li class="chapter" data-level="28" data-path="traditional-item-statistics.html"><a href="traditional-item-statistics.html"><i class="fa fa-check"></i><b>28</b> Traditional item statistics</a>
 <ul>
-<li class="chapter" data-level="33.1" data-path="summary-4.html"><a href="summary-4.html#exercises-3"><i class="fa fa-check"></i><b>33.1</b> Exercises</a></li>
+<li class="chapter" data-level="28.1" data-path="traditional-item-statistics.html"><a href="traditional-item-statistics.html#item-difficulty"><i class="fa fa-check"></i><b>28.1</b> Item difficulty</a></li>
+<li class="chapter" data-level="28.2" data-path="traditional-item-statistics.html"><a href="traditional-item-statistics.html#item-discrimination"><i class="fa fa-check"></i><b>28.2</b> Item discrimination</a></li>
+<li class="chapter" data-level="28.3" data-path="traditional-item-statistics.html"><a href="traditional-item-statistics.html#internal-consistency"><i class="fa fa-check"></i><b>28.3</b> Internal consistency</a></li>
+<li class="chapter" data-level="28.4" data-path="traditional-item-statistics.html"><a href="traditional-item-statistics.html#item-analysis-applications"><i class="fa fa-check"></i><b>28.4</b> Item analysis applications</a></li>
 </ul></li>
-<li class="part"><span><b>VII Module 12</b></span></li>
-<li class="chapter" data-level="34" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>34</b> Practical Testing Applications</a>
+<li class="chapter" data-level="29" data-path="additional-analyses.html"><a href="additional-analyses.html"><i class="fa fa-check"></i><b>29</b> Additional analyses</a>
 <ul>
-<li class="chapter" data-level="34.1" data-path="applications.html"><a href="applications.html#tests-and-decision-making"><i class="fa fa-check"></i><b>34.1</b> Tests and decision making</a>
-<ul>
-<li class="chapter" data-level="34.1.1" data-path="applications.html"><a href="applications.html#educational-decisions"><i class="fa fa-check"></i><b>34.1.1</b> Educational decisions</a></li>
-<li class="chapter" data-level="34.1.2" data-path="applications.html"><a href="applications.html#psychological-decisions"><i class="fa fa-check"></i><b>34.1.2</b> Psychological decisions</a></li>
+<li class="chapter" data-level="29.1" data-path="additional-analyses.html"><a href="additional-analyses.html#option-analysis"><i class="fa fa-check"></i><b>29.1</b> Option analysis</a></li>
+<li class="chapter" data-level="29.2" data-path="additional-analyses.html"><a href="additional-analyses.html#differential-item-functioning"><i class="fa fa-check"></i><b>29.2</b> Differential item functioning</a></li>
 </ul></li>
-<li class="chapter" data-level="34.2" data-path="applications.html"><a href="applications.html#test-types-and-features"><i class="fa fa-check"></i><b>34.2</b> Test types and features</a>
+<li class="chapter" data-level="30" data-path="summary-3.html"><a href="summary-3.html"><i class="fa fa-check"></i><b>30</b> Summary</a>
 <ul>
-<li class="chapter" data-level="34.2.1" data-path="applications.html"><a href="applications.html#cognitive-and-affective"><i class="fa fa-check"></i><b>34.2.1</b> Cognitive and affective</a></li>
-<li class="chapter" data-level="34.2.2" data-path="applications.html"><a href="applications.html#achievement-and-aptitude"><i class="fa fa-check"></i><b>34.2.2</b> Achievement and aptitude</a></li>
-<li class="chapter" data-level="34.2.3" data-path="applications.html"><a href="applications.html#other-distinctions"><i class="fa fa-check"></i><b>34.2.3</b> Other distinctions</a></li>
+<li class="chapter" data-level="30.1" data-path="summary-3.html"><a href="summary-3.html#exercises-2"><i class="fa fa-check"></i><b>30.1</b> Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="34.3" data-path="applications.html"><a href="applications.html#summary-5"><i class="fa fa-check"></i><b>34.3</b> Summary</a></li>
-<li class="chapter" data-level="34.4" data-path="applications.html"><a href="applications.html#finding-test-information"><i class="fa fa-check"></i><b>34.4</b> Finding test information</a></li>
-</ul></li>
-<li class="chapter" data-level="35" data-path="summary-6.html"><a href="summary-6.html"><i class="fa fa-check"></i><b>35</b> Summary</a>
+<li class="part"><span><b>VII Module 11</b></span></li>
+<li class="chapter" data-level="31" data-path="irt.html"><a href="irt.html"><i class="fa fa-check"></i><b>31</b> Item Response Theory</a>
 <ul>
-<li class="chapter" data-level="35.1" data-path="summary-6.html"><a href="summary-6.html#exercises-4"><i class="fa fa-check"></i><b>35.1</b> Exercises</a></li>
+<li class="chapter" data-level="31.1" data-path="irt.html"><a href="irt.html#learning-objectives"><i class="fa fa-check"></i><b>31.1</b> Learning objectives</a></li>
 </ul></li>
-<li class="chapter" data-level="36" data-path="evaluation.html"><a href="evaluation.html"><i class="fa fa-check"></i><b>36</b> Test Evaluation</a>
+<li class="chapter" data-level="32" data-path="irt-versus-ctt.html"><a href="irt-versus-ctt.html"><i class="fa fa-check"></i><b>32</b> IRT versus CTT</a>
 <ul>
-<li class="chapter" data-level="36.1" data-path="evaluation.html"><a href="evaluation.html#test-purpose"><i class="fa fa-check"></i><b>36.1</b> Test purpose</a></li>
-<li class="chapter" data-level="36.2" data-path="evaluation.html"><a href="evaluation.html#study-design"><i class="fa fa-check"></i><b>36.2</b> Study design</a></li>
-<li class="chapter" data-level="36.3" data-path="evaluation.html"><a href="evaluation.html#reliability"><i class="fa fa-check"></i><b>36.3</b> Reliability</a></li>
-<li class="chapter" data-level="36.4" data-path="evaluation.html"><a href="evaluation.html#validity-1"><i class="fa fa-check"></i><b>36.4</b> Validity</a></li>
-<li class="chapter" data-level="36.5" data-path="evaluation.html"><a href="evaluation.html#scoring-1"><i class="fa fa-check"></i><b>36.5</b> Scoring</a></li>
-<li class="chapter" data-level="36.6" data-path="evaluation.html"><a href="evaluation.html#test-use"><i class="fa fa-check"></i><b>36.6</b> Test use</a></li>
+<li class="chapter" data-level="32.1" data-path="irt-versus-ctt.html"><a href="irt-versus-ctt.html#ctt-review"><i class="fa fa-check"></i><b>32.1</b> CTT review</a></li>
+<li class="chapter" data-level="32.2" data-path="irt-versus-ctt.html"><a href="irt-versus-ctt.html#comparing-with-irt"><i class="fa fa-check"></i><b>32.2</b> Comparing with IRT</a></li>
 </ul></li>
-<li class="chapter" data-level="37" data-path="summary-7.html"><a href="summary-7.html"><i class="fa fa-check"></i><b>37</b> Summary</a>
+<li class="chapter" data-level="33" data-path="traditional-irt-models.html"><a href="traditional-irt-models.html"><i class="fa fa-check"></i><b>33</b> Traditional IRT models</a>
 <ul>
-<li class="chapter" data-level="37.1" data-path="summary-7.html"><a href="summary-7.html#exercises-5"><i class="fa fa-check"></i><b>37.1</b> Exercises</a></li>
+<li class="chapter" data-level="33.1" data-path="traditional-irt-models.html"><a href="traditional-irt-models.html#terminology"><i class="fa fa-check"></i><b>33.1</b> Terminology</a></li>
+<li class="chapter" data-level="33.2" data-path="traditional-irt-models.html"><a href="traditional-irt-models.html#the-irt-models"><i class="fa fa-check"></i><b>33.2</b> The IRT models</a></li>
+<li class="chapter" data-level="33.3" data-path="traditional-irt-models.html"><a href="traditional-irt-models.html#assumptions"><i class="fa fa-check"></i><b>33.3</b> Assumptions</a></li>
 </ul></li>
-<li class="part"><span><b>VIII Homework 2</b></span></li>
-<li class="chapter" data-level="38" data-path="homework-instructions.html"><a href="homework-instructions.html"><i class="fa fa-check"></i><b>38</b> Homework Instructions</a></li>
-<li class="part"><span><b>IX Other Coolness</b></span></li>
-<li class="chapter" data-level="39" data-path="good-resources.html"><a href="good-resources.html"><i class="fa fa-check"></i><b>39</b> Good Resources</a>
+<li class="chapter" data-level="34" data-path="irtapplications.html"><a href="irtapplications.html"><i class="fa fa-check"></i><b>34</b> Applications</a>
 <ul>
-<li class="chapter" data-level="39.1" data-path="good-resources.html"><a href="good-resources.html#learning-r"><i class="fa fa-check"></i><b>39.1</b> Learning R</a></li>
-<li class="chapter" data-level="39.2" data-path="good-resources.html"><a href="good-resources.html#psychology-scales"><i class="fa fa-check"></i><b>39.2</b> Psychology Scales</a></li>
+<li class="chapter" data-level="34.1" data-path="irtapplications.html"><a href="irtapplications.html#in-practice"><i class="fa fa-check"></i><b>34.1</b> In practice…</a></li>
+<li class="chapter" data-level="34.2" data-path="irtapplications.html"><a href="irtapplications.html#irtexamples"><i class="fa fa-check"></i><b>34.2</b> Examples</a></li>
+</ul></li>
+<li class="chapter" data-level="35" data-path="summary-4.html"><a href="summary-4.html"><i class="fa fa-check"></i><b>35</b> Summary</a>
+<ul>
+<li class="chapter" data-level="35.1" data-path="summary-4.html"><a href="summary-4.html#exercises-3"><i class="fa fa-check"></i><b>35.1</b> Exercises</a></li>
+</ul></li>
+<li class="part"><span><b>VIII Module 12</b></span></li>
+<li class="chapter" data-level="36" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>36</b> Practical Testing Applications</a>
+<ul>
+<li class="chapter" data-level="36.1" data-path="applications.html"><a href="applications.html#tests-and-decision-making"><i class="fa fa-check"></i><b>36.1</b> Tests and decision making</a>
+<ul>
+<li class="chapter" data-level="36.1.1" data-path="applications.html"><a href="applications.html#educational-decisions"><i class="fa fa-check"></i><b>36.1.1</b> Educational decisions</a></li>
+<li class="chapter" data-level="36.1.2" data-path="applications.html"><a href="applications.html#psychological-decisions"><i class="fa fa-check"></i><b>36.1.2</b> Psychological decisions</a></li>
+</ul></li>
+<li class="chapter" data-level="36.2" data-path="applications.html"><a href="applications.html#test-types-and-features"><i class="fa fa-check"></i><b>36.2</b> Test types and features</a>
+<ul>
+<li class="chapter" data-level="36.2.1" data-path="applications.html"><a href="applications.html#cognitive-and-affective"><i class="fa fa-check"></i><b>36.2.1</b> Cognitive and affective</a></li>
+<li class="chapter" data-level="36.2.2" data-path="applications.html"><a href="applications.html#achievement-and-aptitude"><i class="fa fa-check"></i><b>36.2.2</b> Achievement and aptitude</a></li>
+<li class="chapter" data-level="36.2.3" data-path="applications.html"><a href="applications.html#other-distinctions"><i class="fa fa-check"></i><b>36.2.3</b> Other distinctions</a></li>
+</ul></li>
+<li class="chapter" data-level="36.3" data-path="applications.html"><a href="applications.html#summary-5"><i class="fa fa-check"></i><b>36.3</b> Summary</a></li>
+<li class="chapter" data-level="36.4" data-path="applications.html"><a href="applications.html#finding-test-information"><i class="fa fa-check"></i><b>36.4</b> Finding test information</a></li>
+</ul></li>
+<li class="chapter" data-level="37" data-path="summary-6.html"><a href="summary-6.html"><i class="fa fa-check"></i><b>37</b> Summary</a>
+<ul>
+<li class="chapter" data-level="37.1" data-path="summary-6.html"><a href="summary-6.html#exercises-4"><i class="fa fa-check"></i><b>37.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="38" data-path="evaluation.html"><a href="evaluation.html"><i class="fa fa-check"></i><b>38</b> Test Evaluation</a>
+<ul>
+<li class="chapter" data-level="38.1" data-path="evaluation.html"><a href="evaluation.html#test-purpose"><i class="fa fa-check"></i><b>38.1</b> Test purpose</a></li>
+<li class="chapter" data-level="38.2" data-path="evaluation.html"><a href="evaluation.html#study-design"><i class="fa fa-check"></i><b>38.2</b> Study design</a></li>
+<li class="chapter" data-level="38.3" data-path="evaluation.html"><a href="evaluation.html#reliability"><i class="fa fa-check"></i><b>38.3</b> Reliability</a></li>
+<li class="chapter" data-level="38.4" data-path="evaluation.html"><a href="evaluation.html#validity-1"><i class="fa fa-check"></i><b>38.4</b> Validity</a></li>
+<li class="chapter" data-level="38.5" data-path="evaluation.html"><a href="evaluation.html#scoring-1"><i class="fa fa-check"></i><b>38.5</b> Scoring</a></li>
+<li class="chapter" data-level="38.6" data-path="evaluation.html"><a href="evaluation.html#test-use"><i class="fa fa-check"></i><b>38.6</b> Test use</a></li>
+</ul></li>
+<li class="chapter" data-level="39" data-path="summary-7.html"><a href="summary-7.html"><i class="fa fa-check"></i><b>39</b> Summary</a>
+<ul>
+<li class="chapter" data-level="39.1" data-path="summary-7.html"><a href="summary-7.html#exercises-5"><i class="fa fa-check"></i><b>39.1</b> Exercises</a></li>
+</ul></li>
+<li class="part"><span><b>IX Homework 2</b></span></li>
+<li class="chapter" data-level="40" data-path="homework-instructions.html"><a href="homework-instructions.html"><i class="fa fa-check"></i><b>40</b> Homework Instructions</a></li>
+<li class="part"><span><b>X Other Coolness</b></span></li>
+<li class="chapter" data-level="41" data-path="good-resources.html"><a href="good-resources.html"><i class="fa fa-check"></i><b>41</b> Good Resources</a>
+<ul>
+<li class="chapter" data-level="41.1" data-path="good-resources.html"><a href="good-resources.html#learning-r"><i class="fa fa-check"></i><b>41.1</b> Learning R</a></li>
+<li class="chapter" data-level="41.2" data-path="good-resources.html"><a href="good-resources.html#psychology-scales"><i class="fa fa-check"></i><b>41.2</b> Psychology Scales</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
@@ -451,8 +475,8 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="confirmatory-factor-analysis" class="section level1" number="22">
-<h1><span class="header-section-number">22</span> Confirmatory factor analysis</h1>
+<div id="confirmatory-factor-analysis" class="section level1" number="24">
+<h1><span class="header-section-number">24</span> Confirmatory factor analysis</h1>
 <p>Confirmatory factor analysis or CFA is used to confirm an appropriate factor structure for an instrument. Whereas EFA provides tools for exploring factor structure, it does not allow us to modify specific features of our model beyond the number of factors. Furthermore, EFA does not formally support the testing of model fit or statistical significance in our results. CFA extends EFA by providing a framework for proposing a specific measurement model, fitting the model, and then testing statistically for the appropriateness or accuracy of the model given our instrument and data.</p>
 <p>Note that CFA falls within a much broader and more general class of structural equation modeling (SEM) methods. Other applications of SEM include path analysis, multilevel regression modeling, and latent growth modeling. CFA and SEM models can be fit and analyzed in R, but, given their complexity, commercial software is often preferable, depending on the model and type of data used. For demonstration purposes, we will examine CFA in R using the lavaan package.</p>
 <p><strong>The BDI-II</strong></p>
@@ -463,8 +487,8 @@ div.csl-indent {
 <p>An important feature of factor analysis that we have not yet discussed has to do with the relationships among item errors. In EFA, we assume that all item errors are uncorrelated. This means that the unexplained variability for a given item does not relate to the unexplained variability for any other. Similar to the CTT model, variability in EFA can only come from the estimated factors or random, uncorrelated noise. In CFA, we can relax this assumption by allowing certain error terms to correlate.</p>
 <p><span class="citation"><a href="references.html#ref-whisman2000factor" role="doc-biblioref">Whisman, Perez, and Ramel</a> (<a href="references.html#ref-whisman2000factor" role="doc-biblioref">2000</a>)</span> allowed error terms to correlate for the following pairs of items: sadness and crying, self-dislike and self-criticalness, and loss of pleasure and loss of interest. This choice to have correlated errors seems justified, given the apparent similarities in content for these items. The two factors in the initial CFA didn’t account for the fact that respondents would answer similarly within these pairs of items. Thus, the model was missing an important feature of the data.</p>
 <p>Having allowed for correlated error terms, the two unassigned items Pessimism and Loss of Interest in Sex were also specified to load on the cognitive factor. The result was a final model with more acceptable fit statistics, including CFI of 0.90 and RMSEA of 0.06.</p>
-<div id="steps-in-cfa" class="section level2" number="22.1">
-<h2><span class="header-section-number">22.1</span> Steps in CFA</h2>
+<div id="steps-in-cfa" class="section level2" number="24.1">
+<h2><span class="header-section-number">24.1</span> Steps in CFA</h2>
 <p>Here, we will fit the final model from <span class="citation"><a href="references.html#ref-whisman2000factor" role="doc-biblioref">Whisman, Perez, and Ramel</a> (<a href="references.html#ref-whisman2000factor" role="doc-biblioref">2000</a>)</span>, while demonstrating the following basic steps in conducting a CFA:</p>
 <ol style="list-style-type: decimal">
 <li>hypothesizing the proposed factor structure with necessary constraints,</li>
@@ -474,11 +498,11 @@ div.csl-indent {
 </ol>
 <p><strong>1. Hypothesize the factor structure</strong></p>
 <p>As discussed previously, we hypothesize that two factors will be sufficient for explaining the correlations among items in the BDI-II. These factors are labeled cognitive and somatic, based on the content of the items that tend to load on them. We also hypothesize that the two factors will be correlated. Finally, we allow for correlated errors between sadness and crying, self-dislike and self-criticalness, and loss of pleasure and loss of interest.</p>
-<p>Figure <a href="confirmatory-factor-analysis.html#fig:bdi-model">22.1</a> is a visual representation of the CFA model we’re fitting. On the left are the two factors, and on the right are the observed item variables. Estimates for the correlation between factors, the factor loadings, and item variances are also shown.</p>
-<div class="figure"><span id="fig:bdi-model"></span>
+<p>Figure <a href="confirmatory-factor-analysis.html#fig:bdi-model">24.1</a> is a visual representation of the CFA model we’re fitting. On the left are the two factors, and on the right are the observed item variables. Estimates for the correlation between factors, the factor loadings, and item variances are also shown.</p>
+<div class="figure"><span style="display:block;" id="fig:bdi-model"></span>
 <img src="img/bdicfa.jpg" alt="CFA model for the BDI-II, with factor loadings and error variances." width="50%" />
 <p class="caption">
-Figure 22.1: CFA model for the BDI-II, with factor loadings and error variances.
+Figure 24.1: CFA model for the BDI-II, with factor loadings and error variances.
 </p>
 </div>
 <p><strong>2. Prepare the data, fit the model</strong></p>
@@ -512,7 +536,7 @@ Figure 22.1: CFA model for the BDI-II, with factor loadings and error variances.
 <p>Standardized factor loadings are shown in the last column of the Latent Variables output. Some of the loadings match up well with those reported in the original study. Others are different. The discrepancies may be due to the fact that our CFA was run on correlations rounded to two decimal places that were converted using standard deviations to covariances, whereas raw data were used in the original study. Rounding can result in a loss of meaningful information.</p>
 <div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="confirmatory-factor-analysis.html#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Print fit indices, loadings, and other output</span></span>
 <span id="cb62-2"><a href="confirmatory-factor-analysis.html#cb62-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(bdicfa, <span class="at">fit =</span> <span class="cn">TRUE</span>, <span class="at">standardized =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb62-3"><a href="confirmatory-factor-analysis.html#cb62-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; lavaan 0.6-8 ended normally after 41 iterations</span></span>
+<span id="cb62-3"><a href="confirmatory-factor-analysis.html#cb62-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; lavaan 0.6-9 ended normally after 41 iterations</span></span>
 <span id="cb62-4"><a href="confirmatory-factor-analysis.html#cb62-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
 <span id="cb62-5"><a href="confirmatory-factor-analysis.html#cb62-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   Estimator                                         ML</span></span>
 <span id="cb62-6"><a href="confirmatory-factor-analysis.html#cb62-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   Optimization method                           NLMINB</span></span>
@@ -643,7 +667,7 @@ Figure 22.1: CFA model for the BDI-II, with factor loadings and error variances.
 <span id="cb63-13"><a href="confirmatory-factor-analysis.html#cb63-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">sample.nobs =</span> <span class="dv">576</span>)</span>
 <span id="cb63-14"><a href="confirmatory-factor-analysis.html#cb63-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Print output</span></span>
 <span id="cb63-15"><a href="confirmatory-factor-analysis.html#cb63-15" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(bdicfa2, <span class="at">fit =</span> <span class="cn">TRUE</span>, <span class="at">standardized =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb63-16"><a href="confirmatory-factor-analysis.html#cb63-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; lavaan 0.6-8 ended normally after 29 iterations</span></span>
+<span id="cb63-16"><a href="confirmatory-factor-analysis.html#cb63-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; lavaan 0.6-9 ended normally after 29 iterations</span></span>
 <span id="cb63-17"><a href="confirmatory-factor-analysis.html#cb63-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
 <span id="cb63-18"><a href="confirmatory-factor-analysis.html#cb63-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   Estimator                                         ML</span></span>
 <span id="cb63-19"><a href="confirmatory-factor-analysis.html#cb63-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   Optimization method                           NLMINB</span></span>
@@ -758,8 +782,8 @@ Figure 22.1: CFA model for the BDI-II, with factor loadings and error variances.
 <p>Overall, results for the unidimensional model are no better than for the previous one. The AIC and BIC are both larger, and the CFI and RMSEA are relatively unchanged. Most loadings are moderately positive, but some leave a substantial amount of item variability unexplained. For example, the item error terms (in the Std.all column of the Variances table) for sleep and noenergy are both larger than 0.80. These results indicate that more than 80% of the variability is unexplained for these items. Errors for the remaining items are all above 0.50.</p>
 <p>Taken together, the results of these CFA suggest that the two-factor and unidimensional models may not be appropriate for the BDI-II, at least in the undergraduate population with which the data were collected.</p>
 </div>
-<div id="confirming-pisa-approaches-to-learning" class="section level2" number="22.2">
-<h2><span class="header-section-number">22.2</span> Confirming PISA Approaches to Learning</h2>
+<div id="confirming-pisa-approaches-to-learning" class="section level2" number="24.2">
+<h2><span class="header-section-number">24.2</span> Confirming PISA Approaches to Learning</h2>
 <p>In our final demonstration, we’ll fit a CFA to the PISA Approaches to Learning items. Our first factor structure is similar to what we explored previously via EFA. However, here, our items are only allowed to load on their intended factors. We’re hypothesizing that any cross loadings on other factors are negligible and not essential to the underlying factor structure for the instrument.</p>
 <div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="confirmatory-factor-analysis.html#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="co"># CFA with PISA approaches to learning scale</span></span>
 <span id="cb65-2"><a href="confirmatory-factor-analysis.html#cb65-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Specify the factor structure</span></span>
@@ -775,7 +799,7 @@ Figure 22.1: CFA model for the BDI-II, with factor loadings and error variances.
 <span id="cb65-12"><a href="confirmatory-factor-analysis.html#cb65-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">sample.nobs =</span> <span class="dv">3514</span>)</span>
 <span id="cb65-13"><a href="confirmatory-factor-analysis.html#cb65-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Print output</span></span>
 <span id="cb65-14"><a href="confirmatory-factor-analysis.html#cb65-14" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(alcfa, <span class="at">fit =</span> <span class="cn">TRUE</span>, <span class="at">standardized =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb65-15"><a href="confirmatory-factor-analysis.html#cb65-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; lavaan 0.6-8 ended normally after 20 iterations</span></span>
+<span id="cb65-15"><a href="confirmatory-factor-analysis.html#cb65-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; lavaan 0.6-9 ended normally after 20 iterations</span></span>
 <span id="cb65-16"><a href="confirmatory-factor-analysis.html#cb65-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
 <span id="cb65-17"><a href="confirmatory-factor-analysis.html#cb65-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   Estimator                                         ML</span></span>
 <span id="cb65-18"><a href="confirmatory-factor-analysis.html#cb65-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   Optimization method                           NLMINB</span></span>
@@ -884,7 +908,6 @@ Figure 22.1: CFA model for the BDI-II, with factor loadings and error variances.
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -924,6 +947,10 @@ gitbook.start({
 "text": null
 },
 "download": ["https://github.com/DataScience4Psych/DataScience4Psych/raw/main/0900_dimensionality.Rmd", "PT.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "section"
 }

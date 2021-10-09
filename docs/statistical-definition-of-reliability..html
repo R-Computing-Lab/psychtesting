@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>18 Construct validity | Psychological Testing</title>
+  <title>11 Statistical definition of reliability. | Psychological Testing</title>
   <meta name="description" content="PSY 362: Psychological Testing" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="18 Construct validity | Psychological Testing" />
+  <meta property="og:title" content="11 Statistical definition of reliability. | Psychological Testing" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://r-computing-lab.github.io/psychtesting" />
   <meta property="og:image" content="https://r-computing-lab.github.io/psychtesting/assets/logo.png" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="R-Computing-Lab/psychtesting" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="18 Construct validity | Psychological Testing" />
+  <meta name="twitter:title" content="11 Statistical definition of reliability. | Psychological Testing" />
   <meta name="twitter:site" content="@smasongarrison" />
   <meta name="twitter:description" content="PSY 362: Psychological Testing" />
   <meta name="twitter:image" content="https://r-computing-lab.github.io/psychtesting/assets/logo.png" />
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="criterion-validity.html"/>
-<link rel="next" href="unified-validity-and-threats.html"/>
+<link rel="prev" href="installing-epmr.html"/>
+<link rel="next" href="interpreting-reliability-and-unreliability.html"/>
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -475,88 +475,90 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="construct-validity" class="section level1" number="18">
-<h1><span class="header-section-number">18</span> Construct validity</h1>
-<div id="definition-1" class="section level2" number="18.1">
-<h2><span class="header-section-number">18.1</span> Definition</h2>
-<p>As noted above, validity focuses on the extent to which our construct is in fact what we think it is. If our construct is what we think it is, it should relate in known ways with other measures of the same or different constructs. On the other hand, if it is not what we think it is, relationships that should exist with other constructs will not be found.</p>
-<p>Construct validity is established when relationships between our test and other variables confirm what is predicted by theory. For example, theory might indicate that the personality traits of conscientiousness and neuroticism should be negatively related. If we develop a test of conscientiousness and then demonstrate that scores on our test correlate negatively with scores on a test of neuroticism, we’ve established construct validity evidence for our test. Furthermore, theory might indicate that conscientiousness contains three specific dimensions. Statistical analysis of the items within our test could show that the items tend to cluster, or perform similarly, in three specific groups. This too would establish construct validity evidence for our test.</p>
-<p>Module <a href="dimensionality.html#dimensionality">21</a> presents EFA and CFA as tools for exploring and confirming the factor structure of a test. Results from these analysis, particularly CFA, are key to establishing construct validity evidence.</p>
+<div id="statistical-definition-of-reliability." class="section level1" number="11">
+<h1><span class="header-section-number">11</span> Statistical definition of reliability.</h1>
+<p>In CTT, reliability is defined as the proportion of variability in <span class="math inline">\(X\)</span> that is due to variability in true scores <span class="math inline">\(T\)</span>:</p>
+<p><span class="math display" id="eq:rel1">\[\begin{equation}
+r = \frac{\sigma^2_T}{\sigma^2_X}.
+\tag{11.1}
+\end{equation}\]</span></p>
+<div id="estimating-reliability" class="section level2" number="11.1">
+<h2><span class="header-section-number">11.1</span> Estimating reliability</h2>
+<p>One indirect estimate made possible by CTT is the correlation between scores on two forms of the same test:</p>
+<p><span class="math display" id="eq:rel2">\[\begin{equation}
+r = \rho_{X_1 X_2} = \frac{\sigma_{X_1 X_2}}{\sigma_{X_1} \sigma_{X_2}}.
+\tag{11.2}
+\end{equation}\]</span></p>
 </div>
-<div id="examples" class="section level2" number="18.2">
-<h2><span class="header-section-number">18.2</span> Examples</h2>
-<p>The entire set of relationships between our construct and other available constructs is sometimes referred to as a <em>nomological network</em>. This network outlines what the construct is, based on what it relates positively with, and conversely what it is not, based on what it relates negatively with. For example, what variables would you expect to relate positively with depression? As a person gets more depressed, what else tends to increase? What variables would you not expect to correlate with depression? Finally, what variables would you expect to relate negatively with depression?</p>
-<p>Table <a href="construct-validity.html#tab:nomological">18.1</a> contains an example of a correlation matrix that describes a nomological network for a hypothetical new depression scale. The BDI would be considered a well known criterion measure of depression. The remaining labels in this table refer to other related or unrelated variables. “Fake bad” is a measure of a person’s tendency to pretend to be “bad” or associate themselves with negative behaviors or characteristics. Positive correlations in this table represent what is referred to as <em>convergence</em>. Our hypothetical new scale converges with the BDI, a measure of anxiety, and a measure of faking bad. Negative correlations represent <em>divergence.</em> Our new scale diverges with measures of happiness and health. Both types of correlation should be predicted by a theory of depression.</p>
-<table>
-<caption><span id="tab:nomological">Table 18.1: </span>Nomological Network for a Hypothetical Depression Inventory</caption>
-<thead>
-<tr class="header">
-<th align="left"></th>
-<th align="right">New Scale</th>
-<th align="right">BDI</th>
-<th align="right">Anxiety</th>
-<th align="right">Happy</th>
-<th align="right">Health</th>
-<th align="right">Fake Bad</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">New Scale</td>
-<td align="right">1.00</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-</tr>
-<tr class="even">
-<td align="left">BDI</td>
-<td align="right">0.80</td>
-<td align="right">1.00</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-</tr>
-<tr class="odd">
-<td align="left">Anxiety</td>
-<td align="right">0.65</td>
-<td align="right">0.50</td>
-<td align="right">1.00</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-</tr>
-<tr class="even">
-<td align="left">Happy</td>
-<td align="right">-0.59</td>
-<td align="right">-0.61</td>
-<td align="right">-0.40</td>
-<td align="right">1.00</td>
-<td align="right"></td>
-<td align="right"></td>
-</tr>
-<tr class="odd">
-<td align="left">Health</td>
-<td align="right">-0.35</td>
-<td align="right">-0.10</td>
-<td align="right">-0.35</td>
-<td align="right">0.32</td>
-<td align="right">1.00</td>
-<td align="right"></td>
-</tr>
-<tr class="even">
-<td align="left">Fake Bad</td>
-<td align="right">0.10</td>
-<td align="right">0.14</td>
-<td align="right">0.07</td>
-<td align="right">-0.05</td>
-<td align="right">0.07</td>
-<td align="right">1.00</td>
-</tr>
-</tbody>
-</table>
+<div id="split-half-method" class="section level2" number="11.2">
+<h2><span class="header-section-number">11.2</span> Split-half method</h2>
+<p>The split-half method takes scores on a single test form, and separates them into scores on two halves of the test, which are treated as separate test forms. The correlation between these two halves then represents an indirect estimate of reliability, based on Equation <a href="statistical-definition-of-reliability..html#eq:rel1">(11.1)</a>.</p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="statistical-definition-of-reliability..html#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Split half correlation, assuming we only had scores on </span></span>
+<span id="cb39-2"><a href="statistical-definition-of-reliability..html#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="co"># one test form</span></span>
+<span id="cb39-3"><a href="statistical-definition-of-reliability..html#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="co"># With an odd number of reading items, one half has 5 </span></span>
+<span id="cb39-4"><a href="statistical-definition-of-reliability..html#cb39-4" aria-hidden="true" tabindex="-1"></a><span class="co"># items and the other has 6</span></span>
+<span id="cb39-5"><a href="statistical-definition-of-reliability..html#cb39-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(epmr)</span>
+<span id="cb39-6"><a href="statistical-definition-of-reliability..html#cb39-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-7"><a href="statistical-definition-of-reliability..html#cb39-7" aria-hidden="true" tabindex="-1"></a>xsplit1 <span class="ot">&lt;-</span> <span class="fu">rowSums</span>(PISA09[PISA09<span class="sc">$</span>cnt <span class="sc">==</span> <span class="st">&quot;BEL&quot;</span>, </span>
+<span id="cb39-8"><a href="statistical-definition-of-reliability..html#cb39-8" aria-hidden="true" tabindex="-1"></a>  rsitems[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>]])</span>
+<span id="cb39-9"><a href="statistical-definition-of-reliability..html#cb39-9" aria-hidden="true" tabindex="-1"></a>xsplit2 <span class="ot">&lt;-</span> <span class="fu">rowSums</span>(PISA09[PISA09<span class="sc">$</span>cnt <span class="sc">==</span> <span class="st">&quot;BEL&quot;</span>, </span>
+<span id="cb39-10"><a href="statistical-definition-of-reliability..html#cb39-10" aria-hidden="true" tabindex="-1"></a>  rsitems[<span class="dv">6</span><span class="sc">:</span><span class="dv">11</span>]])</span>
+<span id="cb39-11"><a href="statistical-definition-of-reliability..html#cb39-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-12"><a href="statistical-definition-of-reliability..html#cb39-12" aria-hidden="true" tabindex="-1"></a><span class="fu">cor</span>(xsplit1, xsplit2, <span class="at">use =</span> <span class="st">&quot;complete&quot;</span>)</span>
+<span id="cb39-13"><a href="statistical-definition-of-reliability..html#cb39-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] 0.625</span></span></code></pre></div>
+</div>
+<div id="spearman-brown" class="section level2" number="11.3">
+<h2><span class="header-section-number">11.3</span> Spearman Brown</h2>
+<p>The Spearman-Brown formula was originally used to correct for the reduction in reliability that occurred when correlating two test forms that were only half the length of the original test. In theory, reliability will increase as we add items to a test. Thus, Spearman-Brown is used to estimate, or predict, what the reliability would be if the half-length tests were made into full-length tests.</p>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="statistical-definition-of-reliability..html#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># sb_r() in the epmr package uses the Spearman-Brown </span></span>
+<span id="cb40-2"><a href="statistical-definition-of-reliability..html#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="co"># formula to estimate how reliability would change when </span></span>
+<span id="cb40-3"><a href="statistical-definition-of-reliability..html#cb40-3" aria-hidden="true" tabindex="-1"></a><span class="co"># test length changes by a factor k</span></span>
+<span id="cb40-4"><a href="statistical-definition-of-reliability..html#cb40-4" aria-hidden="true" tabindex="-1"></a><span class="co"># If test length were doubled, k would be 2</span></span>
+<span id="cb40-5"><a href="statistical-definition-of-reliability..html#cb40-5" aria-hidden="true" tabindex="-1"></a><span class="fu">sb_r</span>(<span class="at">r =</span> <span class="fu">cor</span>(xsplit1, xsplit2, <span class="at">use =</span> <span class="st">&quot;complete&quot;</span>), <span class="at">k =</span> <span class="dv">2</span>)</span>
+<span id="cb40-6"><a href="statistical-definition-of-reliability..html#cb40-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] 0.769</span></span></code></pre></div>
+<p>The Spearman-Brown reliability, <span class="math inline">\(r_{new}\)</span>, is estimated as a function of what’s labeled here as the old reliability, <span class="math inline">\(r_{old}\)</span>, and the factor by which the length of <span class="math inline">\(X\)</span> is predicted to change, <span class="math inline">\(k\)</span>:</p>
+<p><span class="math display" id="eq:rnew">\[\begin{equation}
+r_{new} = \frac{kr_{old}}{(k - 1)r_{old} + 1}.
+\tag{11.3}
+\end{equation}\]</span></p>
+<p>Again, <span class="math inline">\(k\)</span> is the factor by which the test length is increased or decreased. It is equal to the number of items in the new test divided by the number of items in the original test. Multiply <span class="math inline">\(k\)</span> by the old reliability, and then divided the result by <span class="math inline">\((k - 1)\)</span> times the old reliability, plus 1. The epmr package contains <code>sb_r()</code>, a simple function for estimating the Spearman-Brown reliability.</p>
+</div>
+<div id="standard-error-of-measurement" class="section level2" number="11.4">
+<h2><span class="header-section-number">11.4</span> Standard Error of Measurement</h2>
+<p>Typically, we’re more interested in how the unreliability of a test can be expressed in terms of the available observed variability. Thus, we multiply the unreliable proportion of variance by the standard deviation of <span class="math inline">\(X\)</span> to obtain the SEM:</p>
+<p><span class="math display" id="eq:sem">\[\begin{equation}
+SEM = \sigma_X\sqrt{1 - r}.
+\tag{11.4}
+\end{equation}\]</span></p>
+<p>Confidence intervals for <code>PISA09</code> can be estimated in the same way. First, we choose a measure of reliability, find the SD of observed scores, and obtain the corresponding SEM. Then, we can find the CI, which gives us the expected amount of uncertainty in our observed scores due to random measurement error. Here, we’re calculating SEM and the CI using alpha, but other reliability estimates would work as well. Figure <a href="statistical-definition-of-reliability..html#fig:cttplot3">11.1</a> shows the 11 possible <code>PISA09</code> reading scores in order, with error bars based on SEM for students in Belgium.</p>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="statistical-definition-of-reliability..html#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get alpha and SEM for students in Belgium</span></span>
+<span id="cb41-2"><a href="statistical-definition-of-reliability..html#cb41-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-3"><a href="statistical-definition-of-reliability..html#cb41-3" aria-hidden="true" tabindex="-1"></a>bela <span class="ot">&lt;-</span> <span class="fu">coef_alpha</span>(PISA09[PISA09<span class="sc">$</span>cnt <span class="sc">==</span> <span class="st">&quot;BEL&quot;</span>, rsitems])</span>
+<span id="cb41-4"><a href="statistical-definition-of-reliability..html#cb41-4" aria-hidden="true" tabindex="-1"></a>bela_alpha<span class="ot">=</span>bela<span class="sc">$</span>alpha</span>
+<span id="cb41-5"><a href="statistical-definition-of-reliability..html#cb41-5" aria-hidden="true" tabindex="-1"></a><span class="co"># The sem function from epmr also overlaps with sem from </span></span>
+<span id="cb41-6"><a href="statistical-definition-of-reliability..html#cb41-6" aria-hidden="true" tabindex="-1"></a><span class="co"># another package so we&#39;re spelling it out here in long </span></span>
+<span id="cb41-7"><a href="statistical-definition-of-reliability..html#cb41-7" aria-hidden="true" tabindex="-1"></a><span class="co"># form</span></span>
+<span id="cb41-8"><a href="statistical-definition-of-reliability..html#cb41-8" aria-hidden="true" tabindex="-1"></a>belsem <span class="ot">&lt;-</span> epmr<span class="sc">::</span><span class="fu">sem</span>(<span class="at">r =</span> bela_alpha, <span class="at">sd =</span> <span class="fu">sd</span>(scores<span class="sc">$</span>x1,</span>
+<span id="cb41-9"><a href="statistical-definition-of-reliability..html#cb41-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb41-10"><a href="statistical-definition-of-reliability..html#cb41-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the 11 possible total scores against themselves</span></span>
+<span id="cb41-11"><a href="statistical-definition-of-reliability..html#cb41-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Error bars are shown for 1 SEM, giving a 68% confidence</span></span>
+<span id="cb41-12"><a href="statistical-definition-of-reliability..html#cb41-12" aria-hidden="true" tabindex="-1"></a><span class="co"># interval and 2 SEM, giving the 95% confidence interval</span></span>
+<span id="cb41-13"><a href="statistical-definition-of-reliability..html#cb41-13" aria-hidden="true" tabindex="-1"></a><span class="co"># x is converted to factor to show discrete values on the </span></span>
+<span id="cb41-14"><a href="statistical-definition-of-reliability..html#cb41-14" aria-hidden="true" tabindex="-1"></a><span class="co"># x-axis</span></span>
+<span id="cb41-15"><a href="statistical-definition-of-reliability..html#cb41-15" aria-hidden="true" tabindex="-1"></a>beldat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">11</span>, <span class="at">sem =</span> belsem)</span>
+<span id="cb41-16"><a href="statistical-definition-of-reliability..html#cb41-16" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(beldat, <span class="fu">aes</span>(<span class="fu">factor</span>(x), x)) <span class="sc">+</span></span>
+<span id="cb41-17"><a href="statistical-definition-of-reliability..html#cb41-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin =</span> x <span class="sc">-</span> sem <span class="sc">*</span> <span class="dv">2</span>,</span>
+<span id="cb41-18"><a href="statistical-definition-of-reliability..html#cb41-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">ymax =</span> x <span class="sc">+</span> sem <span class="sc">*</span> <span class="dv">2</span>), <span class="at">col =</span> <span class="st">&quot;violet&quot;</span>) <span class="sc">+</span></span>
+<span id="cb41-19"><a href="statistical-definition-of-reliability..html#cb41-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin =</span> x <span class="sc">-</span> sem, <span class="at">ymax =</span> x <span class="sc">+</span> sem),</span>
+<span id="cb41-20"><a href="statistical-definition-of-reliability..html#cb41-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">col =</span> <span class="st">&quot;yellow&quot;</span>) <span class="sc">+</span></span>
+<span id="cb41-21"><a href="statistical-definition-of-reliability..html#cb41-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code></pre></div>
+<div class="figure"><span style="display:block;" id="fig:cttplot3"></span>
+<img src="0500_CTT_files/figure-html/cttplot3-1.png" alt="The PISA09 reading scale shown with 68 and 95 percent confidence intervals around each point." width="75%" />
+<p class="caption">
+Figure 11.1: The PISA09 reading scale shown with 68 and 95 percent confidence intervals around each point.
+</p>
+</div>
+<p>Figure <a href="statistical-definition-of-reliability..html#fig:cttplot3">11.1</a> helps us visualize the impact of unreliable measurement on score comparisons. For example, note that the top of the 95% confidence interval for <span class="math inline">\(X\)</span> of 2 extends nearly to 5 points, and thus overlaps with the CI for adjacent scores 3 through 7. It isn’t until <span class="math inline">\(X\)</span> of 8 that the CI no longer overlap. With a CI of <code>belsem</code> 1.425, we’re 95% confident that students with observed scores differing at least by <code>belsem * 4</code> 5.7 have different true scores. Students with observed scores closer than <code>belsem * 4</code> may actually have the same true scores.</p>
 </div>
 </div>
             </section>
@@ -564,8 +566,8 @@ div.csl-indent {
           </div>
         </div>
       </div>
-<a href="criterion-validity.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="unified-validity-and-threats.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="installing-epmr.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="interpreting-reliability-and-unreliability.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -596,7 +598,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/DataScience4Psych/DataScience4Psych/edit/main/0800_validity.Rmd",
+"link": "https://github.com/DataScience4Psych/DataScience4Psych/edit/main/0500_CTT.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -607,7 +609,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["https://github.com/DataScience4Psych/DataScience4Psych/raw/main/0800_validity.Rmd", "PT.epub"],
+"download": ["https://github.com/DataScience4Psych/DataScience4Psych/raw/main/0500_CTT.Rmd", "PT.epub"],
 "search": {
 "engine": "fuse",
 "options": null

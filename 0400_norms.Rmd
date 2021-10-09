@@ -5,7 +5,6 @@ source("common.R")
 # install.packages("devtools")
 if (!require("tweetrmd"))  devtools::install_github("gadenbuie/tweetrmd")
 library(tweetrmd) #... embedding tweets
-class_urls <- read.csv("./data/class_urls.csv")
 ```
 
 ```{r links, child="links.md"}
@@ -13,7 +12,7 @@ class_urls <- read.csv("./data/class_urls.csv")
 
 # Welcome to Norms and Meanings of Test Scores
 
-This module is covers Norms and Meanings of Test Scores. Please watch the videos and work your way through the notes. **The videos start on the next page.**  You can find the module playlist [here](https://www.youtube.com/playlist?list=PLKrrdtYgOUYZ2BXy4ypzoPdA39mszdnlc). 
+This module is covers Norms and Meanings of Test Scores. Please watch the videos and work your way through the notes. **The videos start on the next page.**  You can find the module playlist [here](https://www.youtube.com/playlist?list=PLKrrdtYgOUYbKLQBwbeSVN4mp0DPkNG6t). 
 
 ## Learning Goals
 
