@@ -1,0 +1,134 @@
+# (PART) Module 04 {-}
+
+```{r include = FALSE}
+source("common.R")
+# install.packages("devtools")
+if (!require("tweetrmd"))  devtools::install_github("gadenbuie/tweetrmd")
+library(tweetrmd) #... embedding tweets
+class_urls <- read.csv("./data/class_urls.csv")
+```
+
+```{r links, child="links.md"}
+```
+
+# Welcome to Norms and Meanings of Test Scores
+
+This module is covers Norms and Meanings of Test Scores. Please watch the videos and work your way through the notes. **The videos start on the next page.**  You can find the module playlist [here](https://www.youtube.com/playlist?list=PLKrrdtYgOUYZ2BXy4ypzoPdA39mszdnlc). 
+
+## Learning Goals
+
+By the end of this module, you should be able to achieve all the learning goals outlined below.
+
+
+
+## Module Materials
+
+### Explore
+* Readings
+	* Located on Canvas
+
+* Videos
+  * Located in the subchapters of this module
+* Slidedecks
+	* Located on Canvas
+	
+### Engage
+* Activities
+	* Located on Canvas
+	
+### Evaluate
+* Quiz
+	* Located on Canvas
+
+
+
+### Estimated Video Length
+
+<!--https://www.youtube.com/playlist?list=PLKrrdtYgOUYao_7t5ycK4KDXNKaY-ECup & https://ytplaylist-len.herokuapp.com/ -->
+
+
+
+# Lecture: Norms and Meaning of Test Scores
+
+## Norms and Meaning of Test Scores (04.01)
+
+
+<!-- not yet updated -->
+
+```{r, echo=FALSE}
+embed_url("https://www.youtube.com/watch?v=WcoBYrwKQJo") %>%
+  use_align("center")
+```
+
+
+## Statistics as Summary (04.02)
+
+
+<!-- not yet updated -->
+
+```{r, echo=FALSE}
+embed_url("https://www.youtube.com/watch?v=d4AIfgUdEGY") %>%
+  use_align("center")
+```
+
+## Measures of Spread (04.03)
+
+<!-- not yet updated -->
+
+```{r, echo=FALSE}
+embed_url("https://youtu.be/oilUDTYEBVA") %>%
+  use_align("center")
+```
+
+## Transforming Raw Scores (04.04)
+
+
+<!-- not yet updated -->
+
+```{r, echo=FALSE}
+embed_url("https://www.youtube.com/watch?v=v1diShA7Nug") %>%
+  use_align("center")
+```
+
+
+## Developmental Norms (04.05)
+
+<!-- not yet updated -->
+
+```{r, echo=FALSE}
+embed_url("https://www.youtube.com/watch?v=9q--3XpVwq0") %>%
+  use_align("center")
+```
+
+## Within-Group Norms (04.06)
+<!-- not yet updated -->
+```{r, echo=FALSE}
+embed_url("https://www.youtube.com/watch?v=QBBXrIztZ64") %>%
+  use_align("center")
+```
+
+## Referenced Tests Types (04.07)
+
+<!-- not yet updated -->
+```{r, echo=FALSE}
+embed_url("https://www.youtube.com/watch?v=Q4BjtRh9JDA") %>%
+  use_align("center")
+```
+
+## Minimums, Cutoffs, and Expectancy Tables (04.08)
+
+<!-- not yet updated -->
+```{r, echo=FALSE}
+embed_url("https://www.youtube.com/watch?v=zCAj7EaVBWM") %>%
+  use_align("center")
+```
+
+## Interpreting Test Scores Realistically: Remastered (04.09)
+
+I remastered this video on Interpreting Test Scores Realistically. It was originally produced in 1961. The original can be found [here](https://archive.org/details/interpretingtestscoresrealistically)
+
+<!-- not yet updated -->
+```{r, echo=FALSE}
+embed_url("https://www.youtube.com/watch?v=jlk32-Tmt80") %>%
+  use_align("center")
+```
