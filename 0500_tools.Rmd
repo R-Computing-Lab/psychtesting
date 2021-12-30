@@ -1,4 +1,4 @@
-# (PART) Module 05a {-}
+# (PART) Module 05 {-}
 
 ```{r include = FALSE}
 source("common.R")
@@ -23,11 +23,11 @@ embed_url(video_url) %>%
   use_align("center")
 ```
 
-You can follow along with the slides [here](https://r-computing-lab.github.io/testing_slides//meetr/meet_r.html) if they do not appear below.
+You can follow along with the slides [here](https://r-computing-lab.github.io/testing_slides/meetr/meet_r.html) if they do not appear below.
 
 ```{r, echo=FALSE}
 
-var_url="https://r-computing-lab.github.io/testing_slides//meetr/meet_r.html#1"
+var_url="https://r-computing-lab.github.io/testing_slides/meetr/meet_r.html#1"
 include_url(var_url, height = "400px")
 ```
 
@@ -72,8 +72,6 @@ update.packages(ask = FALSE, checkBuilt = TRUE)
 __Note:__ this  code will only look for updates on CRAN. So if you use a package that lives *only* on GitHub or if you want a development version from GitHub, you will need to  update manually, e.g. via `devtools::install_github()`.
 
 
-
-
 ### Testing testing
 
 * Do whatever is appropriate for your OS to launch RStudio. You should get a window similar to the screenshot you see [here][rstudio-workbench], but yours will be more boring because you haven't written any code or made any figures yet!
@@ -102,13 +100,12 @@ You could use the above method to install the following packages, all of which w
 
 ## Getting Help with R
 
+You can follow along with the slides [here](https://r-computing-lab.github.io/testing_slides/meetr/meet_r.html) if they do not appear below.
 
 ```{r, echo=FALSE}
 embed_url("https://www.youtube.com/watch?v=lo67SSJRScw") %>%
   use_align("center")
 ```
-
-You can follow along with the slides [here](https://r-computing-lab.github.io/testing_slides//meetr/meet_r.html) if they do not appear below.
 
 ```{r, echo=FALSE}
 var_url="https://r-computing-lab.github.io/testing_slides//meetr/meet_r.html#16"
