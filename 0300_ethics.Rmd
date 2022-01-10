@@ -1,0 +1,135 @@
+# (PART) Module 03 {-}
+
+```{r include = FALSE}
+source("common.R")
+# install.packages("devtools")
+if (!require("tweetrmd"))  devtools::install_github("gadenbuie/tweetrmd")
+library(tweetrmd) #... embedding tweets
+```
+
+```{r links, child="links.md"}
+```
+
+# Welcome to Ethics in Testing
+
+This module is covers Ethics in Testing. Please watch the videos and work your way through the notes. **The videos start on the next page.**  You can find the module playlist [here](https://www.youtube.com/playlist?list=PLKrrdtYgOUYb-wsx3rHZI5e33cE1sLE9R). 
+
+## Learning Goals
+
+By the end of this module, you should be able to achieve all the learning goals outlined below.
+
+- Discuss how the profession of psychology regulates itself internally and cite examples of documents that the APA has promulgated for the use of psychologists
+- Explain the major reasons why the use of psychological tests needs to be restricted to those who are competent in their use
+- Describe how you would gauge whether someone is a qualified psychologist
+- List three examples of practices concerning the distribution and marketing of psychological tests that are deemed unacceptable and explain why they might be harmful
+- Discuss how the purpose of which testing is conducted affects the issue of protecting the privacy of test takers
+- Explain what is meant by "informed consent" as fully as possible
+- Discuss the issues of access to test results from the standpoint of test-takers parents third persons and institutions
+- Identify and discuss the major precautions that should apply to the communication of test results to the individual test taker
+- Describe the major legal regulations in the area of employee selection procedures
+- Cite an example from the field of employment testing of a well-intentioned effort to do away with barriers to equal opportunity that has proved to be controversial
+- Discuss the issue of relevant vs. irrelevant cultural factors as it applies to the content of psychological tests
+- Describe the rationale used by those who view standardized testing as having a positive function with regard to protecting the civil rights of minorities and women
+
+## Module Materials
+
+### Explore
+* Readings
+	* Located on Canvas
+
+* Videos
+  * Located in the subchapters of this module
+* Slidedecks
+	* Located on Canvas
+	
+### Engage
+* Activities
+	* Located on Canvas
+	
+### Evaluate
+* Quiz
+	* Located on Canvas
+
+
+
+### Estimated Video Length
+
+<!--https://www.youtube.com/playlist?list=PLKrrdtYgOUYao_7t5ycK4KDXNKaY-ECup & https://ytplaylist-len.herokuapp.com/ -->
+
+No of videos : 7
+
+Average length of video : 16 minutes, 59 seconds
+
+Total length of playlist : 1 hour, 58 minutes, 55 seconds
+
+- At 1.25x : 1 hour, 35 minutes, 8 seconds
+- At 1.50x : 1 hour, 19 minutes, 16 seconds
+
+# Lecture: Ethics in Testing
+
+##  Ethics, Equity, and APA guidelines (03.01)
+
+
+<!-- not yet updated -->
+
+```{r, echo=FALSE}
+embed_url("https://youtu.be/eFT2JgPKk7U") %>%
+  use_align("center")
+```
+
+
+## Responsibilities of Publishers (03.02)
+
+
+<!-- not yet updated -->
+
+```{r, echo=FALSE}
+embed_url("https://youtu.be/y8Eg6gS1WT8") %>%
+  use_align("center")
+```
+
+## Privacy and Test User Responsibilities (03.03)
+
+<!-- not yet updated -->
+
+```{r, echo=FALSE}
+embed_url("https://youtu.be/5xAvbRH_pWE") %>%
+  use_align("center")
+```
+
+## Considerations for Individual Differences (03.04)
+
+
+<!-- not yet updated -->
+
+```{r, echo=FALSE}
+"https://youtu.be/nZi2ykCATnE" %>%
+embed_url() %>%
+  use_align("center")
+```
+
+
+## Legal Considerations (03.05)
+
+<!-- not yet updated -->
+
+```{r, echo=FALSE}
+"https://youtu.be/lzUU3CHXZEo" %>%
+embed_url() %>%
+  use_align("center")
+```
+
+## Ethics from the Test-Taker's Perspective (03.06)
+<!-- not yet updated -->
+```{r, echo=FALSE}
+embed_url("https://youtu.be/HnZ_HsvDNxM") %>%
+  use_align("center")
+```
+
+## Potential Problems from the Test-Taker's Perspective (03.07)
+
+<!-- not yet updated -->
+```{r, echo=FALSE}
+embed_url("https://youtu.be/2IR-C_ZG_dA") %>%
+  use_align("center")
+```
