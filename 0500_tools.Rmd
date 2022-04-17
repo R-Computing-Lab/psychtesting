@@ -49,7 +49,8 @@ At this point you should download and install R and RStudio using the links belo
 
 ```{r}
 library(vembedr)
-embed_url("https://www.youtube.com/watch?v=kVIZGCT5p9U") %>%
+"https://www.youtube.com/watch?v=kVIZGCT5p9U" %>%
+ embed_url() %>%
   use_align("center")
 ```
 
@@ -103,7 +104,8 @@ You could use the above method to install the following packages, all of which w
 You can follow along with the slides [here](https://r-computing-lab.github.io/testing_slides/meetr/meet_r.html) if they do not appear below.
 
 ```{r, echo=FALSE}
-embed_url("https://www.youtube.com/watch?v=lo67SSJRScw") %>%
+"https://www.youtube.com/watch?v=lo67SSJRScw" %>%
+ embed_url() %>%
   use_align("center")
 ```
 

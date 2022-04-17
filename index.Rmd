@@ -45,7 +45,8 @@ Well, these notes are written in R (and RMarkdown)! Indeed, this entire website 
 You can find the current version of the course syllabus [here](https://github.com/smasongarrison/Syllabi/blob/master/syllabus_testing.pdf), along with all of the [other syllabi for my classes]( https://github.com/smasongarrison/Syllabi). You can find the youtube playlist [here](https://www.youtube.com/playlist?list=PLKrrdtYgOUYYgag4erySD7L0jDcZGMlS_)
 
 ```{r,echo=FALSE}
-embed_url("https://www.youtube.com/watch?v=UBB34FqGjxU") %>%
+"https://www.youtube.com/watch?v=UBB34FqGjxU" %>%
+ embed_url() %>%
   use_align("center")
 ```
 

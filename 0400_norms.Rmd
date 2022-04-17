@@ -55,7 +55,8 @@ By the end of this module, you should be able to achieve all the learning goals 
 <!-- not yet updated -->
 
 ```{r, echo=FALSE}
-embed_url("https://www.youtube.com/watch?v=WcoBYrwKQJo") %>%
+"https://www.youtube.com/watch?v=WcoBYrwKQJo" %>%
+ embed_url() %>%
   use_align("center")
 ```
 
@@ -66,7 +67,8 @@ embed_url("https://www.youtube.com/watch?v=WcoBYrwKQJo") %>%
 <!-- not yet updated -->
 
 ```{r, echo=FALSE}
-embed_url("https://www.youtube.com/watch?v=d4AIfgUdEGY") %>%
+"https://www.youtube.com/watch?v=d4AIfgUdEGY" %>%
+ embed_url() %>%
   use_align("center")
 ```
 
@@ -75,7 +77,8 @@ embed_url("https://www.youtube.com/watch?v=d4AIfgUdEGY") %>%
 <!-- not yet updated -->
 
 ```{r, echo=FALSE}
-embed_url("https://youtu.be/oilUDTYEBVA") %>%
+"https://youtu.be/oilUDTYEBVA" %>%
+ embed_url() %>%
   use_align("center")
 ```
 
@@ -85,7 +88,8 @@ embed_url("https://youtu.be/oilUDTYEBVA") %>%
 <!-- not yet updated -->
 
 ```{r, echo=FALSE}
-embed_url("https://www.youtube.com/watch?v=v1diShA7Nug") %>%
+"https://www.youtube.com/watch?v=v1diShA7Nug" %>%
+ embed_url() %>%
   use_align("center")
 ```
 
@@ -95,14 +99,16 @@ embed_url("https://www.youtube.com/watch?v=v1diShA7Nug") %>%
 <!-- not yet updated -->
 
 ```{r, echo=FALSE}
-embed_url("https://www.youtube.com/watch?v=9q--3XpVwq0") %>%
+"https://www.youtube.com/watch?v=9q--3XpVwq0" %>%
+ embed_url() %>%
   use_align("center")
 ```
 
 ## Within-Group Norms (04.06)
 <!-- not yet updated -->
 ```{r, echo=FALSE}
-embed_url("https://www.youtube.com/watch?v=QBBXrIztZ64") %>%
+"https://www.youtube.com/watch?v=QBBXrIztZ64" %>%
+ embed_url() %>%
   use_align("center")
 ```
 
@@ -110,7 +116,8 @@ embed_url("https://www.youtube.com/watch?v=QBBXrIztZ64") %>%
 
 <!-- not yet updated -->
 ```{r, echo=FALSE}
-embed_url("https://www.youtube.com/watch?v=Q4BjtRh9JDA") %>%
+"https://www.youtube.com/watch?v=Q4BjtRh9JDA" %>%
+ embed_url() %>%
   use_align("center")
 ```
 
@@ -118,7 +125,8 @@ embed_url("https://www.youtube.com/watch?v=Q4BjtRh9JDA") %>%
 
 <!-- not yet updated -->
 ```{r, echo=FALSE}
-embed_url("https://www.youtube.com/watch?v=zCAj7EaVBWM") %>%
+"https://www.youtube.com/watch?v=zCAj7EaVBWM" %>%
+ embed_url() %>%
   use_align("center")
 ```
 
@@ -128,6 +136,7 @@ I remastered this video on Interpreting Test Scores Realistically. It was origin
 
 <!-- not yet updated -->
 ```{r, echo=FALSE}
-embed_url("https://www.youtube.com/watch?v=jlk32-Tmt80") %>%
+"https://www.youtube.com/watch?v=jlk32-Tmt80" %>%
+ embed_url() %>%
   use_align("center")
 ```

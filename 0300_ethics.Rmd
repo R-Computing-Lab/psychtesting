@@ -73,7 +73,8 @@ Total length of playlist : 1 hour, 58 minutes, 55 seconds
 <!-- not yet updated -->
 
 ```{r, echo=FALSE}
-embed_url("https://youtu.be/eFT2JgPKk7U") %>%
+"https://youtu.be/eFT2JgPKk7U" %>%
+ embed_url() %>%
   use_align("center")
 ```
 
@@ -84,7 +85,8 @@ embed_url("https://youtu.be/eFT2JgPKk7U") %>%
 <!-- not yet updated -->
 
 ```{r, echo=FALSE}
-embed_url("https://youtu.be/y8Eg6gS1WT8") %>%
+"https://youtu.be/y8Eg6gS1WT8" %>%
+ embed_url() %>%
   use_align("center")
 ```
 
@@ -93,7 +95,8 @@ embed_url("https://youtu.be/y8Eg6gS1WT8") %>%
 <!-- not yet updated -->
 
 ```{r, echo=FALSE}
-embed_url("https://youtu.be/5xAvbRH_pWE") %>%
+"https://youtu.be/5xAvbRH_pWE" %>%
+ embed_url() %>%
   use_align("center")
 ```
 
@@ -122,7 +125,8 @@ embed_url() %>%
 ## Ethics from the Test-Taker's Perspective (03.06)
 <!-- not yet updated -->
 ```{r, echo=FALSE}
-embed_url("https://youtu.be/HnZ_HsvDNxM") %>%
+"https://youtu.be/HnZ_HsvDNxM" %>%
+ embed_url() %>%
   use_align("center")
 ```
 
@@ -130,6 +134,7 @@ embed_url("https://youtu.be/HnZ_HsvDNxM") %>%
 
 <!-- not yet updated -->
 ```{r, echo=FALSE}
-embed_url("https://youtu.be/2IR-C_ZG_dA") %>%
+"https://youtu.be/2IR-C_ZG_dA" %>%
+ embed_url() %>%
   use_align("center")
 ```
