@@ -39,8 +39,8 @@ In this module, we'll use epmr to run IRT analyses with `PISA09` data, and we'll
 
 ```{r}
 # R setup for this module
-library("epmr")
-library("ggplot2")
+library(epmr)
+library(ggplot2)
 # Functions we'll use in this module
 # rirf() for getting an item response function
 # scale_y_continuous() for plotting a continuous scale
@@ -161,10 +161,11 @@ Figure \@ref(fig:irtplot2) contains IRF for five items with different item param
 # Get IRF using the rirf() function from epmr and plot
 # rirf() will be demonstrated again later
 ipar <- data.frame(a = c(2, 1, .5, 1, 1.5),
-  b = c(3, 2, -.5, 0, -1),
-  c = c(0, .2, .25, .1, .28),
-  row.names = paste0("item", 1:5))
-ggplot(rirf(ipar), aes(theta)) + scale_y_continuous("Pr(X)") +
+                   b = c(3, 2, -.5, 0, -1),
+                   c = c(0, .2, .25, .1, .28),
+                   row.names = paste0("item", 1:5))
+ggplot(rirf(ipar), aes(theta)) + 
+  scale_y_continuous("Pr(X)") +
   geom_line(aes(y = item1), col = 1) +
   geom_line(aes(y = item2), col = 2) +
   geom_line(aes(y = item3), col = 3) +
