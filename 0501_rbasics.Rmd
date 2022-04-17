@@ -309,8 +309,8 @@ In your favorite OS-specific way, search your files for `toy_line_plot.pdf` and 
 
 ```{r, echo=FALSE}
 # tradition
-video_url="https://www.youtube.com/watch?v=gRdfX7ut8gw"
-embed_url(video_url) %>%
+"https://www.youtube.com/watch?v=gRdfX7ut8gw" %>%
+ embed_url() %>%
   use_align("center")
 ```
 

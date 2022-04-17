@@ -18,8 +18,8 @@ ds4p_urls <- read.csv("./data/ds4p_urls.csv")
 
 ```{r, echo=FALSE}
 
-video_url="https://www.youtube.com/watch?v=Kub5COELXzs"
-embed_url(video_url) %>%
+"https://www.youtube.com/watch?v=Kub5COELXzs" %>%
+ embed_url() %>%
   use_align("center")
 ```
 

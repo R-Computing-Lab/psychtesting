@@ -23,8 +23,8 @@ This module introduces the idea of classical test theory. Please watch the video
 
 ```{r, echo=FALSE}
 
-video_url="https://www.youtube.com/watch?v=zLeArwu2S2I"
-embed_url(video_url) %>%
+"https://www.youtube.com/watch?v=zLeArwu2S2I" %>%
+ embed_url() %>%
   use_align("center")
 ```
 
@@ -32,8 +32,8 @@ embed_url(video_url) %>%
 
 ```{r, echo=FALSE}
 
-video_url="https://www.youtube.com/watch?v=o_5DD74oa1E"
-embed_url(video_url) %>%
+"https://www.youtube.com/watch?v=o_5DD74oa1E" %>%
+ embed_url() %>%
   use_align("center")
 ```
 
@@ -41,8 +41,8 @@ embed_url(video_url) %>%
 
 ```{r, echo=FALSE}
 
-video_url="https://www.youtube.com/watch?v=R2bQZUwSYGQ"
-embed_url(video_url) %>%
+"https://www.youtube.com/watch?v=R2bQZUwSYGQ" %>%
+ embed_url() %>%
   use_align("center")
 ```
 
@@ -51,8 +51,8 @@ embed_url(video_url) %>%
 
 ```{r, echo=FALSE}
 
-video_url="https://www.youtube.com/watch?v=agw9R1hcqK8"
-embed_url(video_url) %>%
+"https://www.youtube.com/watch?v=agw9R1hcqK8" %>%
+ embed_url() %>%
   use_align("center")
 ```
 
@@ -148,8 +148,8 @@ ggplot(scores, aes(x1, y)) +
 
 ```{r, echo=FALSE}
 
-video_url="https://www.youtube.com/watch?v=XrkNO7hiKvE"
-embed_url(video_url) %>%
+"https://www.youtube.com/watch?v=XrkNO7hiKvE" %>%
+ embed_url() %>%
   use_align("center")
 ```
 
