@@ -27,8 +27,8 @@ You can follow along with the slides [here](https://r-computing-lab.github.io/te
 
 ```{r, echo=FALSE}
 
-var_url="https://r-computing-lab.github.io/testing_slides/meetr/meet_r.html#1"
-include_url(var_url, height = "400px")
+"https://r-computing-lab.github.io/testing_slides/meetr/meet_r.html#1" %>%
+ include_url(height = "400px")
 ```
 
 ## R
@@ -110,8 +110,8 @@ You can follow along with the slides [here](https://r-computing-lab.github.io/te
 ```
 
 ```{r, echo=FALSE}
-var_url="https://r-computing-lab.github.io/testing_slides//meetr/meet_r.html#16"
-include_url(var_url, height = "400px")
+"https://r-computing-lab.github.io/testing_slides//meetr/meet_r.html#16" %>%
+ include_url(height = "400px")
 ```
 
 Help files in R are easily accessed by entering a function name preceded by a question mark, for example, `?c`, `?mean`, or `?devtools::install_github`. Parentheses aren't necessary. The question mark approach is a shortcut for the `help()` function, where, for example, `?mean` is the same as `help("mean")`. Either approach provides direct access to the R documentation for a function.
